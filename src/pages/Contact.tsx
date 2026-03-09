@@ -1,0 +1,92 @@
+import { useState } from "react";
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+import { Textarea } from "@/components/ui/textarea";
+import { toast } from "sonner";
+import { Phone, Mail, MapPin } from "lucide-react";
+
+const Contact = () => {
+  const [form, setForm] = useState({ nom: "", email: "", telephone: "", message: "" });
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    toast.success("Votre message a bien été envoyé ! Je vous réponds rapidement.");
+    setForm({ nom: "", email: "", telephone: "", message: "" });
+  };
+
+  return (
+    <div>
+      <section className="bg-foreground text-primary-foreground section-padding">
+        <div className="container mx-auto max-w-3xl text-center">
+          <h1 className="font-display text-4xl md:text-5xl font-bold mb-6">Contact</h1>
+          <p className="font-body text-lg opacity-85">
+            Une question, un projet ? N'hésitez pas à me contacter, je serai ravie d'échanger avec vous.
+          </p>
+        </div>
+      </section>
+
+      <section className="section-padding">
+        <div className="container mx-auto max-w-4xl">
+          <div className="grid md:grid-cols-5 gap-12">
+            {/* Contact info */}
+            <div className="md:col-span-2 space-y-6">
+              <h2 className="font-display text-2xl font-semibold text-foreground">Mes coordonnées</h2>
+              <div className="space-y-4">
+                <a href="tel:+33600000000" className="flex items-center gap-3 text-muted-foreground hover:text-primary transition-colors font-body">
+                  <div className="w-10 h-10 rounded-full bg-terracotta-light flex items-center justify-center">
+                    <Phone className="w-5 h-5 text-primary" />
+                  </div>
+                  06 00 00 00 00
+                </a>
+                <a href="mailto:contact@patriciavieira-immo.fr" className="flex items-center gap-3 text-muted-foreground hover:text-primary transition-colors font-body">
+                  <div className="w-10 h-10 rounded-full bg-terracotta-light flex items-center justify-center">
+                    <Mail className="w-5 h-5 text-primary" />
+                  </div>
+                  contact@patriciavieira-immo.fr
+                </a>
+                <div className="flex items-center gap-3 text-muted-foreground font-body">
+                  <div className="w-10 h-10 rounded-full bg-terracotta-light flex items-center justify-center">
+                    <MapPin className="w-5 h-5 text-primary" />
+                  </div>
+                  Gretz-Armainvilliers, Seine-et-Marne
+                </div>
+              </div>
+
+              <div className="pt-4">
+                <h3 className="font-display text-lg font-semibold text-foreground mb-3">Réseaux sociaux</h3>
+                <div className="flex gap-3">
+                  {["Facebook", "Instagram", "LinkedIn"].map((social) => (
+                    <a
+                      key={social}
+                      href="#"
+                      className="px-4 py-2 bg-card rounded-lg border border-border/50 text-sm font-body text-muted-foreground hover:text-primary hover:border-primary/30 transition-colors"
+                    >
+                      {social}
+                    </a>
+                  ))}
+                </div>
+              </div>
+            </div>
+
+            {/* Form */}
+            <div className="md:col-span-3">
+              <form onSubmit={handleSubmit} className="space-y-4 bg-card rounded-xl p-8 border border-border/50">
+                <Input placeholder="Nom complet" value={form.nom} onChange={e => setForm({...form, nom: e.target.value})} required />
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                  <Input type="email" placeholder="Email" value={form.email} onChange={e => setForm({...form, email: e.target.value})} required />
+                  <Input type="tel" placeholder="Téléphone" value={form.telephone} onChange={e => setForm({...form, telephone: e.target.value})} />
+                </div>
+                <Textarea placeholder="Votre message" value={form.message} onChange={e => setForm({...form, message: e.target.value})} rows={6} required />
+                <Button variant="hero" size="lg" type="submit" className="w-full">
+                  Envoyer mon message
+                </Button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  );
+};
+
+export default Contact;
