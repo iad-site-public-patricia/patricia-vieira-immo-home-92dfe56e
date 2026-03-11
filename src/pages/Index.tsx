@@ -17,15 +17,14 @@ const Index = () => {
         </div>
         <div className="relative container mx-auto px-4 py-20">
           <div className="max-w-2xl">
-            <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-primary-foreground leading-tight mb-6 animate-fade-in">
-              Patricia Vieira
-              <span className="block text-2xl md:text-3xl lg:text-4xl font-medium mt-2 opacity-90">
+            <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6 animate-fade-in">
+              <span className="text-primary-foreground drop-shadow-lg">Patricia Vieira</span>
+              <span className="block text-2xl md:text-3xl lg:text-4xl font-medium mt-3 italic text-primary-foreground/90 drop-shadow-md">
                 Conseillère immobilier indépendante
               </span>
             </h1>
-            <p className="text-primary-foreground/85 text-lg md:text-xl font-body leading-relaxed mb-10 animate-fade-in" style={{ animationDelay: "0.2s" }}>
-              J'accompagne les propriétaires dans la réussite de leur projet immobilier
-              et je forme également des personnes qui souhaitent entreprendre dans ce métier passionnant.
+            <p className="text-primary-foreground/90 text-lg md:text-xl font-body leading-relaxed mb-10 animate-fade-in drop-shadow-sm" style={{ animationDelay: "0.2s" }}>
+              J'accompagne vos projets immobiliers, de la vente à l'achat, et je partage ma passion avec celles et ceux qui souhaitent construire leur indépendance professionnelle au sein de mon équipe présente dans plusieurs régions en France.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 animate-fade-in" style={{ animationDelay: "0.4s" }}>
               <Button variant="hero" size="xl" asChild>
