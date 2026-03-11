@@ -31,8 +31,8 @@ const Vendre = () => {
       <section className="bg-foreground text-primary-foreground section-padding">
         <div className="container mx-auto max-w-3xl text-center">
           <h1 className="font-display text-4xl md:text-5xl font-bold mb-6">Vendre son bien</h1>
-          <p className="font-body text-lg opacity-85 leading-relaxed">
-            Vendre un bien immobilier est une étape importante. Une estimation juste, une stratégie adaptée et un accompagnement humain font toute la différence pour réussir votre vente dans les meilleures conditions.
+          <p className="font-body text-lg md:text-xl opacity-90 leading-relaxed max-w-2xl mx-auto">
+            Vendre un bien, c'est vendre le plus vite possible, le plus cher possible et dans les meilleures conditions.
           </p>
         </div>
       </section>
