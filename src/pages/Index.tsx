@@ -64,15 +64,18 @@ const Index = () => {
                 Conseillère immobilier indépendante
               </span>
             </h1>
-            <p className="text-primary-foreground/90 text-lg md:text-xl font-body leading-relaxed mb-10 animate-fade-in drop-shadow-sm" style={{ animationDelay: "0.2s" }}>
+            <p className="text-primary-foreground/90 text-lg md:text-xl font-body leading-relaxed mb-8 animate-fade-in drop-shadow-sm" style={{ animationDelay: "0.2s" }}>
               J'accompagne vos projets immobiliers, de la vente à l'achat, et je partage ma passion avec celles et ceux qui souhaitent construire leur indépendance professionnelle au sein de mon équipe présente dans plusieurs régions en France.
+            </p>
+            <p className="text-primary-foreground/80 text-base md:text-lg font-body italic mb-10 animate-fade-in drop-shadow-sm" style={{ animationDelay: "0.3s" }}>
+              Deux projets peuvent nous réunir : votre projet immobilier ou votre projet professionnel.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 animate-fade-in" style={{ animationDelay: "0.4s" }}>
               <Button variant="hero" size="xl" asChild>
-                <Link to="/vendre">Faire estimer mon bien</Link>
+                <Link to="/vendre">Votre projet immobilier</Link>
               </Button>
               <Button variant="hero-outline" size="xl" className="border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-foreground" asChild>
-                <Link to="/rejoindre">Découvrir le métier</Link>
+                <Link to="/rejoindre">Rejoindre mon équipe</Link>
               </Button>
             </div>
           </div>
