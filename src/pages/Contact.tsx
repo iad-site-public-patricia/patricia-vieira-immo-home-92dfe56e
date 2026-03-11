@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { toast } from "sonner";
-import { Phone, Mail, MapPin } from "lucide-react";
+import { Phone, Mail, MapPin, Facebook, Instagram } from "lucide-react";
 
 const Contact = () => {
   const [form, setForm] = useState({ nom: "", email: "", telephone: "", message: "" });
@@ -32,17 +32,17 @@ const Contact = () => {
             <div className="md:col-span-2 space-y-6">
               <h2 className="font-display text-2xl font-semibold text-foreground">Mes coordonnées</h2>
               <div className="space-y-4">
-                <a href="tel:+33600000000" className="flex items-center gap-3 text-muted-foreground hover:text-primary transition-colors font-body">
+                <a href="tel:+33785618768" className="flex items-center gap-3 text-muted-foreground hover:text-primary transition-colors font-body">
                   <div className="w-10 h-10 rounded-full bg-terracotta-light flex items-center justify-center">
                     <Phone className="w-5 h-5 text-primary" />
                   </div>
-                  06 00 00 00 00
+                  07 85 61 87 68
                 </a>
-                <a href="mailto:contact@patriciavieira-immo.fr" className="flex items-center gap-3 text-muted-foreground hover:text-primary transition-colors font-body">
+                <a href="mailto:patricia.vieira@iadfrance.fr" className="flex items-center gap-3 text-muted-foreground hover:text-primary transition-colors font-body">
                   <div className="w-10 h-10 rounded-full bg-terracotta-light flex items-center justify-center">
                     <Mail className="w-5 h-5 text-primary" />
                   </div>
-                  contact@patriciavieira-immo.fr
+                  patricia.vieira@iadfrance.fr
                 </a>
                 <div className="flex items-center gap-3 text-muted-foreground font-body">
                   <div className="w-10 h-10 rounded-full bg-terracotta-light flex items-center justify-center">
@@ -55,15 +55,22 @@ const Contact = () => {
               <div className="pt-4">
                 <h3 className="font-display text-lg font-semibold text-foreground mb-3">Réseaux sociaux</h3>
                 <div className="flex gap-3">
-                  {["Facebook", "Instagram", "LinkedIn"].map((social) => (
-                    <a
-                      key={social}
-                      href="#"
-                      className="px-4 py-2 bg-card rounded-lg border border-border/50 text-sm font-body text-muted-foreground hover:text-primary hover:border-primary/30 transition-colors"
-                    >
-                      {social}
-                    </a>
-                  ))}
+                  <a
+                    href="https://www.facebook.com/patriciavieiraimmobilier/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-2 px-4 py-2 bg-card rounded-lg border border-border/50 text-sm font-body text-muted-foreground hover:text-primary hover:border-primary/30 transition-colors"
+                  >
+                    <Facebook className="w-4 h-4" /> Facebook
+                  </a>
+                  <a
+                    href="https://www.instagram.com/patricia.vieira.immo/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-2 px-4 py-2 bg-card rounded-lg border border-border/50 text-sm font-body text-muted-foreground hover:text-primary hover:border-primary/30 transition-colors"
+                  >
+                    <Instagram className="w-4 h-4" /> Instagram
+                  </a>
                 </div>
               </div>
             </div>

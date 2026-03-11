@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { Menu, X, Phone, Mail } from "lucide-react";
+import { Menu, X, Phone, Mail, Facebook, Instagram } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const navLinks = [
@@ -24,12 +24,20 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
         <div className="container mx-auto flex justify-between items-center">
           <span className="font-body">Patricia Vieira – Conseillère immobilier indépendante</span>
           <div className="flex items-center gap-4">
-            <a href="tel:+33600000000" className="flex items-center gap-1 hover:text-primary transition-colors">
-              <Phone className="w-3 h-3" /> 06 00 00 00 00
+            <a href="tel:+33785618768" className="flex items-center gap-1 hover:text-primary transition-colors">
+              <Phone className="w-3 h-3" /> 07 85 61 87 68
             </a>
-            <a href="mailto:contact@patriciavieira-immo.fr" className="flex items-center gap-1 hover:text-primary transition-colors">
-              <Mail className="w-3 h-3" /> contact@patriciavieira-immo.fr
+            <a href="mailto:patricia.vieira@iadfrance.fr" className="flex items-center gap-1 hover:text-primary transition-colors">
+              <Mail className="w-3 h-3" /> patricia.vieira@iadfrance.fr
             </a>
+            <div className="flex items-center gap-2 ml-2">
+              <a href="https://www.facebook.com/patriciavieiraimmobilier/" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors" aria-label="Facebook">
+                <Facebook className="w-4 h-4" />
+              </a>
+              <a href="https://www.instagram.com/patricia.vieira.immo/" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors" aria-label="Instagram">
+                <Instagram className="w-4 h-4" />
+              </a>
+            </div>
           </div>
         </div>
       </div>
@@ -105,6 +113,14 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
                 Conseillère immobilier indépendante<br />
                 Partenaire du réseau IAD France
               </p>
+              <div className="flex items-center gap-3 mt-4">
+                <a href="https://www.facebook.com/patriciavieiraimmobilier/" target="_blank" rel="noopener noreferrer" className="w-9 h-9 rounded-full bg-primary-foreground/10 hover:bg-primary/20 flex items-center justify-center transition-colors" aria-label="Facebook">
+                  <Facebook className="w-4 h-4" />
+                </a>
+                <a href="https://www.instagram.com/patricia.vieira.immo/" target="_blank" rel="noopener noreferrer" className="w-9 h-9 rounded-full bg-primary-foreground/10 hover:bg-primary/20 flex items-center justify-center transition-colors" aria-label="Instagram">
+                  <Instagram className="w-4 h-4" />
+                </a>
+              </div>
             </div>
             <div>
               <h4 className="font-display text-lg font-semibold mb-4">Navigation</h4>
@@ -123,8 +139,8 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
             <div>
               <h4 className="font-display text-lg font-semibold mb-4">Contact</h4>
               <div className="space-y-2 text-sm opacity-80 font-body">
-                <p>📞 06 00 00 00 00</p>
-                <p>📧 contact@patriciavieira-immo.fr</p>
+                <a href="tel:+33785618768" className="block hover:text-primary transition-colors">📞 07 85 61 87 68</a>
+                <a href="mailto:patricia.vieira@iadfrance.fr" className="block hover:text-primary transition-colors">📧 patricia.vieira@iadfrance.fr</a>
                 <p>📍 Gretz-Armainvilliers, Seine-et-Marne</p>
               </div>
               <div className="mt-4">

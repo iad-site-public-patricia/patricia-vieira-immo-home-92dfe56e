@@ -1,20 +1,61 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { Heart, TrendingUp, FileCheck, Users, Home, ShoppingBag, Briefcase, ArrowRight } from "lucide-react";
+import { Heart, TrendingUp, FileCheck, Users, Home, ShoppingBag, Briefcase, ArrowRight, Star, Quote } from "lucide-react";
 import { blogPosts } from "@/data/blogPosts";
-import heroBg from "@/assets/hero-bg.jpg";
+import vendu1 from "@/assets/vendu-1.png";
+import vendu2 from "@/assets/vendu-2.png";
+import vendu3 from "@/assets/vendu-3.png";
+import signatureNotaire from "@/assets/signature-notaire.jpg";
+import signatureNotaire2 from "@/assets/signature-notaire-2.png";
+
+const soldProperties = [
+  { image: vendu1, type: "Maison familiale", location: "Gretz-Armainvilliers", time: "Vendu en 1 mois" },
+  { image: vendu2, type: "Maison contemporaine", location: "Seine-et-Marne", time: "Vendu en 8 mois" },
+  { image: vendu3, type: "Appartement", location: "Gretz-Armainvilliers", time: "Vendu en 1 jour" },
+];
+
+const testimonials = [
+  {
+    name: "Sophie & Marc L.",
+    text: "Patricia nous a accompagnés avec beaucoup de professionnalisme et d'écoute. Notre maison a été vendue en un mois, au prix souhaité. Une expérience parfaite du début à la fin.",
+    rating: 5,
+    source: "Google",
+  },
+  {
+    name: "Julien D.",
+    text: "Grâce à Patricia, j'ai trouvé l'appartement idéal en quelques semaines. Elle a su comprendre exactement ce que je recherchais et m'a guidé à chaque étape.",
+    rating: 5,
+    source: "Immodvisor",
+  },
+  {
+    name: "Nathalie P.",
+    text: "Un accompagnement humain et bienveillant. Patricia prend le temps d'expliquer chaque démarche et rassure tout au long du processus. Je la recommande sans hésiter.",
+    rating: 5,
+    source: "Google",
+  },
+];
+
+const signatureMoments = [
+  { image: signatureNotaire, caption: "Signature chez le notaire : l'aboutissement d'un projet immobilier." },
+  { image: signatureNotaire2, caption: "Une nouvelle page qui s'ouvre pour mes clients." },
+];
 
 const Index = () => {
   return (
     <div>
-      {/* Hero Section */}
-      <section className="relative min-h-[85vh] flex items-center">
-        <div
-          className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: `url(${heroBg})` }}
+      {/* Hero Section with Video */}
+      <section className="relative min-h-[85vh] flex items-center overflow-hidden">
+        <video
+          autoPlay
+          muted
+          loop
+          playsInline
+          className="absolute inset-0 w-full h-full object-cover"
+          poster=""
         >
-          <div className="absolute inset-0 bg-gradient-to-r from-foreground/70 via-foreground/40 to-foreground/15" />
-        </div>
+          <source src="/hero-video.mp4" type="video/mp4" />
+        </video>
+        <div className="absolute inset-0 bg-gradient-to-r from-foreground/60 via-foreground/35 to-foreground/10" />
         <div className="relative container mx-auto px-4 py-20">
           <div className="max-w-2xl">
             <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6 animate-fade-in">
@@ -72,8 +113,109 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Services Section */}
+      {/* Sold Properties Section */}
       <section className="section-padding">
+        <div className="container mx-auto">
+          <div className="text-center max-w-2xl mx-auto mb-12">
+            <h2 className="font-display text-3xl md:text-4xl font-semibold text-foreground mb-4">
+              Biens vendus récemment
+            </h2>
+            <p className="text-muted-foreground font-body text-lg">
+              Des résultats concrets qui témoignent de mon engagement et de mon efficacité.
+            </p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            {soldProperties.map((property, i) => (
+              <div key={i} className="group bg-card rounded-xl overflow-hidden border border-border/50 hover:shadow-lg transition-all">
+                <div className="relative aspect-square overflow-hidden">
+                  <img
+                    src={property.image}
+                    alt={`${property.type} – ${property.location}`}
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  />
+                  <div className="absolute top-4 left-4 bg-primary text-primary-foreground font-display font-bold text-sm px-4 py-2 rounded-md shadow-lg tracking-wide">
+                    VENDU
+                  </div>
+                </div>
+                <div className="p-5">
+                  <h3 className="font-display text-lg font-semibold text-foreground">{property.type}</h3>
+                  <p className="text-muted-foreground font-body text-sm mt-1">{property.location}</p>
+                  <p className="text-primary font-body font-semibold text-sm mt-2">{property.time}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Testimonials Section */}
+      <section className="section-padding bg-card">
+        <div className="container mx-auto">
+          <div className="text-center max-w-2xl mx-auto mb-12">
+            <h2 className="font-display text-3xl md:text-4xl font-semibold text-foreground mb-4">
+              Avis clients
+            </h2>
+            <p className="text-muted-foreground font-body text-lg">
+              La satisfaction de mes clients est ma plus belle récompense.
+            </p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            {testimonials.map((t, i) => (
+              <div key={i} className="bg-background rounded-xl p-6 border border-border/50 shadow-sm hover:shadow-md transition-shadow">
+                <Quote className="w-8 h-8 text-primary/30 mb-4" />
+                <p className="text-foreground font-body text-sm leading-relaxed mb-5 italic">
+                  "{t.text}"
+                </p>
+                <div className="flex items-center gap-1 mb-3">
+                  {Array.from({ length: t.rating }).map((_, j) => (
+                    <Star key={j} className="w-4 h-4 fill-gold text-gold" />
+                  ))}
+                </div>
+                <div className="flex items-center justify-between">
+                  <span className="font-display font-semibold text-foreground text-sm">{t.name}</span>
+                  <span className="text-xs text-muted-foreground font-body bg-muted px-2 py-1 rounded-full">{t.source}</span>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Signature Moments Section */}
+      <section className="section-padding">
+        <div className="container mx-auto">
+          <div className="text-center max-w-2xl mx-auto mb-12">
+            <h2 className="font-display text-3xl md:text-4xl font-semibold text-foreground mb-4">
+              Moments de signature
+            </h2>
+            <p className="text-muted-foreground font-body text-lg">
+              Chaque signature chez le notaire est l'aboutissement d'un projet accompagné avec soin.
+            </p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            {signatureMoments.map((moment, i) => (
+              <div key={i} className="group relative rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-shadow">
+                <div className="aspect-[4/3] overflow-hidden">
+                  <img
+                    src={moment.image}
+                    alt={moment.caption}
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    style={{ filter: "blur(0px)" }}
+                  />
+                </div>
+                <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-foreground/80 to-transparent p-6">
+                  <p className="text-primary-foreground font-body text-sm md:text-base italic drop-shadow-md">
+                    {moment.caption}
+                  </p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Services Section */}
+      <section className="section-padding bg-card">
         <div className="container mx-auto">
           <h2 className="font-display text-3xl md:text-4xl font-semibold text-foreground text-center mb-12">
             Mes services
@@ -87,7 +229,7 @@ const Index = () => {
               <Link
                 key={i}
                 to={item.link}
-                className="group bg-card rounded-xl p-8 border border-border/50 hover:border-primary/30 hover:shadow-lg transition-all"
+                className="group bg-background rounded-xl p-8 border border-border/50 hover:border-primary/30 hover:shadow-lg transition-all"
               >
                 <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-5">
                   <item.icon className="w-6 h-6 text-primary" />
@@ -104,7 +246,7 @@ const Index = () => {
       </section>
 
       {/* Blog Preview */}
-      <section className="section-padding bg-card">
+      <section className="section-padding">
         <div className="container mx-auto">
           <div className="flex items-center justify-between mb-10">
             <h2 className="font-display text-3xl md:text-4xl font-semibold text-foreground">
@@ -121,7 +263,7 @@ const Index = () => {
               <Link
                 key={post.id}
                 to={`/blog/${post.id}`}
-                className="group bg-background rounded-xl overflow-hidden border border-border/50 hover:shadow-md transition-all"
+                className="group bg-card rounded-xl overflow-hidden border border-border/50 hover:shadow-md transition-all"
               >
                 <div className="h-2 bg-primary" />
                 <div className="p-6">
@@ -143,7 +285,7 @@ const Index = () => {
       </section>
 
       {/* Contact CTA */}
-      <section className="section-padding">
+      <section className="section-padding bg-card">
         <div className="container mx-auto text-center">
           <h2 className="font-display text-3xl md:text-4xl font-semibold text-foreground mb-4">
             Envie d'en discuter ?
