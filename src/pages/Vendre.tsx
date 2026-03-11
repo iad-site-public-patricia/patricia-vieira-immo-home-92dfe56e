@@ -31,8 +31,8 @@ const Vendre = () => {
       <section className="bg-foreground text-primary-foreground section-padding">
         <div className="container mx-auto max-w-3xl text-center">
           <h1 className="font-display text-4xl md:text-5xl font-bold mb-6">Vendre son bien</h1>
-          <p className="font-body text-lg opacity-85 leading-relaxed">
-            Vendre un bien immobilier est une étape importante. Une estimation juste, une stratégie adaptée et un accompagnement humain font toute la différence pour réussir votre vente dans les meilleures conditions.
+          <p className="font-body text-lg md:text-xl opacity-90 leading-relaxed max-w-2xl mx-auto">
+            Vendre un bien, c'est vendre le plus vite possible, le plus cher possible et dans les meilleures conditions.
           </p>
         </div>
       </section>
@@ -46,10 +46,13 @@ const Vendre = () => {
                 L'importance d'une estimation juste
               </h2>
               <p className="text-muted-foreground font-body leading-relaxed mb-4">
-                Une estimation précise est la clé d'une vente réussie. Un bien surévalué risque de rester trop longtemps sur le marché, tandis qu'un bien sous-évalué vous ferait perdre de l'argent.
+                Un bien surévalué reste trop longtemps sur le marché et perd en attractivité. Un bien sous-évalué, c'est de l'argent perdu. <strong className="text-foreground">La bonne estimation, c'est celle qui déclenche les visites et génère des offres rapidement.</strong>
+              </p>
+              <p className="text-muted-foreground font-body leading-relaxed mb-4">
+                Grâce à ma connaissance approfondie du marché local et à des outils d'analyse performants, je vous propose une estimation fiable, argumentée et réaliste.
               </p>
               <p className="text-muted-foreground font-body leading-relaxed">
-                Mon expertise du marché local me permet de vous proposer une estimation fiable et argumentée, basée sur une analyse rigoureuse de votre bien et des tendances du marché.
+                <strong className="text-foreground">Résultat :</strong> un prix juste qui attire les bons acquéreurs et vous permet de vendre dans les meilleurs délais.
               </p>
             </div>
             <div className="bg-card rounded-xl p-8 border border-border/50">
