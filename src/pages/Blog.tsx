@@ -79,20 +79,35 @@ const Blog = () => {
       <section className="section-padding">
         <div className="container mx-auto max-w-6xl">
           {/* Categories */}
-          <div className="flex flex-wrap gap-2 mb-10 justify-center">
-            {categories.map((cat) => (
-              <button
-                key={cat}
-                onClick={() => setActiveCategory(cat)}
-                className={`px-4 py-2 rounded-full text-sm font-body font-medium transition-colors ${
-                  activeCategory === cat
-                    ? "bg-primary text-primary-foreground"
-                    : "bg-card text-muted-foreground hover:bg-accent border border-border/50"
-                }`}
-              >
-                {cat} ({categoryCount[cat]})
-              </button>
-            ))}
+          <div className="flex flex-wrap gap-3 mb-12 justify-center">
+            {categories.map((cat) => {
+              const iconMap: Record<string, React.ReactNode> = {
+                "Tous": <LayoutGrid className="w-5 h-5" />,
+                "Vendre son bien": <Home className="w-5 h-5" />,
+                "Diagnostics et obligations": <ClipboardCheck className="w-5 h-5" />,
+                "Acheter un bien": <ShoppingCart className="w-5 h-5" />,
+                "Primo-accédants": <GraduationCap className="w-5 h-5" />,
+                "Investissement immobilier": <TrendingUp className="w-5 h-5" />,
+                "Où investir": <MapPin className="w-5 h-5" />,
+                "Marché immobilier local": <BarChart3 className="w-5 h-5" />,
+                "Opportunités investisseurs": <Gem className="w-5 h-5" />,
+                "Actualités immobilières": <Newspaper className="w-5 h-5" />,
+              };
+              return (
+                <button
+                  key={cat}
+                  onClick={() => setActiveCategory(cat)}
+                  className={`inline-flex items-center gap-2.5 px-5 py-3 rounded-xl text-sm font-display font-semibold tracking-wide transition-all duration-200 ${
+                    activeCategory === cat
+                      ? "bg-primary text-primary-foreground shadow-md scale-[1.03]"
+                      : "bg-card text-foreground hover:bg-accent border border-border hover:border-primary/30 hover:shadow-sm"
+                  }`}
+                >
+                  {iconMap[cat]}
+                  {cat} <span className="text-xs opacity-70 font-body">({categoryCount[cat]})</span>
+                </button>
+              );
+            })}
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
