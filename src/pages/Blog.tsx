@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import { blogPosts, categories } from "@/data/blogPosts";
-import { ArrowLeft } from "lucide-react";
+import { ArrowLeft, BookOpen } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const Blog = () => {
@@ -17,8 +17,8 @@ const Blog = () => {
       <div>
         <section className="bg-foreground text-primary-foreground section-padding">
           <div className="container mx-auto max-w-3xl">
-            <Link to="/blog" className="inline-flex items-center gap-1 text-sm opacity-80 hover:opacity-100 mb-6 font-body">
-              <ArrowLeft className="w-4 h-4" /> Retour au blog
+            <Link to="/conseils-immobiliers" className="inline-flex items-center gap-1 text-sm opacity-80 hover:opacity-100 mb-6 font-body">
+              <ArrowLeft className="w-4 h-4" /> Retour aux conseils
             </Link>
             <span className="text-xs font-body font-medium bg-primary text-primary-foreground px-2 py-1 rounded-full">
               {post.category}
@@ -49,19 +49,32 @@ const Blog = () => {
   // Blog list
   const filtered = activeCategory === "Tous" ? blogPosts : blogPosts.filter((p) => p.category === activeCategory);
 
+  // Group by category for display
+  const categoryCount = categories.reduce((acc, cat) => {
+    if (cat === "Tous") {
+      acc[cat] = blogPosts.length;
+    } else {
+      acc[cat] = blogPosts.filter((p) => p.category === cat).length;
+    }
+    return acc;
+  }, {} as Record<string, number>);
+
   return (
     <div>
       <section className="bg-foreground text-primary-foreground section-padding">
         <div className="container mx-auto max-w-3xl text-center">
-          <h1 className="font-display text-4xl md:text-5xl font-bold mb-4">Blog</h1>
-          <p className="font-body text-lg opacity-85">
-            Conseils, coulisses et actualités de l'immobilier.
+          <div className="flex items-center justify-center gap-3 mb-4">
+            <BookOpen className="w-8 h-8 text-primary" />
+          </div>
+          <h1 className="font-display text-4xl md:text-5xl font-bold mb-4">Conseils immobiliers</h1>
+          <p className="font-body text-lg opacity-85 max-w-2xl mx-auto">
+            Guides pratiques, analyses de marché et conseils d'experte pour réussir vos projets immobiliers.
           </p>
         </div>
       </section>
 
       <section className="section-padding">
-        <div className="container mx-auto max-w-5xl">
+        <div className="container mx-auto max-w-6xl">
           {/* Categories */}
           <div className="flex flex-wrap gap-2 mb-10 justify-center">
             {categories.map((cat) => (
@@ -74,7 +87,7 @@ const Blog = () => {
                     : "bg-card text-muted-foreground hover:bg-accent border border-border/50"
                 }`}
               >
-                {cat}
+                {cat} ({categoryCount[cat]})
               </button>
             ))}
           </div>
@@ -83,7 +96,7 @@ const Blog = () => {
             {filtered.map((post) => (
               <Link
                 key={post.id}
-                to={`/blog/${post.id}`}
+                to={`/conseils-immobiliers/${post.id}`}
                 className="group bg-card rounded-xl overflow-hidden border border-border/50 hover:shadow-md transition-all"
               >
                 <div className="h-2 bg-primary" />
