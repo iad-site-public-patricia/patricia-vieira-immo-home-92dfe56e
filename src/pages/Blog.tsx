@@ -1,7 +1,10 @@
 import { useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import { blogPosts, categories } from "@/data/blogPosts";
-import { ArrowLeft, BookOpen } from "lucide-react";
+import {
+  ArrowLeft, BookOpen, LayoutGrid, Home, ClipboardCheck, ShoppingCart,
+  GraduationCap, TrendingUp, MapPin, BarChart3, Gem, Newspaper
+} from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const Blog = () => {
