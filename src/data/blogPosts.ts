@@ -18,6 +18,7 @@ export const categories = [
   "Où investir",
   "Marché immobilier local",
   "Opportunités investisseurs",
+  "Actualités immobilières",
 ];
 
 export const blogPosts: BlogPost[] = [
