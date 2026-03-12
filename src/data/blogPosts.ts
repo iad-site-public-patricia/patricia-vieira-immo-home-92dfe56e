@@ -17,6 +17,7 @@ export const categories = [
   "Investissement immobilier",
   "Où investir",
   "Marché immobilier local",
+  "Opportunités investisseurs",
 ];
 
 export const blogPosts: BlogPost[] = [
@@ -1099,5 +1100,178 @@ Le marché immobilier connaît des cycles. Les périodes de ralentissement offre
 En tant que conseillère immobilier implantée localement, je suis souvent informée de biens à vendre avant même leur publication sur les portails. Ce réseau et cette réactivité sont des atouts précieux pour trouver la bonne affaire.
 
 **Vous avez un projet immobilier ? Parlons-en.**`,
+  },
+
+  // ── Opportunités investisseurs ──
+  {
+    id: "opportunites-immobilieres-2026",
+    title: "Opportunités immobilières à saisir en 2026",
+    excerpt: "Découvrez les meilleures opportunités d'investissement immobilier cette année et comment en tirer parti.",
+    category: "Opportunités investisseurs",
+    date: "10 mars 2026",
+    readTime: "6 min",
+    content: `Le marché immobilier évolue constamment, et chaque année apporte son lot d'opportunités pour les investisseurs avertis. En 2026, plusieurs facteurs créent un contexte favorable à l'investissement.
+
+**La stabilisation des taux d'intérêt**
+
+Après la hausse des années précédentes, les taux se stabilisent, rendant le financement plus prévisible. C'est le moment idéal pour négocier des conditions avantageuses auprès des banques et verrouiller un taux compétitif.
+
+**Les biens avec travaux : une mine d'or**
+
+Les biens nécessitant des rénovations se vendent souvent en dessous du prix du marché. Avec les aides à la rénovation énergétique encore disponibles, ces biens représentent une excellente opportunité de créer de la valeur rapidement.
+
+**Les ventes longues et les successions**
+
+Certains biens issus de successions ou de situations particulières sont proposés à des prix attractifs. La clé est d'être réactif et bien informé pour saisir ces opportunités avant les autres.
+
+**Les zones en développement**
+
+Les communes bénéficiant de nouveaux projets d'infrastructures (gares, écoles, commerces) voient leur attractivité augmenter. Investir avant la finalisation de ces projets permet de profiter de la plus-value future.
+
+**Comment repérer les bonnes affaires**
+
+Travailler avec un professionnel implanté localement est un atout majeur. Je suis souvent informée de biens à vendre avant leur publication sur les portails, ce qui vous donne une longueur d'avance.
+
+**Vous souhaitez être accompagné dans votre projet immobilier ? Contactez Patricia Vieira.**`,
+  },
+  {
+    id: "types-biens-bon-rendement",
+    title: "Les types de biens offrant le meilleur rendement locatif",
+    excerpt: "Appartements, studios, maisons divisées… Quel type de bien choisir pour maximiser votre rendement locatif ?",
+    category: "Opportunités investisseurs",
+    date: "8 mars 2026",
+    readTime: "7 min",
+    content: `Le choix du type de bien est déterminant pour la rentabilité de votre investissement locatif. Tous les biens ne se valent pas en termes de rendement.
+
+**Les studios et T1 : les champions du rendement**
+
+Les petites surfaces offrent généralement le meilleur rendement brut, souvent entre 6 % et 9 %. La demande locative est forte grâce aux étudiants, jeunes actifs et personnes en mobilité professionnelle.
+
+**Les T2 : le bon compromis**
+
+Les deux pièces combinent un bon rendement avec une rotation locative plus faible que les studios. Les locataires restent plus longtemps, réduisant les périodes de vacance et les frais de remise en état.
+
+**La colocation : rendement élevé, gestion active**
+
+Louer un grand appartement ou une maison en colocation peut générer un rendement supérieur à la location classique. Chaque chambre est louée individuellement, maximisant le revenu total.
+
+**Les immeubles de rapport**
+
+L'achat d'un petit immeuble permet de mutualiser les risques. Si un logement est vacant, les autres continuent de générer des revenus. C'est une stratégie prisée des investisseurs expérimentés.
+
+**Les parkings et garages**
+
+Souvent négligés, les emplacements de stationnement offrent un rendement attractif avec très peu de gestion et d'entretien. Dans les zones où le stationnement est difficile, la demande est constante.
+
+**Mon conseil**
+
+Ne cherchez pas uniquement le rendement le plus élevé. Tenez compte de la facilité de gestion, de la demande locative locale et de votre capacité à gérer d'éventuels travaux ou rotations de locataires.
+
+**Vous avez un projet immobilier ? Parlons-en.**`,
+  },
+  {
+    id: "saisir-opportunites-marche",
+    title: "Comment saisir les opportunités du marché immobilier",
+    excerpt: "Les meilleures affaires ne restent pas longtemps sur le marché. Voici comment vous positionner pour les saisir.",
+    category: "Opportunités investisseurs",
+    date: "6 mars 2026",
+    readTime: "5 min",
+    content: `Dans l'immobilier, les meilleures opportunités sont souvent celles qui ne sont jamais publiées sur les portails d'annonces. Pour les saisir, il faut être préparé et bien entouré.
+
+**Préparez votre financement en amont**
+
+Avoir un accord de principe de votre banque vous permet de réagir rapidement. Un vendeur sera toujours plus enclin à accepter une offre d'un acheteur dont le financement est déjà validé.
+
+**Définissez vos critères d'investissement**
+
+Savoir exactement ce que vous cherchez (type de bien, zone, budget, rendement cible) vous permet de prendre des décisions rapidement lorsqu'une opportunité se présente.
+
+**Activez votre réseau**
+
+Informez votre conseiller immobilier de vos critères de recherche. En tant que professionnelle implantée localement, je suis souvent la première informée lorsqu'un bien intéressant arrive sur le marché.
+
+**Analysez rapidement mais rigoureusement**
+
+Apprenez à évaluer rapidement le potentiel d'un bien : prix au mètre carré, loyer potentiel, travaux nécessaires, charges de copropriété. Cette capacité d'analyse rapide fait la différence.
+
+**N'attendez pas le bien parfait**
+
+Le bien parfait n'existe pas. Un bon investissement est un bien qui répond à vos critères essentiels et offre un potentiel de rendement ou de plus-value satisfaisant.
+
+**Vous souhaitez être accompagné dans votre projet immobilier ? Contactez Patricia Vieira.**`,
+  },
+  {
+    id: "construire-patrimoine-immobilier",
+    title: "Comment construire un patrimoine immobilier solide",
+    excerpt: "Stratégies et conseils pour bâtir un portefeuille immobilier rentable et pérenne, étape par étape.",
+    category: "Opportunités investisseurs",
+    date: "4 mars 2026",
+    readTime: "7 min",
+    content: `Construire un patrimoine immobilier ne se fait pas en un jour. C'est un processus progressif qui demande de la stratégie, de la patience et de bons conseils.
+
+**Commencez par votre résidence principale**
+
+Votre résidence principale est souvent le premier pas vers la constitution d'un patrimoine. Elle vous permet de vous familiariser avec le processus d'achat et de commencer à capitaliser.
+
+**Premier investissement locatif**
+
+Une fois votre résidence principale acquise, envisagez un premier investissement locatif. Commencez par un bien simple à gérer : un studio ou un T2 dans une zone à forte demande locative.
+
+**Réinvestissez les revenus**
+
+Les loyers perçus et les économies d'impôts doivent être réinvestis pour accélérer la constitution de votre patrimoine. Chaque nouveau bien renforce votre capacité d'emprunt pour le suivant.
+
+**Diversifiez vos investissements**
+
+Ne mettez pas tous vos œufs dans le même panier. Variez les types de biens (studios, T2, parkings) et les localisations pour réduire les risques.
+
+**Optimisez votre fiscalité**
+
+Choisissez le régime fiscal le plus adapté à votre situation : micro-foncier, régime réel, LMNP, SCI… Un bon montage fiscal peut significativement améliorer la rentabilité de vos investissements.
+
+**Pensez long terme**
+
+L'immobilier est un investissement de long terme. Les cycles du marché sont normaux. Gardez vos biens, remboursez vos emprunts et laissez le temps travailler pour vous.
+
+**Vous avez un projet immobilier ? Parlons-en.**`,
+  },
+  {
+    id: "erreurs-investisseurs-eviter",
+    title: "Les erreurs que les investisseurs doivent absolument éviter",
+    excerpt: "Investir dans l'immobilier comporte des pièges. Voici les erreurs les plus courantes et comment les éviter.",
+    category: "Opportunités investisseurs",
+    date: "2 mars 2026",
+    readTime: "6 min",
+    content: `L'investissement immobilier peut être très rentable, mais certaines erreurs peuvent transformer une bonne opération en cauchemar financier. Voici les pièges les plus courants.
+
+**Surestimer le rendement locatif**
+
+Beaucoup d'investisseurs calculent leur rendement sur le loyer brut sans tenir compte des charges, de la taxe foncière, des périodes de vacance et des frais de gestion. Le rendement net est toujours inférieur au rendement brut.
+
+**Négliger l'emplacement**
+
+Un bien moins cher dans une zone sans demande locative sera plus difficile à louer et à revendre. L'emplacement reste le critère numéro un d'un investissement réussi.
+
+**Sous-estimer les travaux**
+
+Les travaux coûtent presque toujours plus cher que prévu. Prévoyez une marge de 15 à 20 % sur le budget travaux estimé et faites réaliser des devis détaillés avant l'achat.
+
+**Investir sans connaître le marché local**
+
+Chaque marché immobilier a ses spécificités. Les prix, la demande locative, le profil des locataires varient d'une ville à l'autre. Renseignez-vous en profondeur avant d'investir.
+
+**Ne pas anticiper la fiscalité**
+
+Les revenus locatifs sont imposés. Ne pas anticiper l'impact fiscal peut réduire considérablement la rentabilité de votre investissement. Consultez un professionnel pour optimiser votre montage.
+
+**Acheter au coup de cœur**
+
+Un investissement locatif n'est pas une résidence principale. Le bien doit plaire à vos futurs locataires, pas nécessairement à vous. Restez objectif et concentrez-vous sur les chiffres.
+
+**Mon accompagnement**
+
+En tant que conseillère immobilière, je vous aide à identifier les biens offrant le meilleur potentiel et à éviter les pièges classiques de l'investissement.
+
+**Vous souhaitez être accompagné dans votre projet immobilier ? Contactez Patricia Vieira.**`,
   },
 ];
