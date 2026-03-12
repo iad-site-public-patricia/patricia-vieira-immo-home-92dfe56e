@@ -79,7 +79,7 @@ const Blog = () => {
       <section className="section-padding">
         <div className="container mx-auto max-w-6xl">
           {/* Categories */}
-          <div className="flex flex-wrap gap-3 mb-12 justify-center">
+          <div className="flex flex-wrap gap-4 mb-14 justify-center">
             {categories.map((cat) => {
               const iconMap: Record<string, React.ReactNode> = {
                 "Tous": <LayoutGrid className="w-5 h-5" />,
@@ -97,14 +97,14 @@ const Blog = () => {
                 <button
                   key={cat}
                   onClick={() => setActiveCategory(cat)}
-                  className={`inline-flex items-center gap-2.5 px-5 py-3 rounded-xl text-sm font-display font-semibold tracking-wide transition-all duration-200 ${
+                  className={`inline-flex items-center gap-3 px-7 py-4 rounded-2xl text-base font-display font-bold uppercase tracking-widest border-2 transition-all duration-200 ${
                     activeCategory === cat
-                      ? "bg-primary text-primary-foreground shadow-md scale-[1.03]"
-                      : "bg-card text-foreground hover:bg-accent border border-border hover:border-primary/30 hover:shadow-sm"
+                      ? "bg-primary text-primary-foreground border-primary shadow-lg scale-[1.04]"
+                      : "bg-card text-foreground border-border hover:border-primary hover:shadow-md"
                   }`}
                 >
                   {iconMap[cat]}
-                  {cat} <span className="text-xs opacity-70 font-body">({categoryCount[cat]})</span>
+                  {cat}
                 </button>
               );
             })}
