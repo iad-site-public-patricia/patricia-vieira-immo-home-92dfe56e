@@ -6,6 +6,7 @@ import {
   GraduationCap, TrendingUp, MapPin, BarChart3, Gem, Newspaper
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import blogHeaderImg from "@/assets/blog-header.jpg";
 
 const Blog = () => {
   const { id } = useParams();
