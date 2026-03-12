@@ -6,6 +6,7 @@ import {
   GraduationCap, TrendingUp, MapPin, BarChart3, Gem, Newspaper
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import blogHeaderImg from "@/assets/blog-header.jpg";
 
 const Blog = () => {
   const { id } = useParams();
@@ -64,13 +65,15 @@ const Blog = () => {
 
   return (
     <div>
-      <section className="bg-foreground text-primary-foreground section-padding">
-        <div className="container mx-auto max-w-3xl text-center">
+      <section className="relative section-padding overflow-hidden">
+        <img src={blogHeaderImg} alt="Conseils immobiliers" className="absolute inset-0 w-full h-full object-cover" />
+        <div className="absolute inset-0 bg-foreground/60" />
+        <div className="container mx-auto max-w-3xl text-center relative z-10">
           <div className="flex items-center justify-center gap-3 mb-4">
             <BookOpen className="w-8 h-8 text-primary" />
           </div>
-          <h1 className="font-display text-4xl md:text-5xl font-bold mb-4">Conseils immobiliers</h1>
-          <p className="font-body text-lg opacity-85 max-w-2xl mx-auto">
+          <h1 className="font-display text-4xl md:text-5xl font-bold mb-4 text-primary-foreground">Conseils immobiliers</h1>
+          <p className="font-body text-lg opacity-90 max-w-2xl mx-auto text-primary-foreground">
             Guides pratiques, analyses de marché et conseils d'experte pour réussir vos projets immobiliers.
           </p>
         </div>
