@@ -18,6 +18,7 @@ export const categories = [
   "Où investir",
   "Marché immobilier local",
   "Opportunités investisseurs",
+  "Actualités immobilières",
 ];
 
 export const blogPosts: BlogPost[] = [
@@ -1273,5 +1274,166 @@ Un investissement locatif n'est pas une résidence principale. Le bien doit plai
 En tant que conseillère immobilière, je vous aide à identifier les biens offrant le meilleur potentiel et à éviter les pièges classiques de l'investissement.
 
 **Vous souhaitez être accompagné dans votre projet immobilier ? Contactez Patricia Vieira.**`,
+  },
+
+  // ── Actualités immobilières ──
+  {
+    id: "evolution-lois-immobilieres-2026",
+    title: "Les changements législatifs immobiliers en 2026 : ce qu'il faut savoir",
+    excerpt: "Nouvelles lois, évolutions fiscales et réglementaires : découvrez les changements qui impactent le marché immobilier en 2026.",
+    category: "Actualités immobilières",
+    date: "10 mars 2026",
+    readTime: "7 min",
+    content: `Le cadre législatif immobilier évolue constamment. En 2026, plusieurs réformes importantes modifient les règles du jeu pour les acheteurs, vendeurs et investisseurs. Voici un tour d'horizon complet.
+
+**Les principales évolutions législatives**
+
+La loi Climat et Résilience continue de produire ses effets avec l'interdiction progressive de location des passoires thermiques. Depuis janvier 2025, les logements classés G sont interdits à la location, et les logements classés F suivront en 2028.
+
+**Fiscalité immobilière : ce qui change**
+
+Les dispositifs fiscaux d'aide à l'investissement locatif ont été réaménagés. Le Pinel a pris fin, remplacé par de nouveaux mécanismes plus ciblés sur la rénovation énergétique et les zones tendues.
+
+**Le prêt à taux zéro élargi**
+
+Le PTZ a été étendu à l'ensemble du territoire pour l'achat dans le neuf et l'ancien avec travaux, offrant de nouvelles opportunités aux primo-accédants.
+
+**L'encadrement des loyers renforcé**
+
+De nouvelles agglomérations ont adopté l'encadrement des loyers, impactant directement la stratégie des investisseurs locatifs.
+
+**Impact sur les transactions**
+
+Ces évolutions modifient les stratégies d'achat et de vente. Il est essentiel de se tenir informé pour prendre les bonnes décisions au bon moment.
+
+**Vous avez un projet immobilier ? Parlons-en.**`,
+  },
+  {
+    id: "evolution-taux-credit-immobilier",
+    title: "Évolution des taux de crédit immobilier : tendances et perspectives",
+    excerpt: "Les taux de crédit immobilier influencent directement votre pouvoir d'achat. Analyse des tendances actuelles et perspectives pour les mois à venir.",
+    category: "Actualités immobilières",
+    date: "8 mars 2026",
+    readTime: "6 min",
+    content: `Les taux de crédit immobilier sont un facteur déterminant dans toute décision d'achat. Après une période de hausse significative, où en sommes-nous en 2026 ?
+
+**La tendance actuelle des taux**
+
+Après avoir atteint des sommets en 2023-2024, les taux de crédit immobilier ont amorcé une baisse progressive. En ce début 2026, les taux moyens se situent autour de 3 % sur 20 ans, contre plus de 4 % fin 2023.
+
+**Pourquoi les taux baissent-ils ?**
+
+La Banque Centrale Européenne a progressivement assoupli sa politique monétaire face au ralentissement de l'inflation. Cette détente se répercute sur les conditions de crédit proposées par les banques.
+
+**Quel impact sur votre projet d'achat ?**
+
+Une baisse de 1 point de taux peut représenter plusieurs dizaines de milliers d'euros d'économies sur la durée totale d'un prêt. C'est le moment de revoir vos simulations et d'évaluer votre capacité d'emprunt.
+
+**Faut-il acheter maintenant ou attendre ?**
+
+Les conditions actuelles sont favorables. Attendre une baisse supplémentaire comporte le risque de voir les prix remonter sous l'effet d'une demande accrue. Le bon moment pour acheter dépend avant tout de votre situation personnelle.
+
+**Perspectives pour les prochains mois**
+
+Les analystes anticipent une stabilisation des taux autour de 2,8 à 3,2 % d'ici fin 2026. Une fenêtre intéressante pour concrétiser un projet immobilier.
+
+**Vous souhaitez être accompagné dans votre projet immobilier ? Contactez Patricia Vieira.**`,
+  },
+  {
+    id: "reglementation-energetique-dpe-2026",
+    title: "Réglementation énergétique et DPE : les nouvelles obligations en 2026",
+    excerpt: "Les exigences énergétiques se renforcent. Découvrez les nouvelles obligations liées au DPE et leur impact sur la vente et la location.",
+    category: "Actualités immobilières",
+    date: "6 mars 2026",
+    readTime: "7 min",
+    content: `La performance énergétique des logements est au cœur des préoccupations réglementaires. En 2026, de nouvelles obligations s'imposent aux propriétaires bailleurs et vendeurs.
+
+**Le calendrier des interdictions de location**
+
+Le calendrier d'interdiction progressive des passoires thermiques se poursuit. Les logements classés G sont déjà interdits à la location depuis 2025. Les logements F seront concernés en 2028, et les E en 2034.
+
+**Le nouveau DPE : plus fiable et plus exigeant**
+
+Le diagnostic de performance énergétique a été réformé pour être plus fiable. La méthode de calcul unifiée prend désormais en compte les caractéristiques réelles du bâtiment, et non plus les factures énergétiques.
+
+**L'audit énergétique obligatoire**
+
+Pour les logements classés F et G mis en vente, un audit énergétique est désormais obligatoire en complément du DPE. Cet audit propose des scénarios de travaux de rénovation avec estimation des coûts.
+
+**Les aides à la rénovation énergétique**
+
+MaPrimeRénov' et les certificats d'économies d'énergie continuent de financer les travaux de rénovation. Les montants et conditions d'éligibilité ont été ajustés pour 2026.
+
+**Impact sur la valeur des biens**
+
+Un bien bien classé (A, B ou C) se vend en moyenne 10 à 15 % plus cher qu'un bien mal classé. La performance énergétique est devenue un critère majeur pour les acheteurs.
+
+**Vous avez un projet immobilier ? Parlons-en.**`,
+  },
+  {
+    id: "tendances-marche-immobilier-france-2026",
+    title: "Tendances du marché immobilier en France : bilan et perspectives 2026",
+    excerpt: "Analyse des grandes tendances du marché immobilier français : prix, volumes de transactions, dynamiques régionales et perspectives.",
+    category: "Actualités immobilières",
+    date: "4 mars 2026",
+    readTime: "8 min",
+    content: `Le marché immobilier français traverse une phase de transition après plusieurs années de turbulences. Quelles sont les grandes tendances qui se dessinent en 2026 ?
+
+**Un marché en phase de reprise**
+
+Après un net ralentissement en 2023-2024 avec une baisse significative des volumes de transactions, le marché immobilier montre des signes de reprise. Le nombre de transactions est reparti à la hausse, porté par la baisse des taux de crédit.
+
+**L'évolution des prix**
+
+Les prix se sont globalement stabilisés après une correction de 5 à 10 % selon les zones. Paris et les grandes métropoles ont connu les ajustements les plus marqués, tandis que les villes moyennes ont mieux résisté.
+
+**Les dynamiques régionales**
+
+Le marché reste très hétérogène selon les territoires. L'Île-de-France bénéficie de l'effet Grand Paris Express, les métropoles régionales attirent toujours les investisseurs, et les zones rurales voient un regain d'intérêt post-Covid se maintenir.
+
+**Le profil des acheteurs évolue**
+
+Les primo-accédants reviennent sur le marché grâce aux conditions de crédit plus favorables et à l'élargissement du PTZ. Les investisseurs, eux, se concentrent sur les biens à forte valeur ajoutée énergétique.
+
+**Perspectives pour le second semestre 2026**
+
+Les professionnels anticipent une poursuite de la reprise modérée, avec une hausse des volumes de 10 à 15 % par rapport à 2025. Les prix devraient rester stables dans l'ensemble.
+
+**Vous souhaitez être accompagné dans votre projet immobilier ? Contactez Patricia Vieira.**`,
+  },
+  {
+    id: "actualites-importantes-acheteurs-vendeurs-investisseurs",
+    title: "Les actualités essentielles pour acheteurs, vendeurs et investisseurs",
+    excerpt: "Retrouvez les informations clés qui impactent directement vos projets immobiliers, que vous soyez acheteur, vendeur ou investisseur.",
+    category: "Actualités immobilières",
+    date: "2 mars 2026",
+    readTime: "6 min",
+    content: `L'immobilier est un secteur en constante évolution. Voici les actualités récentes les plus importantes à connaître selon votre profil.
+
+**Pour les acheteurs**
+
+Le PTZ élargi offre de nouvelles possibilités de financement. Les banques assouplissent progressivement leurs critères d'octroi de crédit, et les prix stabilisés créent des opportunités intéressantes dans de nombreuses zones.
+
+**Pour les vendeurs**
+
+L'obligation d'audit énergétique pour les passoires thermiques impacte les stratégies de vente. Il est plus que jamais important de valoriser la performance énergétique de son bien et d'anticiper les éventuels travaux nécessaires.
+
+**Pour les investisseurs**
+
+La fin du Pinel impose de repenser les stratégies d'investissement locatif. Le statut LMNP reste attractif, et les biens rénovés énergétiquement offrent les meilleures perspectives de rentabilité et de valorisation.
+
+**Les zones à surveiller**
+
+Le Grand Paris Express continue de transformer la carte de l'attractivité en Île-de-France. Les gares du futur métro automatique créent de nouvelles opportunités d'investissement dans des communes jusqu'ici moins prisées.
+
+**Le marché locatif sous tension**
+
+La demande locative reste forte dans les grandes agglomérations, soutenant les rendements locatifs. L'encadrement des loyers dans certaines villes impose cependant une analyse fine avant tout investissement.
+
+**Mon conseil**
+
+Restez informé et entourez-vous de professionnels compétents. Le marché immobilier offre de réelles opportunités à condition de bien s'y préparer.
+
+**Vous avez un projet immobilier ? Parlons-en.**`,
   },
 ];
