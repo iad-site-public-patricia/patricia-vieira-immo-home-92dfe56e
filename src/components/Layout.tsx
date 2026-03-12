@@ -8,7 +8,7 @@ const navLinks = [
   { label: "Vendre son bien", to: "/vendre" },
   { label: "Acheter", to: "/acheter" },
   { label: "Rejoindre mon équipe", to: "/rejoindre" },
-  { label: "Blog", to: "/blog" },
+  { label: "Conseils immobiliers", to: "/conseils-immobiliers" },
   { label: "À propos", to: "/a-propos" },
   { label: "Contact", to: "/contact" },
 ];
