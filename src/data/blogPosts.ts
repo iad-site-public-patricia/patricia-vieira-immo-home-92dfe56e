@@ -735,6 +735,7 @@ Le prix affiché n'est pas toujours le prix final. Dans de nombreux cas, une mar
     category: "Investissement immobilier",
     date: "8 mars 2026",
     readTime: "6 min",
+    coverImage: coverPatrimoineRendement,
     content: `L'investissement immobilier peut répondre à deux objectifs principaux : la constitution de patrimoine et la recherche de rendement locatif. Ces deux approches ne sont pas incompatibles mais impliquent des stratégies différentes.
 
 **L'investissement patrimonial**
