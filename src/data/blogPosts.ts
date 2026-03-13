@@ -3,6 +3,52 @@ import coverVendreVite from "@/assets/cover-vendre-vite.jpg";
 import coverErreursVendeurs from "@/assets/cover-erreurs-vendeurs.jpg";
 import coverPreparerVisites from "@/assets/cover-preparer-visites.jpg";
 import coverMarketingImmobilier from "@/assets/cover-marketing-immobilier.jpg";
+// Diagnostics et obligations
+import coverDiagnosticsObligatoires from "@/assets/cover-diagnostics-obligatoires.jpg";
+import coverComprendreDpe from "@/assets/cover-comprendre-dpe.jpg";
+import coverImpactClassification from "@/assets/cover-impact-classification.jpg";
+import coverDiagnosticsElecGaz from "@/assets/cover-diagnostics-elec-gaz.jpg";
+import coverReglementationsEnv from "@/assets/cover-reglementations-env.jpg";
+// Acheter un bien
+import coverCoutsReelsAchat from "@/assets/cover-couts-reels-achat.jpg";
+import coverFraisNotaire from "@/assets/cover-frais-notaire.jpg";
+import coverCoutsCaches from "@/assets/cover-couts-caches.jpg";
+import coverEtapesAchat from "@/assets/cover-etapes-achat.jpg";
+import coverPreparerAchat from "@/assets/cover-preparer-achat.jpg";
+// Primo-accédants
+import coverPremierAchat from "@/assets/cover-premier-achat.jpg";
+import coverAidesPrimo from "@/assets/cover-aides-primo.jpg";
+import coverPreparerFinancement from "@/assets/cover-preparer-financement.jpg";
+import coverErreursPremierAchat from "@/assets/cover-erreurs-premier-achat.jpg";
+// Investissement immobilier
+import coverPatrimoineRendement from "@/assets/cover-patrimoine-rendement.jpg";
+import coverRentabiliteLocative from "@/assets/cover-rentabilite-locative.jpg";
+import coverLocationDuree from "@/assets/cover-location-duree.jpg";
+import coverStrategiesInvestissement from "@/assets/cover-strategies-investissement.jpg";
+import coverErreursInvestisseurs from "@/assets/cover-erreurs-investisseurs.jpg";
+// Où investir
+import coverVillesInvestir from "@/assets/cover-villes-investir.jpg";
+import coverPetitesVilles from "@/assets/cover-petites-villes.jpg";
+import coverZonesRendement from "@/assets/cover-zones-rendement.jpg";
+import coverOpportunitesRegions from "@/assets/cover-opportunites-regions.jpg";
+// Marché immobilier local
+import coverMarcheGretz from "@/assets/cover-marche-gretz.jpg";
+import coverTendances77 from "@/assets/cover-tendances-77.jpg";
+import coverPrixRegion from "@/assets/cover-prix-region.jpg";
+import coverInvestirLocal from "@/assets/cover-investir-local.jpg";
+import coverOpportunitesLocales from "@/assets/cover-opportunites-locales.jpg";
+// Opportunités investisseurs
+import coverOpportunites2026 from "@/assets/cover-opportunites-2026.jpg";
+import coverTypesRendement from "@/assets/cover-types-rendement.jpg";
+import coverSaisirOpportunites from "@/assets/cover-saisir-opportunites.jpg";
+import coverConstruirePatrimoine from "@/assets/cover-construire-patrimoine.jpg";
+import coverErreursInvestisseursEviter from "@/assets/cover-erreurs-investisseurs-eviter.jpg";
+// Actualités immobilières
+import coverLois2026 from "@/assets/cover-lois-2026.jpg";
+import coverTauxCredit from "@/assets/cover-taux-credit.jpg";
+import coverReglementationDpe from "@/assets/cover-reglementation-dpe.jpg";
+import coverTendancesMarche from "@/assets/cover-tendances-marche.jpg";
+import coverActualitesEssentielles from "@/assets/cover-actualites-essentielles.jpg";
 
 export interface BlogPost {
   id: string;
@@ -199,6 +245,7 @@ Proposer une visite virtuelle permet aux acquéreurs de pré-sélectionner votre
     category: "Diagnostics et obligations",
     date: "10 mars 2026",
     readTime: "6 min",
+    coverImage: coverDiagnosticsObligatoires,
     content: `Lors de la vente d'un bien immobilier, le vendeur est tenu de fournir un dossier de diagnostics techniques (DDT) à l'acquéreur. Ces diagnostics sont obligatoires et protègent à la fois le vendeur et l'acheteur.
 
 **Le DPE (Diagnostic de Performance Énergétique)**
@@ -242,6 +289,7 @@ Anticipez ces diagnostics dès que vous envisagez de vendre. Je vous accompagne 
     category: "Diagnostics et obligations",
     date: "8 mars 2026",
     readTime: "5 min",
+    coverImage: coverComprendreDpe,
     content: `Le DPE (Diagnostic de Performance Énergétique) est devenu un élément central dans toute transaction immobilière. Son impact sur la valeur des biens est de plus en plus significatif.
 
 **Qu'est-ce que le DPE ?**
@@ -269,6 +317,7 @@ Des travaux de rénovation énergétique (isolation, changement de chaudière, f
     category: "Diagnostics et obligations",
     date: "5 mars 2026",
     readTime: "5 min",
+    coverImage: coverImpactClassification,
     content: `La classification énergétique est devenue un critère déterminant dans la valorisation d'un bien immobilier. Comprendre son impact est essentiel pour tout propriétaire.
 
 **La valeur verte des logements**
@@ -296,6 +345,7 @@ MaPrimeRénov', les CEE (Certificats d'Économie d'Énergie), l'éco-prêt à ta
     category: "Diagnostics et obligations",
     date: "2 mars 2026",
     readTime: "5 min",
+    coverImage: coverDiagnosticsElecGaz,
     content: `Outre le DPE, plusieurs diagnostics techniques sont obligatoires lors de la vente d'un bien immobilier. Voici un tour d'horizon détaillé.
 
 **Le diagnostic électricité**
@@ -327,6 +377,7 @@ Je recommande toujours à mes clients de réaliser l'ensemble des diagnostics en
     category: "Diagnostics et obligations",
     date: "28 février 2026",
     readTime: "5 min",
+    coverImage: coverReglementationsEnv,
     content: `Le secteur immobilier est en pleine mutation réglementaire pour répondre aux enjeux climatiques. Voici ce que tout propriétaire et acheteur doit savoir.
 
 **La RE2020 pour les constructions neuves**
@@ -360,6 +411,7 @@ Que vous soyez vendeur, acheteur ou investisseur, ces réglementations impactent
     category: "Acheter un bien",
     date: "7 mars 2026",
     readTime: "6 min",
+    coverImage: coverCoutsReelsAchat,
     content: `Acheter un bien immobilier, c'est bien plus que le prix affiché sur l'annonce. De nombreux frais s'ajoutent et il est essentiel de les anticiper pour éviter les mauvaises surprises.
 
 **Les frais de notaire**
@@ -395,6 +447,7 @@ N'oubliez pas de budgéter d'éventuels travaux de rénovation, de mise aux norm
     category: "Acheter un bien",
     date: "4 mars 2026",
     readTime: "4 min",
+    coverImage: coverFraisNotaire,
     content: `Les « frais de notaire » sont souvent une source de confusion pour les acheteurs. Voici une explication claire de ce qu'ils représentent réellement.
 
 **Ce que contiennent les frais de notaire**
@@ -422,6 +475,7 @@ Les frais de notaire doivent généralement être payés avec votre apport perso
     category: "Acheter un bien",
     date: "1 mars 2026",
     readTime: "5 min",
+    coverImage: coverCoutsCaches,
     content: `Au-delà du prix d'achat et des frais de notaire, d'autres coûts peuvent surprendre les acheteurs mal préparés. Les anticiper, c'est acheter sereinement.
 
 **La taxe foncière**
@@ -457,6 +511,7 @@ Obligatoire dès la remise des clés, elle représente un coût annuel variable 
     category: "Acheter un bien",
     date: "26 février 2026",
     readTime: "6 min",
+    coverImage: coverEtapesAchat,
     content: `Acheter un bien immobilier est un processus qui comporte plusieurs étapes importantes. Les connaître vous permettra d'avancer sereinement.
 
 **1. Définir votre projet et votre budget**
@@ -492,6 +547,7 @@ C'est le jour J. La signature de l'acte authentique transfère officiellement la
     category: "Acheter un bien",
     date: "22 février 2026",
     readTime: "5 min",
+    coverImage: coverPreparerAchat,
     content: `Un achat immobilier réussi commence bien avant les premières visites. Voici comment vous préparer efficacement.
 
 **Évaluez votre capacité d'emprunt**
@@ -529,6 +585,7 @@ Un conseiller immobilier connaît le marché, identifie les bonnes affaires et v
     category: "Primo-accédants",
     date: "9 mars 2026",
     readTime: "7 min",
+    coverImage: coverPremierAchat,
     content: `Acheter son premier bien immobilier est une étape majeure de la vie. C'est aussi un projet qui peut sembler complexe quand on n'a aucune expérience. Voici un guide complet pour vous accompagner.
 
 **Évaluez votre situation financière**
@@ -568,6 +625,7 @@ L'aboutissement de votre projet. Le notaire vérifie la conformité du dossier, 
     category: "Primo-accédants",
     date: "6 mars 2026",
     readTime: "5 min",
+    coverImage: coverAidesPrimo,
     content: `En tant que primo-accédant, vous pouvez bénéficier de plusieurs aides financières pour faciliter votre premier achat immobilier.
 
 **Le Prêt à Taux Zéro (PTZ)**
@@ -603,6 +661,7 @@ N'hésitez pas à cumuler plusieurs dispositifs pour optimiser votre financement
     category: "Primo-accédants",
     date: "3 mars 2026",
     readTime: "5 min",
+    coverImage: coverPreparerFinancement,
     content: `La préparation de votre financement est une étape cruciale qui conditionne la réussite de votre projet immobilier.
 
 **Assainissez vos comptes**
@@ -638,6 +697,7 @@ Le taux d'intérêt n'est pas le seul critère. Négociez aussi les frais de dos
     category: "Primo-accédants",
     date: "28 février 2026",
     readTime: "5 min",
+    coverImage: coverErreursPremierAchat,
     content: `Acheter pour la première fois est excitant mais peut aussi être source d'erreurs coûteuses. Voici les pièges les plus fréquents.
 
 **1. Ne pas définir son budget avant de chercher**
@@ -675,6 +735,7 @@ Le prix affiché n'est pas toujours le prix final. Dans de nombreux cas, une mar
     category: "Investissement immobilier",
     date: "8 mars 2026",
     readTime: "6 min",
+    coverImage: coverPatrimoineRendement,
     content: `L'investissement immobilier peut répondre à deux objectifs principaux : la constitution de patrimoine et la recherche de rendement locatif. Ces deux approches ne sont pas incompatibles mais impliquent des stratégies différentes.
 
 **L'investissement patrimonial**
@@ -706,6 +767,7 @@ L'immobilier est l'un des rares actifs que l'on peut financer à crédit. Les lo
     category: "Investissement immobilier",
     date: "5 mars 2026",
     readTime: "5 min",
+    coverImage: coverRentabiliteLocative,
     content: `Avant d'investir dans l'immobilier locatif, il est essentiel de savoir calculer la rentabilité d'un bien pour évaluer la pertinence de l'investissement.
 
 **Le rendement brut**
@@ -737,6 +799,7 @@ Méfiez-vous des rendements bruts élevés qui cachent parfois des charges impor
     category: "Investissement immobilier",
     date: "2 mars 2026",
     readTime: "5 min",
+    coverImage: coverLocationDuree,
     content: `Le choix entre location courte durée (type Airbnb) et location longue durée classique est une question fréquente chez les investisseurs. Chaque formule a ses avantages et ses contraintes.
 
 **La location longue durée**
@@ -768,6 +831,7 @@ Le choix dépend de votre profil d'investisseur : la longue durée convient aux 
     category: "Investissement immobilier",
     date: "27 février 2026",
     readTime: "6 min",
+    coverImage: coverStrategiesInvestissement,
     content: `L'investissement immobilier offre de nombreuses stratégies pour optimiser sa rentabilité. Voici les plus efficaces.
 
 **L'achat-revente avec travaux**
@@ -803,6 +867,7 @@ Chaque stratégie a ses avantages et ses risques. L'essentiel est de bien défin
     category: "Investissement immobilier",
     date: "24 février 2026",
     readTime: "5 min",
+    coverImage: coverErreursInvestisseurs,
     content: `L'investissement immobilier est une valeur sûre, à condition d'éviter certaines erreurs classiques qui peuvent transformer une bonne affaire en mauvais placement.
 
 **1. Investir avec le cœur plutôt que la raison**
@@ -840,6 +905,7 @@ Certains investisseurs achètent à distance sans visiter le bien. C'est risqué
     category: "Où investir",
     date: "10 mars 2026",
     readTime: "6 min",
+    coverImage: coverVillesInvestir,
     content: `Le choix de la ville est déterminant pour la réussite d'un investissement immobilier. Voici les critères et les tendances pour 2026.
 
 **Les métropoles dynamiques**
@@ -871,6 +937,7 @@ Méfiez-vous des villes où les prix ont beaucoup monté sans que les fondamenta
     category: "Où investir",
     date: "7 mars 2026",
     readTime: "5 min",
+    coverImage: coverPetitesVilles,
     content: `Les petites et moyennes villes françaises offrent souvent les meilleurs rendements locatifs. Encore faut-il savoir les identifier.
 
 **Pourquoi les villes moyennes ?**
@@ -902,6 +969,7 @@ Rien ne remplace une connaissance fine du marché local. C'est pourquoi faire ap
     category: "Où investir",
     date: "4 mars 2026",
     readTime: "5 min",
+    coverImage: coverZonesRendement,
     content: `Identifier une zone à fort rendement locatif demande une méthodologie rigoureuse et une bonne connaissance des indicateurs de marché.
 
 **Analysez la demande locative**
@@ -933,6 +1001,7 @@ Les chiffres ne disent pas tout. Visitez la zone, observez l'ambiance du quartie
     category: "Où investir",
     date: "1 mars 2026",
     readTime: "6 min",
+    coverImage: coverOpportunitesRegions,
     content: `La France offre une grande diversité d'opportunités immobilières. Chaque région a ses atouts et ses spécificités.
 
 **Île-de-France**
@@ -966,6 +1035,7 @@ Rennes et Nantes figurent parmi les villes les plus attractives de France. Leur 
     category: "Marché immobilier local",
     date: "11 mars 2026",
     readTime: "5 min",
+    coverImage: coverMarcheGretz,
     content: `Gretz-Armainvilliers est une commune dynamique de Seine-et-Marne qui attire de plus en plus d'acquéreurs à la recherche d'un cadre de vie agréable à proximité de Paris.
 
 **Les prix du marché**
@@ -997,6 +1067,7 @@ En tant que conseillère immobilier implantée localement, je connais chaque qua
     category: "Marché immobilier local",
     date: "9 mars 2026",
     readTime: "5 min",
+    coverImage: coverTendances77,
     content: `La Seine-et-Marne est un département vaste et contrasté, avec des dynamiques immobilières très différentes selon les secteurs.
 
 **Un département en pleine évolution**
@@ -1024,6 +1095,7 @@ Familles cherchant de l'espace, jeunes couples primo-accédants, investisseurs e
     category: "Marché immobilier local",
     date: "6 mars 2026",
     readTime: "5 min",
+    coverImage: coverPrixRegion,
     content: `Connaître les prix du marché est essentiel, que vous soyez acheteur ou vendeur. Voici un panorama des prix dans notre secteur.
 
 **Gretz-Armainvilliers**
@@ -1059,6 +1131,7 @@ Les prix varient fortement d'un quartier à l'autre, voire d'une rue à l'autre.
     category: "Marché immobilier local",
     date: "3 mars 2026",
     readTime: "5 min",
+    coverImage: coverInvestirLocal,
     content: `Notre secteur géographique offre de nombreux atouts pour les investisseurs immobiliers, qu'ils soient débutants ou expérimentés.
 
 **Des prix encore accessibles**
@@ -1090,6 +1163,7 @@ Grâce à des prix d'achat contenus et des loyers en progression, les rendements
     category: "Marché immobilier local",
     date: "28 février 2026",
     readTime: "4 min",
+    coverImage: coverOpportunitesLocales,
     content: `Le marché immobilier local regorge d'opportunités pour ceux qui savent les identifier. Voici quelques pistes à explorer.
 
 **Les biens à rénover**
@@ -1123,6 +1197,7 @@ En tant que conseillère immobilier implantée localement, je suis souvent infor
     category: "Opportunités investisseurs",
     date: "10 mars 2026",
     readTime: "6 min",
+    coverImage: coverOpportunites2026,
     content: `Le marché immobilier évolue constamment, et chaque année apporte son lot d'opportunités pour les investisseurs avertis. En 2026, plusieurs facteurs créent un contexte favorable à l'investissement.
 
 **La stabilisation des taux d'intérêt**
@@ -1154,6 +1229,7 @@ Travailler avec un professionnel implanté localement est un atout majeur. Je su
     category: "Opportunités investisseurs",
     date: "8 mars 2026",
     readTime: "7 min",
+    coverImage: coverTypesRendement,
     content: `Le choix du type de bien est déterminant pour la rentabilité de votre investissement locatif. Tous les biens ne se valent pas en termes de rendement.
 
 **Les studios et T1 : les champions du rendement**
@@ -1189,6 +1265,7 @@ Ne cherchez pas uniquement le rendement le plus élevé. Tenez compte de la faci
     category: "Opportunités investisseurs",
     date: "6 mars 2026",
     readTime: "5 min",
+    coverImage: coverSaisirOpportunites,
     content: `Dans l'immobilier, les meilleures opportunités sont souvent celles qui ne sont jamais publiées sur les portails d'annonces. Pour les saisir, il faut être préparé et bien entouré.
 
 **Préparez votre financement en amont**
@@ -1220,6 +1297,7 @@ Le bien parfait n'existe pas. Un bon investissement est un bien qui répond à v
     category: "Opportunités investisseurs",
     date: "4 mars 2026",
     readTime: "7 min",
+    coverImage: coverConstruirePatrimoine,
     content: `Construire un patrimoine immobilier ne se fait pas en un jour. C'est un processus progressif qui demande de la stratégie, de la patience et de bons conseils.
 
 **Commencez par votre résidence principale**
@@ -1255,6 +1333,7 @@ L'immobilier est un investissement de long terme. Les cycles du marché sont nor
     category: "Opportunités investisseurs",
     date: "2 mars 2026",
     readTime: "6 min",
+    coverImage: coverErreursInvestisseursEviter,
     content: `L'investissement immobilier peut être très rentable, mais certaines erreurs peuvent transformer une bonne opération en cauchemar financier. Voici les pièges les plus courants.
 
 **Surestimer le rendement locatif**
@@ -1296,6 +1375,7 @@ En tant que conseillère immobilière, je vous aide à identifier les biens offr
     category: "Actualités immobilières",
     date: "10 mars 2026",
     readTime: "7 min",
+    coverImage: coverLois2026,
     content: `Le cadre législatif immobilier évolue constamment. En 2026, plusieurs réformes importantes modifient les règles du jeu pour les acheteurs, vendeurs et investisseurs. Voici un tour d'horizon complet.
 
 **Les principales évolutions législatives**
@@ -1327,6 +1407,7 @@ Ces évolutions modifient les stratégies d'achat et de vente. Il est essentiel 
     category: "Actualités immobilières",
     date: "8 mars 2026",
     readTime: "6 min",
+    coverImage: coverTauxCredit,
     content: `Les taux de crédit immobilier sont un facteur déterminant dans toute décision d'achat. Après une période de hausse significative, où en sommes-nous en 2026 ?
 
 **La tendance actuelle des taux**
@@ -1358,6 +1439,7 @@ Les analystes anticipent une stabilisation des taux autour de 2,8 à 3,2 % d'ici
     category: "Actualités immobilières",
     date: "6 mars 2026",
     readTime: "7 min",
+    coverImage: coverReglementationDpe,
     content: `La performance énergétique des logements est au cœur des préoccupations réglementaires. En 2026, de nouvelles obligations s'imposent aux propriétaires bailleurs et vendeurs.
 
 **Le calendrier des interdictions de location**
@@ -1389,6 +1471,7 @@ Un bien bien classé (A, B ou C) se vend en moyenne 10 à 15 % plus cher qu'un b
     category: "Actualités immobilières",
     date: "4 mars 2026",
     readTime: "8 min",
+    coverImage: coverTendancesMarche,
     content: `Le marché immobilier français traverse une phase de transition après plusieurs années de turbulences. Quelles sont les grandes tendances qui se dessinent en 2026 ?
 
 **Un marché en phase de reprise**
@@ -1420,6 +1503,7 @@ Les professionnels anticipent une poursuite de la reprise modérée, avec une ha
     category: "Actualités immobilières",
     date: "2 mars 2026",
     readTime: "6 min",
+    coverImage: coverActualitesEssentielles,
     content: `L'immobilier est un secteur en constante évolution. Voici les actualités récentes les plus importantes à connaître selon votre profil.
 
 **Pour les acheteurs**
