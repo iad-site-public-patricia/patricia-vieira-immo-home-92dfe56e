@@ -28,10 +28,14 @@ const Vendre = () => {
   return (
     <div>
       {/* Hero */}
-      <section className="bg-foreground text-primary-foreground section-padding">
-        <div className="container mx-auto max-w-3xl text-center">
-          <h1 className="font-display text-4xl md:text-5xl font-bold mb-6">Vendre son bien</h1>
-          <p className="font-body text-lg md:text-xl opacity-90 leading-relaxed max-w-2xl mx-auto">
+      <section className="relative min-h-[60vh] flex items-center overflow-hidden">
+        <video autoPlay muted loop playsInline className="absolute inset-0 w-full h-full object-cover">
+          <source src="/hero-video-vendre.mp4" type="video/mp4" />
+        </video>
+        <div className="absolute inset-0 bg-gradient-to-r from-foreground/60 via-foreground/35 to-foreground/10" />
+        <div className="relative container mx-auto max-w-3xl text-center py-20">
+          <h1 className="font-display text-4xl md:text-5xl font-bold mb-6 text-primary-foreground drop-shadow-lg">Vendre son bien</h1>
+          <p className="font-body text-lg md:text-xl text-primary-foreground/90 leading-relaxed max-w-2xl mx-auto drop-shadow-sm">
             Vendre un bien, c'est vendre le plus vite possible, le plus cher possible et dans les meilleures conditions.
           </p>
         </div>
