@@ -3,6 +3,52 @@ import coverVendreVite from "@/assets/cover-vendre-vite.jpg";
 import coverErreursVendeurs from "@/assets/cover-erreurs-vendeurs.jpg";
 import coverPreparerVisites from "@/assets/cover-preparer-visites.jpg";
 import coverMarketingImmobilier from "@/assets/cover-marketing-immobilier.jpg";
+// Diagnostics et obligations
+import coverDiagnosticsObligatoires from "@/assets/cover-diagnostics-obligatoires.jpg";
+import coverComprendreDpe from "@/assets/cover-comprendre-dpe.jpg";
+import coverImpactClassification from "@/assets/cover-impact-classification.jpg";
+import coverDiagnosticsElecGaz from "@/assets/cover-diagnostics-elec-gaz.jpg";
+import coverReglementationsEnv from "@/assets/cover-reglementations-env.jpg";
+// Acheter un bien
+import coverCoutsReelsAchat from "@/assets/cover-couts-reels-achat.jpg";
+import coverFraisNotaire from "@/assets/cover-frais-notaire.jpg";
+import coverCoutsCaches from "@/assets/cover-couts-caches.jpg";
+import coverEtapesAchat from "@/assets/cover-etapes-achat.jpg";
+import coverPreparerAchat from "@/assets/cover-preparer-achat.jpg";
+// Primo-accédants
+import coverPremierAchat from "@/assets/cover-premier-achat.jpg";
+import coverAidesPrimo from "@/assets/cover-aides-primo.jpg";
+import coverPreparerFinancement from "@/assets/cover-preparer-financement.jpg";
+import coverErreursPremierAchat from "@/assets/cover-erreurs-premier-achat.jpg";
+// Investissement immobilier
+import coverPatrimoineRendement from "@/assets/cover-patrimoine-rendement.jpg";
+import coverRentabiliteLocative from "@/assets/cover-rentabilite-locative.jpg";
+import coverLocationDuree from "@/assets/cover-location-duree.jpg";
+import coverStrategiesInvestissement from "@/assets/cover-strategies-investissement.jpg";
+import coverErreursInvestisseurs from "@/assets/cover-erreurs-investisseurs.jpg";
+// Où investir
+import coverVillesInvestir from "@/assets/cover-villes-investir.jpg";
+import coverPetitesVilles from "@/assets/cover-petites-villes.jpg";
+import coverZonesRendement from "@/assets/cover-zones-rendement.jpg";
+import coverOpportunitesRegions from "@/assets/cover-opportunites-regions.jpg";
+// Marché immobilier local
+import coverMarcheGretz from "@/assets/cover-marche-gretz.jpg";
+import coverTendances77 from "@/assets/cover-tendances-77.jpg";
+import coverPrixRegion from "@/assets/cover-prix-region.jpg";
+import coverInvestirLocal from "@/assets/cover-investir-local.jpg";
+import coverOpportunitesLocales from "@/assets/cover-opportunites-locales.jpg";
+// Opportunités investisseurs
+import coverOpportunites2026 from "@/assets/cover-opportunites-2026.jpg";
+import coverTypesRendement from "@/assets/cover-types-rendement.jpg";
+import coverSaisirOpportunites from "@/assets/cover-saisir-opportunites.jpg";
+import coverConstruirePatrimoine from "@/assets/cover-construire-patrimoine.jpg";
+import coverErreursInvestisseursEviter from "@/assets/cover-erreurs-investisseurs-eviter.jpg";
+// Actualités immobilières
+import coverLois2026 from "@/assets/cover-lois-2026.jpg";
+import coverTauxCredit from "@/assets/cover-taux-credit.jpg";
+import coverReglementationDpe from "@/assets/cover-reglementation-dpe.jpg";
+import coverTendancesMarche from "@/assets/cover-tendances-marche.jpg";
+import coverActualitesEssentielles from "@/assets/cover-actualites-essentielles.jpg";
 
 export interface BlogPost {
   id: string;
