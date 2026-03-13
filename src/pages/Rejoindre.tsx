@@ -19,12 +19,16 @@ const Rejoindre = () => {
 
   return (
     <div>
-      <section className="bg-foreground text-primary-foreground section-padding">
-        <div className="container mx-auto max-w-3xl text-center">
-          <h1 className="font-display text-4xl md:text-5xl font-bold mb-6">
+      <section className="relative min-h-[60vh] flex items-center overflow-hidden">
+        <video autoPlay muted loop playsInline className="absolute inset-0 w-full h-full object-cover">
+          <source src="/hero-video-rejoindre.mp4" type="video/mp4" />
+        </video>
+        <div className="absolute inset-0 bg-gradient-to-r from-foreground/60 via-foreground/35 to-foreground/10" />
+        <div className="relative container mx-auto max-w-3xl text-center py-20">
+          <h1 className="font-display text-4xl md:text-5xl font-bold mb-6 text-primary-foreground drop-shadow-lg">
             Et si vous découvriez le métier de conseiller immobilier ?
           </h1>
-          <p className="font-body text-lg opacity-85 leading-relaxed">
+          <p className="font-body text-lg text-primary-foreground/90 leading-relaxed drop-shadow-sm">
             De plus en plus de personnes souhaitent aujourd'hui exercer une activité indépendante
             et développer leur propre projet professionnel.
           </p>

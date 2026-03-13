@@ -13,10 +13,14 @@ const steps = [
 const Acheter = () => {
   return (
     <div>
-      <section className="bg-foreground text-primary-foreground section-padding">
-        <div className="container mx-auto max-w-3xl text-center">
-          <h1 className="font-display text-4xl md:text-5xl font-bold mb-6">Acheter un bien</h1>
-          <p className="font-body text-lg opacity-85 leading-relaxed">
+      <section className="relative min-h-[60vh] flex items-center overflow-hidden">
+        <video autoPlay muted loop playsInline className="absolute inset-0 w-full h-full object-cover">
+          <source src="/hero-video-acheter.mp4" type="video/mp4" />
+        </video>
+        <div className="absolute inset-0 bg-gradient-to-r from-foreground/60 via-foreground/35 to-foreground/10" />
+        <div className="relative container mx-auto max-w-3xl text-center py-20">
+          <h1 className="font-display text-4xl md:text-5xl font-bold mb-6 text-primary-foreground drop-shadow-lg">Acheter un bien</h1>
+          <p className="font-body text-lg text-primary-foreground/90 leading-relaxed drop-shadow-sm">
             Trouver le bien qui vous correspond est un moment important. Je vous accompagne
             avec patience et expertise pour que votre projet d'achat se déroule sereinement.
           </p>
