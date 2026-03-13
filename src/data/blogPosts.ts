@@ -1,3 +1,9 @@
+import coverEstimation from "@/assets/cover-estimation.jpg";
+import coverVendreVite from "@/assets/cover-vendre-vite.jpg";
+import coverErreursVendeurs from "@/assets/cover-erreurs-vendeurs.jpg";
+import coverPreparerVisites from "@/assets/cover-preparer-visites.jpg";
+import coverMarketingImmobilier from "@/assets/cover-marketing-immobilier.jpg";
+
 export interface BlogPost {
   id: string;
   title: string;
@@ -6,6 +12,7 @@ export interface BlogPost {
   date: string;
   readTime: string;
   content: string;
+  coverImage?: string;
 }
 
 export const categories = [
