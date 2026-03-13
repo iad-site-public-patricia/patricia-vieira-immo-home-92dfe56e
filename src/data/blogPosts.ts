@@ -1439,6 +1439,7 @@ Les analystes anticipent une stabilisation des taux autour de 2,8 à 3,2 % d'ici
     category: "Actualités immobilières",
     date: "6 mars 2026",
     readTime: "7 min",
+    coverImage: coverReglementationDpe,
     content: `La performance énergétique des logements est au cœur des préoccupations réglementaires. En 2026, de nouvelles obligations s'imposent aux propriétaires bailleurs et vendeurs.
 
 **Le calendrier des interdictions de location**
