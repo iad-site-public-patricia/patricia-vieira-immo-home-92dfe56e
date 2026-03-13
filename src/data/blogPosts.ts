@@ -767,6 +767,7 @@ L'immobilier est l'un des rares actifs que l'on peut financer à crédit. Les lo
     category: "Investissement immobilier",
     date: "5 mars 2026",
     readTime: "5 min",
+    coverImage: coverRentabiliteLocative,
     content: `Avant d'investir dans l'immobilier locatif, il est essentiel de savoir calculer la rentabilité d'un bien pour évaluer la pertinence de l'investissement.
 
 **Le rendement brut**
