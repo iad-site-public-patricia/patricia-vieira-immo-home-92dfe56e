@@ -1407,6 +1407,7 @@ Ces évolutions modifient les stratégies d'achat et de vente. Il est essentiel 
     category: "Actualités immobilières",
     date: "8 mars 2026",
     readTime: "6 min",
+    coverImage: coverTauxCredit,
     content: `Les taux de crédit immobilier sont un facteur déterminant dans toute décision d'achat. Après une période de hausse significative, où en sommes-nous en 2026 ?
 
 **La tendance actuelle des taux**
