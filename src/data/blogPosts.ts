@@ -245,6 +245,7 @@ Proposer une visite virtuelle permet aux acquéreurs de pré-sélectionner votre
     category: "Diagnostics et obligations",
     date: "10 mars 2026",
     readTime: "6 min",
+    coverImage: coverDiagnosticsObligatoires,
     content: `Lors de la vente d'un bien immobilier, le vendeur est tenu de fournir un dossier de diagnostics techniques (DDT) à l'acquéreur. Ces diagnostics sont obligatoires et protègent à la fois le vendeur et l'acheteur.
 
 **Le DPE (Diagnostic de Performance Énergétique)**
