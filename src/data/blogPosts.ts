@@ -133,6 +133,7 @@ La transparence est essentielle. Un acheteur qui découvre des problèmes caché
     category: "Vendre son bien",
     date: "20 février 2026",
     readTime: "4 min",
+    coverImage: coverPreparerVisites,
     content: `La présentation de votre bien lors des visites est déterminante pour déclencher un coup de cœur chez les acquéreurs. Voici mes conseils pour optimiser chaque visite.
 
 **1. Désencombrez et rangez**
