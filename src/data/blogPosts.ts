@@ -697,6 +697,7 @@ Le taux d'intérêt n'est pas le seul critère. Négociez aussi les frais de dos
     category: "Primo-accédants",
     date: "28 février 2026",
     readTime: "5 min",
+    coverImage: coverErreursPremierAchat,
     content: `Acheter pour la première fois est excitant mais peut aussi être source d'erreurs coûteuses. Voici les pièges les plus fréquents.
 
 **1. Ne pas définir son budget avant de chercher**
