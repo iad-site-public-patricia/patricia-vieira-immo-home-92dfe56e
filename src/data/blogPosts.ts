@@ -625,6 +625,7 @@ L'aboutissement de votre projet. Le notaire vérifie la conformité du dossier, 
     category: "Primo-accédants",
     date: "6 mars 2026",
     readTime: "5 min",
+    coverImage: coverAidesPrimo,
     content: `En tant que primo-accédant, vous pouvez bénéficier de plusieurs aides financières pour faciliter votre premier achat immobilier.
 
 **Le Prêt à Taux Zéro (PTZ)**
