@@ -165,6 +165,7 @@ Ayez à disposition les plans, les diagnostics, les charges de copropriété et 
     category: "Vendre son bien",
     date: "15 février 2026",
     readTime: "5 min",
+    coverImage: coverMarketingImmobilier,
     content: `Dans un marché immobilier concurrentiel, la visibilité de votre bien est un facteur clé de succès. Un bien peu visible, c'est un bien qui ne se vend pas.
 
 **La puissance d'une annonce bien construite**
