@@ -1095,6 +1095,7 @@ Familles cherchant de l'espace, jeunes couples primo-accédants, investisseurs e
     category: "Marché immobilier local",
     date: "6 mars 2026",
     readTime: "5 min",
+    coverImage: coverPrixRegion,
     content: `Connaître les prix du marché est essentiel, que vous soyez acheteur ou vendeur. Voici un panorama des prix dans notre secteur.
 
 **Gretz-Armainvilliers**
