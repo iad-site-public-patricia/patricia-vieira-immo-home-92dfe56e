@@ -317,6 +317,7 @@ Des travaux de rénovation énergétique (isolation, changement de chaudière, f
     category: "Diagnostics et obligations",
     date: "5 mars 2026",
     readTime: "5 min",
+    coverImage: coverImpactClassification,
     content: `La classification énergétique est devenue un critère déterminant dans la valorisation d'un bien immobilier. Comprendre son impact est essentiel pour tout propriétaire.
 
 **La valeur verte des logements**
