@@ -475,6 +475,7 @@ Les frais de notaire doivent généralement être payés avec votre apport perso
     category: "Acheter un bien",
     date: "1 mars 2026",
     readTime: "5 min",
+    coverImage: coverCoutsCaches,
     content: `Au-delà du prix d'achat et des frais de notaire, d'autres coûts peuvent surprendre les acheteurs mal préparés. Les anticiper, c'est acheter sereinement.
 
 **La taxe foncière**
