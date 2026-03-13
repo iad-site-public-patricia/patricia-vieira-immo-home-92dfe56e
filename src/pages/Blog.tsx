@@ -96,16 +96,24 @@ const Blog = () => {
                 "Opportunités investisseurs": <Gem className="w-5 h-5" />,
                 "Actualités immobilières": <Newspaper className="w-5 h-5" />,
               };
+              const isHighlighted = cat === "Vendre son bien" || cat === "Diagnostics et obligations";
               return (
                 <button
                   key={cat}
                   onClick={() => setActiveCategory(cat)}
-                  className={`inline-flex items-center gap-3 px-7 py-4 rounded-2xl text-base font-display font-bold uppercase tracking-widest border-2 transition-all duration-200 ${
+                  className={`relative inline-flex items-center gap-3 px-7 py-4 rounded-2xl text-base font-display font-bold uppercase tracking-widest border-2 transition-all duration-200 ${
                     activeCategory === cat
                       ? "bg-primary text-primary-foreground border-primary shadow-lg scale-[1.04]"
-                      : "bg-card text-foreground border-border hover:border-primary hover:shadow-md"
+                      : isHighlighted
+                        ? "bg-terracotta-light text-primary border-primary/40 hover:border-primary hover:shadow-md ring-2 ring-primary/20"
+                        : "bg-card text-foreground border-border hover:border-primary hover:shadow-md"
                   }`}
                 >
+                  {isHighlighted && activeCategory !== cat && (
+                    <span className="absolute -top-2 -right-2 bg-primary text-primary-foreground text-[10px] font-body font-semibold px-2 py-0.5 rounded-full shadow-md">
+                      Populaire
+                    </span>
+                  )}
                   {iconMap[cat]}
                   {cat}
                 </button>
