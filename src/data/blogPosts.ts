@@ -1229,6 +1229,7 @@ Travailler avec un professionnel implanté localement est un atout majeur. Je su
     category: "Opportunités investisseurs",
     date: "8 mars 2026",
     readTime: "7 min",
+    coverImage: coverTypesRendement,
     content: `Le choix du type de bien est déterminant pour la rentabilité de votre investissement locatif. Tous les biens ne se valent pas en termes de rendement.
 
 **Les studios et T1 : les champions du rendement**
