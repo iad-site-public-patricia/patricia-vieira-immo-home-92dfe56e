@@ -547,6 +547,7 @@ C'est le jour J. La signature de l'acte authentique transfère officiellement la
     category: "Acheter un bien",
     date: "22 février 2026",
     readTime: "5 min",
+    coverImage: coverPreparerAchat,
     content: `Un achat immobilier réussi commence bien avant les premières visites. Voici comment vous préparer efficacement.
 
 **Évaluez votre capacité d'emprunt**
