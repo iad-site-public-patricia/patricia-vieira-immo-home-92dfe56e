@@ -1067,6 +1067,7 @@ En tant que conseillère immobilier implantée localement, je connais chaque qua
     category: "Marché immobilier local",
     date: "9 mars 2026",
     readTime: "5 min",
+    coverImage: coverTendances77,
     content: `La Seine-et-Marne est un département vaste et contrasté, avec des dynamiques immobilières très différentes selon les secteurs.
 
 **Un département en pleine évolution**
