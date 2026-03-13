@@ -1471,6 +1471,7 @@ Un bien bien classé (A, B ou C) se vend en moyenne 10 à 15 % plus cher qu'un b
     category: "Actualités immobilières",
     date: "4 mars 2026",
     readTime: "8 min",
+    coverImage: coverTendancesMarche,
     content: `Le marché immobilier français traverse une phase de transition après plusieurs années de turbulences. Quelles sont les grandes tendances qui se dessinent en 2026 ?
 
 **Un marché en phase de reprise**
