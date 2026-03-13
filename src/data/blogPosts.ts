@@ -289,6 +289,7 @@ Anticipez ces diagnostics dès que vous envisagez de vendre. Je vous accompagne 
     category: "Diagnostics et obligations",
     date: "8 mars 2026",
     readTime: "5 min",
+    coverImage: coverComprendreDpe,
     content: `Le DPE (Diagnostic de Performance Énergétique) est devenu un élément central dans toute transaction immobilière. Son impact sur la valeur des biens est de plus en plus significatif.
 
 **Qu'est-ce que le DPE ?**
