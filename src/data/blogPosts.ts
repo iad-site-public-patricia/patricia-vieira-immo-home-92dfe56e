@@ -585,6 +585,7 @@ Un conseiller immobilier connaît le marché, identifie les bonnes affaires et v
     category: "Primo-accédants",
     date: "9 mars 2026",
     readTime: "7 min",
+    coverImage: coverPremierAchat,
     content: `Acheter son premier bien immobilier est une étape majeure de la vie. C'est aussi un projet qui peut sembler complexe quand on n'a aucune expérience. Voici un guide complet pour vous accompagner.
 
 **Évaluez votre situation financière**
