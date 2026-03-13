@@ -831,6 +831,7 @@ Le choix dépend de votre profil d'investisseur : la longue durée convient aux 
     category: "Investissement immobilier",
     date: "27 février 2026",
     readTime: "6 min",
+    coverImage: coverStrategiesInvestissement,
     content: `L'investissement immobilier offre de nombreuses stratégies pour optimiser sa rentabilité. Voici les plus efficaces.
 
 **L'achat-revente avec travaux**
