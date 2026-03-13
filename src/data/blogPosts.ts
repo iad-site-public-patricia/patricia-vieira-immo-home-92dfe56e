@@ -1,3 +1,9 @@
+import coverEstimation from "@/assets/cover-estimation.jpg";
+import coverVendreVite from "@/assets/cover-vendre-vite.jpg";
+import coverErreursVendeurs from "@/assets/cover-erreurs-vendeurs.jpg";
+import coverPreparerVisites from "@/assets/cover-preparer-visites.jpg";
+import coverMarketingImmobilier from "@/assets/cover-marketing-immobilier.jpg";
+
 export interface BlogPost {
   id: string;
   title: string;
@@ -6,6 +12,7 @@ export interface BlogPost {
   date: string;
   readTime: string;
   content: string;
+  coverImage?: string;
 }
 
 export const categories = [
@@ -30,6 +37,7 @@ export const blogPosts: BlogPost[] = [
     category: "Vendre son bien",
     date: "5 mars 2026",
     readTime: "5 min",
+    coverImage: coverEstimation,
     content: `L'estimation immobilière est la première étape cruciale dans le processus de vente d'un bien. Une estimation trop haute risque de faire fuir les acheteurs potentiels, tandis qu'une estimation trop basse vous ferait perdre de l'argent.
 
 **Les risques d'une mauvaise estimation**
@@ -57,6 +65,7 @@ Je réalise une estimation gratuite et sans engagement de votre bien. Je prends 
     category: "Vendre son bien",
     date: "1 mars 2026",
     readTime: "6 min",
+    coverImage: coverVendreVite,
     content: `Vendre un bien immobilier rapidement ne signifie pas brader son prix. Au contraire, une vente rapide est souvent le signe d'une stratégie bien pensée et d'un accompagnement professionnel efficace.
 
 **Le bon prix dès le départ**
@@ -88,6 +97,7 @@ Je connais les quartiers, les tendances, les profils d'acheteurs. Cette expertis
     category: "Vendre son bien",
     date: "25 février 2026",
     readTime: "6 min",
+    coverImage: coverErreursVendeurs,
     content: `Mettre son bien en vente est une étape importante qui nécessite une bonne préparation. Voici les erreurs les plus courantes à éviter pour maximiser vos chances de succès.
 
 **1. Négliger la présentation du bien**
@@ -123,6 +133,7 @@ La transparence est essentielle. Un acheteur qui découvre des problèmes caché
     category: "Vendre son bien",
     date: "20 février 2026",
     readTime: "4 min",
+    coverImage: coverPreparerVisites,
     content: `La présentation de votre bien lors des visites est déterminante pour déclencher un coup de cœur chez les acquéreurs. Voici mes conseils pour optimiser chaque visite.
 
 **1. Désencombrez et rangez**
@@ -154,6 +165,7 @@ Ayez à disposition les plans, les diagnostics, les charges de copropriété et 
     category: "Vendre son bien",
     date: "15 février 2026",
     readTime: "5 min",
+    coverImage: coverMarketingImmobilier,
     content: `Dans un marché immobilier concurrentiel, la visibilité de votre bien est un facteur clé de succès. Un bien peu visible, c'est un bien qui ne se vend pas.
 
 **La puissance d'une annonce bien construite**
