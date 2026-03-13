@@ -121,6 +121,15 @@ const Blog = () => {
                 className="group bg-card rounded-xl overflow-hidden border border-border/50 hover:shadow-md transition-all"
               >
                 <div className="h-2 bg-primary" />
+                {post.coverImage && (
+                  <div className="h-44 overflow-hidden">
+                    <img
+                      src={post.coverImage}
+                      alt={post.title}
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                    />
+                  </div>
+                )}
                 <div className="p-6">
                   <span className="text-xs font-body font-medium text-primary bg-terracotta-light px-2 py-1 rounded-full">
                     {post.category}
