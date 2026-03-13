@@ -1197,6 +1197,7 @@ En tant que conseillère immobilier implantée localement, je suis souvent infor
     category: "Opportunités investisseurs",
     date: "10 mars 2026",
     readTime: "6 min",
+    coverImage: coverOpportunites2026,
     content: `Le marché immobilier évolue constamment, et chaque année apporte son lot d'opportunités pour les investisseurs avertis. En 2026, plusieurs facteurs créent un contexte favorable à l'investissement.
 
 **La stabilisation des taux d'intérêt**
