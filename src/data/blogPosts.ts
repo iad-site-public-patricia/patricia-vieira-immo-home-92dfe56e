@@ -969,6 +969,7 @@ Rien ne remplace une connaissance fine du marché local. C'est pourquoi faire ap
     category: "Où investir",
     date: "4 mars 2026",
     readTime: "5 min",
+    coverImage: coverZonesRendement,
     content: `Identifier une zone à fort rendement locatif demande une méthodologie rigoureuse et une bonne connaissance des indicateurs de marché.
 
 **Analysez la demande locative**
