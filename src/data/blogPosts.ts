@@ -447,6 +447,7 @@ N'oubliez pas de budgéter d'éventuels travaux de rénovation, de mise aux norm
     category: "Acheter un bien",
     date: "4 mars 2026",
     readTime: "4 min",
+    coverImage: coverFraisNotaire,
     content: `Les « frais de notaire » sont souvent une source de confusion pour les acheteurs. Voici une explication claire de ce qu'ils représentent réellement.
 
 **Ce que contiennent les frais de notaire**
