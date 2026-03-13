@@ -799,6 +799,7 @@ Méfiez-vous des rendements bruts élevés qui cachent parfois des charges impor
     category: "Investissement immobilier",
     date: "2 mars 2026",
     readTime: "5 min",
+    coverImage: coverLocationDuree,
     content: `Le choix entre location courte durée (type Airbnb) et location longue durée classique est une question fréquente chez les investisseurs. Chaque formule a ses avantages et ses contraintes.
 
 **La location longue durée**
