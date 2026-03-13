@@ -65,6 +65,7 @@ Je réalise une estimation gratuite et sans engagement de votre bien. Je prends 
     category: "Vendre son bien",
     date: "1 mars 2026",
     readTime: "6 min",
+    coverImage: coverVendreVite,
     content: `Vendre un bien immobilier rapidement ne signifie pas brader son prix. Au contraire, une vente rapide est souvent le signe d'une stratégie bien pensée et d'un accompagnement professionnel efficace.
 
 **Le bon prix dès le départ**
