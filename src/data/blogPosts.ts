@@ -1001,6 +1001,7 @@ Les chiffres ne disent pas tout. Visitez la zone, observez l'ambiance du quartie
     category: "Où investir",
     date: "1 mars 2026",
     readTime: "6 min",
+    coverImage: coverOpportunitesRegions,
     content: `La France offre une grande diversité d'opportunités immobilières. Chaque région a ses atouts et ses spécificités.
 
 **Île-de-France**
