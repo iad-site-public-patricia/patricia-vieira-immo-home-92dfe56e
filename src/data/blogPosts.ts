@@ -867,6 +867,7 @@ Chaque stratégie a ses avantages et ses risques. L'essentiel est de bien défin
     category: "Investissement immobilier",
     date: "24 février 2026",
     readTime: "5 min",
+    coverImage: coverErreursInvestisseurs,
     content: `L'investissement immobilier est une valeur sûre, à condition d'éviter certaines erreurs classiques qui peuvent transformer une bonne affaire en mauvais placement.
 
 **1. Investir avec le cœur plutôt que la raison**
