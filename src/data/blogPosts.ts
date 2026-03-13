@@ -937,6 +937,7 @@ Méfiez-vous des villes où les prix ont beaucoup monté sans que les fondamenta
     category: "Où investir",
     date: "7 mars 2026",
     readTime: "5 min",
+    coverImage: coverPetitesVilles,
     content: `Les petites et moyennes villes françaises offrent souvent les meilleurs rendements locatifs. Encore faut-il savoir les identifier.
 
 **Pourquoi les villes moyennes ?**
