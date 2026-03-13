@@ -1035,6 +1035,7 @@ Rennes et Nantes figurent parmi les villes les plus attractives de France. Leur 
     category: "Marché immobilier local",
     date: "11 mars 2026",
     readTime: "5 min",
+    coverImage: coverMarcheGretz,
     content: `Gretz-Armainvilliers est une commune dynamique de Seine-et-Marne qui attire de plus en plus d'acquéreurs à la recherche d'un cadre de vie agréable à proximité de Paris.
 
 **Les prix du marché**
