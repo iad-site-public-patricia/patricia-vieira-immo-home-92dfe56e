@@ -511,6 +511,7 @@ Obligatoire dès la remise des clés, elle représente un coût annuel variable 
     category: "Acheter un bien",
     date: "26 février 2026",
     readTime: "6 min",
+    coverImage: coverEtapesAchat,
     content: `Acheter un bien immobilier est un processus qui comporte plusieurs étapes importantes. Les connaître vous permettra d'avancer sereinement.
 
 **1. Définir votre projet et votre budget**
