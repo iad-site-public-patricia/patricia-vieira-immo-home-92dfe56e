@@ -661,6 +661,7 @@ N'hésitez pas à cumuler plusieurs dispositifs pour optimiser votre financement
     category: "Primo-accédants",
     date: "3 mars 2026",
     readTime: "5 min",
+    coverImage: coverPreparerFinancement,
     content: `La préparation de votre financement est une étape cruciale qui conditionne la réussite de votre projet immobilier.
 
 **Assainissez vos comptes**
