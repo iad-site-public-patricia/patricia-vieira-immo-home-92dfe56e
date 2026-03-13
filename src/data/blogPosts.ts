@@ -377,6 +377,7 @@ Je recommande toujours à mes clients de réaliser l'ensemble des diagnostics en
     category: "Diagnostics et obligations",
     date: "28 février 2026",
     readTime: "5 min",
+    coverImage: coverReglementationsEnv,
     content: `Le secteur immobilier est en pleine mutation réglementaire pour répondre aux enjeux climatiques. Voici ce que tout propriétaire et acheteur doit savoir.
 
 **La RE2020 pour les constructions neuves**
