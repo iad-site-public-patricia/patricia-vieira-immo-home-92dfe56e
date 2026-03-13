@@ -1297,6 +1297,7 @@ Le bien parfait n'existe pas. Un bon investissement est un bien qui répond à v
     category: "Opportunités investisseurs",
     date: "4 mars 2026",
     readTime: "7 min",
+    coverImage: coverConstruirePatrimoine,
     content: `Construire un patrimoine immobilier ne se fait pas en un jour. C'est un processus progressif qui demande de la stratégie, de la patience et de bons conseils.
 
 **Commencez par votre résidence principale**
