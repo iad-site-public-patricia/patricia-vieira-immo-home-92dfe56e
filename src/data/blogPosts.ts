@@ -905,6 +905,7 @@ Certains investisseurs achètent à distance sans visiter le bien. C'est risqué
     category: "Où investir",
     date: "10 mars 2026",
     readTime: "6 min",
+    coverImage: coverVillesInvestir,
     content: `Le choix de la ville est déterminant pour la réussite d'un investissement immobilier. Voici les critères et les tendances pour 2026.
 
 **Les métropoles dynamiques**
