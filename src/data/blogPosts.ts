@@ -1503,6 +1503,7 @@ Les professionnels anticipent une poursuite de la reprise modérée, avec une ha
     category: "Actualités immobilières",
     date: "2 mars 2026",
     readTime: "6 min",
+    coverImage: coverActualitesEssentielles,
     content: `L'immobilier est un secteur en constante évolution. Voici les actualités récentes les plus importantes à connaître selon votre profil.
 
 **Pour les acheteurs**
