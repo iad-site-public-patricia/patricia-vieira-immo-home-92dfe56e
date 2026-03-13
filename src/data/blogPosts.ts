@@ -1163,6 +1163,7 @@ Grâce à des prix d'achat contenus et des loyers en progression, les rendements
     category: "Marché immobilier local",
     date: "28 février 2026",
     readTime: "4 min",
+    coverImage: coverOpportunitesLocales,
     content: `Le marché immobilier local regorge d'opportunités pour ceux qui savent les identifier. Voici quelques pistes à explorer.
 
 **Les biens à rénover**
