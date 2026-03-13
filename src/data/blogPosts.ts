@@ -411,6 +411,7 @@ Que vous soyez vendeur, acheteur ou investisseur, ces réglementations impactent
     category: "Acheter un bien",
     date: "7 mars 2026",
     readTime: "6 min",
+    coverImage: coverCoutsReelsAchat,
     content: `Acheter un bien immobilier, c'est bien plus que le prix affiché sur l'annonce. De nombreux frais s'ajoutent et il est essentiel de les anticiper pour éviter les mauvaises surprises.
 
 **Les frais de notaire**
