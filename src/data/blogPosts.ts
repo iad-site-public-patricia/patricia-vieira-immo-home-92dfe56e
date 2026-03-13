@@ -1375,6 +1375,7 @@ En tant que conseillère immobilière, je vous aide à identifier les biens offr
     category: "Actualités immobilières",
     date: "10 mars 2026",
     readTime: "7 min",
+    coverImage: coverLois2026,
     content: `Le cadre législatif immobilier évolue constamment. En 2026, plusieurs réformes importantes modifient les règles du jeu pour les acheteurs, vendeurs et investisseurs. Voici un tour d'horizon complet.
 
 **Les principales évolutions législatives**
