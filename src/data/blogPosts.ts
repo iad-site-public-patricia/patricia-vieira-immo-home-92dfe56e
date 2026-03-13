@@ -37,6 +37,7 @@ export const blogPosts: BlogPost[] = [
     category: "Vendre son bien",
     date: "5 mars 2026",
     readTime: "5 min",
+    coverImage: coverEstimation,
     content: `L'estimation immobilière est la première étape cruciale dans le processus de vente d'un bien. Une estimation trop haute risque de faire fuir les acheteurs potentiels, tandis qu'une estimation trop basse vous ferait perdre de l'argent.
 
 **Les risques d'une mauvaise estimation**
