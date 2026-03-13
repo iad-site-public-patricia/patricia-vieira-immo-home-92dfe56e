@@ -1131,6 +1131,7 @@ Les prix varient fortement d'un quartier à l'autre, voire d'une rue à l'autre.
     category: "Marché immobilier local",
     date: "3 mars 2026",
     readTime: "5 min",
+    coverImage: coverInvestirLocal,
     content: `Notre secteur géographique offre de nombreux atouts pour les investisseurs immobiliers, qu'ils soient débutants ou expérimentés.
 
 **Des prix encore accessibles**
