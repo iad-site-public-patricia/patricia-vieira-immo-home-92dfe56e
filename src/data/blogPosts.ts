@@ -1265,6 +1265,7 @@ Ne cherchez pas uniquement le rendement le plus élevé. Tenez compte de la faci
     category: "Opportunités investisseurs",
     date: "6 mars 2026",
     readTime: "5 min",
+    coverImage: coverSaisirOpportunites,
     content: `Dans l'immobilier, les meilleures opportunités sont souvent celles qui ne sont jamais publiées sur les portails d'annonces. Pour les saisir, il faut être préparé et bien entouré.
 
 **Préparez votre financement en amont**
