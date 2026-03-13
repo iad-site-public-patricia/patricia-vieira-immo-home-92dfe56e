@@ -1333,6 +1333,7 @@ L'immobilier est un investissement de long terme. Les cycles du marché sont nor
     category: "Opportunités investisseurs",
     date: "2 mars 2026",
     readTime: "6 min",
+    coverImage: coverErreursInvestisseursEviter,
     content: `L'investissement immobilier peut être très rentable, mais certaines erreurs peuvent transformer une bonne opération en cauchemar financier. Voici les pièges les plus courants.
 
 **Surestimer le rendement locatif**
