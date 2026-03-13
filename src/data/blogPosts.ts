@@ -97,6 +97,7 @@ Je connais les quartiers, les tendances, les profils d'acheteurs. Cette expertis
     category: "Vendre son bien",
     date: "25 février 2026",
     readTime: "6 min",
+    coverImage: coverErreursVendeurs,
     content: `Mettre son bien en vente est une étape importante qui nécessite une bonne préparation. Voici les erreurs les plus courantes à éviter pour maximiser vos chances de succès.
 
 **1. Négliger la présentation du bien**
