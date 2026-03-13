@@ -345,6 +345,7 @@ MaPrimeRénov', les CEE (Certificats d'Économie d'Énergie), l'éco-prêt à ta
     category: "Diagnostics et obligations",
     date: "2 mars 2026",
     readTime: "5 min",
+    coverImage: coverDiagnosticsElecGaz,
     content: `Outre le DPE, plusieurs diagnostics techniques sont obligatoires lors de la vente d'un bien immobilier. Voici un tour d'horizon détaillé.
 
 **Le diagnostic électricité**
