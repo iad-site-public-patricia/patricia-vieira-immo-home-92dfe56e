@@ -49,6 +49,7 @@ import coverTauxCredit from "@/assets/cover-taux-credit.jpg";
 import coverReglementationDpe from "@/assets/cover-reglementation-dpe.jpg";
 import coverTendancesMarche from "@/assets/cover-tendances-marche.jpg";
 import coverActualitesEssentielles from "@/assets/cover-actualites-essentielles.jpg";
+import coverDecouvrirParcours from "@/assets/cover-decouvrir-parcours.jpg";
 
 export interface BlogPost {
   id: string;
