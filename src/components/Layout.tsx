@@ -5,11 +5,11 @@ import { Button } from "@/components/ui/button";
 
 const navLinks = [
   { label: "Accueil", to: "/" },
+  { label: "À propos", to: "/a-propos" },
   { label: "Vendre son bien", to: "/vendre" },
   { label: "Acheter", to: "/acheter" },
   { label: "Rejoindre mon équipe", to: "/rejoindre" },
   { label: "Conseils immobiliers", to: "/conseils-immobiliers" },
-  { label: "À propos", to: "/a-propos" },
   { label: "Contact", to: "/contact" },
 ];
 
