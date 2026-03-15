@@ -169,7 +169,7 @@ const Index = () => {
             {testimonials.map((t, i) => (
               <div key={i} className="bg-card rounded-xl p-7 border border-border/40 shadow-sm hover:shadow-lg transition-all duration-300">
                 <Quote className="w-8 h-8 text-primary/25 mb-4" />
-                <p className="text-foreground font-body text-sm leading-relaxed mb-6 italic">
+                <p className="text-foreground font-body leading-relaxed mb-6 italic">
                   "{t.text}"
                 </p>
                 <div className="flex items-center gap-1 mb-3">
