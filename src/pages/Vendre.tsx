@@ -3,7 +3,12 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { toast } from "sonner";
-import { CheckCircle, ClipboardList, Eye, Home, Handshake, FileSignature } from "lucide-react";
+import {
+  CheckCircle, ClipboardList, Eye, Home, Handshake, FileSignature,
+  Scale, Megaphone, Users, CreditCard, BookUser, HeartHandshake,
+  CalendarCheck, Flame, Gavel, Network, Target, Rocket,
+  Sparkles, UserCheck, Shield, MessageCircle, Zap, Award, Quote
+} from "lucide-react";
 
 const steps = [
   { icon: ClipboardList, title: "Estimation du bien", desc: "Une analyse complète pour déterminer la juste valeur de votre propriété." },
@@ -11,6 +16,33 @@ const steps = [
   { icon: Home, title: "Organisation des visites", desc: "Des visites qualifiées avec des acquéreurs sérieux et motivés." },
   { icon: Handshake, title: "Négociation", desc: "Je défends vos intérêts pour obtenir le meilleur prix." },
   { icon: FileSignature, title: "Accompagnement notaire", desc: "Je vous accompagne jusqu'à la signature de l'acte authentique." },
+];
+
+const atouts = [
+  { icon: Scale, title: "Neutralité et crédibilité", desc: "Un regard objectif et professionnel pour inspirer confiance aux acquéreurs." },
+  { icon: Megaphone, title: "Puissance marketing et visibilité", desc: "Des outils de diffusion performants pour une visibilité maximale de votre bien." },
+  { icon: Users, title: "Connaissance fine des acheteurs", desc: "Je comprends les attentes et les comportements des acquéreurs pour mieux cibler." },
+  { icon: CreditCard, title: "Connaissance des modalités de financement", desc: "Je maîtrise les solutions de financement pour faciliter les transactions." },
+  { icon: BookUser, title: "Fichier acquéreurs qualifié", desc: "Un portefeuille d'acheteurs sérieux et prêts à s'engager." },
+  { icon: HeartHandshake, title: "Rôle de tampon émotionnel", desc: "Je gère les émotions pour garantir des échanges sereins et constructifs." },
+  { icon: CalendarCheck, title: "Organisation stratégique des visites", desc: "Des visites planifiées pour maximiser l'impact et l'intérêt des acquéreurs." },
+  { icon: Flame, title: "Création d'émulation entre acheteurs", desc: "Une stratégie qui stimule la concurrence pour obtenir la meilleure offre." },
+  { icon: Gavel, title: "Expertise juridique, réglementaire et technique", desc: "Un accompagnement sécurisé sur tous les aspects légaux et techniques." },
+  { icon: Network, title: "Réseau professionnel solide", desc: "Un réseau étendu de partenaires pour faciliter chaque étape." },
+  { icon: Target, title: "Maîtrise de la négociation", desc: "Des techniques éprouvées pour défendre au mieux vos intérêts financiers." },
+  { icon: Rocket, title: "Capacité à vendre plus vite et mieux", desc: "Une méthode qui accélère la vente tout en optimisant le prix obtenu." },
+];
+
+const engagements = [
+  { icon: Target, label: "Stratégie de vente personnalisée" },
+  { icon: Sparkles, label: "Mise en valeur optimale de votre bien" },
+  { icon: Megaphone, label: "Diffusion large et ciblée" },
+  { icon: UserCheck, label: "Sélection rigoureuse des acquéreurs" },
+  { icon: Shield, label: "Négociation défendant vos intérêts" },
+  { icon: Handshake, label: "Accompagnement complet jusqu'à la signature" },
+  { icon: MessageCircle, label: "Communication transparente et régulière" },
+  { icon: Zap, label: "Disponibilité et réactivité" },
+  { icon: Award, label: "Engagement basé sur la confiance et l'éthique" },
 ];
 
 const Vendre = () => {
@@ -94,6 +126,70 @@ const Vendre = () => {
                 </div>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Ma méthode unique – 12 Atouts */}
+      <section className="section-padding" id="methode">
+        <div className="container mx-auto max-w-5xl">
+          <div className="text-center mb-4">
+            <h2 className="font-display text-3xl md:text-4xl font-semibold text-foreground mb-4">
+              Ma méthode unique
+            </h2>
+            <p className="text-muted-foreground font-body text-lg leading-relaxed max-w-2xl mx-auto">
+              12 atouts majeurs pour vendre votre bien dans les meilleures conditions.
+            </p>
+          </div>
+          <div className="section-divider mb-12" />
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            {atouts.map((atout, i) => (
+              <div
+                key={i}
+                className="bg-card rounded-xl p-6 border border-border/40 hover:shadow-lg hover:border-primary/25 transition-all duration-300 group"
+              >
+                <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mb-4 group-hover:bg-primary/20 transition-colors">
+                  <atout.icon className="w-6 h-6 text-primary" />
+                </div>
+                <h3 className="font-display text-base font-semibold text-foreground mb-2">{atout.title}</h3>
+                <p className="text-muted-foreground font-body text-sm leading-relaxed">{atout.desc}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Mes engagements */}
+      <section className="section-padding bg-card">
+        <div className="container mx-auto max-w-4xl">
+          <div className="text-center mb-4">
+            <h2 className="font-display text-3xl md:text-4xl font-semibold text-foreground mb-4">
+              Mes engagements
+            </h2>
+          </div>
+          <div className="section-divider mb-12" />
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+            {engagements.map((item, i) => (
+              <div
+                key={i}
+                className="flex items-center gap-4 bg-background rounded-xl px-6 py-5 border border-border/40 hover:shadow-md hover:border-primary/20 transition-all duration-300 group"
+              >
+                <div className="w-11 h-11 rounded-full bg-primary/10 flex items-center justify-center shrink-0 group-hover:bg-primary/20 transition-colors">
+                  <item.icon className="w-5 h-5 text-primary" />
+                </div>
+                <span className="font-body text-foreground font-medium text-base leading-snug">{item.label}</span>
+              </div>
+            ))}
+          </div>
+
+          {/* Quote */}
+          <div className="mt-14 text-center">
+            <div className="inline-flex items-start gap-3 max-w-2xl">
+              <Quote className="w-8 h-8 text-primary/30 shrink-0 mt-1" />
+              <p className="font-display text-xl md:text-2xl italic text-foreground leading-relaxed">
+                Chaque vente a sa stratégie. Je m'adapte à votre réalité.
+              </p>
+            </div>
           </div>
         </div>
       </section>

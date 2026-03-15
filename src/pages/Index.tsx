@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { Heart, TrendingUp, FileCheck, Users, Home, ShoppingBag, Briefcase, ArrowRight, Star, Quote } from "lucide-react";
+import { Heart, TrendingUp, FileCheck, Users, Home, ShoppingBag, Briefcase, ArrowRight, Star, Quote, Target, Sparkles, Megaphone, UserCheck, Shield, HandshakeIcon, MessageCircle, Zap, Award } from "lucide-react";
 import { blogPosts } from "@/data/blogPosts";
 import vendu1 from "@/assets/vendu-1.png";
 import vendu2 from "@/assets/vendu-2.png";
@@ -117,7 +117,49 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Sold Properties Section */}
+      {/* Ma méthode unique – Summary */}
+      <section className="section-padding bg-card">
+        <div className="container mx-auto">
+          <div className="text-center max-w-3xl mx-auto mb-4">
+            <h2 className="font-display text-3xl md:text-4xl font-semibold text-foreground mb-4">
+              Ma méthode unique
+            </h2>
+            <p className="text-muted-foreground font-body text-lg leading-relaxed">
+              Chaque bien est unique. Ma méthode repose sur une stratégie claire, un marketing puissant et un accompagnement complet pour vendre votre bien dans les meilleures conditions.
+            </p>
+          </div>
+          <div className="section-divider mb-12" />
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+            {[
+              { icon: Target, label: "Stratégie de vente personnalisée" },
+              { icon: Sparkles, label: "Mise en valeur optimale de votre bien" },
+              { icon: Megaphone, label: "Diffusion large et ciblée" },
+              { icon: UserCheck, label: "Sélection rigoureuse des acquéreurs" },
+              { icon: Shield, label: "Négociation défendant vos intérêts" },
+              { icon: HandshakeIcon, label: "Accompagnement complet jusqu'à la signature" },
+              { icon: MessageCircle, label: "Communication transparente et régulière" },
+              { icon: Zap, label: "Disponibilité et réactivité" },
+              { icon: Award, label: "Engagement basé sur la confiance et l'éthique" },
+            ].map((item, i) => (
+              <div
+                key={i}
+                className="flex items-center gap-4 bg-background rounded-xl px-6 py-5 border border-border/40 hover:shadow-md hover:border-primary/20 transition-all duration-300 group"
+              >
+                <div className="w-11 h-11 rounded-full bg-primary/10 flex items-center justify-center shrink-0 group-hover:bg-primary/20 transition-colors">
+                  <item.icon className="w-5 h-5 text-primary" />
+                </div>
+                <span className="font-body text-foreground font-medium text-base leading-snug">{item.label}</span>
+              </div>
+            ))}
+          </div>
+          <div className="text-center mt-10">
+            <Button variant="hero" size="lg" asChild>
+              <Link to="/vendre">Découvrir ma méthode</Link>
+            </Button>
+          </div>
+        </div>
+      </section>
+
       <section className="section-padding bg-card">
         <div className="container mx-auto">
           <div className="text-center max-w-2xl mx-auto mb-4">
