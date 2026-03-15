@@ -122,11 +122,14 @@ const Index = () => {
       <section className="section-padding bg-card">
         <div className="container mx-auto">
           <div className="text-center max-w-3xl mx-auto mb-4">
+            <p className="font-body text-sm md:text-base uppercase tracking-[0.2em] text-primary mb-3">
+              Une approche structurée pour maximiser la réussite de votre vente.
+            </p>
             <h2 className="font-display text-3xl md:text-4xl font-semibold text-foreground mb-4">
               Ma méthode unique
             </h2>
             <p className="text-muted-foreground font-body text-lg leading-relaxed">
-              Chaque bien est unique. Ma méthode repose sur une stratégie claire, un marketing puissant et un accompagnement complet pour vendre votre bien dans les meilleures conditions.
+              Ma méthode repose sur une stratégie claire, un marketing puissant et un accompagnement complet pour vendre votre bien le plus vite possible, au meilleur prix et dans les meilleures conditions.
             </p>
           </div>
           <div className="section-divider mb-12" />

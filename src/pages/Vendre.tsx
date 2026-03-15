@@ -135,6 +135,9 @@ const Vendre = () => {
       <section className="section-padding" id="methode">
         <div className="container mx-auto max-w-5xl">
           <div className="text-center mb-4">
+            <p className="font-body text-sm md:text-base uppercase tracking-[0.2em] text-primary mb-3">
+              Une approche structurée pour maximiser la réussite de votre vente.
+            </p>
             <h2 className="font-display text-3xl md:text-4xl font-semibold text-foreground mb-4">
               Ma méthode unique
             </h2>
