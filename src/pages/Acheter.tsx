@@ -41,7 +41,7 @@ const Acheter = () => {
                 </div>
                 <div>
                   <h3 className="font-display text-lg font-semibold text-foreground mb-1">{step.title}</h3>
-                  <p className="text-muted-foreground font-body text-sm leading-relaxed">{step.desc}</p>
+                  <p className="text-muted-foreground font-body text-base leading-relaxed">{step.desc}</p>
                 </div>
               </div>
             ))}

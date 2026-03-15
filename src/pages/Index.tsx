@@ -285,7 +285,7 @@ const Index = () => {
                   <h3 className="font-display text-lg font-semibold text-foreground mt-3 mb-2 group-hover:text-primary transition-colors">
                     {post.title}
                   </h3>
-                  <p className="text-muted-foreground font-body text-sm line-clamp-2 leading-relaxed">{post.excerpt}</p>
+                  <p className="text-muted-foreground font-body text-base line-clamp-2 leading-relaxed">{post.excerpt}</p>
                   <div className="mt-4 text-xs text-muted-foreground font-body">
                     {post.date} · {post.readTime} de lecture
                   </div>

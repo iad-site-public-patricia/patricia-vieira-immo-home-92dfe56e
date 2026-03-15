@@ -50,7 +50,7 @@ const APropos = () => {
                     </div>
                     <h3 className="font-display font-semibold text-foreground">{item.title}</h3>
                   </div>
-                  <p className="text-muted-foreground font-body text-sm leading-relaxed">{item.desc}</p>
+                  <p className="text-muted-foreground font-body text-base leading-relaxed">{item.desc}</p>
                 </div>
               ))}
             </div>

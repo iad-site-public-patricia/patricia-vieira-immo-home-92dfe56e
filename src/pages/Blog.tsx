@@ -129,7 +129,7 @@ const Blog = () => {
                   <h2 className="font-display text-lg font-semibold text-foreground mt-3 mb-2 group-hover:text-primary transition-colors leading-snug">
                     {post.title}
                   </h2>
-                  <p className="text-muted-foreground font-body text-sm line-clamp-3 leading-relaxed">{post.excerpt}</p>
+                  <p className="text-muted-foreground font-body text-base line-clamp-3 leading-relaxed">{post.excerpt}</p>
                   <div className="mt-4 flex items-center justify-between">
                     <span className="text-xs text-muted-foreground font-body">
                       {post.date} · {post.readTime} de lecture
