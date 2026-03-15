@@ -92,10 +92,10 @@ const Blog = () => {
                 <button
                   key={cat}
                   onClick={() => setActiveCategory(cat)}
-                  className={`inline-flex items-center gap-2 px-5 py-2.5 rounded-full text-sm font-body font-medium border transition-all duration-200 ${
+                  className={`inline-flex items-center gap-2 px-6 py-3 rounded-lg text-sm font-body font-semibold uppercase tracking-wide border-2 transition-all duration-200 ${
                     activeCategory === cat
                       ? "bg-navy text-navy-foreground border-navy shadow-md"
-                      : "bg-card text-muted-foreground border-border/60 hover:border-primary/40 hover:text-primary hover:shadow-sm"
+                      : "bg-white text-navy border-navy/80 hover:bg-navy/5 hover:shadow-sm"
                   }`}
                 >
                   {iconMap[cat]}
