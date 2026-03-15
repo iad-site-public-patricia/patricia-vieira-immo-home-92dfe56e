@@ -16,10 +16,11 @@ const Contact = () => {
 
   return (
     <div>
-      <section className="bg-foreground text-primary-foreground section-padding">
-        <div className="container mx-auto max-w-3xl text-center">
-          <h1 className="font-display text-4xl md:text-5xl font-bold mb-6">Contact</h1>
-          <p className="font-body text-lg opacity-85">
+      <section className="relative section-padding overflow-hidden bg-gradient-to-br from-navy via-navy/90 to-primary/80">
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_hsl(var(--primary)/0.15),_transparent_70%)]" />
+        <div className="container mx-auto max-w-3xl text-center relative z-10">
+          <h1 className="font-display text-4xl md:text-5xl font-bold mb-6 text-navy-foreground">Contact</h1>
+          <p className="font-body text-lg text-navy-foreground/85 leading-relaxed">
             Une question, un projet ? N'hésitez pas à me contacter, je serai ravie d'échanger avec vous.
           </p>
         </div>
@@ -31,6 +32,7 @@ const Contact = () => {
             {/* Contact info */}
             <div className="md:col-span-2 space-y-6">
               <h2 className="font-display text-2xl font-semibold text-foreground">Mes coordonnées</h2>
+              <div className="section-divider !mx-0 !w-12" />
               <div className="space-y-4">
                 <a href="tel:+33785618768" className="flex items-center gap-3 text-muted-foreground hover:text-primary transition-colors font-body">
                   <div className="w-10 h-10 rounded-full bg-terracotta-light flex items-center justify-center">
@@ -59,7 +61,7 @@ const Contact = () => {
                     href="https://www.facebook.com/patriciavieiraimmobilier/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center gap-2 px-4 py-2 bg-card rounded-lg border border-border/50 text-sm font-body text-muted-foreground hover:text-primary hover:border-primary/30 transition-colors"
+                    className="flex items-center gap-2 px-4 py-2.5 bg-card rounded-lg border border-border/40 text-sm font-body text-muted-foreground hover:text-primary hover:border-primary/30 transition-all"
                   >
                     <Facebook className="w-4 h-4" /> Facebook
                   </a>
@@ -67,7 +69,7 @@ const Contact = () => {
                     href="https://www.instagram.com/patricia.vieira.immo/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center gap-2 px-4 py-2 bg-card rounded-lg border border-border/50 text-sm font-body text-muted-foreground hover:text-primary hover:border-primary/30 transition-colors"
+                    className="flex items-center gap-2 px-4 py-2.5 bg-card rounded-lg border border-border/40 text-sm font-body text-muted-foreground hover:text-primary hover:border-primary/30 transition-all"
                   >
                     <Instagram className="w-4 h-4" /> Instagram
                   </a>
@@ -77,7 +79,7 @@ const Contact = () => {
 
             {/* Form */}
             <div className="md:col-span-3">
-              <form onSubmit={handleSubmit} className="space-y-4 bg-card rounded-xl p-8 border border-border/50">
+              <form onSubmit={handleSubmit} className="space-y-4 bg-card rounded-xl p-8 border border-border/40 shadow-sm">
                 <Input placeholder="Nom complet" value={form.nom} onChange={e => setForm({...form, nom: e.target.value})} required />
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   <Input type="email" placeholder="Email" value={form.email} onChange={e => setForm({...form, email: e.target.value})} required />

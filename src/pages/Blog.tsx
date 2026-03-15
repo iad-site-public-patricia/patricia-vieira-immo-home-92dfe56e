@@ -3,7 +3,7 @@ import { Link, useParams } from "react-router-dom";
 import { blogPosts, categories } from "@/data/blogPosts";
 import {
   ArrowLeft, BookOpen, LayoutGrid, Home, ClipboardCheck, ShoppingCart,
-  GraduationCap, TrendingUp, MapPin, BarChart3, Gem, Newspaper
+  GraduationCap, TrendingUp, MapPin, BarChart3, Gem, Newspaper, ArrowRight
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import blogHeaderImg from "@/assets/blog-header.jpg";
@@ -19,16 +19,17 @@ const Blog = () => {
 
     return (
       <div>
-        <section className="bg-foreground text-primary-foreground section-padding">
-          <div className="container mx-auto max-w-3xl">
-            <Link to="/conseils-immobiliers" className="inline-flex items-center gap-1 text-sm opacity-80 hover:opacity-100 mb-6 font-body">
+        <section className="relative section-padding overflow-hidden bg-gradient-to-br from-navy via-navy/90 to-primary/80">
+          <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_hsl(var(--primary)/0.15),_transparent_70%)]" />
+          <div className="container mx-auto max-w-3xl relative z-10">
+            <Link to="/conseils-immobiliers" className="inline-flex items-center gap-1 text-sm text-navy-foreground/70 hover:text-navy-foreground mb-6 font-body transition-colors">
               <ArrowLeft className="w-4 h-4" /> Retour aux conseils
             </Link>
-            <span className="text-xs font-body font-medium bg-primary text-primary-foreground px-2 py-1 rounded-full">
+            <span className="text-xs font-body font-medium bg-primary text-primary-foreground px-3 py-1 rounded-full">
               {post.category}
             </span>
-            <h1 className="font-display text-3xl md:text-4xl font-bold mt-4 mb-4">{post.title}</h1>
-            <p className="font-body text-sm opacity-70">{post.date} · {post.readTime} de lecture</p>
+            <h1 className="font-display text-3xl md:text-4xl font-bold mt-4 mb-4 text-navy-foreground">{post.title}</h1>
+            <p className="font-body text-sm text-navy-foreground/65">{post.date} · {post.readTime} de lecture</p>
           </div>
         </section>
         <section className="section-padding">
@@ -53,27 +54,18 @@ const Blog = () => {
   // Blog list
   const filtered = activeCategory === "Tous" ? blogPosts : blogPosts.filter((p) => p.category === activeCategory);
 
-  // Group by category for display
-  const categoryCount = categories.reduce((acc, cat) => {
-    if (cat === "Tous") {
-      acc[cat] = blogPosts.length;
-    } else {
-      acc[cat] = blogPosts.filter((p) => p.category === cat).length;
-    }
-    return acc;
-  }, {} as Record<string, number>);
-
   return (
     <div>
+      {/* Magazine-style header */}
       <section className="relative section-padding overflow-hidden">
         <img src={blogHeaderImg} alt="Conseils immobiliers" className="absolute inset-0 w-full h-full object-cover" />
-        <div className="absolute inset-0 bg-foreground/60" />
+        <div className="absolute inset-0 bg-gradient-to-b from-navy/70 via-navy/50 to-navy/80" />
         <div className="container mx-auto max-w-3xl text-center relative z-10">
           <div className="flex items-center justify-center gap-3 mb-4">
             <BookOpen className="w-8 h-8 text-primary" />
           </div>
-          <h1 className="font-display text-4xl md:text-5xl font-bold mb-4 text-primary-foreground">Conseils immobiliers</h1>
-          <p className="font-body text-lg opacity-90 max-w-2xl mx-auto text-primary-foreground">
+          <h1 className="font-display text-4xl md:text-5xl font-bold mb-4 text-navy-foreground">Conseils immobiliers</h1>
+          <p className="font-body text-lg text-navy-foreground/85 max-w-2xl mx-auto leading-relaxed">
             Guides pratiques, analyses de marché et conseils d'experte pour réussir vos projets immobiliers.
           </p>
         </div>
@@ -81,29 +73,29 @@ const Blog = () => {
 
       <section className="section-padding">
         <div className="container mx-auto max-w-6xl">
-          {/* Categories */}
-          <div className="flex flex-wrap gap-4 mb-14 justify-center">
+          {/* Categories - refined pills */}
+          <div className="flex flex-wrap gap-3 mb-14 justify-center">
             {categories.map((cat) => {
               const iconMap: Record<string, React.ReactNode> = {
-                "Tous": <LayoutGrid className="w-5 h-5" />,
-                "Vendre son bien": <Home className="w-5 h-5" />,
-                "Diagnostics et obligations": <ClipboardCheck className="w-5 h-5" />,
-                "Acheter un bien": <ShoppingCart className="w-5 h-5" />,
-                "Primo-accédants": <GraduationCap className="w-5 h-5" />,
-                "Investissement immobilier": <TrendingUp className="w-5 h-5" />,
-                "Où investir": <MapPin className="w-5 h-5" />,
-                "Marché immobilier local": <BarChart3 className="w-5 h-5" />,
-                "Opportunités investisseurs": <Gem className="w-5 h-5" />,
-                "Actualités immobilières": <Newspaper className="w-5 h-5" />,
+                "Tous": <LayoutGrid className="w-4 h-4" />,
+                "Vendre son bien": <Home className="w-4 h-4" />,
+                "Diagnostics et obligations": <ClipboardCheck className="w-4 h-4" />,
+                "Acheter un bien": <ShoppingCart className="w-4 h-4" />,
+                "Primo-accédants": <GraduationCap className="w-4 h-4" />,
+                "Investissement immobilier": <TrendingUp className="w-4 h-4" />,
+                "Où investir": <MapPin className="w-4 h-4" />,
+                "Marché immobilier local": <BarChart3 className="w-4 h-4" />,
+                "Opportunités investisseurs": <Gem className="w-4 h-4" />,
+                "Actualités immobilières": <Newspaper className="w-4 h-4" />,
               };
               return (
                 <button
                   key={cat}
                   onClick={() => setActiveCategory(cat)}
-                  className={`relative inline-flex items-center gap-3 px-7 py-4 rounded-2xl text-base font-display font-bold uppercase tracking-widest border-2 transition-all duration-200 ${
+                  className={`inline-flex items-center gap-2 px-5 py-2.5 rounded-full text-sm font-body font-medium border transition-all duration-200 ${
                     activeCategory === cat
-                      ? "bg-primary text-primary-foreground border-primary shadow-lg scale-[1.04]"
-                      : "bg-terracotta-light text-primary border-primary/40 hover:border-primary hover:shadow-md ring-2 ring-primary/20"
+                      ? "bg-navy text-navy-foreground border-navy shadow-md"
+                      : "bg-card text-muted-foreground border-border/60 hover:border-primary/40 hover:text-primary hover:shadow-sm"
                   }`}
                 >
                   {iconMap[cat]}
@@ -113,33 +105,36 @@ const Blog = () => {
             })}
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {/* Cards grid */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7">
             {filtered.map((post) => (
               <Link
                 key={post.id}
                 to={`/conseils-immobiliers/${post.id}`}
-                className="group bg-card rounded-xl overflow-hidden border border-border/50 hover:shadow-md transition-all"
+                className="group bg-card rounded-xl overflow-hidden border border-border/40 hover:shadow-xl transition-all duration-300"
               >
-                <div className="h-2 bg-primary" />
                 {post.coverImage && (
-                  <div className="h-44 overflow-hidden">
+                  <div className="h-48 overflow-hidden">
                     <img
                       src={post.coverImage}
                       alt={post.title}
-                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                     />
                   </div>
                 )}
                 <div className="p-6">
-                  <span className="text-xs font-body font-medium text-primary bg-terracotta-light px-2 py-1 rounded-full">
+                  <span className="text-xs font-body font-medium text-navy bg-navy-light px-2.5 py-1 rounded-full">
                     {post.category}
                   </span>
-                  <h2 className="font-display text-lg font-semibold text-foreground mt-3 mb-2 group-hover:text-primary transition-colors">
+                  <h2 className="font-display text-lg font-semibold text-foreground mt-3 mb-2 group-hover:text-primary transition-colors leading-snug">
                     {post.title}
                   </h2>
-                  <p className="text-muted-foreground font-body text-sm line-clamp-3">{post.excerpt}</p>
-                  <div className="mt-4 text-xs text-muted-foreground font-body">
-                    {post.date} · {post.readTime} de lecture
+                  <p className="text-muted-foreground font-body text-sm line-clamp-3 leading-relaxed">{post.excerpt}</p>
+                  <div className="mt-4 flex items-center justify-between">
+                    <span className="text-xs text-muted-foreground font-body">
+                      {post.date} · {post.readTime} de lecture
+                    </span>
+                    <ArrowRight className="w-4 h-4 text-primary opacity-0 group-hover:opacity-100 transition-opacity" />
                   </div>
                 </div>
               </Link>

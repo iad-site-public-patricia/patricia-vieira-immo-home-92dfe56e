@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { Menu, X, Phone, Mail, Facebook, Instagram } from "lucide-react";
+import { Menu, X, Phone, Mail, Facebook, Instagram, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const navLinks = [
@@ -20,15 +20,15 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
   return (
     <div className="min-h-screen flex flex-col">
       {/* Top bar */}
-      <div className="bg-foreground text-primary-foreground py-2 px-4 text-sm hidden md:block">
+      <div className="bg-navy text-navy-foreground py-2.5 px-4 text-sm hidden md:block">
         <div className="container mx-auto flex justify-between items-center">
-          <span className="font-body">Patricia Vieira – Conseillère immobilier indépendante</span>
-          <div className="flex items-center gap-4">
-            <a href="tel:+33785618768" className="flex items-center gap-1 hover:text-primary transition-colors">
-              <Phone className="w-3 h-3" /> 07 85 61 87 68
+          <span className="font-body font-medium tracking-wide">Patricia Vieira – Conseillère immobilier indépendante</span>
+          <div className="flex items-center gap-5">
+            <a href="tel:+33785618768" className="flex items-center gap-1.5 hover:text-primary transition-colors">
+              <Phone className="w-3.5 h-3.5" /> 07 85 61 87 68
             </a>
-            <a href="mailto:patricia.vieira@iadfrance.fr" className="flex items-center gap-1 hover:text-primary transition-colors">
-              <Mail className="w-3 h-3" /> patricia.vieira@iadfrance.fr
+            <a href="mailto:patricia.vieira@iadfrance.fr" className="flex items-center gap-1.5 hover:text-primary transition-colors">
+              <Mail className="w-3.5 h-3.5" /> patricia.vieira@iadfrance.fr
             </a>
             <div className="flex items-center gap-2 ml-2">
               <a href="https://www.facebook.com/patriciavieiraimmobilier/" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors" aria-label="Facebook">
@@ -43,25 +43,25 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
       </div>
 
       {/* Navigation */}
-      <header className="sticky top-0 z-50 bg-background/95 backdrop-blur-md border-b">
+      <header className="sticky top-0 z-50 bg-background/98 backdrop-blur-lg border-b border-border/60 shadow-sm">
         <div className="container mx-auto px-4 flex items-center justify-between h-16 md:h-20">
-          <Link to="/" className="flex flex-col">
-            <span className="font-display text-xl md:text-2xl font-semibold text-foreground tracking-tight">
+          <Link to="/" className="flex flex-col group">
+            <span className="font-display text-xl md:text-2xl font-bold text-foreground tracking-tight group-hover:text-primary transition-colors">
               Patricia Vieira
             </span>
-            <span className="text-xs text-muted-foreground font-body -mt-1">Immobilier</span>
+            <span className="text-[11px] uppercase tracking-[0.2em] text-muted-foreground font-body font-medium -mt-0.5">Immobilier</span>
           </Link>
 
           {/* Desktop nav */}
-          <nav className="hidden lg:flex items-center gap-1">
+          <nav className="hidden lg:flex items-center gap-0.5">
             {navLinks.map((link) => (
               <Link
                 key={link.to}
                 to={link.to}
-                className={`px-3 py-2 text-sm font-body font-medium rounded-md transition-colors ${
+                className={`px-3.5 py-2 text-sm font-body font-medium rounded-lg transition-all duration-200 ${
                   location.pathname === link.to
                     ? "text-primary bg-terracotta-light"
-                    : "text-foreground/80 hover:text-primary hover:bg-muted"
+                    : "text-foreground/75 hover:text-primary hover:bg-muted/60"
                 }`}
               >
                 {link.label}
@@ -72,7 +72,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
           {/* Mobile menu button */}
           <button
             onClick={() => setMenuOpen(!menuOpen)}
-            className="lg:hidden p-2 text-foreground"
+            className="lg:hidden p-2 text-foreground hover:text-primary transition-colors"
             aria-label="Menu"
           >
             {menuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
@@ -81,16 +81,16 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
 
         {/* Mobile nav */}
         {menuOpen && (
-          <nav className="lg:hidden bg-background border-t px-4 py-4 space-y-1 animate-fade-in">
+          <nav className="lg:hidden bg-background border-t border-border/60 px-4 py-4 space-y-1 animate-fade-in">
             {navLinks.map((link) => (
               <Link
                 key={link.to}
                 to={link.to}
                 onClick={() => setMenuOpen(false)}
-                className={`block px-4 py-3 rounded-md text-sm font-body font-medium transition-colors ${
+                className={`block px-4 py-3 rounded-lg text-sm font-body font-medium transition-all ${
                   location.pathname === link.to
                     ? "text-primary bg-terracotta-light"
-                    : "text-foreground/80 hover:text-primary hover:bg-muted"
+                    : "text-foreground/80 hover:text-primary hover:bg-muted/60"
                 }`}
               >
                 {link.label}
@@ -104,32 +104,32 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
       <main className="flex-1">{children}</main>
 
       {/* Footer */}
-      <footer className="bg-foreground text-primary-foreground">
-        <div className="container mx-auto px-4 py-12 md:py-16">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <footer className="bg-navy text-navy-foreground">
+        <div className="container mx-auto px-4 py-14 md:py-20">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
             <div>
-              <h3 className="font-display text-xl font-semibold mb-4">Patricia Vieira</h3>
-              <p className="text-sm opacity-80 font-body leading-relaxed">
+              <h3 className="font-display text-2xl font-bold mb-4">Patricia Vieira</h3>
+              <p className="text-sm opacity-75 font-body leading-relaxed">
                 Conseillère immobilier indépendante<br />
                 Partenaire du réseau IAD France
               </p>
-              <div className="flex items-center gap-3 mt-4">
-                <a href="https://www.facebook.com/patriciavieiraimmobilier/" target="_blank" rel="noopener noreferrer" className="w-9 h-9 rounded-full bg-primary-foreground/10 hover:bg-primary/20 flex items-center justify-center transition-colors" aria-label="Facebook">
+              <div className="flex items-center gap-3 mt-5">
+                <a href="https://www.facebook.com/patriciavieiraimmobilier/" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-navy-foreground/10 hover:bg-primary/30 flex items-center justify-center transition-colors" aria-label="Facebook">
                   <Facebook className="w-4 h-4" />
                 </a>
-                <a href="https://www.instagram.com/patricia.vieira.immo/" target="_blank" rel="noopener noreferrer" className="w-9 h-9 rounded-full bg-primary-foreground/10 hover:bg-primary/20 flex items-center justify-center transition-colors" aria-label="Instagram">
+                <a href="https://www.instagram.com/patricia.vieira.immo/" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-navy-foreground/10 hover:bg-primary/30 flex items-center justify-center transition-colors" aria-label="Instagram">
                   <Instagram className="w-4 h-4" />
                 </a>
               </div>
             </div>
             <div>
-              <h4 className="font-display text-lg font-semibold mb-4">Navigation</h4>
-              <div className="space-y-2">
+              <h4 className="font-display text-lg font-semibold mb-5">Navigation</h4>
+              <div className="space-y-2.5">
                 {navLinks.map((link) => (
                   <Link
                     key={link.to}
                     to={link.to}
-                    className="block text-sm opacity-80 hover:opacity-100 hover:text-primary transition-colors font-body"
+                    className="block text-sm opacity-70 hover:opacity-100 hover:text-primary transition-all font-body"
                   >
                     {link.label}
                   </Link>
@@ -137,20 +137,26 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
               </div>
             </div>
             <div>
-              <h4 className="font-display text-lg font-semibold mb-4">Contact</h4>
-              <div className="space-y-2 text-sm opacity-80 font-body">
-                <a href="tel:+33785618768" className="block hover:text-primary transition-colors">📞 07 85 61 87 68</a>
-                <a href="mailto:patricia.vieira@iadfrance.fr" className="block hover:text-primary transition-colors">📧 patricia.vieira@iadfrance.fr</a>
-                <p>📍 Gretz-Armainvilliers, Seine-et-Marne</p>
+              <h4 className="font-display text-lg font-semibold mb-5">Contact</h4>
+              <div className="space-y-3 text-sm opacity-75 font-body">
+                <a href="tel:+33785618768" className="flex items-center gap-2 hover:text-primary transition-colors">
+                  <Phone className="w-4 h-4 text-primary" /> 07 85 61 87 68
+                </a>
+                <a href="mailto:patricia.vieira@iadfrance.fr" className="flex items-center gap-2 hover:text-primary transition-colors">
+                  <Mail className="w-4 h-4 text-primary" /> patricia.vieira@iadfrance.fr
+                </a>
+                <p className="flex items-center gap-2">📍 Gretz-Armainvilliers, Seine-et-Marne</p>
               </div>
-              <div className="mt-4">
+              <div className="mt-6">
                 <Button variant="hero" size="sm" asChild>
-                  <Link to="/contact">Me contacter</Link>
+                  <Link to="/contact" className="inline-flex items-center gap-2">
+                    Me contacter <ArrowRight className="w-4 h-4" />
+                  </Link>
                 </Button>
               </div>
             </div>
           </div>
-          <div className="border-t border-primary-foreground/20 mt-8 pt-8 text-center text-sm opacity-60 font-body">
+          <div className="border-t border-navy-foreground/15 mt-10 pt-8 text-center text-sm opacity-50 font-body">
             © {new Date().getFullYear()} Patricia Vieira Immobilier. Tous droits réservés.
           </div>
         </div>

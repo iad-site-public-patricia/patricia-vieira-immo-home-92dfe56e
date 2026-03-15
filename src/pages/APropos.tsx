@@ -1,14 +1,16 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { Heart, Users, Award, Sparkles } from "lucide-react";
+import { Heart, Users, Award, Sparkles, ArrowRight } from "lucide-react";
 
 const APropos = () => {
   return (
     <div>
-      <section className="bg-foreground text-primary-foreground section-padding">
-        <div className="container mx-auto max-w-3xl text-center">
-          <h1 className="font-display text-4xl md:text-5xl font-bold mb-6">À propos</h1>
-          <p className="font-body text-lg opacity-85">
+      {/* Hero with warm gradient */}
+      <section className="relative section-padding overflow-hidden bg-gradient-to-br from-navy via-navy/90 to-primary/80">
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_hsl(var(--primary)/0.15),_transparent_70%)]" />
+        <div className="container mx-auto max-w-3xl text-center relative z-10">
+          <h1 className="font-display text-4xl md:text-5xl font-bold mb-6 text-navy-foreground">À propos</h1>
+          <p className="font-body text-lg text-navy-foreground/85 leading-relaxed">
             Découvrez mon parcours et ma vision du métier de conseiller immobilier.
           </p>
         </div>
@@ -19,6 +21,7 @@ const APropos = () => {
           <div className="grid md:grid-cols-5 gap-12 items-start">
             <div className="md:col-span-3 space-y-6 font-body text-muted-foreground leading-relaxed">
               <h2 className="font-display text-3xl font-semibold text-foreground">Patricia Vieira</h2>
+              <div className="section-divider !mx-0 !w-12" />
               <p>
                 Passionnée par l'immobilier et les relations humaines, j'exerce le métier de conseillère immobilier indépendante en partenariat avec le réseau IAD France.
               </p>
@@ -40,14 +43,14 @@ const APropos = () => {
                 { icon: Users, title: "Accompagnement", desc: "Des dizaines de clients satisfaits et des conseillers formés." },
                 { icon: Sparkles, title: "Vision", desc: "Un immobilier plus humain, plus transparent, plus accessible." },
               ].map((item, i) => (
-                <div key={i} className="bg-card rounded-xl p-5 border border-border/50">
+                <div key={i} className="bg-card rounded-xl p-5 border border-border/40 hover:shadow-md transition-all duration-300 group">
                   <div className="flex items-center gap-3 mb-2">
-                    <div className="w-10 h-10 rounded-full bg-terracotta-light flex items-center justify-center">
+                    <div className="w-10 h-10 rounded-full bg-terracotta-light flex items-center justify-center group-hover:bg-primary/15 transition-colors">
                       <item.icon className="w-5 h-5 text-primary" />
                     </div>
                     <h3 className="font-display font-semibold text-foreground">{item.title}</h3>
                   </div>
-                  <p className="text-muted-foreground font-body text-sm">{item.desc}</p>
+                  <p className="text-muted-foreground font-body text-sm leading-relaxed">{item.desc}</p>
                 </div>
               ))}
             </div>
@@ -55,7 +58,9 @@ const APropos = () => {
 
           <div className="text-center mt-16">
             <Button variant="hero" size="xl" asChild>
-              <Link to="/contact">Me contacter</Link>
+              <Link to="/contact" className="inline-flex items-center gap-2">
+                Me contacter <ArrowRight className="w-5 h-5" />
+              </Link>
             </Button>
           </div>
         </div>
