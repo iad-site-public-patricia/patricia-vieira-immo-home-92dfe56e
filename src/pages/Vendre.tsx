@@ -32,10 +32,10 @@ const Vendre = () => {
         <video autoPlay muted loop playsInline className="absolute inset-0 w-full h-full object-cover">
           <source src="/hero-video-vendre.mp4" type="video/mp4" />
         </video>
-        <div className="absolute inset-0 bg-gradient-to-r from-foreground/60 via-foreground/35 to-foreground/10" />
+        <div className="absolute inset-0 bg-gradient-to-r from-navy/65 via-navy/35 to-navy/10" />
         <div className="relative container mx-auto max-w-3xl text-center py-20">
-          <h1 className="font-display text-4xl md:text-5xl font-bold mb-6 text-primary-foreground drop-shadow-lg">Vendre son bien</h1>
-          <p className="font-body text-lg md:text-xl text-primary-foreground/90 leading-relaxed max-w-2xl mx-auto drop-shadow-sm">
+          <h1 className="font-display text-4xl md:text-5xl font-bold mb-6 text-navy-foreground drop-shadow-lg">Vendre son bien</h1>
+          <p className="font-body text-lg md:text-xl text-navy-foreground/90 leading-relaxed max-w-2xl mx-auto drop-shadow-sm">
             Vendre un bien, c'est vendre le plus vite possible, le plus cher possible et dans les meilleures conditions.
           </p>
         </div>
@@ -49,6 +49,7 @@ const Vendre = () => {
               <h2 className="font-display text-3xl font-semibold text-foreground mb-4">
                 L'importance d'une estimation juste
               </h2>
+              <div className="section-divider !mx-0 !w-12 mb-6" />
               <p className="text-muted-foreground font-body leading-relaxed mb-4">
                 Un bien surévalué reste trop longtemps sur le marché et perd en attractivité. Un bien sous-évalué, c'est de l'argent perdu. <strong className="text-foreground">La bonne estimation, c'est celle qui déclenche les visites et génère des offres rapidement.</strong>
               </p>
@@ -59,7 +60,7 @@ const Vendre = () => {
                 <strong className="text-foreground">Résultat :</strong> un prix juste qui attire les bons acquéreurs et vous permet de vendre dans les meilleurs délais.
               </p>
             </div>
-            <div className="bg-card rounded-xl p-8 border border-border/50">
+            <div className="bg-card rounded-xl p-8 border border-border/40 shadow-sm">
               <h3 className="font-display text-xl font-semibold text-foreground mb-4">Mon accompagnement</h3>
               <ul className="space-y-3 font-body text-muted-foreground">
                 {["Estimation gratuite et sans engagement", "Analyse complète du marché local", "Stratégie de mise en vente personnalisée", "Suivi régulier et transparent", "Disponibilité et réactivité"].map((item, i) => (
@@ -77,18 +78,19 @@ const Vendre = () => {
       {/* Steps */}
       <section className="section-padding bg-card">
         <div className="container mx-auto max-w-4xl">
-          <h2 className="font-display text-3xl font-semibold text-foreground text-center mb-12">
+          <h2 className="font-display text-3xl font-semibold text-foreground text-center mb-4">
             Les étapes de la vente
           </h2>
-          <div className="space-y-6">
+          <div className="section-divider mb-12" />
+          <div className="space-y-5">
             {steps.map((step, i) => (
-              <div key={i} className="flex items-start gap-6 bg-background rounded-xl p-6 border border-border/50">
-                <div className="w-12 h-12 rounded-full bg-primary flex items-center justify-center text-primary-foreground font-display font-bold text-lg shrink-0">
+              <div key={i} className="flex items-start gap-6 bg-background rounded-xl p-6 border border-border/40 hover:shadow-md transition-all duration-300 group">
+                <div className="w-12 h-12 rounded-full bg-navy flex items-center justify-center text-navy-foreground font-display font-bold text-lg shrink-0 group-hover:bg-primary transition-colors">
                   {i + 1}
                 </div>
                 <div>
                   <h3 className="font-display text-lg font-semibold text-foreground mb-1">{step.title}</h3>
-                  <p className="text-muted-foreground font-body text-sm">{step.desc}</p>
+                  <p className="text-muted-foreground font-body text-sm leading-relaxed">{step.desc}</p>
                 </div>
               </div>
             ))}
@@ -105,7 +107,7 @@ const Vendre = () => {
           <p className="text-muted-foreground font-body text-center mb-8">
             Je vous recontacte rapidement afin d'échanger sur votre projet immobilier.
           </p>
-          <form onSubmit={handleSubmit} className="space-y-4 bg-card rounded-xl p-8 border border-border/50">
+          <form onSubmit={handleSubmit} className="space-y-4 bg-card rounded-xl p-8 border border-border/40 shadow-sm">
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <Input placeholder="Nom" value={form.nom} onChange={e => setForm({...form, nom: e.target.value})} required />
               <Input placeholder="Prénom" value={form.prenom} onChange={e => setForm({...form, prenom: e.target.value})} required />
