@@ -119,8 +119,44 @@ const Index = () => {
       </section>
 
       {/* Ma méthode unique – Summary */}
-      <section className="section-padding bg-card">
-        <div className="container mx-auto">
+      <section className="section-padding bg-card relative overflow-hidden">
+        {/* Subtle background illustration – strategic path to house */}
+        <svg
+          className="absolute inset-0 w-full h-full pointer-events-none"
+          viewBox="0 0 1200 600"
+          fill="none"
+          preserveAspectRatio="xMidYMid slice"
+          aria-hidden="true"
+        >
+          {/* Flowing strategic path */}
+          <path
+            d="M-50 450 C150 450, 200 300, 350 300 S550 200, 650 200 S800 150, 900 150 L1050 150"
+            stroke="hsl(215 50% 28% / 0.06)"
+            strokeWidth="2"
+            strokeDasharray="12 8"
+            fill="none"
+          />
+          <path
+            d="M-50 500 C200 500, 250 350, 400 340 S600 250, 700 240 S850 180, 950 170 L1050 160"
+            stroke="hsl(215 50% 28% / 0.04)"
+            strokeWidth="1.5"
+            fill="none"
+          />
+          {/* Small dots along the path */}
+          <circle cx="350" cy="300" r="3" fill="hsl(215 50% 28% / 0.07)" />
+          <circle cx="650" cy="200" r="3" fill="hsl(215 50% 28% / 0.07)" />
+          <circle cx="900" cy="150" r="3" fill="hsl(215 50% 28% / 0.07)" />
+          {/* House icon at the end */}
+          <g transform="translate(1050, 130)" stroke="hsl(215 50% 28% / 0.08)" strokeWidth="1.5" fill="none">
+            <path d="M0 20 L20 0 L40 20" />
+            <rect x="5" y="20" width="30" height="22" rx="1" />
+            <rect x="15" y="28" width="10" height="14" />
+          </g>
+          {/* Decorative circles */}
+          <circle cx="100" cy="80" r="60" stroke="hsl(215 50% 28% / 0.03)" strokeWidth="1" fill="none" />
+          <circle cx="1100" cy="500" r="80" stroke="hsl(215 50% 28% / 0.03)" strokeWidth="1" fill="none" />
+        </svg>
+        <div className="container mx-auto relative z-10">
           <div className="text-center max-w-3xl mx-auto mb-4">
             <p className="font-body text-sm md:text-base uppercase tracking-[0.2em] text-primary mb-3">
               Une approche structurée pour maximiser la réussite de votre vente.
