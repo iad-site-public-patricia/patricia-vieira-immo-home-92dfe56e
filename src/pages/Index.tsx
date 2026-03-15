@@ -161,6 +161,9 @@ const Index = () => {
         </div>
       </section>
 
+      {/* Les 5 étapes de ma méthode */}
+      <MethodeEtapes />
+
       <section className="section-padding bg-card">
         <div className="container mx-auto">
           <div className="text-center max-w-2xl mx-auto mb-4">

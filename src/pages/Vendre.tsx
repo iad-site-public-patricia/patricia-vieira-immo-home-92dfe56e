@@ -160,6 +160,9 @@ const Vendre = () => {
         </div>
       </section>
 
+      {/* Les 5 étapes de ma méthode */}
+      <MethodeEtapes />
+
       {/* Mes engagements */}
       <section className="section-padding bg-card">
         <div className="container mx-auto max-w-4xl">
