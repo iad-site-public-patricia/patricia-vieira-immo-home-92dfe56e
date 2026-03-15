@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Heart, TrendingUp, FileCheck, Users, Home, ShoppingBag, Briefcase, ArrowRight, Star, Quote, Target, Sparkles, Megaphone, UserCheck, Shield, HandshakeIcon, MessageCircle, Zap, Award } from "lucide-react";
+import MethodeEtapes from "@/components/MethodeEtapes";
 import { blogPosts } from "@/data/blogPosts";
 import vendu1 from "@/assets/vendu-1.png";
 import vendu2 from "@/assets/vendu-2.png";
@@ -159,6 +160,9 @@ const Index = () => {
           </div>
         </div>
       </section>
+
+      {/* Les 5 étapes de ma méthode */}
+      <MethodeEtapes />
 
       <section className="section-padding bg-card">
         <div className="container mx-auto">

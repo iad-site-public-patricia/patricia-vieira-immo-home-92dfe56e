@@ -9,6 +9,7 @@ import {
   CalendarCheck, Flame, Gavel, Network, Target, Rocket,
   Sparkles, UserCheck, Shield, MessageCircle, Zap, Award, Quote
 } from "lucide-react";
+import MethodeEtapes from "@/components/MethodeEtapes";
 
 const steps = [
   { icon: ClipboardList, title: "Estimation du bien", desc: "Une analyse complète pour déterminer la juste valeur de votre propriété." },
@@ -158,6 +159,9 @@ const Vendre = () => {
           </div>
         </div>
       </section>
+
+      {/* Les 5 étapes de ma méthode */}
+      <MethodeEtapes />
 
       {/* Mes engagements */}
       <section className="section-padding bg-card">
