@@ -129,7 +129,7 @@ const Index = () => {
               Ma méthode unique
             </h2>
             <p className="text-muted-foreground font-body text-lg leading-relaxed">
-              Ma méthode repose sur une stratégie claire, un marketing puissant et un accompagnement complet pour vendre votre bien le plus vite possible, au meilleur prix et dans les meilleures conditions.
+              Ma méthode repose sur une stratégie claire, un marketing puissant et un accompagnement complet pour vendre votre bien le plus cher possible, le plus vite possible et dans les meilleures conditions.
             </p>
           </div>
           <div className="section-divider mb-12" />
