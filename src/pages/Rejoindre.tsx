@@ -61,7 +61,7 @@ const Rejoindre = () => {
                   <item.icon className="w-5 h-5 text-navy group-hover:text-primary transition-colors" />
                 </div>
                 <h3 className="font-display text-base font-semibold text-foreground mb-2">{item.title}</h3>
-                <p className="text-muted-foreground font-body text-sm leading-relaxed">{item.desc}</p>
+                <p className="text-muted-foreground font-body text-base leading-relaxed">{item.desc}</p>
               </div>
             ))}
           </div>

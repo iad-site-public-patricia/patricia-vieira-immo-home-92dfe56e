@@ -110,7 +110,7 @@ const Index = () => {
                   <item.icon className="w-6 h-6 text-primary" />
                 </div>
                 <h3 className="font-display text-lg font-semibold text-foreground mb-2">{item.title}</h3>
-                <p className="text-muted-foreground font-body text-sm leading-relaxed">{item.desc}</p>
+                <p className="text-muted-foreground font-body text-base leading-relaxed">{item.desc}</p>
               </div>
             ))}
           </div>
@@ -169,7 +169,7 @@ const Index = () => {
             {testimonials.map((t, i) => (
               <div key={i} className="bg-card rounded-xl p-7 border border-border/40 shadow-sm hover:shadow-lg transition-all duration-300">
                 <Quote className="w-8 h-8 text-primary/25 mb-4" />
-                <p className="text-foreground font-body text-sm leading-relaxed mb-6 italic">
+                <p className="text-foreground font-body leading-relaxed mb-6 italic">
                   "{t.text}"
                 </p>
                 <div className="flex items-center gap-1 mb-3">
@@ -285,7 +285,7 @@ const Index = () => {
                   <h3 className="font-display text-lg font-semibold text-foreground mt-3 mb-2 group-hover:text-primary transition-colors">
                     {post.title}
                   </h3>
-                  <p className="text-muted-foreground font-body text-sm line-clamp-2 leading-relaxed">{post.excerpt}</p>
+                  <p className="text-muted-foreground font-body text-base line-clamp-2 leading-relaxed">{post.excerpt}</p>
                   <div className="mt-4 text-xs text-muted-foreground font-body">
                     {post.date} · {post.readTime} de lecture
                   </div>
