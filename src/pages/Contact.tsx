@@ -4,6 +4,7 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { toast } from "sonner";
 import { Phone, Mail, MapPin, Facebook, Instagram } from "lucide-react";
+import coverContact from "@/assets/cover-contact.png";
 
 const Contact = () => {
   const [form, setForm] = useState({ nom: "", email: "", telephone: "", message: "" });
@@ -16,8 +17,9 @@ const Contact = () => {
 
   return (
     <div>
-      <section className="relative section-padding overflow-hidden bg-gradient-to-br from-navy via-navy/90 to-primary/80">
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_hsl(var(--primary)/0.15),_transparent_70%)]" />
+      <section className="relative section-padding overflow-hidden">
+        <img src={coverContact} alt="Patricia Vieira au téléphone" className="absolute inset-0 w-full h-full object-cover" />
+        <div className="absolute inset-0 bg-gradient-to-r from-navy/80 via-navy/60 to-navy/40" />
         <div className="container mx-auto max-w-3xl text-center relative z-10">
           <h1 className="font-display text-4xl md:text-5xl font-bold mb-6 text-navy-foreground">Contact</h1>
           <p className="font-body text-lg text-navy-foreground/85 leading-relaxed">
