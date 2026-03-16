@@ -56,21 +56,30 @@ const Index = () => {
         >
           <source src="/hero-video.mp4" type="video/mp4" />
         </video>
-        <div className="absolute inset-0 bg-gradient-to-r from-navy/70 via-navy/40 to-navy/10" />
+        <div className="absolute inset-0 bg-black/40" />
+        <div className="absolute inset-0 bg-gradient-to-r from-navy/60 via-navy/30 to-transparent" />
         <div className="relative container mx-auto px-4 py-20">
           <div className="max-w-2xl">
-            <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6 animate-fade-in">
+            <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-4 animate-fade-in">
               <span className="text-navy-foreground drop-shadow-lg">Patricia Vieira</span>
               <span className="block text-2xl md:text-3xl lg:text-4xl font-medium mt-3 italic text-navy-foreground/90 drop-shadow-md">
                 Conseillère immobilier indépendante
               </span>
             </h1>
+            <p className="text-navy-foreground font-display text-xl md:text-2xl font-semibold tracking-wide mb-6 animate-fade-in drop-shadow-md" style={{ animationDelay: "0.15s" }}>
+              Vente • Achat • Investissement immobilier
+            </p>
+            <p className="text-navy-foreground/90 font-body text-base md:text-lg mb-2 animate-fade-in drop-shadow-sm" style={{ animationDelay: "0.15s" }}>
+              Seine-et-Marne • Val-de-Marne
+            </p>
             <p className="text-navy-foreground/90 text-lg md:text-xl font-body leading-relaxed mb-8 animate-fade-in drop-shadow-sm" style={{ animationDelay: "0.2s" }}>
-              J'accompagne vos projets immobiliers, de la vente à l'achat, et je partage ma passion avec celles et ceux qui souhaitent construire leur indépendance professionnelle au sein de mon équipe présente dans plusieurs régions en France.
+              J'accompagne mes clients dans leurs projets immobiliers avec une stratégie claire, une expertise du marché et un suivi complet jusqu'à la signature.
             </p>
-            <p className="text-navy-foreground/80 text-base md:text-lg font-body italic mb-10 animate-fade-in drop-shadow-sm" style={{ animationDelay: "0.3s" }}>
-              Deux projets peuvent nous réunir : votre projet immobilier ou votre projet professionnel.
-            </p>
+            <div className="text-navy-foreground/80 text-base md:text-lg font-body italic mb-10 animate-fade-in drop-shadow-sm" style={{ animationDelay: "0.3s" }}>
+              <p>Deux projets peuvent nous réunir :</p>
+              <p>vendre ou acheter un bien immobilier,</p>
+              <p>ou construire votre activité dans mon équipe.</p>
+            </div>
             <div className="flex flex-col sm:flex-row gap-4 animate-fade-in" style={{ animationDelay: "0.4s" }}>
               <Button variant="hero" size="xl" asChild>
                 <Link to="/vendre">Votre projet immobilier</Link>
@@ -87,21 +96,23 @@ const Index = () => {
       <section className="section-padding bg-background">
         <div className="container mx-auto">
           <div className="text-center max-w-2xl mx-auto mb-4">
-            <h2 className="font-display text-3xl md:text-4xl font-semibold text-foreground mb-4">
-              Pourquoi me faire confiance ?
+            <h2 className="font-display text-3xl md:text-4xl font-semibold mb-4" style={{ color: '#111111' }}>
+              Un accompagnement immobilier complet
             </h2>
-            <p className="text-muted-foreground font-body text-lg leading-relaxed">
-              Chaque projet immobilier est unique. Mon rôle est d'accompagner mes clients
-              avec écoute, transparence et professionnalisme à chaque étape de leur projet.
+            <p className="font-body text-lg leading-relaxed" style={{ color: '#111111' }}>
+              Que vous souhaitiez vendre, acheter ou investir, chaque projet mérite une stratégie claire et un accompagnement personnalisé.
+            </p>
+            <p className="font-body text-lg leading-relaxed mt-4" style={{ color: '#111111' }}>
+              J'interviens principalement en Seine-et-Marne et Val-de-Marne et j'accompagne également celles et ceux qui souhaitent développer leur activité immobilière partout en France.
             </p>
           </div>
           <div className="section-divider mb-12" />
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
-              { icon: Heart, title: "Accompagnement personnalisé", desc: "Un suivi sur-mesure adapté à votre projet et vos besoins." },
-              { icon: TrendingUp, title: "Expertise du marché", desc: "Une connaissance approfondie du marché immobilier local." },
-              { icon: FileCheck, title: "Suivi complet", desc: "Je vous accompagne jusqu'à la signature chez le notaire." },
-              { icon: Users, title: "Relation humaine", desc: "La confiance et l'écoute sont au cœur de mon approche." },
+              { icon: Heart, title: "Stratégie personnalisée", desc: "Un suivi sur-mesure adapté à votre projet et vos besoins." },
+              { icon: TrendingUp, title: "Expertise du marché local", desc: "Une connaissance approfondie du marché immobilier local." },
+              { icon: FileCheck, title: "Accompagnement jusqu'à la signature", desc: "Je vous accompagne jusqu'à la signature chez le notaire." },
+              { icon: Users, title: "Relation de confiance", desc: "La confiance et l'écoute sont au cœur de mon approche." },
             ].map((item, i) => (
               <div
                 key={i}
@@ -110,8 +121,8 @@ const Index = () => {
                 <div className="w-14 h-14 mx-auto mb-5 rounded-full bg-terracotta-light flex items-center justify-center group-hover:bg-primary/15 transition-colors">
                   <item.icon className="w-6 h-6 text-primary" />
                 </div>
-                <h3 className="font-display text-lg font-semibold text-foreground mb-2">{item.title}</h3>
-                <p className="text-muted-foreground font-body text-base leading-relaxed">{item.desc}</p>
+                <h3 className="font-display text-lg font-semibold mb-2" style={{ color: '#111111' }}>{item.title}</h3>
+                <p className="font-body text-base leading-relaxed" style={{ color: '#111111' }}>{item.desc}</p>
               </div>
             ))}
           </div>
