@@ -4,6 +4,7 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { toast } from "sonner";
 import { Phone, Mail, MapPin, Facebook, Instagram } from "lucide-react";
+import coverContact from "@/assets/cover-contact.png";
 
 const Contact = () => {
   const [form, setForm] = useState({ nom: "", email: "", telephone: "", message: "" });
