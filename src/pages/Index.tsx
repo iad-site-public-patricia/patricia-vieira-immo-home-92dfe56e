@@ -66,17 +66,19 @@ const Index = () => {
                 Conseillère immobilier indépendante
               </span>
             </h1>
-            <p className="text-navy-foreground font-display text-xl md:text-2xl font-semibold tracking-wide mb-6 animate-fade-in drop-shadow-md" style={{ animationDelay: "0.15s" }}>
-              Vente • Achat • Investissement immobilier
-            </p>
-            <p className="text-navy-foreground/90 font-body text-base md:text-lg mb-2 animate-fade-in drop-shadow-sm" style={{ animationDelay: "0.15s" }}>
-              Seine-et-Marne • Val-de-Marne
-            </p>
-            <p className="text-navy-foreground/90 text-lg md:text-xl font-body leading-relaxed mb-8 animate-fade-in drop-shadow-sm" style={{ animationDelay: "0.2s" }}>
+            <div className="mb-8 animate-fade-in" style={{ animationDelay: "0.15s" }}>
+              <p className="text-navy-foreground font-display text-xl md:text-2xl font-semibold tracking-wide drop-shadow-md">
+                Vente • Achat • Investissement immobilier
+              </p>
+              <p className="text-navy-foreground/90 font-body text-base md:text-lg mt-1 drop-shadow-sm">
+                Seine-et-Marne • Val-de-Marne
+              </p>
+            </div>
+            <p className="text-navy-foreground/90 text-lg md:text-xl font-body leading-relaxed mb-10 animate-fade-in drop-shadow-sm" style={{ animationDelay: "0.25s" }}>
               J'accompagne mes clients dans leurs projets immobiliers avec une stratégie claire, une expertise du marché et un suivi complet jusqu'à la signature.
             </p>
-            <div className="text-navy-foreground/80 text-base md:text-lg font-body italic mb-10 animate-fade-in drop-shadow-sm" style={{ animationDelay: "0.3s" }}>
-              <p>Deux projets peuvent nous réunir :</p>
+            <div className="text-navy-foreground/85 text-base md:text-lg font-body italic mb-10 animate-fade-in drop-shadow-sm border-l-2 border-navy-foreground/30 pl-4" style={{ animationDelay: "0.35s" }}>
+              <p className="font-semibold not-italic mb-1">Deux projets peuvent nous réunir :</p>
               <p>vendre ou acheter un bien immobilier,</p>
               <p>ou construire votre activité dans mon équipe.</p>
             </div>
