@@ -56,21 +56,30 @@ const Index = () => {
         >
           <source src="/hero-video.mp4" type="video/mp4" />
         </video>
-        <div className="absolute inset-0 bg-gradient-to-r from-navy/70 via-navy/40 to-navy/10" />
+        <div className="absolute inset-0 bg-black/40" />
+        <div className="absolute inset-0 bg-gradient-to-r from-navy/60 via-navy/30 to-transparent" />
         <div className="relative container mx-auto px-4 py-20">
           <div className="max-w-2xl">
-            <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6 animate-fade-in">
+            <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-4 animate-fade-in">
               <span className="text-navy-foreground drop-shadow-lg">Patricia Vieira</span>
               <span className="block text-2xl md:text-3xl lg:text-4xl font-medium mt-3 italic text-navy-foreground/90 drop-shadow-md">
                 Conseillère immobilier indépendante
               </span>
             </h1>
+            <p className="text-navy-foreground font-display text-xl md:text-2xl font-semibold tracking-wide mb-6 animate-fade-in drop-shadow-md" style={{ animationDelay: "0.15s" }}>
+              Vente • Achat • Investissement immobilier
+            </p>
+            <p className="text-navy-foreground/90 font-body text-base md:text-lg mb-2 animate-fade-in drop-shadow-sm" style={{ animationDelay: "0.15s" }}>
+              Seine-et-Marne • Val-de-Marne
+            </p>
             <p className="text-navy-foreground/90 text-lg md:text-xl font-body leading-relaxed mb-8 animate-fade-in drop-shadow-sm" style={{ animationDelay: "0.2s" }}>
-              J'accompagne vos projets immobiliers, de la vente à l'achat, et je partage ma passion avec celles et ceux qui souhaitent construire leur indépendance professionnelle au sein de mon équipe présente dans plusieurs régions en France.
+              J'accompagne mes clients dans leurs projets immobiliers avec une stratégie claire, une expertise du marché et un suivi complet jusqu'à la signature.
             </p>
-            <p className="text-navy-foreground/80 text-base md:text-lg font-body italic mb-10 animate-fade-in drop-shadow-sm" style={{ animationDelay: "0.3s" }}>
-              Deux projets peuvent nous réunir : votre projet immobilier ou votre projet professionnel.
-            </p>
+            <div className="text-navy-foreground/80 text-base md:text-lg font-body italic mb-10 animate-fade-in drop-shadow-sm" style={{ animationDelay: "0.3s" }}>
+              <p>Deux projets peuvent nous réunir :</p>
+              <p>vendre ou acheter un bien immobilier,</p>
+              <p>ou construire votre activité dans mon équipe.</p>
+            </div>
             <div className="flex flex-col sm:flex-row gap-4 animate-fade-in" style={{ animationDelay: "0.4s" }}>
               <Button variant="hero" size="xl" asChild>
                 <Link to="/vendre">Votre projet immobilier</Link>
