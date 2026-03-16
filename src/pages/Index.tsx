@@ -96,21 +96,23 @@ const Index = () => {
       <section className="section-padding bg-background">
         <div className="container mx-auto">
           <div className="text-center max-w-2xl mx-auto mb-4">
-            <h2 className="font-display text-3xl md:text-4xl font-semibold text-foreground mb-4">
-              Pourquoi me faire confiance ?
+            <h2 className="font-display text-3xl md:text-4xl font-semibold mb-4" style={{ color: '#111111' }}>
+              Un accompagnement immobilier complet
             </h2>
-            <p className="text-muted-foreground font-body text-lg leading-relaxed">
-              Chaque projet immobilier est unique. Mon rôle est d'accompagner mes clients
-              avec écoute, transparence et professionnalisme à chaque étape de leur projet.
+            <p className="font-body text-lg leading-relaxed" style={{ color: '#111111' }}>
+              Que vous souhaitiez vendre, acheter ou investir, chaque projet mérite une stratégie claire et un accompagnement personnalisé.
+            </p>
+            <p className="font-body text-lg leading-relaxed mt-4" style={{ color: '#111111' }}>
+              J'interviens principalement en Seine-et-Marne et Val-de-Marne et j'accompagne également celles et ceux qui souhaitent développer leur activité immobilière partout en France.
             </p>
           </div>
           <div className="section-divider mb-12" />
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
-              { icon: Heart, title: "Accompagnement personnalisé", desc: "Un suivi sur-mesure adapté à votre projet et vos besoins." },
-              { icon: TrendingUp, title: "Expertise du marché", desc: "Une connaissance approfondie du marché immobilier local." },
-              { icon: FileCheck, title: "Suivi complet", desc: "Je vous accompagne jusqu'à la signature chez le notaire." },
-              { icon: Users, title: "Relation humaine", desc: "La confiance et l'écoute sont au cœur de mon approche." },
+              { icon: Heart, title: "Stratégie personnalisée", desc: "Un suivi sur-mesure adapté à votre projet et vos besoins." },
+              { icon: TrendingUp, title: "Expertise du marché local", desc: "Une connaissance approfondie du marché immobilier local." },
+              { icon: FileCheck, title: "Accompagnement jusqu'à la signature", desc: "Je vous accompagne jusqu'à la signature chez le notaire." },
+              { icon: Users, title: "Relation de confiance", desc: "La confiance et l'écoute sont au cœur de mon approche." },
             ].map((item, i) => (
               <div
                 key={i}
@@ -119,8 +121,8 @@ const Index = () => {
                 <div className="w-14 h-14 mx-auto mb-5 rounded-full bg-terracotta-light flex items-center justify-center group-hover:bg-primary/15 transition-colors">
                   <item.icon className="w-6 h-6 text-primary" />
                 </div>
-                <h3 className="font-display text-lg font-semibold text-foreground mb-2">{item.title}</h3>
-                <p className="text-muted-foreground font-body text-base leading-relaxed">{item.desc}</p>
+                <h3 className="font-display text-lg font-semibold mb-2" style={{ color: '#111111' }}>{item.title}</h3>
+                <p className="font-body text-base leading-relaxed" style={{ color: '#111111' }}>{item.desc}</p>
               </div>
             ))}
           </div>
