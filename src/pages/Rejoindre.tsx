@@ -7,7 +7,7 @@ import { toast } from "sonner";
 import {
   ArrowRight, Building2, Users, Briefcase, Heart,
   MapPin, Laptop, Star, GraduationCap, Wrench, UserPlus,
-  CheckCircle2, Quote, ChevronRight
+  CheckCircle2, Quote, ChevronRight, Facebook, Linkedin
 } from "lucide-react";
 
 import heroImg from "@/assets/rejoindre-hero-cover.png";
