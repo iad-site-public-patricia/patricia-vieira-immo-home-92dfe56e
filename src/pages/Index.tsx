@@ -4,15 +4,21 @@ import { Heart, TrendingUp, FileCheck, Users, Home, ShoppingBag, Briefcase, Arro
 import MethodeEtapes from "@/components/MethodeEtapes";
 import { blogPosts } from "@/data/blogPosts";
 import vendu1 from "@/assets/vendu-1.png";
-import vendu2 from "@/assets/vendu-2.png";
 import vendu3 from "@/assets/vendu-3.png";
+import vendu4 from "@/assets/vendu-4.png";
+import vendu5 from "@/assets/vendu-5.png";
+import vendu6 from "@/assets/vendu-6.png";
+import vendu7 from "@/assets/vendu-7.png";
 import signatureNotaire from "@/assets/signature-notaire.jpg";
 import signatureNotaire2 from "@/assets/signature-notaire-2.png";
 
 const soldProperties = [
   { image: vendu1, type: "Maison familiale", location: "Gretz-Armainvilliers", time: "Vendu en 1 mois" },
-  { image: vendu2, type: "Maison contemporaine", location: "Seine-et-Marne", time: "Vendu en 8 mois" },
   { image: vendu3, type: "Appartement", location: "Gretz-Armainvilliers", time: "Vendu en 1 jour" },
+  { image: vendu4, type: "Maison contemporaine", location: "Saint-Augustin 77", time: "Vendu en 8 mois" },
+  { image: vendu5, type: "Appartement investisseur", location: "Noisy-le-Grand 93", time: "Vendu en 3 semaines" },
+  { image: vendu6, type: "Appartement", location: "La Queue-en-Brie 94", time: "Vendu en 1 jour" },
+  { image: vendu7, type: "Maison", location: "Seine-et-Marne", time: "Vendu en 15 jours" },
 ];
 
 const testimonials = [
