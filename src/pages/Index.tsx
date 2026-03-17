@@ -19,11 +19,11 @@ const soldProperties = [
   { image: vendu1, type: "Maison familiale", location: "Lésigny 77", time: "Vendu en 1 mois" },
   { image: vendu8, type: "Appartement investisseur", location: "Bussy-Saint-Georges 93", time: "Vendu en 2 mois" },
   { image: vendu9, type: "Appartement", location: "Chevry-Cossigny 77", time: "Vendu en 1 jour" },
-  { image: vendu10, type: "Maison pour investisseur", location: "Saint-Maur-des-Fossés 94", time: "Vendu en 7 mois" },
+  { image: vendu6, type: "Appartement", location: "La Queue-en-Brie 94", time: "Vendu en 1 jour" },
   { image: vendu4, type: "Maison contemporaine", location: "Saint-Augustin 77", time: "Vendu en 8 mois" },
   { image: vendu5, type: "Appartement investisseur", location: "Noisy-le-Grand 93", time: "Vendu en 3 semaines" },
-  { image: vendu6, type: "Appartement", location: "La Queue-en-Brie 94", time: "Vendu en 1 jour" },
   { image: vendu7, type: "Maison", location: "Lagny-sur-Marne 77", time: "Vendu en 15 jours" },
+  { image: vendu10, type: "Maison pour investisseur", location: "Saint-Maur-des-Fossés 94", time: "Vendu en 7 mois" },
 ];
 
 const testimonials = [
