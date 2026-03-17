@@ -236,35 +236,66 @@ const Rejoindre = () => {
       {/* 6. POURQUOI ME REJOINDRE */}
       <section className="section-padding">
         <div className="container mx-auto max-w-5xl">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          {/* Intro texte */}
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-16">
             <div className="order-2 lg:order-1 rounded-2xl overflow-hidden shadow-lg">
               <img src={formationImg} alt="Formation et accompagnement" className="w-full h-full object-cover" />
             </div>
             <div className="order-1 lg:order-2">
               <p className="font-body text-sm uppercase tracking-[0.2em] text-primary mb-4">L'accompagnement</p>
-              <h2 className="font-display text-3xl md:text-4xl font-semibold text-foreground mb-6">
+              <h2 className="font-display text-3xl md:text-4xl font-semibold text-[#111111] mb-6">
                 Pourquoi me rejoindre ?
               </h2>
               <div className="section-divider !mx-0 mb-8" />
-              <ul className="space-y-5 mb-8">
-                {[
-                  { icon: Star, text: "Accompagnement personnalisé" },
-                  { icon: GraduationCap, text: "Formations régulières" },
-                  { icon: Wrench, text: "Outils performants" },
-                  { icon: UserPlus, text: "Intégration dans une équipe dynamique" },
-                ].map((item, i) => (
-                  <li key={i} className="flex items-center gap-4 font-body text-lg text-muted-foreground">
-                    <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center shrink-0">
-                      <item.icon className="w-5 h-5 text-primary" />
-                    </div>
-                    {item.text}
-                  </li>
-                ))}
-              </ul>
-              <p className="font-display text-lg italic text-foreground/80">
-                « Vous êtes accompagné(e) à chaque étape de votre évolution. »
-              </p>
+              <div className="space-y-4 font-body text-[#111111] leading-relaxed text-[1.05rem]">
+                <p>Rejoindre mon équipe, ce n'est pas simplement exercer un métier…</p>
+                <p className="font-medium">C'est construire votre propre projet de vie, à votre rythme, avec un accompagnement réel.</p>
+                <p>Depuis plus de 11 ans, j'accompagne des femmes et des hommes à se lancer, évoluer et réussir dans l'immobilier.</p>
+                <p>Mon rôle n'est pas seulement de vous former, mais de vous guider, vous soutenir et vous faire grandir à chaque étape.</p>
+                <p className="font-semibold text-primary">Ici, vous n'êtes jamais seul(e).</p>
+              </div>
             </div>
+          </div>
+
+          {/* 4 blocs */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-14">
+            {[
+              {
+                icon: Heart,
+                title: "Un accompagnement humain et personnalisé",
+                desc: "Je prends le temps de comprendre votre parcours, vos objectifs et vos freins. Chaque personne est unique, et mon accompagnement s'adapte à vous, pas l'inverse."
+              },
+              {
+                icon: Star,
+                title: "Un cadre pour réussir et évoluer",
+                desc: "Formations, outils, méthodes éprouvées : vous bénéficiez d'un environnement structuré pour monter en compétences rapidement et durablement."
+              },
+              {
+                icon: Briefcase,
+                title: "Un véritable projet entrepreneurial",
+                desc: "Vous ne cherchez pas un emploi, vous construisez votre propre activité. Avec le modèle iad, vous développez un fonds de commerce qui vous appartient."
+              },
+              {
+                icon: Users,
+                title: "Une équipe qui avance ensemble",
+                desc: "L'entraide, le partage d'expérience et l'énergie collective sont au cœur de notre fonctionnement. Vous évoluez entouré(e), jamais isolé(e)."
+              },
+            ].map((item, i) => (
+              <div key={i} className="bg-card rounded-2xl p-8 border border-border/40 hover:shadow-xl transition-shadow duration-300">
+                <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-5">
+                  <item.icon className="w-6 h-6 text-primary" />
+                </div>
+                <h3 className="font-display text-lg font-semibold text-[#111111] mb-3">{item.title}</h3>
+                <p className="font-body text-[#111111]/80 leading-relaxed">{item.desc}</p>
+              </div>
+            ))}
+          </div>
+
+          {/* Phrase finale */}
+          <div className="text-center">
+            <p className="font-display text-xl italic text-[#111111]">
+              « Votre réussite devient aussi la mienne. »
+            </p>
           </div>
         </div>
       </section>
