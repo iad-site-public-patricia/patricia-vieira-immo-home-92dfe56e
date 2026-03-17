@@ -9,11 +9,17 @@ import vendu4 from "@/assets/vendu-4.png";
 import vendu5 from "@/assets/vendu-5.png";
 import vendu6 from "@/assets/vendu-6.png";
 import vendu7 from "@/assets/vendu-7.png";
+import vendu8 from "@/assets/vendu-8.png";
+import vendu9 from "@/assets/vendu-9.png";
+import vendu10 from "@/assets/vendu-10.png";
 import signatureNotaire from "@/assets/signature-notaire.jpg";
 import signatureNotaire2 from "@/assets/signature-notaire-2.png";
 
 const soldProperties = [
   { image: vendu1, type: "Maison familiale", location: "Lésigny 77", time: "Vendu en 1 mois" },
+  { image: vendu8, type: "Appartement investisseur", location: "Bussy-Saint-Georges 93", time: "Vendu en 2 mois" },
+  { image: vendu9, type: "Appartement", location: "Chevry-Cossigny 77", time: "Vendu en 1 jour" },
+  { image: vendu10, type: "Maison pour investisseur", location: "Saint-Maur-des-Fossés 94", time: "Vendu en 7 mois" },
   { image: vendu4, type: "Maison contemporaine", location: "Saint-Augustin 77", time: "Vendu en 8 mois" },
   { image: vendu5, type: "Appartement investisseur", location: "Noisy-le-Grand 93", time: "Vendu en 3 semaines" },
   { image: vendu6, type: "Appartement", location: "La Queue-en-Brie 94", time: "Vendu en 1 jour" },
