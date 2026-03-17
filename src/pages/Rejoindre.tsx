@@ -39,12 +39,16 @@ const Rejoindre = () => {
         <div className="container mx-auto max-w-4xl">
           <div className="max-w-2xl mx-auto text-center mb-4">
             <p className="text-muted-foreground font-body text-lg leading-relaxed mb-4">
-              Depuis plusieurs années, j'accompagne également des personnes qui souhaitent découvrir
-              le métier de conseiller immobilier.
+              Depuis plus de 11 ans, en tant que Manager Platinum Associée au sein du réseau iad, j'accompagne des personnes dans leur évolution professionnelle.
             </p>
-            <p className="text-muted-foreground font-body text-lg leading-relaxed">
-              Si vous êtes simplement curieux ou si vous réfléchissez à une évolution professionnelle,
-              je serai ravie d'échanger avec vous.
+            <p className="text-muted-foreground font-body text-lg leading-relaxed mb-4">
+              J'ai eu le plaisir de former et accompagner de nombreux conseillers à développer leur activité, à gagner en indépendance et à construire un véritable projet professionnel durable.
+            </p>
+            <p className="text-muted-foreground font-body text-lg leading-relaxed mb-4">
+              Que vous soyez simplement curieux, en réflexion sur votre avenir ou déjà prêt à passer à l'action, je serai ravie d'échanger avec vous et de vous faire découvrir les opportunités offertes par ce métier.
+            </p>
+            <p className="text-muted-foreground font-body text-lg leading-relaxed font-semibold">
+              👉 Et si c'était le bon moment pour vous lancer ?
             </p>
           </div>
           <div className="section-divider mb-12" />
