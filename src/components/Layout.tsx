@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { Menu, X, Phone, Mail, Facebook, Instagram, ArrowRight } from "lucide-react";
+import { Menu, X, Phone, Mail, Facebook, Instagram, Linkedin, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const navLinks = [
@@ -31,11 +31,14 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
               <Mail className="w-3.5 h-3.5" /> patricia.vieira@iadfrance.fr
             </a>
             <div className="flex items-center gap-2 ml-2">
-              <a href="https://www.facebook.com/patriciavieiraimmobilier/" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors" aria-label="Facebook">
+              <a href="https://www.facebook.com/patriciavieiraimmobilier?locale=fr_FR" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors" aria-label="Facebook">
                 <Facebook className="w-4 h-4" />
               </a>
               <a href="https://www.instagram.com/patricia.vieira.immo/" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors" aria-label="Instagram">
                 <Instagram className="w-4 h-4" />
+              </a>
+              <a href="https://www.linkedin.com/in/patriciavieiraiad/" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors" aria-label="LinkedIn">
+                <Linkedin className="w-4 h-4" />
               </a>
             </div>
           </div>
@@ -114,11 +117,14 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
                 Partenaire du réseau IAD France
               </p>
               <div className="flex items-center gap-3 mt-5">
-                <a href="https://www.facebook.com/patriciavieiraimmobilier/" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-navy-foreground/10 hover:bg-primary/30 flex items-center justify-center transition-colors" aria-label="Facebook">
+                <a href="https://www.facebook.com/patriciavieiraimmobilier?locale=fr_FR" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-navy-foreground/10 hover:bg-primary/30 flex items-center justify-center transition-colors" aria-label="Facebook">
                   <Facebook className="w-4 h-4" />
                 </a>
                 <a href="https://www.instagram.com/patricia.vieira.immo/" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-navy-foreground/10 hover:bg-primary/30 flex items-center justify-center transition-colors" aria-label="Instagram">
                   <Instagram className="w-4 h-4" />
+                </a>
+                <a href="https://www.linkedin.com/in/patriciavieiraiad/" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-navy-foreground/10 hover:bg-primary/30 flex items-center justify-center transition-colors" aria-label="LinkedIn">
+                  <Linkedin className="w-4 h-4" />
                 </a>
               </div>
             </div>

@@ -7,7 +7,7 @@ import { toast } from "sonner";
 import {
   ArrowRight, Building2, Users, Briefcase, Heart,
   MapPin, Laptop, Star, GraduationCap, Wrench, UserPlus,
-  CheckCircle2, Quote, ChevronRight
+  CheckCircle2, Quote, ChevronRight, Facebook, Linkedin
 } from "lucide-react";
 
 import heroImg from "@/assets/rejoindre-hero-cover.png";
@@ -362,6 +362,25 @@ const Rejoindre = () => {
               Prendre contact <ArrowRight className="w-4 h-4 ml-1" />
             </Button>
           </form>
+
+          <div className="flex items-center justify-center gap-4 mt-8">
+            <a
+              href="https://www.facebook.com/patriciavieiraimmobilier?locale=fr_FR"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 px-5 py-3 bg-card rounded-xl border border-border/40 text-sm font-body text-muted-foreground hover:text-primary hover:border-primary/30 transition-all"
+            >
+              <Facebook className="w-5 h-5" /> Facebook
+            </a>
+            <a
+              href="https://www.linkedin.com/in/patriciavieiraiad/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 px-5 py-3 bg-card rounded-xl border border-border/40 text-sm font-body text-muted-foreground hover:text-primary hover:border-primary/30 transition-all"
+            >
+              <Linkedin className="w-5 h-5" /> LinkedIn
+            </a>
+          </div>
         </div>
       </section>
     </div>
