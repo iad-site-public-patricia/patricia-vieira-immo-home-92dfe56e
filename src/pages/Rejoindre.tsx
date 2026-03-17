@@ -10,7 +10,7 @@ import {
   CheckCircle2, Quote, ChevronRight
 } from "lucide-react";
 
-import heroImg from "@/assets/rejoindre-hero.jpg";
+import heroImg from "@/assets/rejoindre-hero-cover.png";
 import equipeImg from "@/assets/rejoindre-equipe.jpg";
 import lifestyleImg from "@/assets/rejoindre-lifestyle.jpg";
 import formationImg from "@/assets/rejoindre-formation.jpg";

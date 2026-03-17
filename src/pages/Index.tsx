@@ -292,10 +292,18 @@ const Index = () => {
             <h2 className="font-display text-3xl md:text-4xl font-semibold text-foreground mb-4">
               Avis clients
             </h2>
-            <p className="text-muted-foreground font-body text-lg">
-              La satisfaction de mes clients est ma plus belle récompense.
-            </p>
-          </div>
+             <p className="text-muted-foreground font-body text-lg">
+               La satisfaction de mes clients est ma plus belle récompense.
+             </p>
+             <div className="flex items-center justify-center gap-4 mt-4">
+               <a href="https://www.immodvisor.com/pro/patricia-vieira-iad-france-gretz-armainvilliers-77220.html" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-sm font-medium text-primary hover:text-primary/80 transition-colors underline underline-offset-4">
+                 Voir mes avis Immodvisor →
+               </a>
+               <a href="https://www.google.com/search?q=patricia+vieira+iad+avis" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-sm font-medium text-primary hover:text-primary/80 transition-colors underline underline-offset-4">
+                 Voir mes avis Google →
+               </a>
+             </div>
+           </div>
           <div className="section-divider mb-12" />
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {testimonials.map((t, i) => (
