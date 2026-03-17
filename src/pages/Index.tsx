@@ -2,7 +2,6 @@ import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Heart, TrendingUp, FileCheck, Users, Home, ShoppingBag, Briefcase, ArrowRight, Star, Quote, Target, Sparkles, Megaphone, UserCheck, Shield, HandshakeIcon, MessageCircle, Zap, Award } from "lucide-react";
 import { blogPosts } from "@/data/blogPosts";
-import { blogPosts } from "@/data/blogPosts";
 import vendu1 from "@/assets/vendu-1.png";
 import vendu3 from "@/assets/vendu-3.png";
 import vendu4 from "@/assets/vendu-4.png";
