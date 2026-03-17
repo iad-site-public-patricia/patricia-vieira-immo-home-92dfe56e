@@ -232,27 +232,6 @@ const Rejoindre = () => {
         </div>
       </section>
 
-      {/* 5. MON APPROCHE */}
-      <section className="section-padding bg-card">
-        <div className="container mx-auto max-w-3xl text-center">
-          <p className="font-body text-sm uppercase tracking-[0.2em] text-primary mb-4">Mon approche</p>
-          <h2 className="font-display text-3xl md:text-4xl font-semibold text-foreground mb-6">
-            La vente inversée
-          </h2>
-          <div className="section-divider mb-10" />
-          <div className="space-y-5 font-body text-lg text-muted-foreground leading-relaxed">
-            <p>
-              Depuis plus de 11 ans, j'ai développé une approche basée sur la <strong className="text-foreground">vente inversée</strong>.
-            </p>
-            <p>
-              Plutôt que d'attendre les acheteurs, j'active un réseau d'acquéreurs qualifiés et une stratégie digitale pour créer la rencontre entre les bonnes personnes et les bons biens.
-            </p>
-            <p>
-              Cette approche permet souvent d'accélérer les ventes et d'apporter plus de sérénité.
-            </p>
-          </div>
-        </div>
-      </section>
 
       {/* 6. POURQUOI ME REJOINDRE */}
       <section className="section-padding">
