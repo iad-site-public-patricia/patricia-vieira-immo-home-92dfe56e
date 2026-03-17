@@ -9,6 +9,9 @@ import vendu4 from "@/assets/vendu-4.png";
 import vendu5 from "@/assets/vendu-5.png";
 import vendu6 from "@/assets/vendu-6.png";
 import vendu7 from "@/assets/vendu-7.png";
+import signatureNotaire from "@/assets/signature-notaire.jpg";
+import signatureNotaire2 from "@/assets/signature-notaire-2.png";
+import vendu7 from "@/assets/vendu-7.png";
 
 const soldProperties = [
   { image: vendu1, type: "Maison familiale", location: "Gretz-Armainvilliers", time: "Vendu en 1 mois" },
