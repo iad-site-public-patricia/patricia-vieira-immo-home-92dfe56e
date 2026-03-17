@@ -323,38 +323,6 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Services Section */}
-      <section className="section-padding bg-background">
-        <div className="container mx-auto">
-          <h2 className="font-display text-3xl md:text-4xl font-semibold text-foreground text-center mb-4">
-            Mes services
-          </h2>
-          <div className="section-divider mb-12" />
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {[
-              { icon: Home, title: "Vendre votre bien", desc: "Estimation gratuite, stratégie de commercialisation et accompagnement complet.", link: "/vendre" },
-              { icon: ShoppingBag, title: "Acheter un bien", desc: "Recherche personnalisée et conseils experts pour trouver votre futur logement.", link: "/acheter" },
-              { icon: Briefcase, title: "Découvrir le métier", desc: "Envie d'entreprendre ? Découvrez le métier de conseiller immobilier.", link: "/rejoindre" },
-            ].map((item, i) => (
-              <Link
-                key={i}
-                to={item.link}
-                className="group bg-card rounded-xl p-8 border border-border/40 hover:border-primary/30 hover:shadow-xl transition-all duration-300"
-              >
-                <div className="w-12 h-12 rounded-lg bg-navy-light flex items-center justify-center mb-5 group-hover:bg-primary/10 transition-colors">
-                  <item.icon className="w-6 h-6 text-navy group-hover:text-primary transition-colors" />
-                </div>
-                <h3 className="font-display text-xl font-semibold text-foreground mb-3">{item.title}</h3>
-                <p className="text-muted-foreground font-body mb-5 leading-relaxed">{item.desc}</p>
-                <span className="text-primary font-body font-medium text-sm flex items-center gap-1 group-hover:gap-2.5 transition-all">
-                  En savoir plus <ArrowRight className="w-4 h-4" />
-                </span>
-              </Link>
-            ))}
-          </div>
-        </div>
-      </section>
-
 
       {/* Blog Preview */}
       <section className="section-padding bg-card">
