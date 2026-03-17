@@ -109,7 +109,7 @@ const Index = () => {
               Un accompagnement immobilier complet
             </h2>
             <p className="font-body text-lg leading-relaxed" style={{ color: '#111111' }}>
-              Que vous souhaitiez vendre, acheter ou investir, chaque projet mérite une stratégie claire et un accompagnement personnalisé.
+              Que vous souhaitiez vendre, acheter ou investir dans l'ancien ou le neuf, chaque projet mérite une stratégie claire et un accompagnement personnalisé.
             </p>
             <p className="font-body text-lg leading-relaxed mt-4" style={{ color: '#111111' }}>
               J'interviens principalement en Seine-et-Marne et Val-de-Marne et j'accompagne également celles et ceux qui souhaitent développer leur activité immobilière partout en France.
