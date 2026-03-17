@@ -233,9 +233,6 @@ const Index = () => {
                     alt={`${property.type} – ${property.location}`}
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                   />
-                  <div className="absolute top-4 left-4 bg-primary text-primary-foreground font-display font-bold text-sm px-4 py-2 rounded-lg shadow-lg tracking-wide">
-                    VENDU
-                  </div>
                 </div>
                 <div className="p-6">
                   <h3 className="font-display text-lg font-semibold text-foreground">{property.type}</h3>
