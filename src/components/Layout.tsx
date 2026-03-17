@@ -31,11 +31,14 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
               <Mail className="w-3.5 h-3.5" /> patricia.vieira@iadfrance.fr
             </a>
             <div className="flex items-center gap-2 ml-2">
-              <a href="https://www.facebook.com/patriciavieiraimmobilier/" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors" aria-label="Facebook">
+              <a href="https://www.facebook.com/patriciavieiraimmobilier?locale=fr_FR" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors" aria-label="Facebook">
                 <Facebook className="w-4 h-4" />
               </a>
               <a href="https://www.instagram.com/patricia.vieira.immo/" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors" aria-label="Instagram">
                 <Instagram className="w-4 h-4" />
+              </a>
+              <a href="https://www.linkedin.com/in/patriciavieiraiad/" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors" aria-label="LinkedIn">
+                <Linkedin className="w-4 h-4" />
               </a>
             </div>
           </div>
