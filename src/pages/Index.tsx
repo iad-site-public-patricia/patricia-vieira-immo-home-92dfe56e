@@ -74,13 +74,10 @@ const Index = () => {
                 Seine-et-Marne • Val-de-Marne
               </p>
             </div>
-            <p className="text-navy-foreground/90 text-lg md:text-xl font-body leading-relaxed mb-10 animate-fade-in drop-shadow-sm" style={{ animationDelay: "0.25s" }}>
-              J'accompagne mes clients dans leurs projets immobiliers avec une stratégie claire, une expertise du marché et un suivi complet jusqu'à la signature.
-            </p>
-            <div className="text-navy-foreground/85 text-base md:text-lg font-body italic mb-10 animate-fade-in drop-shadow-sm border-l-2 border-navy-foreground/30 pl-4" style={{ animationDelay: "0.35s" }}>
-              <p className="font-semibold not-italic mb-1">Deux projets peuvent nous réunir :</p>
-              <p>vendre ou acheter un bien immobilier,</p>
-              <p>ou construire votre activité dans mon équipe.</p>
+            <div className="text-navy-foreground text-xl md:text-2xl font-body mb-10 animate-fade-in drop-shadow-sm" style={{ animationDelay: "0.25s" }}>
+              <p className="font-display font-bold text-2xl md:text-3xl mb-3">Deux projets peuvent nous réunir :</p>
+              <p className="text-navy-foreground/90 text-lg md:text-xl leading-relaxed">vendre ou acheter un bien immobilier,</p>
+              <p className="text-navy-foreground/90 text-lg md:text-xl leading-relaxed">ou construire votre activité dans mon équipe.</p>
             </div>
             <div className="flex flex-col sm:flex-row gap-4 animate-fade-in" style={{ animationDelay: "0.4s" }}>
               <Button variant="hero" size="xl" asChild>
