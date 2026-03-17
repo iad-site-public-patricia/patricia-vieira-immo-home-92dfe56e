@@ -1546,7 +1546,7 @@ Restez informé et entourez-vous de professionnels compétents. Le marché immob
 
 **Qui je suis**
 
-Je suis Patricia Vieira, conseillère en immobilier indépendante et manager platinium associée au sein du réseau IAD France depuis 2015. Au fil des années, j'ai eu le plaisir d'accompagner de nombreux clients dans leurs projets immobiliers et de développer une équipe de conseillers indépendants présents partout en France.
+Je suis Patricia Vieira, conseillère en immobilier indépendante et manager platinium associée au sein du réseau IAD France depuis 2015. Au fil des années, j'ai eu le plaisir d'accompagner de nombreux clients dans leurs projets immobiliers et de développer une équipe de conseillers indépendants.
 
 **Ce qui m'a amenée à choisir ce métier**
 
