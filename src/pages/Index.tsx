@@ -292,10 +292,11 @@ const Index = () => {
              </p>
            </div>
           <div className="section-divider mb-12" />
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-3xl mx-auto">
             {testimonials.map((t, i) => (
               <div key={i} className="bg-card rounded-xl p-7 border border-border/40 shadow-sm hover:shadow-lg transition-all duration-300">
                 <Quote className="w-8 h-8 text-primary/25 mb-4" />
+                <h3 className="font-display font-semibold text-foreground mb-3">{t.title}</h3>
                 <p className="text-foreground font-body leading-relaxed mb-6 italic">
                   "{t.text}"
                 </p>
@@ -304,10 +305,7 @@ const Index = () => {
                     <Star key={j} className="w-4 h-4 fill-gold text-gold" />
                   ))}
                 </div>
-                <div className="flex items-center justify-between">
-                  <span className="font-display font-semibold text-foreground text-sm">{t.name}</span>
-                  <span className="text-xs text-muted-foreground font-body bg-muted px-3 py-1 rounded-full">{t.source}</span>
-                </div>
+                <span className="font-display font-semibold text-foreground text-sm">{t.name}</span>
               </div>
             ))}
           </div>
