@@ -32,12 +32,35 @@ const testimonials = [
     text: "Patricia Vieira nous a accompagné tout au long de notre vente. Le dossier a parfaitement été géré. Je recommande totalement.",
     rating: 5,
     title: "Excellente prestation",
+    source: "Immodvisor",
   },
   {
     name: "Coraline L.",
     text: "Vente de mon appartement en 1 semaine et au prix ! Je recommande les yeux fermés.",
     rating: 5,
     title: "Parfaite !",
+    source: "Immodvisor",
+  },
+  {
+    name: "Christine",
+    text: "Personne très humaine et professionnelle, nous sommes ravis d'avoir été accompagnés par Mme Vieira. Merci pour tout !",
+    rating: 5,
+    title: "Agente de confiance",
+    source: "Immodvisor",
+  },
+  {
+    name: "KH",
+    text: "Point de vue en tant qu'acheteur : Patricia a été toujours disponible et très réactive. De plus, elle est communicative et arrangeante. J'ai beaucoup apprécié son travail. Merci.",
+    rating: 5,
+    title: "Une professionnelle à l'écoute !",
+    source: "Immodvisor",
+  },
+  {
+    name: "Christophe",
+    text: "C'est la 3ème fois que je sollicite Patricia, preuve de son sérieux et de la confiance que je lui témoigne. Patricia se montre toujours disponible, à l'écoute, réactive, elle accompagne ses clients dans les démarches administratives. Je la remercie pour sa bienveillance. Une vraie professionnelle qui m'a accompagné de A à Z avec sincérité et sérieux.",
+    rating: 5,
+    title: "Disponible, sérieuse, à l'écoute, humaine et de bons conseils",
+    source: "Immodvisor",
   },
 ];
 
