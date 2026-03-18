@@ -62,6 +62,13 @@ const testimonials = [
     title: "Disponible, sérieuse, à l'écoute, humaine et de bons conseils",
     source: "Immodvisor",
   },
+  {
+    name: "Lisa",
+    text: "Patricia c'est une main de fer dans un gant de velours. Déterminée en toutes circonstances, toujours disponible, à l'écoute et de bons conseils. Et de 3 Patricia bravo !! Très bonne continuation et encore merci pour tout.",
+    rating: 5,
+    title: "Main de fer dans un gant de velours",
+    source: "Google",
+  },
 ];
 
 const signatureMoments = [
