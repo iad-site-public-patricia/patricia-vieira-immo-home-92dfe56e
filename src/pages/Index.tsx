@@ -28,22 +28,16 @@ const soldProperties = [
 
 const testimonials = [
   {
-    name: "Sophie & Marc L.",
-    text: "Patricia nous a accompagnés avec beaucoup de professionnalisme et d'écoute. Notre maison a été vendue en un mois, au prix souhaité. Une expérience parfaite du début à la fin.",
+    name: "Olivier P.",
+    text: "Patricia Vieira nous a accompagné tout au long de notre vente. Le dossier a parfaitement été géré. Je recommande totalement.",
     rating: 5,
-    source: "Google",
+    title: "Excellente prestation",
   },
   {
-    name: "Julien D.",
-    text: "Grâce à Patricia, j'ai trouvé l'appartement idéal en quelques semaines. Elle a su comprendre exactement ce que je recherchais et m'a guidé à chaque étape.",
+    name: "Coraline L.",
+    text: "Vente de mon appartement en 1 semaine et au prix ! Je recommande les yeux fermés.",
     rating: 5,
-    source: "Immodvisor",
-  },
-  {
-    name: "Nathalie P.",
-    text: "Un accompagnement humain et bienveillant. Patricia prend le temps d'expliquer chaque démarche et rassure tout au long du processus. Je la recommande sans hésiter.",
-    rating: 5,
-    source: "Google",
+    title: "Parfaite !",
   },
 ];
 
