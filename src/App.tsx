@@ -24,13 +24,23 @@ const App = () => (
         <Layout>
           <Routes>
             <Route path="/" element={<Index />} />
+            {/* Vendeurs */}
             <Route path="/vendre" element={<Vendre />} />
+            <Route path="/vendre-son-bien" element={<Vendre />} />
+            <Route path="/estimation-immobiliere" element={<Contact />} />
+            {/* Acheteurs */}
             <Route path="/acheter" element={<Acheter />} />
+            {/* Secteur - pages locales (placeholder vers Index pour l'instant) */}
+            <Route path="/secteur" element={<NotFound />} />
+            <Route path="/secteur/:ville" element={<NotFound />} />
+            {/* Recrutement */}
             <Route path="/rejoindre" element={<Rejoindre />} />
+            {/* Blog */}
             <Route path="/conseils-immobiliers" element={<Blog />} />
             <Route path="/conseils-immobiliers/:id" element={<Blog />} />
             <Route path="/blog" element={<Blog />} />
             <Route path="/blog/:id" element={<Blog />} />
+            {/* Transversal */}
             <Route path="/a-propos" element={<APropos />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="*" element={<NotFound />} />
