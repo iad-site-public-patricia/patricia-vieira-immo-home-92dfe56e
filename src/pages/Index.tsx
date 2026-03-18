@@ -32,12 +32,35 @@ const testimonials = [
     text: "Patricia Vieira nous a accompagné tout au long de notre vente. Le dossier a parfaitement été géré. Je recommande totalement.",
     rating: 5,
     title: "Excellente prestation",
+    source: "Immodvisor",
   },
   {
     name: "Coraline L.",
     text: "Vente de mon appartement en 1 semaine et au prix ! Je recommande les yeux fermés.",
     rating: 5,
     title: "Parfaite !",
+    source: "Immodvisor",
+  },
+  {
+    name: "Christine",
+    text: "Personne très humaine et professionnelle, nous sommes ravis d'avoir été accompagnés par Mme Vieira. Merci pour tout !",
+    rating: 5,
+    title: "Agente de confiance",
+    source: "Immodvisor",
+  },
+  {
+    name: "KH",
+    text: "Point de vue en tant qu'acheteur : Patricia a été toujours disponible et très réactive. De plus, elle est communicative et arrangeante. J'ai beaucoup apprécié son travail. Merci.",
+    rating: 5,
+    title: "Une professionnelle à l'écoute !",
+    source: "Immodvisor",
+  },
+  {
+    name: "Christophe",
+    text: "C'est la 3ème fois que je sollicite Patricia, preuve de son sérieux et de la confiance que je lui témoigne. Patricia se montre toujours disponible, à l'écoute, réactive, elle accompagne ses clients dans les démarches administratives. Je la remercie pour sa bienveillance. Une vraie professionnelle qui m'a accompagné de A à Z avec sincérité et sérieux.",
+    rating: 5,
+    title: "Disponible, sérieuse, à l'écoute, humaine et de bons conseils",
+    source: "Immodvisor",
   },
 ];
 
@@ -292,7 +315,7 @@ const Index = () => {
              </p>
            </div>
           <div className="section-divider mb-12" />
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-3xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {testimonials.map((t, i) => (
               <div key={i} className="bg-card rounded-xl p-7 border border-border/40 shadow-sm hover:shadow-lg transition-all duration-300">
                 <Quote className="w-8 h-8 text-primary/25 mb-4" />
@@ -305,7 +328,10 @@ const Index = () => {
                     <Star key={j} className="w-4 h-4 fill-gold text-gold" />
                   ))}
                 </div>
-                <span className="font-display font-semibold text-foreground text-sm">{t.name}</span>
+                <div className="flex items-center justify-between">
+                  <span className="font-display font-semibold text-foreground text-sm">{t.name}</span>
+                  <span className="text-xs text-muted-foreground font-body bg-muted px-3 py-1 rounded-full">{t.source}</span>
+                </div>
               </div>
             ))}
           </div>
