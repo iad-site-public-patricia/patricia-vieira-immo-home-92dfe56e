@@ -28,22 +28,16 @@ const soldProperties = [
 
 const testimonials = [
   {
-    name: "Sophie & Marc L.",
-    text: "Patricia nous a accompagnés avec beaucoup de professionnalisme et d'écoute. Notre maison a été vendue en un mois, au prix souhaité. Une expérience parfaite du début à la fin.",
+    name: "Olivier P.",
+    text: "Patricia Vieira nous a accompagné tout au long de notre vente. Le dossier a parfaitement été géré. Je recommande totalement.",
     rating: 5,
-    source: "Google",
+    title: "Excellente prestation",
   },
   {
-    name: "Julien D.",
-    text: "Grâce à Patricia, j'ai trouvé l'appartement idéal en quelques semaines. Elle a su comprendre exactement ce que je recherchais et m'a guidé à chaque étape.",
+    name: "Coraline L.",
+    text: "Vente de mon appartement en 1 semaine et au prix ! Je recommande les yeux fermés.",
     rating: 5,
-    source: "Immodvisor",
-  },
-  {
-    name: "Nathalie P.",
-    text: "Un accompagnement humain et bienveillant. Patricia prend le temps d'expliquer chaque démarche et rassure tout au long du processus. Je la recommande sans hésiter.",
-    rating: 5,
-    source: "Google",
+    title: "Parfaite !",
   },
 ];
 
@@ -298,10 +292,11 @@ const Index = () => {
              </p>
            </div>
           <div className="section-divider mb-12" />
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-3xl mx-auto">
             {testimonials.map((t, i) => (
               <div key={i} className="bg-card rounded-xl p-7 border border-border/40 shadow-sm hover:shadow-lg transition-all duration-300">
                 <Quote className="w-8 h-8 text-primary/25 mb-4" />
+                <h3 className="font-display font-semibold text-foreground mb-3">{t.title}</h3>
                 <p className="text-foreground font-body leading-relaxed mb-6 italic">
                   "{t.text}"
                 </p>
@@ -310,10 +305,7 @@ const Index = () => {
                     <Star key={j} className="w-4 h-4 fill-gold text-gold" />
                   ))}
                 </div>
-                <div className="flex items-center justify-between">
-                  <span className="font-display font-semibold text-foreground text-sm">{t.name}</span>
-                  <span className="text-xs text-muted-foreground font-body bg-muted px-3 py-1 rounded-full">{t.source}</span>
-                </div>
+                <span className="font-display font-semibold text-foreground text-sm">{t.name}</span>
               </div>
             ))}
           </div>
