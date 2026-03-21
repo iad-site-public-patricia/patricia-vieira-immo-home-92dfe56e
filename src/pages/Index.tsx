@@ -108,7 +108,7 @@ const Index = () => {
             </div>
             <div className="flex flex-col sm:flex-row gap-4 animate-fade-in" style={{ animationDelay: "0.3s" }}>
               <Button variant="hero" size="xl" asChild>
-                <Link to="/estimation-immobiliere" className="inline-flex items-center gap-2">
+                <Link to="/estimation-immobiliere#formulaire" className="inline-flex items-center gap-2">
                   Estimer mon bien gratuitement <ArrowRight className="w-5 h-5" />
                 </Link>
               </Button>
@@ -169,7 +169,7 @@ const Index = () => {
               </ul>
               <div className="flex flex-col sm:flex-row gap-3">
                 <Button variant="hero" size="lg" asChild>
-                  <Link to="/estimation-immobiliere" className="inline-flex items-center gap-2">
+                  <Link to="/estimation-immobiliere#formulaire" className="inline-flex items-center gap-2">
                     Estimer mon bien gratuitement <ArrowRight className="w-5 h-5" />
                   </Link>
                 </Button>
@@ -483,7 +483,7 @@ const Index = () => {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button variant="hero" size="xl" asChild>
-              <Link to="/estimation-immobiliere" className="inline-flex items-center gap-2">
+              <Link to="/estimation-immobiliere#formulaire" className="inline-flex items-center gap-2">
                 Estimer mon bien <ArrowRight className="w-5 h-5" />
               </Link>
             </Button>
