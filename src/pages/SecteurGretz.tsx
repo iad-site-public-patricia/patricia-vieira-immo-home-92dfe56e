@@ -5,6 +5,8 @@ import gretzBrocante from "@/assets/gretz-brocante.jpeg";
 import gretzRando from "@/assets/gretz-rando-chateaux.jpg";
 import gretzGare from "@/assets/gretz-gare.jpg";
 import gretzRerE from "@/assets/gretz-rer-e.jpg";
+import gretzMairie from "@/assets/gretz-mairie.jpg";
+import gretzChateau from "@/assets/gretz-chateau.jpg";
 
 const SecteurGretz = () => (
   <main className="bg-background">
@@ -108,7 +110,10 @@ const SecteurGretz = () => (
         <p>Certains éléments du patrimoine, comme l'église Saint-Jean-Baptiste, témoignent de son passé et participent à l'identité de la commune.</p>
         <p>Ce mélange entre authenticité et modernité renforce l'attractivité du secteur et donne une vraie personnalité à la ville.</p>
       </div>
-      
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-8">
+        <img src={gretzMairie} alt="Hôtel de ville de Gretz-Armainvilliers" className="w-full rounded-xl shadow-md object-cover aspect-[4/3]" />
+        <img src={gretzChateau} alt="Château de Gretz-Armainvilliers – vue aérienne" className="w-full rounded-xl shadow-md object-cover aspect-[4/3]" />
+      </div>
       </div>
     </section>
 
