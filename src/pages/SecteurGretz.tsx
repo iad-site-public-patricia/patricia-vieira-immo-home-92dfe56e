@@ -7,11 +7,12 @@ import gretzGare from "@/assets/gretz-gare.jpg";
 import gretzRerE from "@/assets/gretz-rer-e.jpg";
 import gretzMairie from "@/assets/gretz-mairie.jpg";
 import gretzChateau from "@/assets/gretz-chateau.jpg";
+import gretzHero from "@/assets/gretz-hero.jpg";
 
 const SecteurGretz = () => (
   <main className="bg-background">
     {/* Hero */}
-    <section className="relative bg-[url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1920&q=80')] bg-cover bg-center py-24 md:py-32">
+    <section className="relative bg-cover bg-center py-24 md:py-32" style={{ backgroundImage: `url(${gretzHero})` }}>
       <div className="absolute inset-0 bg-foreground/50" />
       <div className="container mx-auto px-4 relative z-10 text-center max-w-3xl">
         <p className="text-primary-foreground/80 font-body text-sm uppercase tracking-widest mb-3">Mon secteur · Seine-et-Marne</p>
