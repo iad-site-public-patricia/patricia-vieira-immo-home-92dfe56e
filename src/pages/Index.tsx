@@ -174,7 +174,7 @@ const Index = () => {
                   </Link>
                 </Button>
                 <Button variant="hero-outline" size="lg" asChild>
-                  <Link to="/vendre-son-bien">Découvrir ma méthode de vente</Link>
+                  <Link to="/vendre-son-bien#methode">Découvrir ma méthode de vente</Link>
                 </Button>
               </div>
             </div>
