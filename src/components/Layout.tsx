@@ -225,7 +225,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
                 Partenaire du réseau IAD France
               </p>
               <div className="flex items-center gap-3 mt-5">
-                <a href="https://www.facebook.com/patriciavieiraimmobilier?locale=fr_FR" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-navy-foreground/10 hover:bg-primary/30 flex items-center justify-center transition-colors" aria-label="Facebook">
+                <a href="https://www.facebook.com/patriciavieiraimmobilier/" target="_blank" rel="noopener noreferrer nofollow" className="w-10 h-10 rounded-full bg-navy-foreground/10 hover:bg-primary/30 flex items-center justify-center transition-colors" aria-label="Facebook">
                   <Facebook className="w-4 h-4" />
                 </a>
                 <a href="https://www.instagram.com/patricia.vieira.immo/" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-navy-foreground/10 hover:bg-primary/30 flex items-center justify-center transition-colors" aria-label="Instagram">
