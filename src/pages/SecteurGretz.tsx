@@ -98,7 +98,7 @@ const SecteurGretz = () => (
         <p>Certains éléments du patrimoine, comme l'église Saint-Jean-Baptiste, témoignent de son passé et participent à l'identité de la commune.</p>
         <p>Ce mélange entre authenticité et modernité renforce l'attractivité du secteur et donne une vraie personnalité à la ville.</p>
       </div>
-      <img src={gretzPatrimoine} alt="Patrimoine architectural de Gretz-Armainvilliers – église et bâtiments historiques" className="w-full rounded-xl mt-8 shadow-md" />
+      
       </div>
     </section>
 
