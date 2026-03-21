@@ -84,7 +84,7 @@ const SecteurGretz = () => (
         <p>De nombreux événements sont organisés tout au long de l'année&nbsp;: brocantes, animations, événements culturels… Ces moments participent à créer une véritable dynamique locale et un esprit de village très apprécié.</p>
         <p>Cette convivialité est un véritable atout, notamment pour les personnes souhaitant s'installer durablement.</p>
       </div>
-      <img src={gretzVieLocale} alt="Marché et brocante à Gretz-Armainvilliers – vie locale conviviale" className="w-full rounded-xl mt-8 shadow-md" />
+      
     </section>
 
     {/* Patrimoine */}
