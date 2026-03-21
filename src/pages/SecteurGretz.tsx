@@ -56,7 +56,7 @@ const SecteurGretz = () => (
         <p>Elle bénéficie également d'un accès facilité aux axes routiers, ce qui permet de rejoindre rapidement les zones d'activité environnantes.</p>
         <p><strong>Acheter une maison à Gretz-Armainvilliers</strong>, c'est donc bénéficier d'un compromis idéal entre vie au calme et accessibilité.</p>
       </div>
-      <img src={gretzGare} alt="Gare RER E de Gretz-Armainvilliers – accès direct vers Paris" className="w-full rounded-xl mt-8 shadow-md" />
+      
     </section>
 
     {/* Familles */}
