@@ -62,7 +62,7 @@ const Contact = () => {
                   <a
                     href="https://www.facebook.com/patriciavieiraimmobilier/"
                     target="_blank"
-                    rel="noopener noreferrer"
+                    rel="noopener noreferrer nofollow"
                     className="flex items-center gap-2 px-4 py-2.5 bg-card rounded-lg border border-border/40 text-sm font-body text-muted-foreground hover:text-primary hover:border-primary/30 transition-all"
                   >
                     <Facebook className="w-4 h-4" /> Facebook
