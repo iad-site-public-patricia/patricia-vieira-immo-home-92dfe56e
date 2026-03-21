@@ -169,7 +169,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
                 <div key={link.to}>
                   <button
                     onClick={() => setMobileSectorOpen(!mobileSectorOpen)}
-                    className={`w-full flex items-center justify-between px-4 py-3 rounded-lg text-sm font-body font-medium transition-all ${
+                    className={`w-full flex items-center justify-between px-4 py-3 rounded-lg text-sm font-body font-medium uppercase tracking-wide transition-all ${
                       isActive(link.to)
                         ? "text-primary bg-terracotta-light"
                         : "text-foreground/80 hover:text-primary hover:bg-muted/60"
