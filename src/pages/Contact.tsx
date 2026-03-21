@@ -28,7 +28,7 @@ const Contact = () => {
         </div>
       </section>
 
-      <section className="section-padding">
+      <section className="section-padding" id="formulaire">
         <div className="container mx-auto max-w-4xl">
           <div className="grid md:grid-cols-5 gap-12">
             {/* Contact info */}
