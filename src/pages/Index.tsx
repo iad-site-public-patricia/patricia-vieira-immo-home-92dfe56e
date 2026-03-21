@@ -173,26 +173,35 @@ const Index = () => {
                     Estimer mon bien gratuitement <ArrowRight className="w-5 h-5" />
                   </Link>
                 </Button>
-                <Button variant="outline" size="lg" asChild>
+                <Button variant="hero-outline" size="lg" asChild>
                   <Link to="/vendre-son-bien">Découvrir ma méthode de vente</Link>
                 </Button>
               </div>
             </div>
-            <div className="grid grid-cols-2 gap-4">
-              <div className="space-y-4">
-                <div className="rounded-xl overflow-hidden shadow-md">
-                  <img src={vendu1} alt="Bien vendu à Lésigny" className="w-full h-48 object-cover" />
+            <div>
+              <h3 className="font-display text-xl font-semibold text-foreground mb-4 text-center lg:text-left">Biens vendus récemment</h3>
+              <div className="grid grid-cols-2 gap-4">
+                <div className="space-y-4">
+                  <div className="rounded-xl overflow-hidden shadow-md">
+                    <img src={vendu1} alt="Bien vendu à Lésigny" className="w-full h-48 object-cover" />
+                  </div>
+                  <div className="rounded-xl overflow-hidden shadow-md">
+                    <img src={vendu5_2} alt="Bien vendu à Chevry-Cossigny" className="w-full h-32 object-cover" />
+                  </div>
+                  <div className="rounded-xl overflow-hidden shadow-md">
+                    <img src={vendu8} alt="Bien vendu à Bussy-Saint-Georges" className="w-full h-40 object-cover" />
+                  </div>
                 </div>
-                <div className="rounded-xl overflow-hidden shadow-md">
-                  <img src={vendu5_2} alt="Bien vendu à Chevry-Cossigny" className="w-full h-32 object-cover" />
-                </div>
-              </div>
-              <div className="space-y-4 mt-8">
-                <div className="rounded-xl overflow-hidden shadow-md">
-                  <img src={vendu6} alt="Bien vendu à La Queue-en-Brie" className="w-full h-32 object-cover" />
-                </div>
-                <div className="rounded-xl overflow-hidden shadow-md">
-                  <img src={vendu7} alt="Bien vendu à Lagny-sur-Marne" className="w-full h-48 object-cover" />
+                <div className="space-y-4 mt-8">
+                  <div className="rounded-xl overflow-hidden shadow-md">
+                    <img src={vendu6} alt="Bien vendu à La Queue-en-Brie" className="w-full h-32 object-cover" />
+                  </div>
+                  <div className="rounded-xl overflow-hidden shadow-md">
+                    <img src={vendu7} alt="Bien vendu à Lagny-sur-Marne" className="w-full h-48 object-cover" />
+                  </div>
+                  <div className="rounded-xl overflow-hidden shadow-md">
+                    <img src={vendu4} alt="Bien vendu à Saint-Augustin" className="w-full h-40 object-cover" />
+                  </div>
                 </div>
               </div>
             </div>
@@ -202,46 +211,32 @@ const Index = () => {
 
       {/* Section Acheteurs */}
       <section className="section-padding bg-card">
-        <div className="container mx-auto">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div className="order-2 lg:order-1">
-              <div className="grid grid-cols-2 gap-4">
-                <div className="rounded-xl overflow-hidden shadow-md">
-                  <img src={vendu8} alt="Appartement à Bussy-Saint-Georges" className="w-full h-56 object-cover" />
-                </div>
-                <div className="rounded-xl overflow-hidden shadow-md mt-8">
-                  <img src={vendu4} alt="Maison à Saint-Augustin" className="w-full h-56 object-cover" />
-                </div>
-              </div>
-            </div>
-            <div className="order-1 lg:order-2">
-              <p className="font-body text-sm uppercase tracking-[0.2em] text-primary mb-3">Acheteurs</p>
-              <h2 className="font-display text-3xl md:text-4xl font-semibold text-foreground mb-6">
-                Vous cherchez un bien en Seine-et-Marne ?
-              </h2>
-              <p className="text-muted-foreground font-body text-lg leading-relaxed mb-6">
-                Maison, appartement, investissement locatif… Je vous aide à trouver le bien qui correspond à vos critères et votre budget sur tout mon secteur.
-              </p>
-              <ul className="space-y-3 mb-8">
-                {[
-                  "Recherche personnalisée selon vos critères",
-                  "Visites accompagnées avec conseil professionnel",
-                  "Analyse du marché et conseils sur le prix",
-                  "Accompagnement jusqu'à la remise des clés",
-                ].map((item, i) => (
-                  <li key={i} className="flex items-center gap-3 font-body text-foreground">
-                    <CheckCircle className="w-5 h-5 text-primary shrink-0" />
-                    {item}
-                  </li>
-                ))}
-              </ul>
-              <Button variant="hero" size="lg" asChild>
-                <Link to="/acheter" className="inline-flex items-center gap-2">
-                  Me confier votre recherche <ArrowRight className="w-5 h-5" />
-                </Link>
-              </Button>
-            </div>
-          </div>
+        <div className="container mx-auto max-w-3xl">
+          <p className="font-body text-sm uppercase tracking-[0.2em] text-primary mb-3">Acheteurs</p>
+          <h2 className="font-display text-3xl md:text-4xl font-semibold text-foreground mb-6">
+            Vous cherchez un bien en Seine-et-Marne ?
+          </h2>
+          <p className="text-muted-foreground font-body text-lg leading-relaxed mb-6">
+            Maison, appartement, investissement locatif… Je vous aide à trouver le bien qui correspond à vos critères et votre budget sur tout mon secteur.
+          </p>
+          <ul className="space-y-3 mb-8">
+            {[
+              "Recherche personnalisée selon vos critères",
+              "Visites accompagnées avec conseil professionnel",
+              "Analyse du marché et conseils sur le prix",
+              "Accompagnement jusqu'à la remise des clés",
+            ].map((item, i) => (
+              <li key={i} className="flex items-center gap-3 font-body text-foreground">
+                <CheckCircle className="w-5 h-5 text-primary shrink-0" />
+                {item}
+              </li>
+            ))}
+          </ul>
+          <Button variant="hero" size="lg" asChild>
+            <Link to="/acheter" className="inline-flex items-center gap-2">
+              Me confier votre recherche <ArrowRight className="w-5 h-5" />
+            </Link>
+          </Button>
         </div>
       </section>
 
