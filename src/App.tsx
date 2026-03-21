@@ -21,6 +21,7 @@ import Blog from "./pages/Blog";
 import APropos from "./pages/APropos";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
+import SecteurGretz from "./pages/SecteurGretz";
 
 const queryClient = new QueryClient();
 
