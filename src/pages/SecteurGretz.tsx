@@ -1,9 +1,6 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Home, TrendingUp, MapPin, Users, Phone, ArrowRight, TreePine, Train, School, Heart, Building } from "lucide-react";
-import gretzPatrimoine from "@/assets/gretz-patrimoine.jpg";
-import gretzVieLocale from "@/assets/gretz-vie-locale.jpg";
-import gretzGare from "@/assets/gretz-gare.jpg";
 
 const SecteurGretz = () => (
   <main className="bg-background">
@@ -59,7 +56,7 @@ const SecteurGretz = () => (
         <p>Elle bénéficie également d'un accès facilité aux axes routiers, ce qui permet de rejoindre rapidement les zones d'activité environnantes.</p>
         <p><strong>Acheter une maison à Gretz-Armainvilliers</strong>, c'est donc bénéficier d'un compromis idéal entre vie au calme et accessibilité.</p>
       </div>
-      <img src={gretzGare} alt="Gare RER E de Gretz-Armainvilliers – accès direct vers Paris" className="w-full rounded-xl mt-8 shadow-md" />
+      
     </section>
 
     {/* Familles */}
@@ -87,7 +84,7 @@ const SecteurGretz = () => (
         <p>De nombreux événements sont organisés tout au long de l'année&nbsp;: brocantes, animations, événements culturels… Ces moments participent à créer une véritable dynamique locale et un esprit de village très apprécié.</p>
         <p>Cette convivialité est un véritable atout, notamment pour les personnes souhaitant s'installer durablement.</p>
       </div>
-      <img src={gretzVieLocale} alt="Marché et brocante à Gretz-Armainvilliers – vie locale conviviale" className="w-full rounded-xl mt-8 shadow-md" />
+      
     </section>
 
     {/* Patrimoine */}
@@ -101,7 +98,7 @@ const SecteurGretz = () => (
         <p>Certains éléments du patrimoine, comme l'église Saint-Jean-Baptiste, témoignent de son passé et participent à l'identité de la commune.</p>
         <p>Ce mélange entre authenticité et modernité renforce l'attractivité du secteur et donne une vraie personnalité à la ville.</p>
       </div>
-      <img src={gretzPatrimoine} alt="Patrimoine architectural de Gretz-Armainvilliers – église et bâtiments historiques" className="w-full rounded-xl mt-8 shadow-md" />
+      
       </div>
     </section>
 
