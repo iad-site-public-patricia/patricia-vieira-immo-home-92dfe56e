@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button";
 const mainNav = [
   { label: "Accueil", to: "/" },
   { label: "Vendre", to: "/vendre-son-bien" },
-  { label: "Estimation gratuite", to: "/estimation-immobiliere" },
+  { label: "Estimation gratuite", to: "/estimation-immobiliere#formulaire" },
   { label: "Acheter", to: "/acheter" },
   {
     label: "Mon secteur",
