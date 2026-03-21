@@ -178,21 +178,30 @@ const Index = () => {
                 </Button>
               </div>
             </div>
-            <div className="grid grid-cols-2 gap-4">
-              <div className="space-y-4">
-                <div className="rounded-xl overflow-hidden shadow-md">
-                  <img src={vendu1} alt="Bien vendu à Lésigny" className="w-full h-48 object-cover" />
+            <div>
+              <h3 className="font-display text-xl font-semibold text-foreground mb-4 text-center lg:text-left">Biens vendus récemment</h3>
+              <div className="grid grid-cols-2 gap-4">
+                <div className="space-y-4">
+                  <div className="rounded-xl overflow-hidden shadow-md">
+                    <img src={vendu1} alt="Bien vendu à Lésigny" className="w-full h-48 object-cover" />
+                  </div>
+                  <div className="rounded-xl overflow-hidden shadow-md">
+                    <img src={vendu5_2} alt="Bien vendu à Chevry-Cossigny" className="w-full h-32 object-cover" />
+                  </div>
+                  <div className="rounded-xl overflow-hidden shadow-md">
+                    <img src={vendu8} alt="Bien vendu à Bussy-Saint-Georges" className="w-full h-40 object-cover" />
+                  </div>
                 </div>
-                <div className="rounded-xl overflow-hidden shadow-md">
-                  <img src={vendu5_2} alt="Bien vendu à Chevry-Cossigny" className="w-full h-32 object-cover" />
-                </div>
-              </div>
-              <div className="space-y-4 mt-8">
-                <div className="rounded-xl overflow-hidden shadow-md">
-                  <img src={vendu6} alt="Bien vendu à La Queue-en-Brie" className="w-full h-32 object-cover" />
-                </div>
-                <div className="rounded-xl overflow-hidden shadow-md">
-                  <img src={vendu7} alt="Bien vendu à Lagny-sur-Marne" className="w-full h-48 object-cover" />
+                <div className="space-y-4 mt-8">
+                  <div className="rounded-xl overflow-hidden shadow-md">
+                    <img src={vendu6} alt="Bien vendu à La Queue-en-Brie" className="w-full h-32 object-cover" />
+                  </div>
+                  <div className="rounded-xl overflow-hidden shadow-md">
+                    <img src={vendu7} alt="Bien vendu à Lagny-sur-Marne" className="w-full h-48 object-cover" />
+                  </div>
+                  <div className="rounded-xl overflow-hidden shadow-md">
+                    <img src={vendu4} alt="Bien vendu à Saint-Augustin" className="w-full h-40 object-cover" />
+                  </div>
                 </div>
               </div>
             </div>
