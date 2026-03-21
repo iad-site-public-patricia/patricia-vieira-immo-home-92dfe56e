@@ -3,6 +3,8 @@ import { Button } from "@/components/ui/button";
 import { Home, TrendingUp, MapPin, Users, Phone, ArrowRight, TreePine, Train, School, Heart, Building } from "lucide-react";
 import gretzBrocante from "@/assets/gretz-brocante.jpeg";
 import gretzRando from "@/assets/gretz-rando-chateaux.jpg";
+import gretzGare from "@/assets/gretz-gare.jpg";
+import gretzRerE from "@/assets/gretz-rer-e.jpg";
 
 const SecteurGretz = () => (
   <main className="bg-background">
