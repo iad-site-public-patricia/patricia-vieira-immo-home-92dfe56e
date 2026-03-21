@@ -5,6 +5,8 @@ import gretzBrocante from "@/assets/gretz-brocante.jpeg";
 import gretzRando from "@/assets/gretz-rando-chateaux.jpg";
 import gretzGare from "@/assets/gretz-gare.jpg";
 import gretzRerE from "@/assets/gretz-rer-e.jpg";
+import gretzMairie from "@/assets/gretz-mairie.jpg";
+import gretzChateau from "@/assets/gretz-chateau.jpg";
 
 const SecteurGretz = () => (
   <main className="bg-background">
