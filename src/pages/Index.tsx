@@ -173,7 +173,7 @@ const Index = () => {
                     Estimer mon bien gratuitement <ArrowRight className="w-5 h-5" />
                   </Link>
                 </Button>
-                <Button variant="outline" size="lg" asChild>
+                <Button variant="hero-outline" size="lg" asChild>
                   <Link to="/vendre-son-bien">Découvrir ma méthode de vente</Link>
                 </Button>
               </div>
