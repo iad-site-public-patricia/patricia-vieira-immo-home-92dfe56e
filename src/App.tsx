@@ -21,6 +21,7 @@ import Blog from "./pages/Blog";
 import APropos from "./pages/APropos";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
+import SecteurGretz from "./pages/SecteurGretz";
 
 const queryClient = new QueryClient();
 
@@ -42,6 +43,7 @@ const App = () => (
             <Route path="/acheter" element={<Acheter />} />
             {/* Secteur - pages locales (placeholder vers Index pour l'instant) */}
             <Route path="/secteur" element={<NotFound />} />
+            <Route path="/secteur/gretz-armainvilliers" element={<SecteurGretz />} />
             <Route path="/secteur/:ville" element={<NotFound />} />
             {/* Recrutement */}
             <Route path="/rejoindre" element={<Rejoindre />} />
