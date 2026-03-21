@@ -1,9 +1,6 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Home, TrendingUp, MapPin, Users, Phone, ArrowRight, TreePine, Train, School, Heart, Building } from "lucide-react";
-import gretzPatrimoine from "@/assets/gretz-patrimoine.jpg";
-import gretzVieLocale from "@/assets/gretz-vie-locale.jpg";
-import gretzGare from "@/assets/gretz-gare.jpg";
 
 const SecteurGretz = () => (
   <main className="bg-background">
