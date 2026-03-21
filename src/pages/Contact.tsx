@@ -28,7 +28,7 @@ const Contact = () => {
         </div>
       </section>
 
-      <section className="section-padding">
+      <section className="section-padding" id="formulaire">
         <div className="container mx-auto max-w-4xl">
           <div className="grid md:grid-cols-5 gap-12">
             {/* Contact info */}
@@ -80,7 +80,7 @@ const Contact = () => {
             </div>
 
             {/* Form */}
-            <div className="md:col-span-3" id="formulaire">
+            <div className="md:col-span-3">
               <form onSubmit={handleSubmit} className="space-y-4 bg-card rounded-xl p-8 border border-border/40 shadow-sm">
                 <Input placeholder="Nom complet" value={form.nom} onChange={e => setForm({...form, nom: e.target.value})} required />
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
