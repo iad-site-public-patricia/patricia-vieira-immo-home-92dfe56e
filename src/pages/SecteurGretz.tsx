@@ -3,6 +3,8 @@ import { Button } from "@/components/ui/button";
 import { Home, TrendingUp, MapPin, Users, Phone, ArrowRight, TreePine, Train, School, Heart, Building } from "lucide-react";
 import gretzBrocante from "@/assets/gretz-brocante.jpeg";
 import gretzRando from "@/assets/gretz-rando-chateaux.jpg";
+import gretzGare from "@/assets/gretz-gare.jpg";
+import gretzRerE from "@/assets/gretz-rer-e.jpg";
 
 const SecteurGretz = () => (
   <main className="bg-background">
@@ -58,7 +60,10 @@ const SecteurGretz = () => (
         <p>Elle bénéficie également d'un accès facilité aux axes routiers, ce qui permet de rejoindre rapidement les zones d'activité environnantes.</p>
         <p><strong>Acheter une maison à Gretz-Armainvilliers</strong>, c'est donc bénéficier d'un compromis idéal entre vie au calme et accessibilité.</p>
       </div>
-      
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-8">
+        <img src={gretzGare} alt="Gare de Gretz-Armainvilliers – RER E vers Paris" className="w-full rounded-xl shadow-md object-cover aspect-[4/3]" />
+        <img src={gretzRerE} alt="Plan du RER E – ligne desservant Gretz-Armainvilliers" className="w-full rounded-xl shadow-md object-contain bg-white aspect-[4/3]" />
+      </div>
     </section>
 
     {/* Familles */}
