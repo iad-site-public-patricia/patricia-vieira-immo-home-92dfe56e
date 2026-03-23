@@ -108,15 +108,19 @@ const Index = () => {
             </div>
             <div className="flex flex-col sm:flex-row gap-4 animate-fade-in" style={{ animationDelay: "0.3s" }}>
               <Button variant="hero" size="xl" asChild>
-                <Link to="/estimation-immobiliere#formulaire" className="inline-flex items-center gap-2">
-                  Estimer mon bien gratuitement <ArrowRight className="w-5 h-5" />
+                <Link to="/vendre" className="inline-flex items-center gap-2">
+                  Vendre mon bien <ArrowRight className="w-5 h-5" />
                 </Link>
               </Button>
-              <Button variant="hero-outline" size="xl" className="border-navy-foreground text-navy-foreground hover:bg-navy-foreground hover:text-navy" asChild>
-                <Link to="/acheter">Acheter un bien</Link>
+              <Button variant="hero" size="xl" asChild>
+                <Link to="/acheter" className="inline-flex items-center gap-2">
+                  Acheter un bien <ArrowRight className="w-5 h-5" />
+                </Link>
               </Button>
-              <Button variant="hero-outline" size="xl" className="border-navy-foreground text-navy-foreground hover:bg-navy-foreground hover:text-navy" asChild>
-                <Link to="/rejoindre">Rejoindre mon équipe</Link>
+              <Button variant="hero" size="xl" asChild>
+                <Link to="/rejoindre" className="inline-flex items-center gap-2">
+                  Rejoindre mon équipe <ArrowRight className="w-5 h-5" />
+                </Link>
               </Button>
             </div>
           </div>
@@ -129,9 +133,9 @@ const Index = () => {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
             {[
               { value: "11 ans", label: "d'expérience" },
-              { value: "+200", label: "biens vendus" },
+              { value: "+150", label: "biens vendus" },
               { value: "5★", label: "avis clients" },
-              { value: "30 km", label: "autour de Gretz" },
+              { value: "30 km", label: "autour de Gretz-Armainvilliers" },
             ].map((stat, i) => (
               <div key={i} className="group">
                 <p className="font-display text-3xl md:text-4xl font-bold text-primary">{stat.value}</p>
