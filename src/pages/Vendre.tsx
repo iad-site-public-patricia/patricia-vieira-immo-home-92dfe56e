@@ -195,8 +195,6 @@ const Vendre = () => {
         </div>
       </section>
 
-      {/* Les 5 étapes de ma méthode */}
-      <MethodeEtapes />
 
       {/* Mes engagements */}
       <section className="section-padding bg-card">
