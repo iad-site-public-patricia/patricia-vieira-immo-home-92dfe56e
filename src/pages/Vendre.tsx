@@ -77,22 +77,20 @@ const Vendre = () => {
       {/* Importance */}
       <section className="section-padding">
         <div className="container mx-auto max-w-4xl">
-          <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div>
-              <h2 className="font-display text-3xl font-semibold text-foreground mb-4">
-                L'importance d'une estimation juste
-              </h2>
-              <div className="section-divider !mx-0 !w-12 mb-6" />
-              <p className="text-muted-foreground font-body leading-relaxed mb-4">
-                Un bien surévalué reste trop longtemps sur le marché et perd en attractivité. Un bien sous-évalué, c'est de l'argent perdu. <strong className="text-foreground">La bonne estimation, c'est celle qui déclenche les visites et génère des offres rapidement.</strong>
-              </p>
-              <p className="text-muted-foreground font-body leading-relaxed mb-4">
-                Grâce à ma connaissance approfondie du marché local et à des outils d'analyse performants, je vous propose une estimation fiable, argumentée et réaliste.
-              </p>
-              <p className="text-muted-foreground font-body leading-relaxed">
-                <strong className="text-foreground">Résultat :</strong> un prix juste qui attire les bons acquéreurs et vous permet de vendre dans les meilleurs délais.
-              </p>
-            </div>
+          <div>
+            <h2 className="font-display text-3xl font-semibold text-foreground mb-4">
+              L'importance d'une estimation juste
+            </h2>
+            <div className="section-divider !mx-0 !w-12 mb-6" />
+            <p className="text-muted-foreground font-body leading-relaxed mb-4">
+              Un bien surévalué reste trop longtemps sur le marché et perd en attractivité. Un bien sous-évalué, c'est de l'argent perdu. <strong className="text-foreground">La bonne estimation, c'est celle qui déclenche les visites et génère des offres rapidement.</strong>
+            </p>
+            <p className="text-muted-foreground font-body leading-relaxed mb-4">
+              Grâce à ma connaissance approfondie du marché local et à des outils d'analyse performants, je vous propose une estimation fiable, argumentée et réaliste.
+            </p>
+            <p className="text-muted-foreground font-body leading-relaxed">
+              <strong className="text-foreground">Résultat :</strong> un prix juste qui attire les bons acquéreurs et vous permet de vendre dans les meilleurs délais.
+            </p>
           </div>
         </div>
       </section>
