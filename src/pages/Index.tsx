@@ -214,10 +214,10 @@ const Index = () => {
         <div className="container mx-auto max-w-3xl">
           <p className="font-body text-sm uppercase tracking-[0.2em] text-primary mb-3">Acheteurs</p>
           <h2 className="font-display text-3xl md:text-4xl font-semibold text-foreground mb-6">
-            Vous cherchez un bien en Seine-et-Marne ?
+            Vous cherchez un bien en Seine-et-Marne ? Ancien ou neuf ?
           </h2>
           <p className="text-muted-foreground font-body text-lg leading-relaxed mb-6">
-            Maison, appartement, investissement locatif… Je vous aide à trouver le bien qui correspond à vos critères et votre budget sur tout mon secteur.
+            Maison, appartement, investissement locatif, terrain… Je vous aide à trouver le bien qui correspond à vos critères et votre budget sur tout mon secteur.
           </p>
           <ul className="space-y-3 mb-8">
             {[
