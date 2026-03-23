@@ -106,7 +106,7 @@ const Index = () => {
                 Gretz-Armainvilliers et alentours (30 km)
               </p>
             </div>
-            <div className="flex flex-col sm:flex-row gap-4 animate-fade-in" style={{ animationDelay: "0.3s" }}>
+            <div className="flex flex-col sm:flex-row gap-4 animate-fade-in max-w-[280px] sm:max-w-none" style={{ animationDelay: "0.3s" }}>
               <Button variant="hero" size="xl" asChild>
                 <Link to="/vendre" className="inline-flex items-center gap-2">
                   Vendre mon bien <ArrowRight className="w-5 h-5" />
