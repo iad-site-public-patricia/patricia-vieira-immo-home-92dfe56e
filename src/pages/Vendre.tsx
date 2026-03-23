@@ -93,17 +93,6 @@ const Vendre = () => {
                 <strong className="text-foreground">Résultat :</strong> un prix juste qui attire les bons acquéreurs et vous permet de vendre dans les meilleurs délais.
               </p>
             </div>
-            <div className="bg-card rounded-xl p-8 border border-border/40 shadow-sm">
-              <h3 className="font-display text-xl font-semibold text-foreground mb-4">Mon accompagnement</h3>
-              <ul className="space-y-3 font-body text-muted-foreground">
-                {["Estimation gratuite et sans engagement", "Analyse complète du marché local", "Stratégie de mise en vente personnalisée", "Suivi régulier et transparent", "Disponibilité et réactivité"].map((item, i) => (
-                  <li key={i} className="flex items-start gap-2">
-                    <CheckCircle className="w-5 h-5 text-primary mt-0.5 shrink-0" />
-                    <span>{item}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
           </div>
         </div>
       </section>
