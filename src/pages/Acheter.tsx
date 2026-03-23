@@ -21,7 +21,10 @@ const Acheter = () => {
         <div className="relative container mx-auto max-w-3xl text-center py-20">
           <h1 className="font-display text-4xl md:text-5xl font-bold mb-6 text-navy-foreground drop-shadow-lg">Acheter un bien</h1>
           <p className="font-body text-lg text-navy-foreground/90 leading-relaxed drop-shadow-sm">
-            Trouver le bien qui vous correspond est un moment important. Je vous accompagne
+            Vous cherchez un bien en Seine-et-Marne ? Ancien ou neuf ?
+          </p>
+          <p className="font-body text-lg text-navy-foreground/90 leading-relaxed drop-shadow-sm mt-2">
+            Maison, appartement, investissement locatif, terrain… Je vous accompagne
             avec patience et expertise pour que votre projet d'achat se déroule sereinement.
           </p>
         </div>
