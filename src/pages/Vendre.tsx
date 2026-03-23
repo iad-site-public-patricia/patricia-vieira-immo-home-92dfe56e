@@ -12,8 +12,8 @@ import {
 
 
 const steps = [
-  { icon: ClipboardList, title: "Estimation du bien", desc: "Une analyse complète pour déterminer la juste valeur de votre propriété." },
-  { icon: Eye, title: "Mise en valeur et stratégie", desc: "Photos professionnelles, annonces ciblées et plan de commercialisation adapté." },
+  { icon: ClipboardList, title: "Estimation gratuite du bien", desc: "Une analyse complète pour déterminer la juste valeur de votre propriété." },
+  { icon: Eye, title: "Mise en valeur et stratégie de vente personnalisée", desc: "Photos professionnelles, annonces ciblées et plan de commercialisation adapté." },
   { icon: Home, title: "Organisation des visites", desc: "Des visites qualifiées avec des acquéreurs sérieux et motivés." },
   { icon: Handshake, title: "Négociation", desc: "Je défends vos intérêts pour obtenir le meilleur prix." },
   { icon: FileSignature, title: "Accompagnement notaire", desc: "Je vous accompagne jusqu'à la signature de l'acte authentique." },
@@ -77,33 +77,20 @@ const Vendre = () => {
       {/* Importance */}
       <section className="section-padding">
         <div className="container mx-auto max-w-4xl">
-          <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div>
-              <h2 className="font-display text-3xl font-semibold text-foreground mb-4">
-                L'importance d'une estimation juste
-              </h2>
-              <div className="section-divider !mx-0 !w-12 mb-6" />
-              <p className="text-muted-foreground font-body leading-relaxed mb-4">
-                Un bien surévalué reste trop longtemps sur le marché et perd en attractivité. Un bien sous-évalué, c'est de l'argent perdu. <strong className="text-foreground">La bonne estimation, c'est celle qui déclenche les visites et génère des offres rapidement.</strong>
-              </p>
-              <p className="text-muted-foreground font-body leading-relaxed mb-4">
-                Grâce à ma connaissance approfondie du marché local et à des outils d'analyse performants, je vous propose une estimation fiable, argumentée et réaliste.
-              </p>
-              <p className="text-muted-foreground font-body leading-relaxed">
-                <strong className="text-foreground">Résultat :</strong> un prix juste qui attire les bons acquéreurs et vous permet de vendre dans les meilleurs délais.
-              </p>
-            </div>
-            <div className="bg-card rounded-xl p-8 border border-border/40 shadow-sm">
-              <h3 className="font-display text-xl font-semibold text-foreground mb-4">Mon accompagnement</h3>
-              <ul className="space-y-3 font-body text-muted-foreground">
-                {["Estimation gratuite et sans engagement", "Analyse complète du marché local", "Stratégie de mise en vente personnalisée", "Suivi régulier et transparent", "Disponibilité et réactivité"].map((item, i) => (
-                  <li key={i} className="flex items-start gap-2">
-                    <CheckCircle className="w-5 h-5 text-primary mt-0.5 shrink-0" />
-                    <span>{item}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
+          <div>
+            <h2 className="font-display text-3xl font-semibold text-foreground mb-4">
+              L'importance d'une estimation juste
+            </h2>
+            <div className="section-divider !mx-0 !w-12 mb-6" />
+            <p className="text-muted-foreground font-body leading-relaxed mb-4">
+              Un bien surévalué reste trop longtemps sur le marché et perd en attractivité. Un bien sous-évalué, c'est de l'argent perdu. <strong className="text-foreground">La bonne estimation, c'est celle qui déclenche les visites et génère des offres rapidement.</strong>
+            </p>
+            <p className="text-muted-foreground font-body leading-relaxed mb-4">
+              Grâce à ma connaissance approfondie du marché local et à des outils d'analyse performants, je vous propose une estimation fiable, argumentée et réaliste.
+            </p>
+            <p className="text-muted-foreground font-body leading-relaxed">
+              <strong className="text-foreground">Résultat :</strong> un prix juste qui attire les bons acquéreurs et vous permet de vendre dans les meilleurs délais.
+            </p>
           </div>
         </div>
       </section>
