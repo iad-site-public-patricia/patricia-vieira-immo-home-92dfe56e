@@ -208,7 +208,7 @@ const Vendre = () => {
               <Input placeholder="Surface approximative (m²)" value={form.surface} onChange={e => setForm({...form, surface: e.target.value})} />
             </div>
             <Textarea placeholder="Votre message (optionnel)" value={form.message} onChange={e => setForm({...form, message: e.target.value})} rows={4} />
-            <Button variant="hero" size="lg" type="submit" className="w-full">
+            <Button variant="hero" size="lg" type="submit" className="w-full text-sm sm:text-base px-4 py-3 whitespace-normal h-auto">
               Envoyer ma demande d'estimation
             </Button>
           </form>
