@@ -133,9 +133,9 @@ const Index = () => {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
             {[
               { value: "11 ans", label: "d'expérience" },
-              { value: "+200", label: "biens vendus" },
+              { value: "+150", label: "biens vendus" },
               { value: "5★", label: "avis clients" },
-              { value: "30 km", label: "autour de Gretz" },
+              { value: "30 km", label: "autour de Gretz-Armainvilliers" },
             ].map((stat, i) => (
               <div key={i} className="group">
                 <p className="font-display text-3xl md:text-4xl font-bold text-primary">{stat.value}</p>
