@@ -9,7 +9,7 @@ import {
   CalendarCheck, Flame, Gavel, Network, Target, Rocket,
   Sparkles, UserCheck, Shield, MessageCircle, Zap, Award, Quote
 } from "lucide-react";
-import MethodeEtapes from "@/components/MethodeEtapes";
+
 
 const steps = [
   { icon: ClipboardList, title: "Estimation du bien", desc: "Une analyse complète pour déterminer la juste valeur de votre propriété." },
@@ -174,7 +174,7 @@ const Vendre = () => {
               Ma méthode unique
             </h2>
             <p className="text-muted-foreground font-body text-lg leading-relaxed max-w-2xl mx-auto">
-              12 atouts majeurs pour vendre votre bien dans les meilleures conditions.
+              12 atouts majeurs pour vendre votre bien le plus vite possible, le plus cher possible et dans les meilleures conditions.
             </p>
           </div>
           <div className="section-divider mb-12" />
@@ -195,8 +195,6 @@ const Vendre = () => {
         </div>
       </section>
 
-      {/* Les 5 étapes de ma méthode */}
-      <MethodeEtapes />
 
       {/* Mes engagements */}
       <section className="section-padding bg-card">
