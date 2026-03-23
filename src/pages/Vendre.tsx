@@ -174,7 +174,7 @@ const Vendre = () => {
               Ma méthode unique
             </h2>
             <p className="text-muted-foreground font-body text-lg leading-relaxed max-w-2xl mx-auto">
-              12 atouts majeurs pour vendre votre bien dans les meilleures conditions.
+              12 atouts majeurs pour vendre votre bien le plus vite possible, le plus cher possible et dans les meilleures conditions.
             </p>
           </div>
           <div className="section-divider mb-12" />
