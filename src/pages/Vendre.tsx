@@ -9,7 +9,7 @@ import {
   CalendarCheck, Flame, Gavel, Network, Target, Rocket,
   Sparkles, UserCheck, Shield, MessageCircle, Zap, Award, Quote
 } from "lucide-react";
-import MethodeEtapes from "@/components/MethodeEtapes";
+
 
 const steps = [
   { icon: ClipboardList, title: "Estimation du bien", desc: "Une analyse complète pour déterminer la juste valeur de votre propriété." },
