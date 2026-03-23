@@ -12,8 +12,8 @@ import {
 
 
 const steps = [
-  { icon: ClipboardList, title: "Estimation du bien", desc: "Une analyse complète pour déterminer la juste valeur de votre propriété." },
-  { icon: Eye, title: "Mise en valeur et stratégie", desc: "Photos professionnelles, annonces ciblées et plan de commercialisation adapté." },
+  { icon: ClipboardList, title: "Estimation gratuite du bien", desc: "Une analyse complète pour déterminer la juste valeur de votre propriété." },
+  { icon: Eye, title: "Mise en valeur et stratégie de vente personnalisée", desc: "Photos professionnelles, annonces ciblées et plan de commercialisation adapté." },
   { icon: Home, title: "Organisation des visites", desc: "Des visites qualifiées avec des acquéreurs sérieux et motivés." },
   { icon: Handshake, title: "Négociation", desc: "Je défends vos intérêts pour obtenir le meilleur prix." },
   { icon: FileSignature, title: "Accompagnement notaire", desc: "Je vous accompagne jusqu'à la signature de l'acte authentique." },
