@@ -183,40 +183,6 @@ const Vendre = () => {
       </section>
 
 
-      {/* Mes engagements */}
-      <section className="section-padding bg-card">
-        <div className="container mx-auto max-w-4xl">
-          <div className="text-center mb-4">
-            <h2 className="font-display text-3xl md:text-4xl font-semibold text-foreground mb-4">
-              Mes engagements
-            </h2>
-          </div>
-          <div className="section-divider mb-12" />
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
-            {engagements.map((item, i) => (
-              <div
-                key={i}
-                className="flex items-center gap-4 bg-background rounded-xl px-6 py-5 border border-border/40 hover:shadow-md hover:border-primary/20 transition-all duration-300 group"
-              >
-                <div className="w-11 h-11 rounded-full bg-primary/10 flex items-center justify-center shrink-0 group-hover:bg-primary/20 transition-colors">
-                  <item.icon className="w-5 h-5 text-primary" />
-                </div>
-                <span className="font-body text-foreground font-medium text-base leading-snug">{item.label}</span>
-              </div>
-            ))}
-          </div>
-
-          {/* Quote */}
-          <div className="mt-14 text-center">
-            <div className="inline-flex items-start gap-3 max-w-2xl">
-              <Quote className="w-8 h-8 text-primary/30 shrink-0 mt-1" />
-              <p className="font-display text-xl md:text-2xl italic text-foreground leading-relaxed">
-                Chaque vente a sa stratégie. Je m'adapte à votre réalité.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
 
       {/* Estimation Form */}
       <section className="section-padding" id="estimation">
