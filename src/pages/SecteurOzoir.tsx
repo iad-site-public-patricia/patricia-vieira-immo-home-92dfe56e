@@ -36,9 +36,12 @@ const SecteurOzoir = () => (
       </div>
     </section>
 
-    {/* Photo quartier résidentiel */}
+    {/* Photos quartiers résidentiels */}
     <section className="container mx-auto px-4 max-w-4xl pb-8">
-      <img src={ozoirResidential} alt="Quartier résidentiel avec maisons élégantes et jardins à Ozoir-la-Ferrière" width={1280} height={720} loading="lazy" className="rounded-2xl shadow-lg w-full h-64 md:h-80 object-cover" />
+      <div className="grid md:grid-cols-2 gap-4">
+        <img src={ozoirMaison1} alt="Maison avec jardin et haie verdoyante à Ozoir-la-Ferrière" width={640} height={480} loading="lazy" className="rounded-2xl shadow-lg w-full h-64 object-cover" />
+        <img src={ozoirMaison2} alt="Maison familiale avec véranda et jardin à Ozoir-la-Ferrière" width={640} height={480} loading="lazy" className="rounded-2xl shadow-lg w-full h-64 object-cover" />
+      </div>
     </section>
 
     {/* Cadre de vie */}
@@ -71,7 +74,10 @@ const SecteurOzoir = () => (
         <p>Situé dans un environnement naturel d'exception, ce domaine offre un cadre unique, mêlant nature, élégance et tranquillité. Il contribue fortement à l'image qualitative de la commune.</p>
         <p>À proximité du golf, on retrouve des secteurs particulièrement recherchés, avec des biens immobiliers offrant un cadre de vie privilégié.</p>
       </div>
-      <img src={ozoirGolf} alt="Golf d'Ozoir-la-Ferrière avec fairway verdoyant et clubhouse élégant" width={1280} height={720} loading="lazy" className="rounded-2xl shadow-lg w-full h-64 md:h-80 object-cover mt-8" />
+      <div className="mt-8 grid md:grid-cols-5 gap-4">
+        <img src={ozoirChateau} alt="Château et clubhouse du golf d'Ozoir-la-Ferrière" width={800} height={400} loading="lazy" className="rounded-2xl shadow-lg w-full h-64 md:h-72 object-cover md:col-span-3" />
+        <img src={ozoirGolfReal} alt="Fairway verdoyant du golf d'Ozoir-la-Ferrière" width={500} height={500} loading="lazy" className="rounded-2xl shadow-lg w-full h-64 md:h-72 object-cover md:col-span-2" />
+      </div>
     </section>
 
     {/* Kaufman */}
@@ -91,7 +97,6 @@ const SecteurOzoir = () => (
           <p>Ces maisons représentent aujourd'hui une valeur sûre sur le marché <strong>immobilier à Ozoir-la-Ferrière</strong>.</p>
           <p><strong>Acheter une maison à Ozoir-la-Ferrière</strong> dans ces quartiers, c'est investir dans un bien recherché, durable et valorisé.</p>
         </div>
-        <img src={ozoirKaufman} alt="Maisons Kaufman & Broad dans un quartier résidentiel harmonieux à Ozoir-la-Ferrière" width={1280} height={720} loading="lazy" className="rounded-2xl shadow-lg w-full h-64 md:h-80 object-cover mt-8" />
       </div>
     </section>
 
@@ -105,7 +110,6 @@ const SecteurOzoir = () => (
         <p>Entre forêts, parcs et espaces verts, la commune offre de nombreuses possibilités de promenade et de détente.</p>
         <p>Cet équilibre entre urbanisation maîtrisée et nature est aujourd'hui l'un des critères majeurs dans les recherches immobilières.</p>
       </div>
-      <img src={ozoirNature} alt="Forêt et sentiers de promenade à proximité d'Ozoir-la-Ferrière" width={1280} height={720} loading="lazy" className="rounded-2xl shadow-lg w-full h-64 md:h-80 object-cover mt-8" />
     </section>
 
     {/* Localisation */}
