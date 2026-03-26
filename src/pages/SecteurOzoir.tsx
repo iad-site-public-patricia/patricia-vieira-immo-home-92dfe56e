@@ -5,12 +5,14 @@ import ozoirMaison1 from "@/assets/ozoir-maison1.jpg";
 import ozoirMaison2 from "@/assets/ozoir-maison2.jpg";
 import ozoirChateau from "@/assets/ozoir-chateau.jpg";
 import ozoirGolfReal from "@/assets/ozoir-golf-real.jpg";
+import ozoirHero from "@/assets/ozoir-hero.jpg";
 
 const SecteurOzoir = () => (
   <main className="bg-background">
     {/* Hero */}
     <section className="relative bg-navy py-24 md:py-32">
       <div className="absolute inset-0 bg-foreground/50" />
+      <img src={ozoirHero} alt="Château et jardins d'Ozoir-la-Ferrière" className="absolute inset-0 w-full h-full object-cover -z-0" />
       <div className="container mx-auto px-4 relative z-10 text-center max-w-3xl">
         <p className="text-primary-foreground/80 font-body text-sm uppercase tracking-widest mb-3">Mon secteur · Seine-et-Marne</p>
         <h1 className="font-heading text-3xl md:text-5xl font-bold text-primary-foreground leading-tight mb-6">
