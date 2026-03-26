@@ -1,6 +1,10 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Home, TrendingUp, MapPin, Users, Phone, ArrowRight, TreePine, Train, School, Heart, Building, Leaf } from "lucide-react";
+import ozoirResidential from "@/assets/ozoir-residential.jpg";
+import ozoirParc from "@/assets/ozoir-parc.jpg";
+import ozoirGare from "@/assets/ozoir-gare.jpg";
+import ozoirCentre from "@/assets/ozoir-centre.jpg";
 
 const SecteurOzoir = () => (
   <main className="bg-background">
@@ -29,6 +33,11 @@ const SecteurOzoir = () => (
         <p><strong>Vivre à Ozoir-la-Ferrière</strong>, c'est bénéficier d'un équilibre entre dynamisme urbain et sérénité résidentielle. La ville séduit aussi bien les familles que les actifs, grâce à ses infrastructures complètes et à sa qualité de vie.</p>
         <p>L'<strong>immobilier à Ozoir-la-Ferrière</strong> représente une opportunité intéressante pour celles et ceux qui souhaitent s'installer durablement ou réaliser un investissement en Seine-et-Marne.</p>
       </div>
+    </section>
+
+    {/* Photo quartier résidentiel */}
+    <section className="container mx-auto px-4 max-w-4xl pb-8">
+      <img src={ozoirResidential} alt="Quartier résidentiel avec maisons et jardins à Ozoir-la-Ferrière" width={1280} height={720} loading="lazy" className="rounded-2xl shadow-lg w-full h-64 md:h-80 object-cover" />
     </section>
 
     {/* Cadre de vie */}
@@ -62,6 +71,8 @@ const SecteurOzoir = () => (
         <p>Les axes routiers à proximité facilitent également les déplacements vers les zones d'emploi environnantes.</p>
         <p><strong>Acheter une maison à Ozoir-la-Ferrière</strong> permet ainsi de concilier confort de vie et mobilité.</p>
       </div>
+      {/* Photo gare */}
+      <img src={ozoirGare} alt="Gare RER desservant Ozoir-la-Ferrière pour rejoindre Paris" width={1280} height={720} loading="lazy" className="rounded-2xl shadow-lg w-full h-64 md:h-80 object-cover mt-8" />
     </section>
 
     {/* Familles */}
@@ -94,6 +105,8 @@ const SecteurOzoir = () => (
         <p>Marchés, événements culturels, activités associatives… la commune offre un cadre dynamique et convivial.</p>
         <p>Cette vie locale contribue fortement à l'attractivité de la ville et à la qualité de vie de ses habitants.</p>
       </div>
+      {/* Photo centre-ville */}
+      <img src={ozoirCentre} alt="Centre-ville animé d'Ozoir-la-Ferrière avec commerces et marchés" width={1280} height={720} loading="lazy" className="rounded-2xl shadow-lg w-full h-64 md:h-80 object-cover mt-8" />
     </section>
 
     {/* Nature & modernité */}
@@ -107,6 +120,8 @@ const SecteurOzoir = () => (
           <p>Les espaces verts, les zones résidentielles et les aménagements urbains permettent de bénéficier d'un environnement équilibré.</p>
           <p>Ce mélange entre modernité et nature est particulièrement recherché par les acquéreurs aujourd'hui.</p>
         </div>
+        {/* Photo parc */}
+        <img src={ozoirParc} alt="Parc verdoyant avec promeneurs à Ozoir-la-Ferrière" width={1280} height={720} loading="lazy" className="rounded-2xl shadow-lg w-full h-64 md:h-80 object-cover mt-8" />
       </div>
     </section>
 
@@ -117,7 +132,6 @@ const SecteurOzoir = () => (
       </h2>
       <p className="text-muted-foreground font-body leading-relaxed mb-8">Le marché immobilier à Ozoir-la-Ferrière est actif et recherché.</p>
 
-      {/* Prix */}
       <h3 className="font-heading text-xl font-semibold text-foreground mb-4">💰 Prix au m²</h3>
       <div className="grid sm:grid-cols-2 gap-4 mb-10">
         <div className="rounded-xl bg-card border border-border p-6 text-center">
@@ -130,7 +144,6 @@ const SecteurOzoir = () => (
         </div>
       </div>
 
-      {/* Tendances */}
       <h3 className="font-heading text-xl font-semibold text-foreground mb-4">📈 Tendances du marché</h3>
       <div className="space-y-4 text-muted-foreground font-body leading-relaxed mb-10">
         <p>Le secteur bénéficie&nbsp;:</p>
@@ -142,7 +155,6 @@ const SecteurOzoir = () => (
         <p>Les biens bien positionnés se vendent dans de bonnes conditions.</p>
       </div>
 
-      {/* Typologie */}
       <h3 className="font-heading text-xl font-semibold text-foreground mb-4">🏡 Types de biens</h3>
       <ul className="list-disc list-inside space-y-2 text-muted-foreground font-body leading-relaxed">
         <li>Maisons individuelles</li>
