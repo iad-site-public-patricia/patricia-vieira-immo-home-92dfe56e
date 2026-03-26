@@ -1,10 +1,6 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Home, TrendingUp, MapPin, Users, Phone, ArrowRight, TreePine, Train, School, Heart, Building, Leaf } from "lucide-react";
-import ozoirResidential from "@/assets/ozoir-residential.jpg";
-import ozoirParc from "@/assets/ozoir-parc.jpg";
-import ozoirGare from "@/assets/ozoir-gare.jpg";
-import ozoirCentre from "@/assets/ozoir-centre.jpg";
 
 const SecteurOzoir = () => (
   <main className="bg-background">
