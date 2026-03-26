@@ -1,10 +1,6 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Home, TrendingUp, MapPin, Users, Phone, ArrowRight, TreePine, Train, School, Heart, Building, Leaf } from "lucide-react";
-import ozoirResidential from "@/assets/ozoir-residential.jpg";
-import ozoirParc from "@/assets/ozoir-parc.jpg";
-import ozoirGare from "@/assets/ozoir-gare.jpg";
-import ozoirCentre from "@/assets/ozoir-centre.jpg";
 
 const SecteurOzoir = () => (
   <main className="bg-background">
@@ -35,10 +31,6 @@ const SecteurOzoir = () => (
       </div>
     </section>
 
-    {/* Photo quartier résidentiel */}
-    <section className="container mx-auto px-4 max-w-4xl pb-8">
-      <img src={ozoirResidential} alt="Quartier résidentiel avec maisons et jardins à Ozoir-la-Ferrière" width={1280} height={720} loading="lazy" className="rounded-2xl shadow-lg w-full h-64 md:h-80 object-cover" />
-    </section>
 
     {/* Cadre de vie */}
     <section className="bg-secondary/40 py-16">
@@ -71,8 +63,6 @@ const SecteurOzoir = () => (
         <p>Les axes routiers à proximité facilitent également les déplacements vers les zones d'emploi environnantes.</p>
         <p><strong>Acheter une maison à Ozoir-la-Ferrière</strong> permet ainsi de concilier confort de vie et mobilité.</p>
       </div>
-      {/* Photo gare */}
-      <img src={ozoirGare} alt="Gare RER desservant Ozoir-la-Ferrière pour rejoindre Paris" width={1280} height={720} loading="lazy" className="rounded-2xl shadow-lg w-full h-64 md:h-80 object-cover mt-8" />
     </section>
 
     {/* Familles */}
@@ -105,8 +95,6 @@ const SecteurOzoir = () => (
         <p>Marchés, événements culturels, activités associatives… la commune offre un cadre dynamique et convivial.</p>
         <p>Cette vie locale contribue fortement à l'attractivité de la ville et à la qualité de vie de ses habitants.</p>
       </div>
-      {/* Photo centre-ville */}
-      <img src={ozoirCentre} alt="Centre-ville animé d'Ozoir-la-Ferrière avec commerces et marchés" width={1280} height={720} loading="lazy" className="rounded-2xl shadow-lg w-full h-64 md:h-80 object-cover mt-8" />
     </section>
 
     {/* Nature & modernité */}
@@ -120,8 +108,6 @@ const SecteurOzoir = () => (
           <p>Les espaces verts, les zones résidentielles et les aménagements urbains permettent de bénéficier d'un environnement équilibré.</p>
           <p>Ce mélange entre modernité et nature est particulièrement recherché par les acquéreurs aujourd'hui.</p>
         </div>
-        {/* Photo parc */}
-        <img src={ozoirParc} alt="Parc verdoyant avec promeneurs à Ozoir-la-Ferrière" width={1280} height={720} loading="lazy" className="rounded-2xl shadow-lg w-full h-64 md:h-80 object-cover mt-8" />
       </div>
     </section>
 
