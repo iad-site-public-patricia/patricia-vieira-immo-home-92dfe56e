@@ -11,15 +11,16 @@ const SecteurOzoir = () => (
   <main className="bg-background">
     {/* Hero */}
     <section className="relative bg-navy py-24 md:py-32">
-      <div className="absolute inset-0 bg-foreground/80" />
+      <div className="absolute inset-0 bg-foreground/40" />
       <img src={ozoirHero} alt="Château et jardins d'Ozoir-la-Ferrière" className="absolute inset-0 w-full h-full object-cover -z-0" />
       <div className="container mx-auto px-4 relative z-10 text-center max-w-3xl">
-        <p className="text-primary-foreground/80 font-body text-sm uppercase tracking-widest mb-3">Mon secteur · Seine-et-Marne</p>
-        <h1 className="leading-tight mb-6">
-          <span className="font-heading text-3xl md:text-5xl font-bold text-primary-foreground">Immobilier à Ozoir-la-Ferrière</span>
-          <br />
-          <span className="font-body text-xl md:text-2xl font-normal text-primary-foreground/90">un cadre de vie recherché entre nature, standing et proximité de Paris</span>
-        </h1>
+        <div className="bg-foreground/60 backdrop-blur-sm rounded-2xl px-8 py-10 inline-block">
+          <p className="text-primary-foreground/80 font-body text-sm uppercase tracking-widest mb-3">Mon secteur · Seine-et-Marne</p>
+          <h1 className="leading-tight mb-6">
+            <span className="font-heading text-3xl md:text-5xl font-bold text-primary-foreground">Immobilier à Ozoir-la-Ferrière</span>
+            <br />
+            <span className="font-body text-xl md:text-2xl font-normal text-primary-foreground/90">un cadre de vie recherché entre nature, standing et proximité de Paris</span>
+          </h1>
         <div className="flex flex-wrap gap-4 justify-center">
           <Button asChild variant="hero" size="lg"><Link to="/estimation-immobiliere#formulaire">Estimer mon bien <ArrowRight className="ml-1 h-4 w-4" /></Link></Button>
           <Button asChild variant="hero-outline" size="lg" className="border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-foreground"><Link to="/contact">Me contacter</Link></Button>
