@@ -14,7 +14,7 @@ const SecteurOzoir = () => (
       <div className="absolute inset-0 bg-foreground/40" />
       <img src={ozoirHero} alt="Château et jardins d'Ozoir-la-Ferrière" className="absolute inset-0 w-full h-full object-cover -z-0" />
       <div className="container mx-auto px-4 relative z-10 text-center max-w-3xl">
-        <div className="bg-foreground/60 backdrop-blur-sm rounded-2xl px-8 py-10 inline-block">
+        <div className="bg-foreground/45 backdrop-blur-sm rounded-2xl px-8 py-10 inline-block">
           <p className="text-primary-foreground/80 font-body text-sm uppercase tracking-widest mb-3">Mon secteur · Seine-et-Marne</p>
           <h1 className="leading-tight mb-6">
             <span className="font-heading text-3xl md:text-5xl font-bold text-primary-foreground">Immobilier à Ozoir-la-Ferrière</span>
