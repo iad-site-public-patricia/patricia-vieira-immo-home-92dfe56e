@@ -16,8 +16,10 @@ const SecteurGretz = () => (
       <div className="absolute inset-0 bg-foreground/50" />
       <div className="container mx-auto px-4 relative z-10 text-center max-w-3xl">
         <p className="text-primary-foreground/80 font-body text-sm uppercase tracking-widest mb-3">Mon secteur · Seine-et-Marne</p>
-        <h1 className="font-heading text-3xl md:text-5xl font-bold text-primary-foreground leading-tight mb-6">
-          Immobilier à Gretz-Armainvilliers&nbsp;: vivre, acheter et investir dans un cadre privilégié en Seine-et-Marne
+        <h1 className="leading-tight mb-6">
+          <span className="font-heading text-3xl md:text-5xl font-bold text-primary-foreground">Immobilier à Gretz-Armainvilliers</span>
+          <br />
+          <span className="font-body text-xl md:text-2xl font-normal text-primary-foreground/90">vivre, acheter et investir dans un cadre privilégié en Seine-et-Marne</span>
         </h1>
         <div className="flex flex-wrap gap-4 justify-center">
           <Button asChild variant="hero" size="lg"><Link to="/estimation-immobiliere#formulaire">Estimer mon bien <ArrowRight className="ml-1 h-4 w-4" /></Link></Button>
