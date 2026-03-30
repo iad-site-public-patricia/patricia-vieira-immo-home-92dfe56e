@@ -24,6 +24,7 @@ const Contact = () => {
         canonical="/contact"
       />
     <div>
+      <section className="relative section-padding overflow-hidden">
         <img src={coverContact} alt="Patricia Vieira au téléphone" className="absolute inset-0 w-full h-full object-cover object-[75%_center] md:object-center" />
         <div className="absolute inset-0 bg-gradient-to-r from-navy/80 via-navy/60 to-navy/40" />
         <div className="container mx-auto max-w-3xl text-center relative z-10">

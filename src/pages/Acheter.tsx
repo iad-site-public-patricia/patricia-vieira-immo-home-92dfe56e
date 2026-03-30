@@ -20,6 +20,7 @@ const Acheter = () => {
         canonical="/acheter"
       />
     <div>
+      <section className="relative min-h-[60vh] flex items-center overflow-hidden">
         <video autoPlay muted loop playsInline className="absolute inset-0 w-full h-full object-cover">
           <source src="/hero-video-acheter.mp4" type="video/mp4" />
         </video>
