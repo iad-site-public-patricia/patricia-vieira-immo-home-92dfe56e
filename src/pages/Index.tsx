@@ -78,7 +78,7 @@ const signatureMoments = [
 
 const sectorCities = [
   "Gretz-Armainvilliers", "Ozoir-la-Ferrière", "Tournan-en-Brie",
-  "Brie-Comte-Robert", "Roissy-en-Brie", "Pontault-Combault",
+  "Brie-Comte-Robert", "Pontault-Combault",
   "Presles-en-Brie", "Lésigny",
 ];
 

@@ -210,7 +210,7 @@ const SecteurBrieComteRobert = () => (
           { label: "Ozoir-la-Ferrière", to: "/secteur/ozoir-la-ferriere" },
           { label: "Pontault-Combault", to: "/secteur/pontault-combault" },
           { label: "Tournan-en-Brie", to: "/secteur/tournan-en-brie" },
-          { label: "Roissy-en-Brie", to: "/secteur/roissy-en-brie" },
+          
         ].map(v => (
           <Link key={v.to} to={v.to} className="rounded-full border border-border px-4 py-2 text-sm font-body text-muted-foreground hover:bg-primary hover:text-primary-foreground transition-colors">
             {v.label}

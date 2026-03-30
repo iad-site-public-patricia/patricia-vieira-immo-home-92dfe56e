@@ -16,7 +16,7 @@ const mainNav = [
       { label: "Ozoir-la-Ferrière", to: "/secteur/ozoir-la-ferriere" },
       { label: "Tournan-en-Brie", to: "/secteur/tournan-en-brie" },
       { label: "Brie-Comte-Robert", to: "/secteur/brie-comte-robert" },
-      { label: "Roissy-en-Brie", to: "/secteur/roissy-en-brie" },
+      
       { label: "Pontault-Combault", to: "/secteur/pontault-combault" },
       { label: "Voir toutes les villes →", to: "/secteur" },
     ],

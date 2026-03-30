@@ -223,7 +223,7 @@ const SecteurPontault = () => (
         {[
           { label: "Gretz-Armainvilliers", to: "/secteur/gretz-armainvilliers" },
           { label: "Ozoir-la-Ferrière", to: "/secteur/ozoir-la-ferriere" },
-          { label: "Roissy-en-Brie", to: "/secteur/roissy-en-brie" },
+          
           { label: "Tournan-en-Brie", to: "/secteur/tournan-en-brie" },
           { label: "Brie-Comte-Robert", to: "/secteur/brie-comte-robert" },
         ].map(v => (
