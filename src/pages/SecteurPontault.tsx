@@ -8,6 +8,12 @@ import pontaultGare from "@/assets/pontault-gare.jpg";
 import pontaultRerE from "@/assets/pontault-rer-e.png";
 
 const SecteurPontault = () => (
+  <>
+    <PageSEO
+      title="Immobilier Pontault-Combault : acheter, vendre et estimer"
+      description="Tout savoir sur l'immobilier à Pontault-Combault. Prix au m², cadre de vie, transports et estimation immobilière gratuite en Seine-et-Marne."
+      canonical="/secteur/pontault-combault"
+    />
   <main className="bg-background">
     {/* Hero */}
     <section className="relative py-24 md:py-32">

@@ -9,6 +9,12 @@ import ozoirGolfReal from "@/assets/ozoir-golf-real.jpg";
 import ozoirHero from "@/assets/ozoir-hero.jpg";
 
 const SecteurOzoir = () => (
+  <>
+    <PageSEO
+      title="Immobilier Ozoir-la-Ferrière : acheter, vendre et estimer votre bien"
+      description="Découvrez pourquoi vivre à Ozoir-la-Ferrière est un excellent choix. Marché immobilier, cadre de vie et estimation immobilière locale."
+      canonical="/secteur/ozoir-la-ferriere"
+    />
   <main className="bg-background">
     {/* Hero */}
     <section className="relative bg-navy py-24 md:py-32">

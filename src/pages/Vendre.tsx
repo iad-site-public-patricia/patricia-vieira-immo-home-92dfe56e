@@ -60,6 +60,12 @@ const Vendre = () => {
   };
 
   return (
+    <>
+      <PageSEO
+        title="Vendre son bien immobilier en Seine-et-Marne | Patricia Vieira"
+        description="Confiez la vente de votre bien à Patricia Vieira, conseillère immobilier en Seine-et-Marne. Estimation gratuite, stratégie de vente personnalisée et accompagnement complet."
+        canonical="/vendre"
+      />
     <div>
       {/* Hero */}
       <section className="relative min-h-[60vh] flex items-center overflow-hidden">

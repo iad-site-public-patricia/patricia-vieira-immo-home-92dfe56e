@@ -29,8 +29,13 @@ const Rejoindre = () => {
   };
 
   return (
+    <>
+      <PageSEO
+        title="Rejoindre mon équipe immobilière iad en Seine-et-Marne | Patricia Vieira"
+        description="Devenez conseiller immobilier indépendant avec iad. Formation, accompagnement et outils pour réussir votre reconversion professionnelle dans l'immobilier."
+        canonical="/rejoindre"
+      />
     <div>
-      {/* 1. HERO SECTION */}
       <section className="relative min-h-[85vh] flex items-center overflow-hidden">
         <img src={heroImg} alt="Équipe de conseillers immobiliers" className="absolute inset-0 w-full h-full object-cover" />
         <div className="absolute inset-0 bg-gradient-to-r from-navy/80 via-navy/50 to-navy/20" />
