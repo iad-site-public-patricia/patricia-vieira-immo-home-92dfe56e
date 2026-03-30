@@ -32,6 +32,10 @@ const SecteurBrieComteRobert = () => (
       </h2>
       <div className="space-y-4 text-muted-foreground font-body leading-relaxed">
         <p>Située en <strong>Seine-et-Marne</strong>, à environ 30&nbsp;kilomètres de Paris, <strong>Brie-Comte-Robert</strong> est une commune qui séduit par son équilibre entre patrimoine, dynamisme et cadre de vie agréable. Elle attire aujourd'hui de nombreux acquéreurs à la recherche d'un environnement à la fois vivant et accessible.</p>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-6">
+          <img src={brieEglise} alt="Église et centre-ville de Brie-Comte-Robert" className="rounded-xl w-full h-64 object-cover" />
+          <img src={brieMarche} alt="Marché médiéval au château de Brie-Comte-Robert" className="rounded-xl w-full h-64 object-cover" />
+        </div>
         <p><strong>Vivre à Brie-Comte-Robert</strong>, c'est profiter d'une ville qui a su conserver son identité tout en se développant. Son centre-ville animé, ses commerces et ses infrastructures en font un lieu de vie particulièrement apprécié.</p>
         <p>L'<strong>immobilier à Brie-Comte-Robert</strong> bénéficie de cette attractivité, avec un marché dynamique et une demande régulière.</p>
       </div>
