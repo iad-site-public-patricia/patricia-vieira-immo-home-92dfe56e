@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import PageSEO from "@/components/PageSEO";
 import { Button } from "@/components/ui/button";
 import { Home, TrendingUp, MapPin, Users, Phone, ArrowRight, TreePine, Train, School, Heart, Leaf } from "lucide-react";
 import ozoirMaison1 from "@/assets/ozoir-maison1.jpg";

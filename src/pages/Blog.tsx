@@ -1,4 +1,5 @@
 import { useState } from "react";
+import PageSEO from "@/components/PageSEO";
 import { Link, useParams } from "react-router-dom";
 import { blogPosts, categories } from "@/data/blogPosts";
 import {

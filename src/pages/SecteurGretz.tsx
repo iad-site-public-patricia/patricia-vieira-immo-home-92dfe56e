@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import PageSEO from "@/components/PageSEO";
 import { Button } from "@/components/ui/button";
 import { Home, TrendingUp, MapPin, Users, Phone, ArrowRight, TreePine, Train, School, Heart, Building } from "lucide-react";
 import gretzBrocante from "@/assets/gretz-brocante.jpeg";

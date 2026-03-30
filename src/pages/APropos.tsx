@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import PageSEO from "@/components/PageSEO";
 import { Button } from "@/components/ui/button";
 import { Heart, Users, Award, Sparkles, ArrowRight } from "lucide-react";
 import { useEffect, useRef } from "react";

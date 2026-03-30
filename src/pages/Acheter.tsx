@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import PageSEO from "@/components/PageSEO";
 import { Button } from "@/components/ui/button";
 import { Search, Home, Eye, TrendingUp, FileSignature, ArrowRight } from "lucide-react";
 
