@@ -2,6 +2,9 @@ import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Home, TrendingUp, MapPin, Phone, ArrowRight, TreePine, Train, School, Heart, Building, PartyPopper, Users } from "lucide-react";
 import pontaultHero from "@/assets/pontault-hero.jpeg";
+import pontaultModernite from "@/assets/pontault-modernite.jpg";
+import pontaultGare from "@/assets/pontault-gare.jpg";
+import pontaultRerE from "@/assets/pontault-rer-e.png";
 
 const SecteurPontault = () => (
   <main className="bg-background">
@@ -46,6 +49,12 @@ const SecteurPontault = () => (
         <div className="space-y-4 text-muted-foreground font-body leading-relaxed">
           <p>L'un des grands atouts de Pontault-Combault est sa localisation.</p>
           <p>La commune est desservie par le <strong>RER&nbsp;E</strong>, permettant de rejoindre Paris rapidement, notamment la Gare de l'Est. Cette accessibilité est un véritable avantage pour les actifs travaillant en région parisienne.</p>
+        </div>
+        <div className="grid md:grid-cols-2 gap-6 my-8">
+          <img src={pontaultGare} alt="Gare d'Émerainville - Pontault-Combault" className="rounded-xl w-full h-56 object-cover" />
+          <img src={pontaultRerE} alt="Plan du RER E desservant Pontault-Combault" className="rounded-xl w-full h-56 object-contain bg-white p-2" />
+        </div>
+        <div className="space-y-4 text-muted-foreground font-body leading-relaxed">
           <p>La ville bénéficie également d'un accès facilité aux axes routiers, permettant de rejoindre facilement les zones d'activité environnantes.</p>
           <p><strong>Acheter une maison à Pontault-Combault</strong> permet ainsi de concilier qualité de vie et mobilité.</p>
         </div>
@@ -91,6 +100,11 @@ const SecteurPontault = () => (
       </h2>
       <div className="space-y-4 text-muted-foreground font-body leading-relaxed">
         <p>Pontault-Combault a su évoluer tout en conservant son attractivité.</p>
+      </div>
+      <div className="my-8">
+        <img src={pontaultModernite} alt="Quartier résidentiel de Pontault-Combault" className="rounded-xl w-full h-64 object-cover" />
+      </div>
+      <div className="space-y-4 text-muted-foreground font-body leading-relaxed">
         <p>La ville propose aujourd'hui un bon équilibre entre&nbsp;:</p>
         <ul className="list-disc list-inside space-y-1 ml-2">
           <li>zones résidentielles</li>
