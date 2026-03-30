@@ -219,7 +219,7 @@ const SecteurGretz = () => (
           { label: "Ozoir-la-Ferrière", to: "/secteur/ozoir-la-ferriere" },
           { label: "Tournan-en-Brie", to: "/secteur/tournan-en-brie" },
           { label: "Brie-Comte-Robert", to: "/secteur/brie-comte-robert" },
-          { label: "Roissy-en-Brie", to: "/secteur/roissy-en-brie" },
+          
           { label: "Pontault-Combault", to: "/secteur/pontault-combault" },
         ].map(v => (
           <Link key={v.to} to={v.to} className="rounded-full border border-border px-4 py-2 text-sm font-body text-muted-foreground hover:bg-primary hover:text-primary-foreground transition-colors">

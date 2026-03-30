@@ -222,7 +222,7 @@ const SecteurTournan = () => (
           { label: "Gretz-Armainvilliers", to: "/secteur/gretz-armainvilliers" },
           { label: "Ozoir-la-Ferrière", to: "/secteur/ozoir-la-ferriere" },
           { label: "Pontault-Combault", to: "/secteur/pontault-combault" },
-          { label: "Roissy-en-Brie", to: "/secteur/roissy-en-brie" },
+          
           { label: "Brie-Comte-Robert", to: "/secteur/brie-comte-robert" },
         ].map(v => (
           <Link key={v.to} to={v.to} className="rounded-full border border-border px-4 py-2 text-sm font-body text-muted-foreground hover:bg-primary hover:text-primary-foreground transition-colors">
