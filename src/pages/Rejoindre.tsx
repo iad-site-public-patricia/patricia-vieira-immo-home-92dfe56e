@@ -326,26 +326,28 @@ const Rejoindre = () => {
             <div className="section-divider" />
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {[
               {
-                quote: "Patricia m'a accompagnée avec bienveillance et professionnalisme. Grâce à elle, j'ai trouvé ma voie dans l'immobilier.",
-                name: "Sophie M.",
-                role: "Conseillère depuis 2 ans"
+                quote: "Patricia est passionnée par son métier et ce qui fait d'elle une excellente formatrice habilitée au sein du réseau IAD. Merci à toi pour ton partage de connaissances et pour ce temps que tu passes gracieusement à nous former ! Ton expérience et ta pédagogie sont précieux pour tous ceux qui, comme moi, souhaitent développer leurs compétences dans l'immobilier.",
+                name: "Laura B.",
+                role: "Conseillère depuis 2023",
+                stars: 5
               },
               {
-                quote: "Après 15 ans en entreprise, j'ai fait le grand saut. L'accompagnement de Patricia a fait toute la différence.",
-                name: "Thomas R.",
-                role: "Conseiller depuis 3 ans"
-              },
-              {
-                quote: "Une manager à l'écoute, disponible et inspirante. Je recommande à tous ceux qui hésitent encore.",
-                name: "Nadia K.",
-                role: "Conseillère depuis 1 an"
+                quote: "Patricia est toujours présente pour aider ses équipes, et met son dynamisme et sa volonté au service de notre réussite. Elle est toujours en recherche de solutions pour fédérer et faire progresser ses équipes, c'est une chance de l'avoir comme manager. Je vous la recommande que ce soit pour un projet d'achat ou de vente sur Gretz-Armainvilliers et alentours ou pour vous accompagner dans votre reconversion professionnelle dans l'immobilier.",
+                name: "Julien A.",
+                role: "Conseiller depuis 2018",
+                stars: 5
               },
             ].map((testimonial, i) => (
               <div key={i} className="bg-card rounded-2xl p-8 border border-border/40 hover:shadow-lg transition-shadow duration-300 flex flex-col">
                 <Quote className="w-8 h-8 text-primary/30 mb-4" />
+                <div className="flex gap-1 mb-3">
+                  {Array.from({ length: testimonial.stars }).map((_, s) => (
+                    <span key={s} className="text-yellow-500 text-lg">★</span>
+                  ))}
+                </div>
                 <p className="font-body text-muted-foreground leading-relaxed italic flex-1 mb-6">
                   "{testimonial.quote}"
                 </p>
