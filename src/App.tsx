@@ -1,7 +1,7 @@
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Route, Routes, useLocation } from "react-router-dom";
 import { useEffect } from "react";
-
+import { HelmetProvider } from "react-helmet-async";
 function ScrollToTop() {
   const { pathname, hash } = useLocation();
   useEffect(() => {
