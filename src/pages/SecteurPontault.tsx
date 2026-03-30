@@ -1,12 +1,16 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Home, TrendingUp, MapPin, Phone, ArrowRight, TreePine, Train, School, Heart, Building, PartyPopper, Users } from "lucide-react";
+import pontaultHero from "@/assets/pontault-hero.jpeg";
 
 const SecteurPontault = () => (
   <main className="bg-background">
     {/* Hero */}
-    <section className="relative bg-navy py-24 md:py-32">
-      <div className="absolute inset-0 bg-foreground/55" />
+    <section className="relative py-24 md:py-32">
+      <div className="absolute inset-0">
+        <img src={pontaultHero} alt="Pontault-Combault" className="w-full h-full object-cover" />
+        <div className="absolute inset-0 bg-foreground/45" />
+      </div>
       <div className="container mx-auto px-4 relative z-10 text-center max-w-3xl">
         <p className="text-primary-foreground/80 font-body text-sm uppercase tracking-widest mb-3">Mon secteur · Seine-et-Marne</p>
         <h1 className="leading-tight mb-6">
