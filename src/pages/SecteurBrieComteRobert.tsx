@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Home, TrendingUp, MapPin, Users, Phone, ArrowRight, TreePine, Train, School, Heart, Building } from "lucide-react";
+import coverImage from "@/assets/brie-comte-robert-cover.jpg";
 
 const SecteurBrieComteRobert = () => (
   <main className="bg-background">
