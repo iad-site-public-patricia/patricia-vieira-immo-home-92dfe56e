@@ -267,6 +267,7 @@ const SecteurOzoir = () => (
       </div>
     </section>
   </main>
+  </>
 );
 
 export default SecteurOzoir;

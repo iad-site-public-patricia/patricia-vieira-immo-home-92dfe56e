@@ -222,6 +222,7 @@ const Vendre = () => {
         </div>
       </section>
     </div>
+    </>
   );
 };
 

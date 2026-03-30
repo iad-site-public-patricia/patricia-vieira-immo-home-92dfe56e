@@ -65,6 +65,7 @@ const Acheter = () => {
         </div>
       </section>
     </div>
+    </>
   );
 };
 

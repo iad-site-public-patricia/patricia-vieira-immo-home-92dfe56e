@@ -236,6 +236,7 @@ const SecteurGretz = () => (
       </div>
     </section>
   </main>
+  </>
 );
 
 export default SecteurGretz;

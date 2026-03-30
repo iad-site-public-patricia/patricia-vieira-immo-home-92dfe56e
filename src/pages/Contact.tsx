@@ -103,6 +103,7 @@ const Contact = () => {
         </div>
       </section>
     </div>
+    </>
   );
 };
 

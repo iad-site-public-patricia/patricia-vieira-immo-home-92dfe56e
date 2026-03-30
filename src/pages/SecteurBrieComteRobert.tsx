@@ -226,6 +226,7 @@ const SecteurBrieComteRobert = () => (
       </div>
     </section>
   </main>
+  </>
 );
 
 export default SecteurBrieComteRobert;

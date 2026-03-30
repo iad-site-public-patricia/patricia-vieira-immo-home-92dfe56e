@@ -239,6 +239,7 @@ const SecteurTournan = () => (
       </div>
     </section>
   </main>
+  </>
 );
 
 export default SecteurTournan;
