@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Home, TrendingUp, MapPin, Phone, ArrowRight, TreePine, Train, School, Heart, Building, PartyPopper, Users } from "lucide-react";
+import pontaultHero from "@/assets/pontault-hero.jpeg";
 
 const SecteurPontault = () => (
   <main className="bg-background">
