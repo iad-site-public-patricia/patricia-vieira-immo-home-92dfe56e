@@ -35,6 +35,7 @@ import SecteurGretz from "./pages/SecteurGretz";
 import SecteurOzoir from "./pages/SecteurOzoir";
 import SecteurPontault from "./pages/SecteurPontault";
 import SecteurTournan from "./pages/SecteurTournan";
+import SecteurBrieComteRobert from "./pages/SecteurBrieComteRobert";
 
 const queryClient = new QueryClient();
 
@@ -60,6 +61,7 @@ const App = () => (
             <Route path="/secteur/ozoir-la-ferriere" element={<SecteurOzoir />} />
             <Route path="/secteur/pontault-combault" element={<SecteurPontault />} />
             <Route path="/secteur/tournan-en-brie" element={<SecteurTournan />} />
+            <Route path="/secteur/brie-comte-robert" element={<SecteurBrieComteRobert />} />
             <Route path="/secteur/:ville" element={<NotFound />} />
             {/* Recrutement */}
             <Route path="/rejoindre" element={<Rejoindre />} />
