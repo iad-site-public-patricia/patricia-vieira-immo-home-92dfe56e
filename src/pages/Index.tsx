@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import PageSEO from "@/components/PageSEO";
 import { Button } from "@/components/ui/button";
 import { Heart, TrendingUp, FileCheck, Users, Home, ShoppingBag, Briefcase, ArrowRight, Star, Quote, Target, Sparkles, Megaphone, UserCheck, Shield, HandshakeIcon, MessageCircle, Zap, Award, MapPin, CheckCircle, ClipboardCheck } from "lucide-react";
 import { blogPosts } from "@/data/blogPosts";
