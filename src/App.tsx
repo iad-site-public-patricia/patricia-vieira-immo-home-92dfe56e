@@ -33,6 +33,7 @@ import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
 import SecteurGretz from "./pages/SecteurGretz";
 import SecteurOzoir from "./pages/SecteurOzoir";
+import SecteurPontault from "./pages/SecteurPontault";
 
 const queryClient = new QueryClient();
 
@@ -56,6 +57,7 @@ const App = () => (
             <Route path="/secteur" element={<NotFound />} />
             <Route path="/secteur/gretz-armainvilliers" element={<SecteurGretz />} />
             <Route path="/secteur/ozoir-la-ferriere" element={<SecteurOzoir />} />
+            <Route path="/secteur/pontault-combault" element={<SecteurPontault />} />
             <Route path="/secteur/:ville" element={<NotFound />} />
             {/* Recrutement */}
             <Route path="/rejoindre" element={<Rejoindre />} />
