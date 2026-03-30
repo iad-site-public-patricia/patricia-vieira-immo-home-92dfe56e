@@ -1,5 +1,5 @@
 import { renderToString } from "react-dom/server";
-import { StaticRouter } from "react-router-dom/server";
+import { StaticRouter } from "react-router";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import Layout from "@/components/Layout";
@@ -16,7 +16,7 @@ import SecteurOzoir from "./pages/SecteurOzoir";
 import SecteurPontault from "./pages/SecteurPontault";
 import SecteurTournan from "./pages/SecteurTournan";
 import SecteurBrieComteRobert from "./pages/SecteurBrieComteRobert";
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route } from "react-router";
 
 const AppRoutes = () => (
   <Routes>
