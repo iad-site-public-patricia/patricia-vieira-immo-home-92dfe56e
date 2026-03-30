@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import PageSEO from "@/components/PageSEO";
 import { Button } from "@/components/ui/button";
 import { Heart, TrendingUp, FileCheck, Users, Home, ShoppingBag, Briefcase, ArrowRight, Star, Quote, Target, Sparkles, Megaphone, UserCheck, Shield, HandshakeIcon, MessageCircle, Zap, Award, MapPin, CheckCircle, ClipboardCheck } from "lucide-react";
 import { blogPosts } from "@/data/blogPosts";
@@ -83,6 +84,13 @@ const sectorCities = [
 ];
 
 const Index = () => {
+  return (
+    <>
+      <PageSEO
+        title="Patricia Vieira Immobilier – Conseillère immobilier en Seine-et-Marne"
+        description="Patricia Vieira, conseillère immobilier indépendante en Seine-et-Marne. Estimation gratuite, vente et achat immobilier à Gretz-Armainvilliers, Ozoir-la-Ferrière, Pontault-Combault et alentours."
+        canonical="/"
+      />
   return (
     <div>
       {/* Hero Section — 3 CTA */}
@@ -493,6 +501,7 @@ const Index = () => {
         </div>
       </section>
     </div>
+    </>
   );
 };
 

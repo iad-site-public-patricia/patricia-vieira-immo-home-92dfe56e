@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import PageSEO from "@/components/PageSEO";
 import { Button } from "@/components/ui/button";
 import { Home, TrendingUp, MapPin, Users, Phone, ArrowRight, TreePine, Train, School, Heart, Building } from "lucide-react";
 import coverImage from "@/assets/brie-comte-robert-cover.jpg";
@@ -6,6 +7,12 @@ import brieEglise from "@/assets/brie-eglise.jpg";
 import brieMarche from "@/assets/brie-marche.jpg";
 
 const SecteurBrieComteRobert = () => (
+  <>
+    <PageSEO
+      title="Immobilier Brie-Comte-Robert : vivre, acheter et investir"
+      description="Tout savoir sur l'immobilier à Brie-Comte-Robert. Patrimoine, cadre de vie, prix au m² et estimation immobilière gratuite en Seine-et-Marne."
+      canonical="/secteur/brie-comte-robert"
+    />
   <main className="bg-background">
     {/* Hero */}
     <section className="relative py-24 md:py-32 overflow-hidden">
@@ -219,6 +226,7 @@ const SecteurBrieComteRobert = () => (
       </div>
     </section>
   </main>
+  </>
 );
 
 export default SecteurBrieComteRobert;

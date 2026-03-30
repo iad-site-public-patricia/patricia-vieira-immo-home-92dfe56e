@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import PageSEO from "@/components/PageSEO";
 import { Button } from "@/components/ui/button";
 import { Search, Home, Eye, TrendingUp, FileSignature, ArrowRight } from "lucide-react";
 
@@ -12,6 +13,12 @@ const steps = [
 
 const Acheter = () => {
   return (
+    <>
+      <PageSEO
+        title="Acheter un bien immobilier en Seine-et-Marne | Patricia Vieira"
+        description="Trouvez la maison ou l'appartement idéal en Seine-et-Marne avec Patricia Vieira. Accompagnement personnalisé de la recherche à la signature chez le notaire."
+        canonical="/acheter"
+      />
     <div>
       <section className="relative min-h-[60vh] flex items-center overflow-hidden">
         <video autoPlay muted loop playsInline className="absolute inset-0 w-full h-full object-cover">
@@ -59,6 +66,7 @@ const Acheter = () => {
         </div>
       </section>
     </div>
+    </>
   );
 };
 

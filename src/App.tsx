@@ -1,7 +1,7 @@
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Route, Routes, useLocation } from "react-router-dom";
 import { useEffect } from "react";
-
+import { HelmetProvider } from "react-helmet-async";
 function ScrollToTop() {
   const { pathname, hash } = useLocation();
   useEffect(() => {
@@ -40,45 +40,47 @@ import SecteurBrieComteRobert from "./pages/SecteurBrieComteRobert";
 const queryClient = new QueryClient();
 
 const App = () => (
-  <QueryClientProvider client={queryClient}>
-    <TooltipProvider>
-      <Toaster />
-      <Sonner />
-      <BrowserRouter>
-        <ScrollToTop />
-        <Layout>
-          <Routes>
-            <Route path="/" element={<Index />} />
-            {/* Vendeurs */}
-            <Route path="/vendre" element={<Vendre />} />
-            <Route path="/vendre-son-bien" element={<Vendre />} />
-            <Route path="/estimation-immobiliere" element={<Contact />} />
-            {/* Acheteurs */}
-            <Route path="/acheter" element={<Acheter />} />
-            {/* Secteur - pages locales (placeholder vers Index pour l'instant) */}
-            <Route path="/secteur" element={<NotFound />} />
-            <Route path="/secteur/gretz-armainvilliers" element={<SecteurGretz />} />
-            <Route path="/secteur/ozoir-la-ferriere" element={<SecteurOzoir />} />
-            <Route path="/secteur/pontault-combault" element={<SecteurPontault />} />
-            <Route path="/secteur/tournan-en-brie" element={<SecteurTournan />} />
-            <Route path="/secteur/brie-comte-robert" element={<SecteurBrieComteRobert />} />
-            <Route path="/secteur/:ville" element={<NotFound />} />
-            {/* Recrutement */}
-            <Route path="/rejoindre" element={<Rejoindre />} />
-            {/* Blog */}
-            <Route path="/conseils-immobiliers" element={<Blog />} />
-            <Route path="/conseils-immobiliers/:id" element={<Blog />} />
-            <Route path="/blog" element={<Blog />} />
-            <Route path="/blog/:id" element={<Blog />} />
-            {/* Transversal */}
-            <Route path="/a-propos" element={<APropos />} />
-            <Route path="/contact" element={<Contact />} />
-            <Route path="*" element={<NotFound />} />
-          </Routes>
-        </Layout>
-      </BrowserRouter>
-    </TooltipProvider>
-  </QueryClientProvider>
+  <HelmetProvider>
+    <QueryClientProvider client={queryClient}>
+      <TooltipProvider>
+        <Toaster />
+        <Sonner />
+        <BrowserRouter>
+          <ScrollToTop />
+          <Layout>
+            <Routes>
+              <Route path="/" element={<Index />} />
+              {/* Vendeurs */}
+              <Route path="/vendre" element={<Vendre />} />
+              <Route path="/vendre-son-bien" element={<Vendre />} />
+              <Route path="/estimation-immobiliere" element={<Contact />} />
+              {/* Acheteurs */}
+              <Route path="/acheter" element={<Acheter />} />
+              {/* Secteur - pages locales */}
+              <Route path="/secteur" element={<NotFound />} />
+              <Route path="/secteur/gretz-armainvilliers" element={<SecteurGretz />} />
+              <Route path="/secteur/ozoir-la-ferriere" element={<SecteurOzoir />} />
+              <Route path="/secteur/pontault-combault" element={<SecteurPontault />} />
+              <Route path="/secteur/tournan-en-brie" element={<SecteurTournan />} />
+              <Route path="/secteur/brie-comte-robert" element={<SecteurBrieComteRobert />} />
+              <Route path="/secteur/:ville" element={<NotFound />} />
+              {/* Recrutement */}
+              <Route path="/rejoindre" element={<Rejoindre />} />
+              {/* Blog */}
+              <Route path="/conseils-immobiliers" element={<Blog />} />
+              <Route path="/conseils-immobiliers/:id" element={<Blog />} />
+              <Route path="/blog" element={<Blog />} />
+              <Route path="/blog/:id" element={<Blog />} />
+              {/* Transversal */}
+              <Route path="/a-propos" element={<APropos />} />
+              <Route path="/contact" element={<Contact />} />
+              <Route path="*" element={<NotFound />} />
+            </Routes>
+          </Layout>
+        </BrowserRouter>
+      </TooltipProvider>
+    </QueryClientProvider>
+  </HelmetProvider>
 );
 
 export default App;

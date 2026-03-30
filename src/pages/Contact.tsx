@@ -1,4 +1,5 @@
 import { useState } from "react";
+import PageSEO from "@/components/PageSEO";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -16,6 +17,12 @@ const Contact = () => {
   };
 
   return (
+    <>
+      <PageSEO
+        title="Contact et estimation immobilière gratuite | Patricia Vieira"
+        description="Contactez Patricia Vieira pour une estimation immobilière gratuite en Seine-et-Marne. Disponible et réactive pour tous vos projets immobiliers."
+        canonical="/contact"
+      />
     <div>
       <section className="relative section-padding overflow-hidden">
         <img src={coverContact} alt="Patricia Vieira au téléphone" className="absolute inset-0 w-full h-full object-cover object-[75%_center] md:object-center" />
@@ -97,6 +104,7 @@ const Contact = () => {
         </div>
       </section>
     </div>
+    </>
   );
 };
 

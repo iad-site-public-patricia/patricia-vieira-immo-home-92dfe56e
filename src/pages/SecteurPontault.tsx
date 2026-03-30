@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import PageSEO from "@/components/PageSEO";
 import { Button } from "@/components/ui/button";
 import { Home, TrendingUp, MapPin, Phone, ArrowRight, TreePine, Train, School, Heart, Building, PartyPopper, Users } from "lucide-react";
 import pontaultHero from "@/assets/pontault-hero.jpeg";
@@ -7,6 +8,12 @@ import pontaultGare from "@/assets/pontault-gare.jpg";
 import pontaultRerE from "@/assets/pontault-rer-e.png";
 
 const SecteurPontault = () => (
+  <>
+    <PageSEO
+      title="Immobilier Pontault-Combault : acheter, vendre et estimer"
+      description="Tout savoir sur l'immobilier à Pontault-Combault. Prix au m², cadre de vie, transports et estimation immobilière gratuite en Seine-et-Marne."
+      canonical="/secteur/pontault-combault"
+    />
   <main className="bg-background">
     {/* Hero */}
     <section className="relative py-24 md:py-32">
@@ -234,6 +241,7 @@ const SecteurPontault = () => (
       </div>
     </section>
   </main>
+  </>
 );
 
 export default SecteurPontault;

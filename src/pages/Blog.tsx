@@ -1,4 +1,5 @@
 import { useState } from "react";
+import PageSEO from "@/components/PageSEO";
 import { Link, useParams } from "react-router-dom";
 import { blogPosts, categories } from "@/data/blogPosts";
 import {
@@ -55,6 +56,12 @@ const Blog = () => {
   const filtered = activeCategory === "Tous" ? blogPosts : blogPosts.filter((p) => p.category === activeCategory);
 
   return (
+    <>
+      <PageSEO
+        title="Conseils immobiliers en Seine-et-Marne | Blog Patricia Vieira"
+        description="Guides pratiques, analyses de marché et conseils d'experte pour réussir vos projets immobiliers en Seine-et-Marne. Achat, vente, estimation et investissement."
+        canonical="/conseils-immobiliers"
+      />
     <div>
       {/* Magazine-style header */}
       <section className="relative section-padding overflow-hidden">
@@ -143,6 +150,7 @@ const Blog = () => {
         </div>
       </section>
     </div>
+    </>
   );
 };
 

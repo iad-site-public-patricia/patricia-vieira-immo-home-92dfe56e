@@ -1,8 +1,15 @@
 import { Link } from "react-router-dom";
+import PageSEO from "@/components/PageSEO";
 import { Button } from "@/components/ui/button";
 import { TrendingUp, MapPin, Phone, ArrowRight, TreePine, Train, School, Heart, Building, PartyPopper } from "lucide-react";
 
 const SecteurTournan = () => (
+  <>
+    <PageSEO
+      title="Immobilier Tournan-en-Brie : vivre, acheter et investir"
+      description="Découvrez Tournan-en-Brie : cadre de vie stratégique, marché immobilier dynamique et estimation immobilière en Seine-et-Marne."
+      canonical="/secteur/tournan-en-brie"
+    />
   <main className="bg-background">
     {/* Hero */}
     <section className="relative py-24 md:py-32 bg-secondary/60">
@@ -232,6 +239,7 @@ const SecteurTournan = () => (
       </div>
     </section>
   </main>
+  </>
 );
 
 export default SecteurTournan;

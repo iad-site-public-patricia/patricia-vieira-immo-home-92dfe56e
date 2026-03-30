@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import PageSEO from "@/components/PageSEO";
 import { Button } from "@/components/ui/button";
 import { Heart, Users, Award, Sparkles, ArrowRight } from "lucide-react";
 import { useEffect, useRef } from "react";
@@ -26,8 +27,13 @@ const APropos = () => {
   }, []);
 
   return (
+    <>
+      <PageSEO
+        title="À propos de Patricia Vieira – Conseillère immobilier en Seine-et-Marne"
+        description="Découvrez le parcours de Patricia Vieira, conseillère immobilier indépendante iad en Seine-et-Marne. Proximité, écoute et expertise locale."
+        canonical="/a-propos"
+      />
     <div>
-      {/* Hero Cover */}
       <section className="relative h-[55vh] min-h-[400px] overflow-hidden">
         <div
           className="absolute inset-0 bg-cover bg-center"
@@ -132,6 +138,7 @@ const APropos = () => {
         </div>
       </section>
     </div>
+    </>
   );
 };
 

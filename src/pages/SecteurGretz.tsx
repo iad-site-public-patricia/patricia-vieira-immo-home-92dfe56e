@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import PageSEO from "@/components/PageSEO";
 import { Button } from "@/components/ui/button";
 import { Home, TrendingUp, MapPin, Users, Phone, ArrowRight, TreePine, Train, School, Heart, Building } from "lucide-react";
 import gretzBrocante from "@/assets/gretz-brocante.jpeg";
@@ -10,6 +11,12 @@ import gretzChateau from "@/assets/gretz-chateau.jpg";
 import gretzHero from "@/assets/gretz-hero.jpg";
 
 const SecteurGretz = () => (
+  <>
+    <PageSEO
+      title="Immobilier Gretz-Armainvilliers : vivre, acheter et vendre"
+      description="Découvrez Gretz-Armainvilliers : cadre de vie, marché immobilier et estimation immobilière en Seine-et-Marne. Accompagnement personnalisé par Patricia Vieira."
+      canonical="/secteur/gretz-armainvilliers"
+    />
   <main className="bg-background">
     {/* Hero */}
     <section className="relative bg-cover bg-center py-24 md:py-32" style={{ backgroundImage: `url(${gretzHero})` }}>
@@ -229,6 +236,7 @@ const SecteurGretz = () => (
       </div>
     </section>
   </main>
+  </>
 );
 
 export default SecteurGretz;
