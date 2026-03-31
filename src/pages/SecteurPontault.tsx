@@ -6,6 +6,7 @@ import pontaultHero from "@/assets/pontault-hero.jpeg";
 import pontaultModernite from "@/assets/pontault-modernite.jpg";
 import pontaultGare from "@/assets/pontault-gare.jpg";
 import pontaultRerE from "@/assets/pontault-rer-e.png";
+import SecteurMaillage from "@/components/SecteurMaillage";
 
 const SecteurPontault = () => (
   <>
