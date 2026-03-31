@@ -7,6 +7,7 @@ import ozoirMaison2 from "@/assets/ozoir-maison2.jpg";
 import ozoirChateau from "@/assets/ozoir-chateau.jpg";
 import ozoirGolfReal from "@/assets/ozoir-golf-real.jpg";
 import ozoirHero from "@/assets/ozoir-hero.jpg";
+import SecteurMaillage from "@/components/SecteurMaillage";
 
 const SecteurOzoir = () => (
   <>
