@@ -9,6 +9,7 @@ import gretzRerE from "@/assets/gretz-rer-e.jpg";
 import gretzMairie from "@/assets/gretz-mairie.jpg";
 import gretzChateau from "@/assets/gretz-chateau.jpg";
 import gretzHero from "@/assets/gretz-hero.jpg";
+import SecteurMaillage from "@/components/SecteurMaillage";
 
 const SecteurGretz = () => (
   <>
