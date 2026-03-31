@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import PageSEO from "@/components/PageSEO";
 import { Button } from "@/components/ui/button";
 import { TrendingUp, MapPin, Phone, ArrowRight, TreePine, Train, School, Heart, Building, PartyPopper } from "lucide-react";
+import SecteurMaillage from "@/components/SecteurMaillage";
 
 const SecteurTournan = () => (
   <>
