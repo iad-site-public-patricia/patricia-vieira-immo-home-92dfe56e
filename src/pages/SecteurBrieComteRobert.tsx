@@ -5,6 +5,7 @@ import { Home, TrendingUp, MapPin, Users, Phone, ArrowRight, TreePine, Train, Sc
 import coverImage from "@/assets/brie-comte-robert-cover.jpg";
 import brieEglise from "@/assets/brie-eglise.jpg";
 import brieMarche from "@/assets/brie-marche.jpg";
+import SecteurMaillage from "@/components/SecteurMaillage";
 
 const SecteurBrieComteRobert = () => (
   <>
