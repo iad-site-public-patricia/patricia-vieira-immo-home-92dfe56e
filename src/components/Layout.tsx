@@ -249,6 +249,24 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
                   </Link>
                 ))}
               </div>
+              <h4 className="font-display text-lg font-semibold mt-6 mb-3">Mes secteurs</h4>
+              <div className="space-y-2">
+                {[
+                  { label: "Gretz-Armainvilliers", to: "/secteur/gretz-armainvilliers" },
+                  { label: "Ozoir-la-Ferrière", to: "/secteur/ozoir-la-ferriere" },
+                  { label: "Pontault-Combault", to: "/secteur/pontault-combault" },
+                  { label: "Tournan-en-Brie", to: "/secteur/tournan-en-brie" },
+                  { label: "Brie-Comte-Robert", to: "/secteur/brie-comte-robert" },
+                ].map((city) => (
+                  <Link
+                    key={city.to}
+                    to={city.to}
+                    className="block text-sm opacity-70 hover:opacity-100 hover:text-primary transition-all font-body"
+                  >
+                    {city.label}
+                  </Link>
+                ))}
+              </div>
             </div>
             <div>
               <h4 className="font-display text-lg font-semibold mb-5">Contact</h4>

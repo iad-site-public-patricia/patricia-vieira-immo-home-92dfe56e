@@ -92,6 +92,7 @@ const Index = () => {
         description="Patricia Vieira, conseillère immobilier indépendante en Seine-et-Marne. Estimation gratuite, vente et achat immobilier à Gretz-Armainvilliers, Ozoir-la-Ferrière, Pontault-Combault et alentours."
         canonical="/"
       />
+      <SchemaOrg breadcrumbs={[{ name: "Accueil", url: "/" }]} />
   return (
     <div>
       {/* Hero Section — 3 CTA */}
