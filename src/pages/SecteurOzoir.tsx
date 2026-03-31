@@ -7,6 +7,7 @@ import ozoirMaison2 from "@/assets/ozoir-maison2.jpg";
 import ozoirChateau from "@/assets/ozoir-chateau.jpg";
 import ozoirGolfReal from "@/assets/ozoir-golf-real.jpg";
 import ozoirHero from "@/assets/ozoir-hero.jpg";
+import SecteurMaillage from "@/components/SecteurMaillage";
 
 const SecteurOzoir = () => (
   <>
@@ -249,23 +250,7 @@ const SecteurOzoir = () => (
       </div>
     </section>
 
-    {/* Maillage interne */}
-    <section className="container mx-auto px-4 py-12 max-w-3xl">
-      <h2 className="font-heading text-xl font-semibold text-foreground mb-4">Découvrir les villes voisines</h2>
-      <div className="flex flex-wrap gap-3">
-        {[
-          { label: "Gretz-Armainvilliers", to: "/secteur/gretz-armainvilliers" },
-          { label: "Tournan-en-Brie", to: "/secteur/tournan-en-brie" },
-          { label: "Brie-Comte-Robert", to: "/secteur/brie-comte-robert" },
-          
-          { label: "Pontault-Combault", to: "/secteur/pontault-combault" },
-        ].map(v => (
-          <Link key={v.to} to={v.to} className="rounded-full border border-border px-4 py-2 text-sm font-body text-muted-foreground hover:bg-primary hover:text-primary-foreground transition-colors">
-            {v.label}
-          </Link>
-        ))}
-      </div>
-    </section>
+    <SecteurMaillage currentCity="Ozoir-la-Ferrière" currentPath="/secteur/ozoir-la-ferriere" />
   </main>
   </>
 );
