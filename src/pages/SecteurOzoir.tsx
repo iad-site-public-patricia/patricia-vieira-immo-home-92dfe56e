@@ -30,7 +30,7 @@ const SecteurOzoir = () => (
             <span className="font-body text-xl md:text-2xl font-normal text-primary-foreground/90">un cadre de vie recherché entre nature, standing et proximité de Paris</span>
           </h1>
           <div className="flex flex-wrap gap-4 justify-center">
-            <Button asChild variant="hero" size="lg"><Link to="/estimation-immobiliere#formulaire">Estimer mon bien <ArrowRight className="ml-1 h-4 w-4" /></Link></Button>
+            <Button asChild variant="hero" size="lg"><Link to="/estimation">Estimer mon bien <ArrowRight className="ml-1 h-4 w-4" /></Link></Button>
             <Button asChild variant="hero-outline" size="lg" className="border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-foreground"><Link to="/contact">Me contacter</Link></Button>
           </div>
         </div>
