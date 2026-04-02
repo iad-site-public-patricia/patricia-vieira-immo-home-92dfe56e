@@ -209,7 +209,7 @@ const SecteurBrieComteRobert = () => (
       </div>
     </section>
 
-    <SecteurMaillage currentCity="Brie-Comte-Robert" currentPath="/secteur/brie-comte-robert" />
+    <SecteurMaillage currentCity="Brie-Comte-Robert" currentPath="/immobilier-brie-comte-robert" />
   </main>
   </>
 );

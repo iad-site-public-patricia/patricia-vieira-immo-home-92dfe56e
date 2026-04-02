@@ -250,7 +250,7 @@ const SecteurOzoir = () => (
       </div>
     </section>
 
-    <SecteurMaillage currentCity="Ozoir-la-Ferrière" currentPath="/secteur/ozoir-la-ferriere" />
+    <SecteurMaillage currentCity="Ozoir-la-Ferrière" currentPath="/immobilier-ozoir-la-ferriere" />
   </main>
   </>
 );

@@ -224,7 +224,7 @@ const SecteurPontault = () => (
       </div>
     </section>
 
-    <SecteurMaillage currentCity="Pontault-Combault" currentPath="/secteur/pontault-combault" />
+    <SecteurMaillage currentCity="Pontault-Combault" currentPath="/immobilier-pontault-combault" />
   </main>
   </>
 );

@@ -219,7 +219,7 @@ const SecteurGretz = () => (
       </div>
     </section>
 
-    <SecteurMaillage currentCity="Gretz-Armainvilliers" currentPath="/secteur/gretz-armainvilliers" />
+    <SecteurMaillage currentCity="Gretz-Armainvilliers" currentPath="/immobilier-gretz-armainvilliers" />
   </main>
   </>
 );

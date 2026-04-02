@@ -222,7 +222,7 @@ const SecteurTournan = () => (
       </div>
     </section>
 
-    <SecteurMaillage currentCity="Tournan-en-Brie" currentPath="/secteur/tournan-en-brie" />
+    <SecteurMaillage currentCity="Tournan-en-Brie" currentPath="/immobilier-tournan-en-brie" />
   </main>
   </>
 );
