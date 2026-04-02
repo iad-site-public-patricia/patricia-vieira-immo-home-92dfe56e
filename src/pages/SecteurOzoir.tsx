@@ -12,9 +12,9 @@ import SecteurMaillage from "@/components/SecteurMaillage";
 const SecteurOzoir = () => (
   <>
     <PageSEO
-      title="Immobilier Ozoir-la-Ferrière : acheter, vendre et estimer votre bien"
-      description="Découvrez pourquoi vivre à Ozoir-la-Ferrière est un excellent choix. Marché immobilier, cadre de vie et estimation immobilière locale."
-      canonical="/secteur/ozoir-la-ferriere"
+      title="Immobilier Ozoir-la-Ferrière (77330) — Prix, Marché et Conseillère Locale | Patricia Vieira"
+      description="Tout savoir sur l'immobilier à Ozoir-la-Ferrière : prix au m², marché local, quartiers, commodités. Patricia Vieira, votre conseillère IAD sur place. Estimation gratuite."
+      canonical="/immobilier-ozoir-la-ferriere"
     />
   <main className="bg-background">
     {/* Hero */}
@@ -30,7 +30,7 @@ const SecteurOzoir = () => (
             <span className="font-body text-xl md:text-2xl font-normal text-primary-foreground/90">un cadre de vie recherché entre nature, standing et proximité de Paris</span>
           </h1>
           <div className="flex flex-wrap gap-4 justify-center">
-            <Button asChild variant="hero" size="lg"><Link to="/estimation-immobiliere#formulaire">Estimer mon bien <ArrowRight className="ml-1 h-4 w-4" /></Link></Button>
+            <Button asChild variant="hero" size="lg"><Link to="/estimation">Estimer mon bien <ArrowRight className="ml-1 h-4 w-4" /></Link></Button>
             <Button asChild variant="hero-outline" size="lg" className="border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-foreground"><Link to="/contact">Me contacter</Link></Button>
           </div>
         </div>
@@ -244,13 +244,13 @@ const SecteurOzoir = () => (
         </h2>
         <p className="text-muted-foreground font-body leading-relaxed mb-8">Vous avez un projet immobilier à Ozoir-la-Ferrière&nbsp;? Que ce soit pour vendre, acheter ou réaliser une <strong>estimation immobilière à Ozoir-la-Ferrière</strong>, je suis à votre écoute pour vous accompagner.</p>
         <div className="flex flex-wrap gap-4 justify-center">
-          <Button asChild variant="hero" size="lg"><Link to="/estimation-immobiliere#formulaire">Demander une estimation gratuite <ArrowRight className="ml-1 h-4 w-4" /></Link></Button>
+          <Button asChild variant="hero" size="lg"><Link to="/estimation">Demander une estimation gratuite <ArrowRight className="ml-1 h-4 w-4" /></Link></Button>
           <Button asChild variant="hero-outline" size="lg"><Link to="/contact">Me contacter</Link></Button>
         </div>
       </div>
     </section>
 
-    <SecteurMaillage currentCity="Ozoir-la-Ferrière" currentPath="/secteur/ozoir-la-ferriere" />
+    <SecteurMaillage currentCity="Ozoir-la-Ferrière" currentPath="/immobilier-ozoir-la-ferriere" />
   </main>
   </>
 );

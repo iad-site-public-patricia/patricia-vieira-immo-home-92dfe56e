@@ -10,9 +10,9 @@ import SecteurMaillage from "@/components/SecteurMaillage";
 const SecteurBrieComteRobert = () => (
   <>
     <PageSEO
-      title="Immobilier Brie-Comte-Robert : vivre, acheter et investir"
-      description="Tout savoir sur l'immobilier à Brie-Comte-Robert. Patrimoine, cadre de vie, prix au m² et estimation immobilière gratuite en Seine-et-Marne."
-      canonical="/secteur/brie-comte-robert"
+      title="Immobilier Brie-Comte-Robert (77170) — Prix, Marché et Conseillère Locale | Patricia Vieira"
+      description="Tout savoir sur l'immobilier à Brie-Comte-Robert : prix au m², marché local, quartiers, commodités. Patricia Vieira, votre conseillère IAD sur place. Estimation gratuite."
+      canonical="/immobilier-brie-comte-robert"
     />
   <main className="bg-background">
     {/* Hero */}
@@ -27,7 +27,7 @@ const SecteurBrieComteRobert = () => (
           <span className="font-body text-lg md:text-xl font-normal text-white/90 inline-block mt-2 bg-black/30 px-4 py-2 rounded-lg">vivre, acheter et investir dans une ville de caractère en Seine-et-Marne</span>
         </h1>
         <div className="flex flex-wrap gap-4 justify-center">
-          <Button asChild variant="hero" size="lg"><Link to="/estimation-immobiliere#formulaire">Estimer mon bien <ArrowRight className="ml-1 h-4 w-4" /></Link></Button>
+          <Button asChild variant="hero" size="lg"><Link to="/estimation">Estimer mon bien <ArrowRight className="ml-1 h-4 w-4" /></Link></Button>
           <Button asChild variant="hero-outline" size="lg" className="border-white text-white hover:bg-white hover:text-foreground"><Link to="/contact">Me contacter</Link></Button>
         </div>
       </div>
@@ -203,13 +203,13 @@ const SecteurBrieComteRobert = () => (
         </h2>
         <p className="text-muted-foreground font-body leading-relaxed mb-8">Que ce soit pour vendre, acheter ou réaliser une <strong>estimation immobilière à Brie-Comte-Robert</strong>, je suis à votre disposition pour vous accompagner.</p>
         <div className="flex flex-wrap gap-4 justify-center">
-          <Button asChild variant="hero" size="lg"><Link to="/estimation-immobiliere#formulaire">Demander une estimation gratuite <ArrowRight className="ml-1 h-4 w-4" /></Link></Button>
+          <Button asChild variant="hero" size="lg"><Link to="/estimation">Demander une estimation gratuite <ArrowRight className="ml-1 h-4 w-4" /></Link></Button>
           <Button asChild variant="hero-outline" size="lg"><Link to="/contact">Me contacter</Link></Button>
         </div>
       </div>
     </section>
 
-    <SecteurMaillage currentCity="Brie-Comte-Robert" currentPath="/secteur/brie-comte-robert" />
+    <SecteurMaillage currentCity="Brie-Comte-Robert" currentPath="/immobilier-brie-comte-robert" />
   </main>
   </>
 );

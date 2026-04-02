@@ -19,8 +19,8 @@ const Contact = () => {
   return (
     <>
       <PageSEO
-        title="Contact et estimation immobilière gratuite | Patricia Vieira"
-        description="Contactez Patricia Vieira pour une estimation immobilière gratuite en Seine-et-Marne. Disponible et réactive pour tous vos projets immobiliers."
+        title="Contact — Patricia Vieira Immobilier | Gretz-Armainvilliers — Seine-et-Marne (77)"
+        description="Contactez Patricia Vieira, conseillère immobilier IAD France. Tél : 07 85 61 87 68. Email : patricia.vieira@iadfrance.fr. Gretz-Armainvilliers et Seine-et-Marne (77)."
         canonical="/contact"
       />
     <div>

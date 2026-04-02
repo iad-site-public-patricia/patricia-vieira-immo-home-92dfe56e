@@ -79,18 +79,23 @@ const signatureMoments = [
 ];
 
 const sectorCities = [
-  "Gretz-Armainvilliers", "Ozoir-la-Ferrière", "Tournan-en-Brie",
-  "Brie-Comte-Robert", "Pontault-Combault",
-  "Presles-en-Brie", "Lésigny",
+  { name: "Gretz-Armainvilliers", to: "/immobilier-gretz-armainvilliers" },
+  { name: "Ozoir-la-Ferrière", to: "/immobilier-ozoir-la-ferriere" },
+  { name: "Tournan-en-Brie", to: "/immobilier-tournan-en-brie" },
+  { name: "Brie-Comte-Robert", to: "/immobilier-brie-comte-robert" },
+  { name: "Pontault-Combault", to: "/immobilier-pontault-combault" },
+  { name: "Roissy-en-Brie", to: "/immobilier-roissy-en-brie" },
 ];
 
 const Index = () => {
   return (
     <>
       <PageSEO
-        title="Patricia Vieira Immobilier – Conseillère immobilier en Seine-et-Marne"
-        description="Patricia Vieira, conseillère immobilier indépendante en Seine-et-Marne. Estimation gratuite, vente et achat immobilier à Gretz-Armainvilliers, Ozoir-la-Ferrière, Pontault-Combault et alentours."
+        title="Conseillère Immobilier Seine-et-Marne (77) | Patricia Vieira IAD — Gretz-Armainvilliers"
+        description="Patricia Vieira, conseillère immobilier IAD France en Seine-et-Marne (77). Estimation gratuite, accompagnement vente et achat à Gretz-Armainvilliers et environs. 4.9/5 sur 47+ avis clients vérifiés."
         canonical="/"
+        ogTitle="Patricia Vieira — Conseillère Immobilier Seine-et-Marne (77)"
+        ogDescription="Estimation gratuite, vente et achat immobilier à Gretz-Armainvilliers et en Seine-et-Marne. 4.9/5 sur 47+ avis."
       />
       <SchemaOrg breadcrumbs={[{ name: "Accueil", url: "/" }]} />
   return (
@@ -183,12 +188,12 @@ const Index = () => {
               </ul>
               <div className="flex flex-col sm:flex-row gap-3">
                 <Button variant="hero" size="lg" asChild>
-                  <Link to="/estimation-immobiliere#formulaire" className="inline-flex items-center gap-2">
+                  <Link to="/estimation" className="inline-flex items-center gap-2">
                     Estimer mon bien gratuitement <ArrowRight className="w-5 h-5" />
                   </Link>
                 </Button>
                 <Button variant="hero-outline" size="lg" asChild>
-                  <Link to="/vendre-son-bien#methode">Découvrir ma méthode de vente</Link>
+                  <Link to="/vendre#methode">Découvrir ma méthode de vente</Link>
                 </Button>
               </div>
             </div>
@@ -265,23 +270,18 @@ const Index = () => {
             J'interviens sur Gretz-Armainvilliers et dans un rayon de 30 km, en Seine-et-Marne et Val-de-Marne.
           </p>
           <div className="section-divider mb-10" />
-          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 max-w-3xl mx-auto mb-10">
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 gap-4 max-w-3xl mx-auto mb-10">
             {sectorCities.map((city) => (
               <Link
-                key={city}
-                to={`/secteur/${city.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/\s+/g, "-")}`}
+                key={city.to}
+                to={city.to}
                 className="flex items-center gap-2 justify-center bg-card rounded-xl px-4 py-4 border border-border/40 hover:border-primary/30 hover:shadow-md transition-all duration-300 group"
               >
                 <MapPin className="w-4 h-4 text-primary group-hover:scale-110 transition-transform" />
-                <span className="font-body text-sm font-medium text-foreground group-hover:text-primary transition-colors">{city}</span>
+                <span className="font-body text-sm font-medium text-foreground group-hover:text-primary transition-colors">{city.name}</span>
               </Link>
             ))}
           </div>
-          <Button variant="outline" size="lg" asChild>
-            <Link to="/secteur" className="inline-flex items-center gap-2">
-              Voir toutes les villes de mon secteur <ArrowRight className="w-4 h-4" />
-            </Link>
-          </Button>
         </div>
       </section>
 
@@ -366,7 +366,7 @@ const Index = () => {
           </div>
           <div className="text-center mt-10">
             <Button variant="hero" size="lg" asChild>
-              <Link to="/vendre-son-bien">Découvrir ma méthode</Link>
+              <Link to="/vendre">Découvrir ma méthode</Link>
             </Button>
           </div>
         </div>
@@ -492,8 +492,8 @@ const Index = () => {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button variant="hero" size="xl" asChild>
-              <Link to="/estimation-immobiliere#formulaire" className="inline-flex items-center gap-2">
-                Estimer mon bien <ArrowRight className="w-5 h-5" />
+              <Link to="/estimation" className="inline-flex items-center gap-2">
+                 Estimer mon bien <ArrowRight className="w-5 h-5" />
               </Link>
             </Button>
             <Button variant="hero-outline" size="xl" className="border-navy-foreground text-navy-foreground hover:bg-navy-foreground hover:text-navy" asChild>

@@ -29,8 +29,8 @@ const APropos = () => {
   return (
     <>
       <PageSEO
-        title="À propos de Patricia Vieira – Conseillère immobilier en Seine-et-Marne"
-        description="Découvrez le parcours de Patricia Vieira, conseillère immobilier indépendante iad en Seine-et-Marne. Proximité, écoute et expertise locale."
+        title="À Propos de Patricia Vieira — Conseillère Immobilier IAD en Seine-et-Marne"
+        description="Découvrez le parcours de Patricia Vieira, conseillère immobilier IAD France à Gretz-Armainvilliers depuis plus de 10 ans. Expertise locale, accompagnement personnalisé, passion du métier."
         canonical="/a-propos"
       />
     <div>

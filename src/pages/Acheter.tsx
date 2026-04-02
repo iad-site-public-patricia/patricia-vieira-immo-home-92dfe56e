@@ -15,8 +15,8 @@ const Acheter = () => {
   return (
     <>
       <PageSEO
-        title="Acheter un bien immobilier en Seine-et-Marne | Patricia Vieira"
-        description="Trouvez la maison ou l'appartement idéal en Seine-et-Marne avec Patricia Vieira. Accompagnement personnalisé de la recherche à la signature chez le notaire."
+        title="Acheter un Bien Immobilier en Seine-et-Marne (77) | Patricia Vieira — IAD France"
+        description="Trouvez votre futur logement en Seine-et-Marne avec Patricia Vieira, conseillère IAD France. Maisons et appartements à Gretz-Armainvilliers, Tournan-en-Brie, Ozoir-la-Ferrière et environs."
         canonical="/acheter"
       />
     <div>

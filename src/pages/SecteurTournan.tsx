@@ -7,9 +7,9 @@ import SecteurMaillage from "@/components/SecteurMaillage";
 const SecteurTournan = () => (
   <>
     <PageSEO
-      title="Immobilier Tournan-en-Brie : vivre, acheter et investir"
-      description="Découvrez Tournan-en-Brie : cadre de vie stratégique, marché immobilier dynamique et estimation immobilière en Seine-et-Marne."
-      canonical="/secteur/tournan-en-brie"
+      title="Immobilier Tournan-en-Brie (77220) — Prix, Marché et Conseillère Locale | Patricia Vieira"
+      description="Tout savoir sur l'immobilier à Tournan-en-Brie : prix au m², marché local, quartiers, commodités. Patricia Vieira, votre conseillère IAD sur place. Estimation gratuite."
+      canonical="/immobilier-tournan-en-brie"
     />
   <main className="bg-background">
     {/* Hero */}
@@ -22,7 +22,7 @@ const SecteurTournan = () => (
           <span className="font-body text-lg md:text-xl font-normal text-muted-foreground">vivre, acheter et investir dans une ville stratégique de Seine-et-Marne</span>
         </h1>
         <div className="flex flex-wrap gap-4 justify-center">
-          <Button asChild variant="hero" size="lg"><Link to="/estimation-immobiliere#formulaire">Estimer mon bien <ArrowRight className="ml-1 h-4 w-4" /></Link></Button>
+          <Button asChild variant="hero" size="lg"><Link to="/estimation">Estimer mon bien <ArrowRight className="ml-1 h-4 w-4" /></Link></Button>
           <Button asChild variant="hero-outline" size="lg"><Link to="/contact">Me contacter</Link></Button>
         </div>
       </div>
@@ -216,13 +216,13 @@ const SecteurTournan = () => (
         </h2>
         <p className="text-muted-foreground font-body leading-relaxed mb-8">Vous avez un projet immobilier à Tournan-en-Brie&nbsp;? Que ce soit pour vendre, acheter ou réaliser une <strong>estimation immobilière à Tournan-en-Brie</strong>, je suis à votre écoute pour vous accompagner. Chaque projet mérite une attention particulière, et je mets tout en œuvre pour qu'il se réalise dans les meilleures conditions.</p>
         <div className="flex flex-wrap gap-4 justify-center">
-          <Button asChild variant="hero" size="lg"><Link to="/estimation-immobiliere#formulaire">Demander une estimation gratuite <ArrowRight className="ml-1 h-4 w-4" /></Link></Button>
+          <Button asChild variant="hero" size="lg"><Link to="/estimation">Demander une estimation gratuite <ArrowRight className="ml-1 h-4 w-4" /></Link></Button>
           <Button asChild variant="hero-outline" size="lg"><Link to="/contact">Me contacter</Link></Button>
         </div>
       </div>
     </section>
 
-    <SecteurMaillage currentCity="Tournan-en-Brie" currentPath="/secteur/tournan-en-brie" />
+    <SecteurMaillage currentCity="Tournan-en-Brie" currentPath="/immobilier-tournan-en-brie" />
   </main>
   </>
 );

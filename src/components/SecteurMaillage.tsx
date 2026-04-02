@@ -10,11 +10,12 @@ import {
 } from "@/components/ui/breadcrumb";
 
 const allCities = [
-  { label: "Gretz-Armainvilliers", to: "/secteur/gretz-armainvilliers" },
-  { label: "Ozoir-la-Ferrière", to: "/secteur/ozoir-la-ferriere" },
-  { label: "Pontault-Combault", to: "/secteur/pontault-combault" },
-  { label: "Tournan-en-Brie", to: "/secteur/tournan-en-brie" },
-  { label: "Brie-Comte-Robert", to: "/secteur/brie-comte-robert" },
+  { label: "Gretz-Armainvilliers", to: "/immobilier-gretz-armainvilliers" },
+  { label: "Ozoir-la-Ferrière", to: "/immobilier-ozoir-la-ferriere" },
+  { label: "Pontault-Combault", to: "/immobilier-pontault-combault" },
+  { label: "Tournan-en-Brie", to: "/immobilier-tournan-en-brie" },
+  { label: "Brie-Comte-Robert", to: "/immobilier-brie-comte-robert" },
+  { label: "Roissy-en-Brie", to: "/immobilier-roissy-en-brie" },
 ];
 
 interface SecteurMaillageProps {
@@ -30,7 +31,6 @@ const SecteurMaillage = ({ currentCity, currentPath }: SecteurMaillageProps) => 
       <SchemaOrg
         breadcrumbs={[
           { name: "Accueil", url: "/" },
-          { name: "Mon secteur", url: "/secteur" },
           { name: currentCity, url: currentPath },
         ]}
       />
@@ -42,12 +42,6 @@ const SecteurMaillage = ({ currentCity, currentPath }: SecteurMaillageProps) => 
             <BreadcrumbItem>
               <BreadcrumbLink asChild>
                 <Link to="/">Accueil</Link>
-              </BreadcrumbLink>
-            </BreadcrumbItem>
-            <BreadcrumbSeparator />
-            <BreadcrumbItem>
-              <BreadcrumbLink asChild>
-                <Link to="/secteur">Mon secteur</Link>
               </BreadcrumbLink>
             </BreadcrumbItem>
             <BreadcrumbSeparator />

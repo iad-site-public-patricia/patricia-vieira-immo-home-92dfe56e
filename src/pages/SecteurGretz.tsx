@@ -14,9 +14,9 @@ import SecteurMaillage from "@/components/SecteurMaillage";
 const SecteurGretz = () => (
   <>
     <PageSEO
-      title="Immobilier Gretz-Armainvilliers : vivre, acheter et vendre"
-      description="Découvrez Gretz-Armainvilliers : cadre de vie, marché immobilier et estimation immobilière en Seine-et-Marne. Accompagnement personnalisé par Patricia Vieira."
-      canonical="/secteur/gretz-armainvilliers"
+      title="Immobilier Gretz-Armainvilliers (77220) — Prix, Marché et Conseillère Locale | Patricia Vieira"
+      description="Tout savoir sur l'immobilier à Gretz-Armainvilliers : prix au m², marché local, quartiers, commodités. Patricia Vieira, votre conseillère IAD sur place. Estimation gratuite."
+      canonical="/immobilier-gretz-armainvilliers"
     />
   <main className="bg-background">
     {/* Hero */}
@@ -30,7 +30,7 @@ const SecteurGretz = () => (
           <span className="font-body text-xl md:text-2xl font-normal text-primary-foreground/90">vivre, acheter et investir dans un cadre privilégié en Seine-et-Marne</span>
         </h1>
         <div className="flex flex-wrap gap-4 justify-center">
-          <Button asChild variant="hero" size="lg"><Link to="/estimation-immobiliere#formulaire">Estimer mon bien <ArrowRight className="ml-1 h-4 w-4" /></Link></Button>
+          <Button asChild variant="hero" size="lg"><Link to="/estimation">Estimer mon bien <ArrowRight className="ml-1 h-4 w-4" /></Link></Button>
           <Button asChild variant="hero-outline" size="lg" className="border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-foreground"><Link to="/contact">Me contacter</Link></Button>
         </div>
       </div>
@@ -213,13 +213,13 @@ const SecteurGretz = () => (
         </h2>
         <p className="text-muted-foreground font-body leading-relaxed mb-8">Que vous souhaitiez vendre, acheter ou simplement obtenir une <strong>estimation immobilière à Gretz-Armainvilliers</strong>, je suis à votre disposition pour vous accompagner à chaque étape, avec sérieux et bienveillance.</p>
         <div className="flex flex-wrap gap-4 justify-center">
-          <Button asChild variant="hero" size="lg"><Link to="/estimation-immobiliere#formulaire">Demander une estimation gratuite <ArrowRight className="ml-1 h-4 w-4" /></Link></Button>
+          <Button asChild variant="hero" size="lg"><Link to="/estimation">Demander une estimation gratuite <ArrowRight className="ml-1 h-4 w-4" /></Link></Button>
           <Button asChild variant="hero-outline" size="lg"><Link to="/contact">Me contacter</Link></Button>
         </div>
       </div>
     </section>
 
-    <SecteurMaillage currentCity="Gretz-Armainvilliers" currentPath="/secteur/gretz-armainvilliers" />
+    <SecteurMaillage currentCity="Gretz-Armainvilliers" currentPath="/immobilier-gretz-armainvilliers" />
   </main>
   </>
 );

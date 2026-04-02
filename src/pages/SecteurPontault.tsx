@@ -11,9 +11,9 @@ import SecteurMaillage from "@/components/SecteurMaillage";
 const SecteurPontault = () => (
   <>
     <PageSEO
-      title="Immobilier Pontault-Combault : acheter, vendre et estimer"
-      description="Tout savoir sur l'immobilier à Pontault-Combault. Prix au m², cadre de vie, transports et estimation immobilière gratuite en Seine-et-Marne."
-      canonical="/secteur/pontault-combault"
+      title="Immobilier Pontault-Combault (77340) — Prix, Marché et Conseillère Locale | Patricia Vieira"
+      description="Tout savoir sur l'immobilier à Pontault-Combault : prix au m², marché local, quartiers, commodités. Patricia Vieira, votre conseillère IAD sur place. Estimation gratuite."
+      canonical="/immobilier-pontault-combault"
     />
   <main className="bg-background">
     {/* Hero */}
@@ -30,7 +30,7 @@ const SecteurPontault = () => (
           <span className="font-body text-xl md:text-2xl font-normal text-primary-foreground/90">une ville dynamique et attractive en Seine-et-Marne</span>
         </h1>
         <div className="flex flex-wrap gap-4 justify-center">
-          <Button asChild variant="hero" size="lg"><Link to="/estimation-immobiliere#formulaire">Estimer mon bien <ArrowRight className="ml-1 h-4 w-4" /></Link></Button>
+          <Button asChild variant="hero" size="lg"><Link to="/estimation">Estimer mon bien <ArrowRight className="ml-1 h-4 w-4" /></Link></Button>
           <Button asChild variant="hero-outline" size="lg" className="border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-foreground"><Link to="/contact">Me contacter</Link></Button>
         </div>
       </div>
@@ -218,13 +218,13 @@ const SecteurPontault = () => (
         </h2>
         <p className="text-muted-foreground font-body leading-relaxed mb-8">Vous avez un projet immobilier à Pontault-Combault&nbsp;? Que ce soit pour vendre, acheter ou réaliser une <strong>estimation immobilière à Pontault-Combault</strong>, je suis à votre disposition pour vous accompagner. Mon objectif est de vous aider à concrétiser votre projet avec sérieux, bienveillance et efficacité.</p>
         <div className="flex flex-wrap gap-4 justify-center">
-          <Button asChild variant="hero" size="lg"><Link to="/estimation-immobiliere#formulaire">Demander une estimation gratuite <ArrowRight className="ml-1 h-4 w-4" /></Link></Button>
+          <Button asChild variant="hero" size="lg"><Link to="/estimation">Demander une estimation gratuite <ArrowRight className="ml-1 h-4 w-4" /></Link></Button>
           <Button asChild variant="hero-outline" size="lg"><Link to="/contact">Me contacter</Link></Button>
         </div>
       </div>
     </section>
 
-    <SecteurMaillage currentCity="Pontault-Combault" currentPath="/secteur/pontault-combault" />
+    <SecteurMaillage currentCity="Pontault-Combault" currentPath="/immobilier-pontault-combault" />
   </main>
   </>
 );

@@ -1,7 +1,5 @@
 /**
  * Post-build prerendering script.
- * Starts a local server from the dist/ folder, crawls each route with Puppeteer,
- * and writes the rendered HTML back to dist/.
  */
 import { launch } from "puppeteer";
 import { createServer } from "http";
@@ -14,22 +12,23 @@ const PORT = 4173;
 const ROUTES = [
   "/",
   "/vendre",
-  "/vendre-son-bien",
-  "/estimation-immobiliere",
+  "/estimation",
   "/acheter",
-  "/secteur/gretz-armainvilliers",
-  "/secteur/ozoir-la-ferriere",
-  "/secteur/pontault-combault",
-  "/secteur/tournan-en-brie",
-  "/secteur/brie-comte-robert",
+  "/avis",
+  "/immobilier-gretz-armainvilliers",
+  "/immobilier-ozoir-la-ferriere",
+  "/immobilier-pontault-combault",
+  "/immobilier-tournan-en-brie",
+  "/immobilier-brie-comte-robert",
+  "/immobilier-roissy-en-brie",
   "/rejoindre",
   "/conseils-immobiliers",
   "/blog",
   "/a-propos",
   "/contact",
+  "/mentions-legales",
 ];
 
-// Simple static file server for dist/
 function startServer() {
   const mime = {
     ".html": "text/html",
@@ -43,12 +42,12 @@ function startServer() {
     ".webp": "image/webp",
     ".woff": "font/woff",
     ".woff2": "font/woff2",
+    ".mp4": "video/mp4",
   };
 
   const server = createServer((req, res) => {
     let filePath = join(DIST, req.url === "/" ? "index.html" : req.url);
     if (!existsSync(filePath)) {
-      // SPA fallback
       filePath = join(DIST, "index.html");
     }
     const ext = "." + filePath.split(".").pop();
@@ -77,13 +76,10 @@ async function prerender() {
     const url = `http://localhost:${PORT}${route}`;
 
     await page.goto(url, { waitUntil: "networkidle0", timeout: 15000 });
-
-    // Wait for React to render
     await page.waitForSelector("#root", { timeout: 5000 });
 
     const html = await page.content();
 
-    // Determine output path
     const outPath =
       route === "/"
         ? join(DIST, "index.html")
