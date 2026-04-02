@@ -213,7 +213,7 @@ const SecteurGretz = () => (
         </h2>
         <p className="text-muted-foreground font-body leading-relaxed mb-8">Que vous souhaitiez vendre, acheter ou simplement obtenir une <strong>estimation immobilière à Gretz-Armainvilliers</strong>, je suis à votre disposition pour vous accompagner à chaque étape, avec sérieux et bienveillance.</p>
         <div className="flex flex-wrap gap-4 justify-center">
-          <Button asChild variant="hero" size="lg"><Link to="/estimation-immobiliere#formulaire">Demander une estimation gratuite <ArrowRight className="ml-1 h-4 w-4" /></Link></Button>
+          <Button asChild variant="hero" size="lg"><Link to="/estimation">Demander une estimation gratuite <ArrowRight className="ml-1 h-4 w-4" /></Link></Button>
           <Button asChild variant="hero-outline" size="lg"><Link to="/contact">Me contacter</Link></Button>
         </div>
       </div>
