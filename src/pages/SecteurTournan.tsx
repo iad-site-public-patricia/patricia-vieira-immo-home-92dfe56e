@@ -22,7 +22,7 @@ const SecteurTournan = () => (
           <span className="font-body text-lg md:text-xl font-normal text-muted-foreground">vivre, acheter et investir dans une ville stratégique de Seine-et-Marne</span>
         </h1>
         <div className="flex flex-wrap gap-4 justify-center">
-          <Button asChild variant="hero" size="lg"><Link to="/estimation-immobiliere#formulaire">Estimer mon bien <ArrowRight className="ml-1 h-4 w-4" /></Link></Button>
+          <Button asChild variant="hero" size="lg"><Link to="/estimation">Estimer mon bien <ArrowRight className="ml-1 h-4 w-4" /></Link></Button>
           <Button asChild variant="hero-outline" size="lg"><Link to="/contact">Me contacter</Link></Button>
         </div>
       </div>
