@@ -13,7 +13,7 @@ const SecteurPontault = () => (
     <PageSEO
       title="Immobilier Pontault-Combault : acheter, vendre et estimer"
       description="Tout savoir sur l'immobilier à Pontault-Combault. Prix au m², cadre de vie, transports et estimation immobilière gratuite en Seine-et-Marne."
-      canonical="/secteur/pontault-combault"
+      canonical="/immobilier-pontault-combault"
     />
   <main className="bg-background">
     {/* Hero */}
