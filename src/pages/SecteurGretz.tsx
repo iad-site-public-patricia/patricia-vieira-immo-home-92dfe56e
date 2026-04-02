@@ -16,7 +16,7 @@ const SecteurGretz = () => (
     <PageSEO
       title="Immobilier Gretz-Armainvilliers : vivre, acheter et vendre"
       description="Découvrez Gretz-Armainvilliers : cadre de vie, marché immobilier et estimation immobilière en Seine-et-Marne. Accompagnement personnalisé par Patricia Vieira."
-      canonical="/secteur/gretz-armainvilliers"
+      canonical="/immobilier-gretz-armainvilliers"
     />
   <main className="bg-background">
     {/* Hero */}
