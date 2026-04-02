@@ -270,23 +270,18 @@ const Index = () => {
             J'interviens sur Gretz-Armainvilliers et dans un rayon de 30 km, en Seine-et-Marne et Val-de-Marne.
           </p>
           <div className="section-divider mb-10" />
-          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 max-w-3xl mx-auto mb-10">
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 gap-4 max-w-3xl mx-auto mb-10">
             {sectorCities.map((city) => (
               <Link
-                key={city}
-                to={`/secteur/${city.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/\s+/g, "-")}`}
+                key={city.to}
+                to={city.to}
                 className="flex items-center gap-2 justify-center bg-card rounded-xl px-4 py-4 border border-border/40 hover:border-primary/30 hover:shadow-md transition-all duration-300 group"
               >
                 <MapPin className="w-4 h-4 text-primary group-hover:scale-110 transition-transform" />
-                <span className="font-body text-sm font-medium text-foreground group-hover:text-primary transition-colors">{city}</span>
+                <span className="font-body text-sm font-medium text-foreground group-hover:text-primary transition-colors">{city.name}</span>
               </Link>
             ))}
           </div>
-          <Button variant="outline" size="lg" asChild>
-            <Link to="/secteur" className="inline-flex items-center gap-2">
-              Voir toutes les villes de mon secteur <ArrowRight className="w-4 h-4" />
-            </Link>
-          </Button>
         </div>
       </section>
 
