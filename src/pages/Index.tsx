@@ -492,8 +492,8 @@ const Index = () => {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button variant="hero" size="xl" asChild>
-              <Link to="/estimation-immobiliere#formulaire" className="inline-flex items-center gap-2">
-                Estimer mon bien <ArrowRight className="w-5 h-5" />
+              <Link to="/estimation" className="inline-flex items-center gap-2">
+                 Estimer mon bien <ArrowRight className="w-5 h-5" />
               </Link>
             </Button>
             <Button variant="hero-outline" size="xl" className="border-navy-foreground text-navy-foreground hover:bg-navy-foreground hover:text-navy" asChild>
