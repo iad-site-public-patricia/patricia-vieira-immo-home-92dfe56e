@@ -216,7 +216,7 @@ const SecteurTournan = () => (
         </h2>
         <p className="text-muted-foreground font-body leading-relaxed mb-8">Vous avez un projet immobilier à Tournan-en-Brie&nbsp;? Que ce soit pour vendre, acheter ou réaliser une <strong>estimation immobilière à Tournan-en-Brie</strong>, je suis à votre écoute pour vous accompagner. Chaque projet mérite une attention particulière, et je mets tout en œuvre pour qu'il se réalise dans les meilleures conditions.</p>
         <div className="flex flex-wrap gap-4 justify-center">
-          <Button asChild variant="hero" size="lg"><Link to="/estimation-immobiliere#formulaire">Demander une estimation gratuite <ArrowRight className="ml-1 h-4 w-4" /></Link></Button>
+          <Button asChild variant="hero" size="lg"><Link to="/estimation">Demander une estimation gratuite <ArrowRight className="ml-1 h-4 w-4" /></Link></Button>
           <Button asChild variant="hero-outline" size="lg"><Link to="/contact">Me contacter</Link></Button>
         </div>
       </div>
