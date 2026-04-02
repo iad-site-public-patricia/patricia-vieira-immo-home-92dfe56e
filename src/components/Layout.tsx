@@ -5,37 +5,41 @@ import { Button } from "@/components/ui/button";
 
 const mainNav = [
   { label: "Accueil", to: "/" },
-  { label: "Vendre", to: "/vendre-son-bien" },
-  { label: "Estimation gratuite", to: "/estimation-immobiliere#formulaire" },
+  { label: "Estimation gratuite", to: "/estimation" },
+  { label: "Vendre", to: "/vendre" },
   { label: "Acheter", to: "/acheter" },
+  { label: "Avis clients", to: "/avis" },
   {
-    label: "Mon secteur",
-    to: "/secteur",
+    label: "Communes",
+    to: "/immobilier-gretz-armainvilliers",
     children: [
-      { label: "Gretz-Armainvilliers", to: "/secteur/gretz-armainvilliers" },
-      { label: "Ozoir-la-Ferrière", to: "/secteur/ozoir-la-ferriere" },
-      { label: "Tournan-en-Brie", to: "/secteur/tournan-en-brie" },
-      { label: "Brie-Comte-Robert", to: "/secteur/brie-comte-robert" },
-      
-      { label: "Pontault-Combault", to: "/secteur/pontault-combault" },
-      { label: "Voir toutes les villes →", to: "/secteur" },
+      { label: "Gretz-Armainvilliers", to: "/immobilier-gretz-armainvilliers" },
+      { label: "Ozoir-la-Ferrière", to: "/immobilier-ozoir-la-ferriere" },
+      { label: "Tournan-en-Brie", to: "/immobilier-tournan-en-brie" },
+      { label: "Brie-Comte-Robert", to: "/immobilier-brie-comte-robert" },
+      { label: "Pontault-Combault", to: "/immobilier-pontault-combault" },
+      { label: "Roissy-en-Brie", to: "/immobilier-roissy-en-brie" },
     ],
   },
-  { label: "Rejoindre mon équipe", to: "/rejoindre" },
-  { label: "Conseils", to: "/conseils-immobiliers" },
   { label: "Contact", to: "/contact" },
 ];
 
 const footerNav = [
   { label: "Accueil", to: "/" },
-  { label: "Vendre son bien", to: "/vendre-son-bien" },
-  { label: "Estimation gratuite", to: "/estimation-immobiliere#formulaire" },
+  { label: "Estimation gratuite", to: "/estimation" },
+  { label: "Vendre", to: "/vendre" },
   { label: "Acheter", to: "/acheter" },
-  { label: "Mon secteur", to: "/secteur" },
-  { label: "Rejoindre mon équipe", to: "/rejoindre" },
-  { label: "Conseils immobiliers", to: "/conseils-immobiliers" },
-  { label: "À propos", to: "/a-propos" },
+  { label: "Avis clients", to: "/avis" },
   { label: "Contact", to: "/contact" },
+];
+
+const footerCities = [
+  { label: "Gretz-Armainvilliers", to: "/immobilier-gretz-armainvilliers" },
+  { label: "Ozoir-la-Ferrière", to: "/immobilier-ozoir-la-ferriere" },
+  { label: "Pontault-Combault", to: "/immobilier-pontault-combault" },
+  { label: "Tournan-en-Brie", to: "/immobilier-tournan-en-brie" },
+  { label: "Brie-Comte-Robert", to: "/immobilier-brie-comte-robert" },
+  { label: "Roissy-en-Brie", to: "/immobilier-roissy-en-brie" },
 ];
 
 const Layout = ({ children }: { children: React.ReactNode }) => {
@@ -112,7 +116,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
                   <button
                     onClick={() => setSectorOpen(!sectorOpen)}
                     className={`px-3.5 py-2 text-sm font-body font-medium rounded-lg transition-all duration-200 flex items-center gap-1 ${
-                      isActive(link.to)
+                      location.pathname.startsWith("/immobilier-")
                         ? "text-primary bg-terracotta-light"
                         : "text-foreground/75 hover:text-primary hover:bg-muted/60"
                     }`}
@@ -170,7 +174,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
                   <button
                     onClick={() => setMobileSectorOpen(!mobileSectorOpen)}
                     className={`w-full flex items-center justify-between px-4 py-3 rounded-lg text-sm font-body font-medium uppercase tracking-wide transition-all ${
-                      isActive(link.to)
+                      location.pathname.startsWith("/immobilier-")
                         ? "text-primary bg-terracotta-light"
                         : "text-foreground/80 hover:text-primary hover:bg-muted/60"
                     }`}
@@ -217,12 +221,12 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
       {/* Footer */}
       <footer className="bg-navy text-navy-foreground">
         <div className="container mx-auto px-4 py-14 md:py-20">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-10">
             <div>
               <h3 className="font-display text-2xl font-bold mb-4">Patricia Vieira</h3>
               <p className="text-sm opacity-75 font-body leading-relaxed">
-                Conseillère immobilier indépendante<br />
-                Partenaire du réseau IAD France
+                Conseillère immobilier IAD France<br />
+                à Gretz-Armainvilliers
               </p>
               <div className="flex items-center gap-3 mt-5">
                 <a href="https://www.facebook.com/patriciavieiraimmobilier/" target="_blank" rel="noopener noreferrer nofollow" className="w-10 h-10 rounded-full bg-navy-foreground/10 hover:bg-primary/30 flex items-center justify-center transition-colors" aria-label="Facebook">
@@ -237,7 +241,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
               </div>
             </div>
             <div>
-              <h4 className="font-display text-lg font-semibold mb-5">Navigation</h4>
+              <h4 className="font-display text-lg font-semibold mb-5">Liens rapides</h4>
               <div className="space-y-2.5">
                 {footerNav.map((link) => (
                   <Link
@@ -249,15 +253,11 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
                   </Link>
                 ))}
               </div>
-              <h4 className="font-display text-lg font-semibold mt-6 mb-3">Mes secteurs</h4>
-              <div className="space-y-2">
-                {[
-                  { label: "Gretz-Armainvilliers", to: "/secteur/gretz-armainvilliers" },
-                  { label: "Ozoir-la-Ferrière", to: "/secteur/ozoir-la-ferriere" },
-                  { label: "Pontault-Combault", to: "/secteur/pontault-combault" },
-                  { label: "Tournan-en-Brie", to: "/secteur/tournan-en-brie" },
-                  { label: "Brie-Comte-Robert", to: "/secteur/brie-comte-robert" },
-                ].map((city) => (
+            </div>
+            <div>
+              <h4 className="font-display text-lg font-semibold mb-5">Communes</h4>
+              <div className="space-y-2.5">
+                {footerCities.map((city) => (
                   <Link
                     key={city.to}
                     to={city.to}
@@ -277,7 +277,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
                 <a href="mailto:patricia.vieira@iadfrance.fr" className="flex items-center gap-2 hover:text-primary transition-colors">
                   <Mail className="w-4 h-4 text-primary" /> patricia.vieira@iadfrance.fr
                 </a>
-                <p className="flex items-center gap-2">📍 Gretz-Armainvilliers et alentours, Seine-et-Marne</p>
+                <p className="flex items-center gap-2">📍 Gretz-Armainvilliers et alentours</p>
               </div>
               <div className="mt-6">
                 <Button variant="hero" size="sm" asChild>
@@ -288,8 +288,9 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
               </div>
             </div>
           </div>
-          <div className="border-t border-navy-foreground/15 mt-10 pt-8 text-center text-sm opacity-50 font-body">
-            © {new Date().getFullYear()} Patricia Vieira Immobilier. Tous droits réservés.
+          <div className="border-t border-navy-foreground/15 mt-10 pt-8 flex flex-col sm:flex-row items-center justify-between text-sm opacity-50 font-body gap-2">
+            <span>© {new Date().getFullYear()} Patricia Vieira Immobilier — Agent commercial RSAC Melun 339303513 — IAD France</span>
+            <Link to="/mentions-legales" className="hover:text-primary hover:opacity-100 transition-all">Mentions légales</Link>
           </div>
         </div>
       </footer>

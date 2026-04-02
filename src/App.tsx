@@ -1,7 +1,8 @@
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { BrowserRouter, Route, Routes, useLocation } from "react-router-dom";
+import { BrowserRouter, Route, Routes, Navigate, useLocation } from "react-router-dom";
 import { useEffect } from "react";
 import { HelmetProvider } from "react-helmet-async";
+
 function ScrollToTop() {
   const { pathname, hash } = useLocation();
   useEffect(() => {
@@ -19,6 +20,7 @@ function ScrollToTop() {
   }, [pathname, hash]);
   return null;
 }
+
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
@@ -26,16 +28,20 @@ import Layout from "@/components/Layout";
 import Index from "./pages/Index";
 import Vendre from "./pages/Vendre";
 import Acheter from "./pages/Acheter";
+import Estimation from "./pages/Estimation";
+import Avis from "./pages/Avis";
 import Rejoindre from "./pages/Rejoindre";
 import Blog from "./pages/Blog";
 import APropos from "./pages/APropos";
 import Contact from "./pages/Contact";
+import MentionsLegales from "./pages/MentionsLegales";
 import NotFound from "./pages/NotFound";
 import SecteurGretz from "./pages/SecteurGretz";
 import SecteurOzoir from "./pages/SecteurOzoir";
 import SecteurPontault from "./pages/SecteurPontault";
 import SecteurTournan from "./pages/SecteurTournan";
 import SecteurBrieComteRobert from "./pages/SecteurBrieComteRobert";
+import SecteurRoissy from "./pages/SecteurRoissy";
 
 const queryClient = new QueryClient();
 
@@ -50,20 +56,18 @@ const App = () => (
           <Layout>
             <Routes>
               <Route path="/" element={<Index />} />
-              {/* Vendeurs */}
+              {/* Services */}
               <Route path="/vendre" element={<Vendre />} />
-              <Route path="/vendre-son-bien" element={<Vendre />} />
-              <Route path="/estimation-immobiliere" element={<Contact />} />
-              {/* Acheteurs */}
+              <Route path="/estimation" element={<Estimation />} />
               <Route path="/acheter" element={<Acheter />} />
-              {/* Secteur - pages locales */}
-              <Route path="/secteur" element={<NotFound />} />
-              <Route path="/secteur/gretz-armainvilliers" element={<SecteurGretz />} />
-              <Route path="/secteur/ozoir-la-ferriere" element={<SecteurOzoir />} />
-              <Route path="/secteur/pontault-combault" element={<SecteurPontault />} />
-              <Route path="/secteur/tournan-en-brie" element={<SecteurTournan />} />
-              <Route path="/secteur/brie-comte-robert" element={<SecteurBrieComteRobert />} />
-              <Route path="/secteur/:ville" element={<NotFound />} />
+              <Route path="/avis" element={<Avis />} />
+              {/* Pages locales – nouvelles URLs */}
+              <Route path="/immobilier-gretz-armainvilliers" element={<SecteurGretz />} />
+              <Route path="/immobilier-ozoir-la-ferriere" element={<SecteurOzoir />} />
+              <Route path="/immobilier-pontault-combault" element={<SecteurPontault />} />
+              <Route path="/immobilier-tournan-en-brie" element={<SecteurTournan />} />
+              <Route path="/immobilier-brie-comte-robert" element={<SecteurBrieComteRobert />} />
+              <Route path="/immobilier-roissy-en-brie" element={<SecteurRoissy />} />
               {/* Recrutement */}
               <Route path="/rejoindre" element={<Rejoindre />} />
               {/* Blog */}
@@ -74,6 +78,17 @@ const App = () => (
               {/* Transversal */}
               <Route path="/a-propos" element={<APropos />} />
               <Route path="/contact" element={<Contact />} />
+              <Route path="/mentions-legales" element={<MentionsLegales />} />
+              {/* Redirections anciennes URLs */}
+              <Route path="/secteur/gretz-armainvilliers" element={<Navigate to="/immobilier-gretz-armainvilliers" replace />} />
+              <Route path="/secteur/ozoir-la-ferriere" element={<Navigate to="/immobilier-ozoir-la-ferriere" replace />} />
+              <Route path="/secteur/pontault-combault" element={<Navigate to="/immobilier-pontault-combault" replace />} />
+              <Route path="/secteur/tournan-en-brie" element={<Navigate to="/immobilier-tournan-en-brie" replace />} />
+              <Route path="/secteur/brie-comte-robert" element={<Navigate to="/immobilier-brie-comte-robert" replace />} />
+              <Route path="/estimation-immobiliere" element={<Navigate to="/estimation" replace />} />
+              <Route path="/vendre-son-bien" element={<Navigate to="/vendre" replace />} />
+              <Route path="/secteur" element={<Navigate to="/" replace />} />
+              <Route path="/secteur/:ville" element={<NotFound />} />
               <Route path="*" element={<NotFound />} />
             </Routes>
           </Layout>
