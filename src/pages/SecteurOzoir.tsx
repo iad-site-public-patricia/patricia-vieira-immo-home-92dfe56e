@@ -14,7 +14,7 @@ const SecteurOzoir = () => (
     <PageSEO
       title="Immobilier Ozoir-la-Ferrière : acheter, vendre et estimer votre bien"
       description="Découvrez pourquoi vivre à Ozoir-la-Ferrière est un excellent choix. Marché immobilier, cadre de vie et estimation immobilière locale."
-      canonical="/secteur/ozoir-la-ferriere"
+      canonical="/immobilier-ozoir-la-ferriere"
     />
   <main className="bg-background">
     {/* Hero */}
