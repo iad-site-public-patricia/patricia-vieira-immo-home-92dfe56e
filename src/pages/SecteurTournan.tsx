@@ -9,7 +9,7 @@ const SecteurTournan = () => (
     <PageSEO
       title="Immobilier Tournan-en-Brie : vivre, acheter et investir"
       description="Découvrez Tournan-en-Brie : cadre de vie stratégique, marché immobilier dynamique et estimation immobilière en Seine-et-Marne."
-      canonical="/secteur/tournan-en-brie"
+      canonical="/immobilier-tournan-en-brie"
     />
   <main className="bg-background">
     {/* Hero */}
