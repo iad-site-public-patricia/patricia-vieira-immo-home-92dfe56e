@@ -88,9 +88,11 @@ const Index = () => {
   return (
     <>
       <PageSEO
-        title="Patricia Vieira Immobilier – Conseillère immobilier en Seine-et-Marne"
-        description="Patricia Vieira, conseillère immobilier indépendante en Seine-et-Marne. Estimation gratuite, vente et achat immobilier à Gretz-Armainvilliers, Ozoir-la-Ferrière, Pontault-Combault et alentours."
+        title="Conseillère Immobilier Seine-et-Marne (77) | Patricia Vieira IAD — Gretz-Armainvilliers"
+        description="Patricia Vieira, conseillère immobilier IAD France en Seine-et-Marne (77). Estimation gratuite, accompagnement vente et achat à Gretz-Armainvilliers et environs. 4.9/5 sur 47+ avis clients vérifiés."
         canonical="/"
+        ogTitle="Patricia Vieira — Conseillère Immobilier Seine-et-Marne (77)"
+        ogDescription="Estimation gratuite, vente et achat immobilier à Gretz-Armainvilliers et en Seine-et-Marne. 4.9/5 sur 47+ avis."
       />
       <SchemaOrg breadcrumbs={[{ name: "Accueil", url: "/" }]} />
   return (
