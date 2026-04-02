@@ -12,7 +12,7 @@ const SecteurBrieComteRobert = () => (
     <PageSEO
       title="Immobilier Brie-Comte-Robert : vivre, acheter et investir"
       description="Tout savoir sur l'immobilier à Brie-Comte-Robert. Patrimoine, cadre de vie, prix au m² et estimation immobilière gratuite en Seine-et-Marne."
-      canonical="/secteur/brie-comte-robert"
+      canonical="/immobilier-brie-comte-robert"
     />
   <main className="bg-background">
     {/* Hero */}
