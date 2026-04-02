@@ -188,7 +188,7 @@ const Index = () => {
               </ul>
               <div className="flex flex-col sm:flex-row gap-3">
                 <Button variant="hero" size="lg" asChild>
-                  <Link to="/estimation-immobiliere#formulaire" className="inline-flex items-center gap-2">
+                  <Link to="/estimation" className="inline-flex items-center gap-2">
                     Estimer mon bien gratuitement <ArrowRight className="w-5 h-5" />
                   </Link>
                 </Button>
