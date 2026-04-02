@@ -14,8 +14,8 @@ import SecteurMaillage from "@/components/SecteurMaillage";
 const SecteurGretz = () => (
   <>
     <PageSEO
-      title="Immobilier Gretz-Armainvilliers : vivre, acheter et vendre"
-      description="Découvrez Gretz-Armainvilliers : cadre de vie, marché immobilier et estimation immobilière en Seine-et-Marne. Accompagnement personnalisé par Patricia Vieira."
+      title="Immobilier Gretz-Armainvilliers (77220) — Prix, Marché et Conseillère Locale | Patricia Vieira"
+      description="Tout savoir sur l'immobilier à Gretz-Armainvilliers : prix au m², marché local, quartiers, commodités. Patricia Vieira, votre conseillère IAD sur place. Estimation gratuite."
       canonical="/immobilier-gretz-armainvilliers"
     />
   <main className="bg-background">

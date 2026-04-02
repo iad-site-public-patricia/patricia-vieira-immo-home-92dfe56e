@@ -11,8 +11,8 @@ import SecteurMaillage from "@/components/SecteurMaillage";
 const SecteurPontault = () => (
   <>
     <PageSEO
-      title="Immobilier Pontault-Combault : acheter, vendre et estimer"
-      description="Tout savoir sur l'immobilier à Pontault-Combault. Prix au m², cadre de vie, transports et estimation immobilière gratuite en Seine-et-Marne."
+      title="Immobilier Pontault-Combault (77340) — Prix, Marché et Conseillère Locale | Patricia Vieira"
+      description="Tout savoir sur l'immobilier à Pontault-Combault : prix au m², marché local, quartiers, commodités. Patricia Vieira, votre conseillère IAD sur place. Estimation gratuite."
       canonical="/immobilier-pontault-combault"
     />
   <main className="bg-background">

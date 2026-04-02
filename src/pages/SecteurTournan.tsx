@@ -7,8 +7,8 @@ import SecteurMaillage from "@/components/SecteurMaillage";
 const SecteurTournan = () => (
   <>
     <PageSEO
-      title="Immobilier Tournan-en-Brie : vivre, acheter et investir"
-      description="Découvrez Tournan-en-Brie : cadre de vie stratégique, marché immobilier dynamique et estimation immobilière en Seine-et-Marne."
+      title="Immobilier Tournan-en-Brie (77220) — Prix, Marché et Conseillère Locale | Patricia Vieira"
+      description="Tout savoir sur l'immobilier à Tournan-en-Brie : prix au m², marché local, quartiers, commodités. Patricia Vieira, votre conseillère IAD sur place. Estimation gratuite."
       canonical="/immobilier-tournan-en-brie"
     />
   <main className="bg-background">

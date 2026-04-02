@@ -12,8 +12,8 @@ import SecteurMaillage from "@/components/SecteurMaillage";
 const SecteurOzoir = () => (
   <>
     <PageSEO
-      title="Immobilier Ozoir-la-Ferrière : acheter, vendre et estimer votre bien"
-      description="Découvrez pourquoi vivre à Ozoir-la-Ferrière est un excellent choix. Marché immobilier, cadre de vie et estimation immobilière locale."
+      title="Immobilier Ozoir-la-Ferrière (77330) — Prix, Marché et Conseillère Locale | Patricia Vieira"
+      description="Tout savoir sur l'immobilier à Ozoir-la-Ferrière : prix au m², marché local, quartiers, commodités. Patricia Vieira, votre conseillère IAD sur place. Estimation gratuite."
       canonical="/immobilier-ozoir-la-ferriere"
     />
   <main className="bg-background">
