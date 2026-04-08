@@ -38,8 +38,8 @@ const Estimation = () => {
   return (
     <>
       <PageSEO
-        title="Estimation Immobilière Gratuite à Gretz-Armainvilliers et Seine-et-Marne (77) | Patricia Vieira"
-        description="Faites estimer votre bien immobilier gratuitement et sans engagement par Patricia Vieira, conseillère IAD France à Gretz-Armainvilliers. Estimation précise basée sur le marché local du 77."
+        title="Estimation Immobilière Gratuite en Seine-et-Marne (77) | Patricia Vieira IAD"
+        description="Faites estimer votre bien immobilier gratuitement par Patricia Vieira, conseillère IAD France à Gretz-Armainvilliers. Estimation précise basée sur le marché local du 77. Sans engagement."
         canonical="/estimation"
       />
       <SchemaOrg
