@@ -98,7 +98,6 @@ const Index = () => {
         ogDescription="Estimation gratuite, vente et achat immobilier à Gretz-Armainvilliers et en Seine-et-Marne. 4.9/5 sur 47+ avis."
       />
       <SchemaOrg breadcrumbs={[{ name: "Accueil", url: "/" }]} />
-  return (
     <div>
       {/* Hero Section — 3 CTA */}
       <section className="relative min-h-[85vh] flex items-center overflow-hidden">

@@ -1,5 +1,6 @@
 import { useState } from "react";
 import PageSEO from "@/components/PageSEO";
+import SchemaOrg from "@/components/SchemaOrg";
 import { Link, useParams } from "react-router-dom";
 import { blogPosts, categories } from "@/data/blogPosts";
 import {
@@ -61,6 +62,12 @@ const Blog = () => {
         title="Conseils immobiliers en Seine-et-Marne | Blog Patricia Vieira"
         description="Guides pratiques, analyses de marché et conseils d'experte pour réussir vos projets immobiliers en Seine-et-Marne. Achat, vente, estimation et investissement."
         canonical="/conseils-immobiliers"
+      />
+      <SchemaOrg
+        breadcrumbs={[
+          { name: "Accueil", url: "/" },
+          { name: "Blog", url: "/conseils-immobiliers" },
+        ]}
       />
     <div>
       {/* Magazine-style header */}
