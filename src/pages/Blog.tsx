@@ -1,5 +1,6 @@
 import { useState } from "react";
 import PageSEO from "@/components/PageSEO";
+import SchemaOrg from "@/components/SchemaOrg";
 import { Link, useParams } from "react-router-dom";
 import { blogPosts, categories } from "@/data/blogPosts";
 import {
