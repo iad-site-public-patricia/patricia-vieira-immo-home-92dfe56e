@@ -5,7 +5,7 @@ const MentionsLegales = () => (
   <>
     <PageSEO
       title="Mentions Légales — Patricia Vieira Immobilier"
-      description="Mentions légales du site immobilier-seine-et-marne.fr. Éditeur, hébergeur, protection des données personnelles (RGPD)."
+      description="Mentions légales du site Patricia Vieira Immobilier. Agent commercial RSAC Melun 339303513. IAD France."
       canonical="/mentions-legales"
     />
     <SchemaOrg

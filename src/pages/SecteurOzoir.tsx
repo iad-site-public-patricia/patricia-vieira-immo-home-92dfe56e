@@ -12,8 +12,8 @@ import SecteurMaillage from "@/components/SecteurMaillage";
 const SecteurOzoir = () => (
   <>
     <PageSEO
-      title="Immobilier Ozoir-la-Ferrière (77330) — Prix, Marché et Conseillère Locale | Patricia Vieira"
-      description="Tout savoir sur l'immobilier à Ozoir-la-Ferrière : prix au m², marché local, quartiers, commodités. Patricia Vieira, votre conseillère IAD sur place. Estimation gratuite."
+      title="Immobilier Ozoir-la-Ferrière (77330) — Prix, Marché Local | Patricia Vieira"
+      description="Immobilier à Ozoir-la-Ferrière : prix, marché, quartiers. Patricia Vieira, conseillère IAD France en Seine-et-Marne. Estimation gratuite."
       canonical="/immobilier-ozoir-la-ferriere"
     />
   <main className="bg-background">

@@ -11,8 +11,8 @@ import SecteurMaillage from "@/components/SecteurMaillage";
 const SecteurPontault = () => (
   <>
     <PageSEO
-      title="Immobilier Pontault-Combault (77340) — Prix, Marché et Conseillère Locale | Patricia Vieira"
-      description="Tout savoir sur l'immobilier à Pontault-Combault : prix au m², marché local, quartiers, commodités. Patricia Vieira, votre conseillère IAD sur place. Estimation gratuite."
+      title="Immobilier Pontault-Combault (77340) — Prix, Marché Local | Patricia Vieira"
+      description="Immobilier à Pontault-Combault : prix au m², marché, quartiers résidentiels. Patricia Vieira, conseillère IAD France. Estimation gratuite."
       canonical="/immobilier-pontault-combault"
     />
   <main className="bg-background">
