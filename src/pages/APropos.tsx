@@ -4,7 +4,7 @@ import SchemaOrg from "@/components/SchemaOrg";
 import { Button } from "@/components/ui/button";
 import { Heart, Users, Award, Sparkles, ArrowRight } from "lucide-react";
 import { useEffect, useRef } from "react";
-import patriciaPhoto from "@/assets/patricia-vieira.png";
+import patriciaPhoto from "@/assets/patricia-vieira.jpg";
 
 const APropos = () => {
   const sectionRef = useRef<HTMLDivElement>(null);
