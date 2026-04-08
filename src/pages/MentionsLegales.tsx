@@ -1,4 +1,5 @@
 import PageSEO from "@/components/PageSEO";
+import SchemaOrg from "@/components/SchemaOrg";
 
 const MentionsLegales = () => (
   <>
@@ -6,6 +7,12 @@ const MentionsLegales = () => (
       title="Mentions Légales — Patricia Vieira Immobilier"
       description="Mentions légales du site immobilier-seine-et-marne.fr. Éditeur, hébergeur, protection des données personnelles (RGPD)."
       canonical="/mentions-legales"
+    />
+    <SchemaOrg
+      breadcrumbs={[
+        { name: "Accueil", url: "/" },
+        { name: "Mentions Légales", url: "/mentions-legales" },
+      ]}
     />
     <main>
       <section className="bg-navy text-navy-foreground section-padding">
