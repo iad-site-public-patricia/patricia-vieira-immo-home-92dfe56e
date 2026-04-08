@@ -4,18 +4,18 @@ import SchemaOrg from "@/components/SchemaOrg";
 import { Button } from "@/components/ui/button";
 import { Heart, TrendingUp, FileCheck, Users, Home, ShoppingBag, Briefcase, ArrowRight, Star, Quote, Target, Sparkles, Megaphone, UserCheck, Shield, HandshakeIcon, MessageCircle, Zap, Award, MapPin, CheckCircle, ClipboardCheck } from "lucide-react";
 import { blogPosts } from "@/data/blogPosts";
-import vendu1 from "@/assets/vendu-1.png";
-import vendu3 from "@/assets/vendu-3.png";
-import vendu4 from "@/assets/vendu-4.png";
-import vendu5 from "@/assets/vendu-5.png";
-import vendu6 from "@/assets/vendu-6.png";
-import vendu7 from "@/assets/vendu-7.png";
-import vendu8 from "@/assets/vendu-8.png";
-import vendu9 from "@/assets/vendu-9.png";
-import vendu5_2 from "@/assets/vendu-5-2.png";
-import vendu10 from "@/assets/vendu-10.png";
+import vendu1 from "@/assets/vendu-1.jpg";
+import vendu3 from "@/assets/vendu-3.jpg";
+import vendu4 from "@/assets/vendu-4.jpg";
+import vendu5 from "@/assets/vendu-5.jpg";
+import vendu6 from "@/assets/vendu-6.jpg";
+import vendu7 from "@/assets/vendu-7.jpg";
+import vendu8 from "@/assets/vendu-8.jpg";
+import vendu9 from "@/assets/vendu-9.jpg";
+import vendu5_2 from "@/assets/vendu-5-2.jpg";
+import vendu10 from "@/assets/vendu-10.jpg";
 import signatureNotaire from "@/assets/signature-notaire.jpg";
-import signatureNotaire2 from "@/assets/signature-notaire-2.png";
+import signatureNotaire2 from "@/assets/signature-notaire-2.jpg";
 
 const soldProperties = [
   { image: vendu1, type: "Maison familiale", location: "Lésigny 77", time: "Vendu en 1 mois" },

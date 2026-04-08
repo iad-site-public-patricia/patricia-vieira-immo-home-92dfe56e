@@ -9,7 +9,7 @@ import { Label } from "@/components/ui/label";
 import { Checkbox } from "@/components/ui/checkbox";
 import { toast } from "sonner";
 import { Phone, Mail, MapPin, Facebook, Instagram } from "lucide-react";
-import coverContact from "@/assets/cover-contact.png";
+import coverContact from "@/assets/cover-contact.jpg";
 
 const Contact = () => {
   const [form, setForm] = useState({ nom: "", email: "", telephone: "", objet: "", message: "" });
