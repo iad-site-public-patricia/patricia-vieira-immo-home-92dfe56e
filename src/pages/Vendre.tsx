@@ -59,8 +59,8 @@ const Vendre = () => {
   return (
     <>
       <PageSEO
-        title="Vendre Votre Bien Immobilier en Seine-et-Marne (77) | Patricia Vieira — IAD France"
-        description="Vendez votre maison ou appartement en Seine-et-Marne avec Patricia Vieira, IAD France. Honoraires réduits, accompagnement personnalisé, estimation gratuite. Gretz-Armainvilliers et environs."
+        title="Vendre Votre Bien Immobilier en Seine-et-Marne (77) | Patricia Vieira IAD France"
+        description="Vendez votre maison ou appartement en Seine-et-Marne avec Patricia Vieira, IAD France. Honoraires réduits de 20 à 30%, accompagnement complet, estimation gratuite."
         canonical="/vendre"
       />
       <SchemaOrg

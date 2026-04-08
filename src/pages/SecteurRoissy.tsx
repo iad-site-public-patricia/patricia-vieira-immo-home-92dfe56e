@@ -7,8 +7,8 @@ import SecteurMaillage from "@/components/SecteurMaillage";
 const SecteurRoissy = () => (
   <>
     <PageSEO
-      title="Immobilier Roissy-en-Brie (77680) — Prix, Marché et Conseillère Locale | Patricia Vieira"
-      description="Tout savoir sur l'immobilier à Roissy-en-Brie : prix au m², marché local, quartiers, commodités. Patricia Vieira, votre conseillère IAD sur place. Estimation gratuite."
+      title="Immobilier Roissy-en-Brie (77680) — Prix, Marché Local | Patricia Vieira"
+      description="Immobilier à Roissy-en-Brie : prix, marché local, cadre de vie. Patricia Vieira, conseillère IAD France. Estimation gratuite et sans engagement."
       canonical="/immobilier-roissy-en-brie"
       geoPlacename="Roissy-en-Brie"
     />

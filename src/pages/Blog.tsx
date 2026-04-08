@@ -59,8 +59,8 @@ const Blog = () => {
   return (
     <>
       <PageSEO
-        title="Conseils immobiliers en Seine-et-Marne | Blog Patricia Vieira"
-        description="Guides pratiques, analyses de marché et conseils d'experte pour réussir vos projets immobiliers en Seine-et-Marne. Achat, vente, estimation et investissement."
+        title="Conseils Immobiliers Seine-et-Marne — Blog Patricia Vieira"
+        description="Conseils et actualités immobilières en Seine-et-Marne par Patricia Vieira, conseillère IAD France. Prix, tendances, astuces pour vendre et acheter."
         canonical="/conseils-immobiliers"
       />
       <SchemaOrg
