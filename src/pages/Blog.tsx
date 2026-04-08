@@ -63,6 +63,12 @@ const Blog = () => {
         description="Guides pratiques, analyses de marché et conseils d'experte pour réussir vos projets immobiliers en Seine-et-Marne. Achat, vente, estimation et investissement."
         canonical="/conseils-immobiliers"
       />
+      <SchemaOrg
+        breadcrumbs={[
+          { name: "Accueil", url: "/" },
+          { name: "Blog", url: "/conseils-immobiliers" },
+        ]}
+      />
     <div>
       {/* Magazine-style header */}
       <section className="relative section-padding overflow-hidden">
