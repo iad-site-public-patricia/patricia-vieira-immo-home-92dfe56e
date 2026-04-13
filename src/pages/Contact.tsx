@@ -8,7 +8,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import { Checkbox } from "@/components/ui/checkbox";
 import { toast } from "sonner";
-import { Phone, Mail, MapPin, Facebook, Instagram } from "lucide-react";
+import { Phone, Mail, MapPin, Facebook, Instagram, Linkedin } from "lucide-react";
 import coverContact from "@/assets/cover-contact.jpg";
 
 const Contact = () => {
@@ -93,7 +93,7 @@ const Contact = () => {
 
                 <div className="pt-4">
                   <h3 className="font-display text-lg font-semibold text-foreground mb-3">Réseaux sociaux</h3>
-                  <div className="flex gap-3">
+                  <div className="flex gap-3 flex-wrap">
                     <a
                       href="https://www.facebook.com/patriciavieiraimmobilier/"
                       target="_blank"
@@ -109,6 +109,14 @@ const Contact = () => {
                       className="flex items-center gap-2 px-4 py-2.5 bg-card rounded-lg border border-border/40 text-sm font-body text-muted-foreground hover:text-primary hover:border-primary/30 transition-all"
                     >
                       <Instagram className="w-4 h-4" /> Instagram
+                    </a>
+                    <a
+                      href="https://www.linkedin.com/in/patriciavieiraiad/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-2 px-4 py-2.5 bg-card rounded-lg border border-border/40 text-sm font-body text-muted-foreground hover:text-primary hover:border-primary/30 transition-all"
+                    >
+                      <Linkedin className="w-4 h-4" /> LinkedIn
                     </a>
                   </div>
                 </div>

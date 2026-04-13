@@ -8,7 +8,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { toast } from "sonner";
 import {
   ArrowRight, Heart, Users, Briefcase, Star,
-  CheckCircle2, Quote, Facebook, Linkedin, Building2, Laptop,
+  CheckCircle2, Quote, Facebook, Instagram, Linkedin, Building2, Laptop,
   MapPin, GraduationCap, UserPlus
 } from "lucide-react";
 
@@ -329,9 +329,12 @@ const MonEquipe = () => {
               </Button>
             </form>
 
-            <div className="flex items-center justify-center gap-4 mt-8">
+            <div className="flex items-center justify-center gap-4 mt-8 flex-wrap">
               <a href="https://www.facebook.com/patriciavieiraimmobilier/" target="_blank" rel="noopener noreferrer nofollow" className="flex items-center gap-2 px-5 py-3 bg-card rounded-xl border border-border/40 text-sm font-body text-muted-foreground hover:text-primary hover:border-primary/30 transition-all">
                 <Facebook className="w-5 h-5" /> Facebook
+              </a>
+              <a href="https://www.instagram.com/patricia.vieira.immo/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 px-5 py-3 bg-card rounded-xl border border-border/40 text-sm font-body text-muted-foreground hover:text-primary hover:border-primary/30 transition-all">
+                <Instagram className="w-5 h-5" /> Instagram
               </a>
               <a href="https://www.linkedin.com/in/patriciavieiraiad/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 px-5 py-3 bg-card rounded-xl border border-border/40 text-sm font-body text-muted-foreground hover:text-primary hover:border-primary/30 transition-all">
                 <Linkedin className="w-5 h-5" /> LinkedIn
