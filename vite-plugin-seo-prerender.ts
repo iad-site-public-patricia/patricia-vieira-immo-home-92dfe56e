@@ -41,10 +41,10 @@ const routesMeta: Record<string, RouteMeta> = {
     description: "Trouvez votre futur logement en Seine-et-Marne avec Patricia Vieira, IAD France. Maisons et appartements à Gretz-Armainvilliers, Tournan, Ozoir et environs.",
     canonical: "/acheter",
   },
-  "/avis": {
-    title: "Avis Clients Patricia Vieira | 4.9/5 sur 47+ Avis Vérifiés — Immobilier Seine-et-Marne",
-    description: "Découvrez les avis vérifiés des clients de Patricia Vieira, conseillère immobilier IAD France. Note 4.9/5 sur Immodvisor. Témoignages authentiques de vendeurs et acheteurs.",
-    canonical: "/avis",
+  "/mon-equipe": {
+    title: "Mon Équipe — Conseillers Immobiliers IAD France | Patricia Vieira",
+    description: "Découvrez l'équipe de Patricia Vieira, conseillers immobiliers IAD France. Rejoignez une équipe dynamique, bienveillante et ambitieuse. Accompagnement personnalisé.",
+    canonical: "/mon-equipe",
   },
   "/a-propos": {
     title: "Patricia Vieira — Conseillère Immobilier IAD France en Seine-et-Marne depuis 11 ans",
@@ -91,11 +91,6 @@ const routesMeta: Record<string, RouteMeta> = {
     description: "Immobilier à Brie-Comte-Robert : prix au m², marché, quartiers historiques. Patricia Vieira, conseillère IAD. Estimation gratuite.",
     canonical: "/immobilier-brie-comte-robert",
     geoPlacename: "Brie-Comte-Robert",
-  },
-  "/rejoindre": {
-    title: "Devenir Conseiller Immobilier IAD France — Rejoindre l'Équipe Patricia Vieira",
-    description: "Envie de devenir conseiller immobilier indépendant ? Patricia Vieira vous accompagne dans votre reconversion avec IAD France. Formation, coaching, réseau national.",
-    canonical: "/rejoindre",
   },
   "/blog": {
     title: "Conseils Immobiliers Seine-et-Marne — Blog Patricia Vieira",

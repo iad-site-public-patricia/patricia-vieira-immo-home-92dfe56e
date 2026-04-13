@@ -5,12 +5,12 @@ import { Button } from "@/components/ui/button";
 
 const mainNav = [
   { label: "Accueil", to: "/" },
-  { label: "Estimation gratuite", to: "/estimation" },
+  { label: "À Propos", to: "/a-propos" },
   { label: "Vendre", to: "/vendre" },
   { label: "Acheter", to: "/acheter" },
-  { label: "Avis clients", to: "/avis" },
+  { label: "Mon Équipe", to: "/mon-equipe" },
   {
-    label: "Communes",
+    label: "Secteurs",
     to: "/immobilier-gretz-armainvilliers",
     children: [
       { label: "Gretz-Armainvilliers", to: "/immobilier-gretz-armainvilliers" },
@@ -21,15 +21,17 @@ const mainNav = [
       { label: "Roissy-en-Brie", to: "/immobilier-roissy-en-brie" },
     ],
   },
+  { label: "Conseils", to: "/conseils-immobiliers" },
   { label: "Contact", to: "/contact" },
 ];
 
 const footerNav = [
   { label: "Accueil", to: "/" },
-  { label: "Estimation gratuite", to: "/estimation" },
+  { label: "À Propos", to: "/a-propos" },
   { label: "Vendre", to: "/vendre" },
   { label: "Acheter", to: "/acheter" },
-  { label: "Avis clients", to: "/avis" },
+  { label: "Mon Équipe", to: "/mon-equipe" },
+  { label: "Conseils", to: "/conseils-immobiliers" },
   { label: "Contact", to: "/contact" },
 ];
 
@@ -255,7 +257,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
               </div>
             </div>
             <div>
-              <h4 className="font-display text-lg font-semibold mb-5">Communes</h4>
+              <h4 className="font-display text-lg font-semibold mb-5">Secteurs</h4>
               <div className="space-y-2.5">
                 {footerCities.map((city) => (
                   <Link

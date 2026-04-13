@@ -29,8 +29,7 @@ import Index from "./pages/Index";
 import Vendre from "./pages/Vendre";
 import Acheter from "./pages/Acheter";
 import Estimation from "./pages/Estimation";
-import Avis from "./pages/Avis";
-import Rejoindre from "./pages/Rejoindre";
+import MonEquipe from "./pages/MonEquipe";
 import Blog from "./pages/Blog";
 import APropos from "./pages/APropos";
 import Contact from "./pages/Contact";
@@ -60,26 +59,28 @@ const App = () => (
               <Route path="/vendre" element={<Vendre />} />
               <Route path="/estimation" element={<Estimation />} />
               <Route path="/acheter" element={<Acheter />} />
-              <Route path="/avis" element={<Avis />} />
-              {/* Pages locales – nouvelles URLs */}
+              {/* À Propos (inclut avis) */}
+              <Route path="/a-propos" element={<APropos />} />
+              {/* Mon Équipe (remplace Rejoindre) */}
+              <Route path="/mon-equipe" element={<MonEquipe />} />
+              {/* Pages locales */}
               <Route path="/immobilier-gretz-armainvilliers" element={<SecteurGretz />} />
               <Route path="/immobilier-ozoir-la-ferriere" element={<SecteurOzoir />} />
               <Route path="/immobilier-pontault-combault" element={<SecteurPontault />} />
               <Route path="/immobilier-tournan-en-brie" element={<SecteurTournan />} />
               <Route path="/immobilier-brie-comte-robert" element={<SecteurBrieComteRobert />} />
               <Route path="/immobilier-roissy-en-brie" element={<SecteurRoissy />} />
-              {/* Recrutement */}
-              <Route path="/rejoindre" element={<Rejoindre />} />
-              {/* Blog */}
+              {/* Blog / Conseils */}
               <Route path="/conseils-immobiliers" element={<Blog />} />
               <Route path="/conseils-immobiliers/:id" element={<Blog />} />
-              <Route path="/blog" element={<Blog />} />
+              <Route path="/blog" element={<Navigate to="/conseils-immobiliers" replace />} />
               <Route path="/blog/:id" element={<Blog />} />
               {/* Transversal */}
-              <Route path="/a-propos" element={<APropos />} />
               <Route path="/contact" element={<Contact />} />
               <Route path="/mentions-legales" element={<MentionsLegales />} />
-              {/* Redirections anciennes URLs */}
+              {/* Redirections */}
+              <Route path="/avis" element={<Navigate to="/a-propos#avis" replace />} />
+              <Route path="/rejoindre" element={<Navigate to="/mon-equipe" replace />} />
               <Route path="/secteur/gretz-armainvilliers" element={<Navigate to="/immobilier-gretz-armainvilliers" replace />} />
               <Route path="/secteur/ozoir-la-ferriere" element={<Navigate to="/immobilier-ozoir-la-ferriere" replace />} />
               <Route path="/secteur/pontault-combault" element={<Navigate to="/immobilier-pontault-combault" replace />} />

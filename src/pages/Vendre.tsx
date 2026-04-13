@@ -145,7 +145,7 @@ const Vendre = () => {
               <div className="bg-card rounded-xl p-6 border border-primary/20 mt-8">
                 <p className="text-foreground font-semibold text-center">
                   ⭐ 4.9/5 sur 47+ avis vérifiés — Vos voisins me font confiance.{" "}
-                  <Link to="/avis" className="text-primary hover:underline">Voir les avis →</Link>
+                  <Link to="/a-propos#avis" className="text-primary hover:underline">Voir les avis →</Link>
                 </p>
               </div>
             </div>
