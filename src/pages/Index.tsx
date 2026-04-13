@@ -132,7 +132,7 @@ const Index = () => {
                 </Link>
               </Button>
               <Button variant="hero" size="xl" asChild>
-                <Link to="/rejoindre" className="inline-flex items-center gap-2">
+                <Link to="/mon-equipe" className="inline-flex items-center gap-2">
                   Rejoindre mon équipe <ArrowRight className="w-5 h-5" />
                 </Link>
               </Button>
@@ -397,7 +397,7 @@ const Index = () => {
                 ))}
               </ul>
               <Button variant="hero" size="lg" asChild>
-                <Link to="/rejoindre" className="inline-flex items-center gap-2">
+                <Link to="/mon-equipe" className="inline-flex items-center gap-2">
                   En savoir plus <ArrowRight className="w-5 h-5" />
                 </Link>
               </Button>
