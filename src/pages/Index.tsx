@@ -404,34 +404,7 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Biens vendus récemment */}
-      <section className="section-padding bg-card">
-        <div className="container mx-auto">
-          <div className="text-center max-w-2xl mx-auto mb-4">
-            <h2 className="font-display text-3xl md:text-4xl font-semibold text-foreground mb-4">
-              Biens vendus récemment
-            </h2>
-            <p className="text-muted-foreground font-body text-lg">
-              Des résultats concrets qui témoignent de mon engagement et de mon efficacité.
-            </p>
-          </div>
-          <div className="section-divider mb-12" />
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {soldProperties.slice(0, 6).map((property, i) => (
-              <div key={i} className="group bg-background rounded-xl overflow-hidden border border-border/40 hover:shadow-xl transition-all duration-300">
-                <div className="relative aspect-square overflow-hidden">
-                  <img src={property.image} alt={`${property.type} – ${property.location}`} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
-                </div>
-                <div className="p-6">
-                  <h3 className="font-display text-lg font-semibold text-foreground">{property.type}</h3>
-                  <p className="text-muted-foreground font-body text-sm mt-1">{property.location}</p>
-                  <p className="text-primary font-body font-semibold text-sm mt-2">{property.time}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+
 
       {/* Derniers articles */}
       <section className="section-padding bg-background">
