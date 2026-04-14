@@ -198,29 +198,20 @@ const Index = () => {
             </div>
             <div>
               <h3 className="font-display text-xl font-semibold text-foreground mb-4 text-center lg:text-left">Biens vendus récemment</h3>
+              <p className="text-muted-foreground font-body text-sm mb-6 text-center lg:text-left">Des résultats concrets qui témoignent de mon engagement et de mon efficacité.</p>
               <div className="grid grid-cols-2 gap-4">
-                <div className="space-y-4">
-                  <div className="rounded-xl overflow-hidden shadow-md">
-                    <img src={vendu1} alt="Bien vendu à Lésigny" className="w-full h-48 object-cover" />
+                {soldProperties.slice(0, 6).map((property, i) => (
+                  <div key={i} className="group bg-card rounded-xl overflow-hidden border border-border/40 hover:shadow-md transition-all duration-300">
+                    <div className="relative aspect-[4/3] overflow-hidden">
+                      <img src={property.image} alt={`${property.type} – ${property.location}`} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                    </div>
+                    <div className="p-3">
+                      <h4 className="font-display text-sm font-semibold text-foreground">{property.type}</h4>
+                      <p className="text-muted-foreground font-body text-xs mt-0.5">{property.location}</p>
+                      <p className="text-primary font-body font-semibold text-xs mt-1">{property.time}</p>
+                    </div>
                   </div>
-                  <div className="rounded-xl overflow-hidden shadow-md">
-                    <img src={vendu5_2} alt="Bien vendu à Chevry-Cossigny" className="w-full h-32 object-cover" />
-                  </div>
-                  <div className="rounded-xl overflow-hidden shadow-md">
-                    <img src={vendu8} alt="Bien vendu à Bussy-Saint-Georges" className="w-full h-40 object-cover" />
-                  </div>
-                </div>
-                <div className="space-y-4 mt-8">
-                  <div className="rounded-xl overflow-hidden shadow-md">
-                    <img src={vendu6} alt="Bien vendu à La Queue-en-Brie" className="w-full h-32 object-cover" />
-                  </div>
-                  <div className="rounded-xl overflow-hidden shadow-md">
-                    <img src={vendu7} alt="Bien vendu à Lagny-sur-Marne" className="w-full h-48 object-cover" />
-                  </div>
-                  <div className="rounded-xl overflow-hidden shadow-md">
-                    <img src={vendu4} alt="Bien vendu à Saint-Augustin" className="w-full h-40 object-cover" />
-                  </div>
-                </div>
+                ))}
               </div>
             </div>
           </div>
