@@ -19,7 +19,7 @@ import signatureNotaire2 from "@/assets/signature-notaire-2.jpg";
 
 const soldProperties = [
   { image: vendu1, type: "Maison familiale", location: "Lésigny 77", time: "Vendu en 1 mois" },
-  { image: vendu8, type: "Appartement investisseur", location: "Bussy-Saint-Georges 93", time: "Vendu en 2 mois" },
+  { image: vendu8, type: "Appartement investisseur", location: "Bussy-Saint-Georges 77", time: "Vendu en 2 mois" },
   { image: vendu5_2, type: "Appartement", location: "Chevry-Cossigny 77", time: "Vendu en 1 jour" },
   { image: vendu6, type: "Appartement", location: "La Queue-en-Brie 94", time: "Vendu en 1 jour" },
   { image: vendu4, type: "Maison contemporaine", location: "Saint-Augustin 77", time: "Vendu en 8 mois" },
