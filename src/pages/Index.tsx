@@ -19,7 +19,7 @@ import signatureNotaire2 from "@/assets/signature-notaire-2.jpg";
 
 const soldProperties = [
   { image: vendu1, type: "Maison familiale", location: "Lésigny 77", time: "Vendu en 1 mois" },
-  { image: vendu8, type: "Appartement investisseur", location: "Bussy-Saint-Georges 93", time: "Vendu en 2 mois" },
+  { image: vendu8, type: "Appartement investisseur", location: "Bussy-Saint-Georges 77", time: "Vendu en 2 mois" },
   { image: vendu5_2, type: "Appartement", location: "Chevry-Cossigny 77", time: "Vendu en 1 jour" },
   { image: vendu6, type: "Appartement", location: "La Queue-en-Brie 94", time: "Vendu en 1 jour" },
   { image: vendu4, type: "Maison contemporaine", location: "Saint-Augustin 77", time: "Vendu en 8 mois" },
@@ -198,29 +198,20 @@ const Index = () => {
             </div>
             <div>
               <h3 className="font-display text-xl font-semibold text-foreground mb-4 text-center lg:text-left">Biens vendus récemment</h3>
+              <p className="text-muted-foreground font-body text-sm mb-6 text-center lg:text-left">Des résultats concrets qui témoignent de mon engagement et de mon efficacité.</p>
               <div className="grid grid-cols-2 gap-4">
-                <div className="space-y-4">
-                  <div className="rounded-xl overflow-hidden shadow-md">
-                    <img src={vendu1} alt="Bien vendu à Lésigny" className="w-full h-48 object-cover" />
+                {soldProperties.slice(0, 6).map((property, i) => (
+                  <div key={i} className="group bg-card rounded-xl overflow-hidden border border-border/40 hover:shadow-md transition-all duration-300">
+                    <div className="relative aspect-[4/3] overflow-hidden">
+                      <img src={property.image} alt={`${property.type} – ${property.location}`} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                    </div>
+                    <div className="p-3">
+                      <h4 className="font-display text-sm font-semibold text-foreground">{property.type}</h4>
+                      <p className="text-muted-foreground font-body text-xs mt-0.5">{property.location}</p>
+                      <p className="text-primary font-body font-semibold text-xs mt-1">{property.time}</p>
+                    </div>
                   </div>
-                  <div className="rounded-xl overflow-hidden shadow-md">
-                    <img src={vendu5_2} alt="Bien vendu à Chevry-Cossigny" className="w-full h-32 object-cover" />
-                  </div>
-                  <div className="rounded-xl overflow-hidden shadow-md">
-                    <img src={vendu8} alt="Bien vendu à Bussy-Saint-Georges" className="w-full h-40 object-cover" />
-                  </div>
-                </div>
-                <div className="space-y-4 mt-8">
-                  <div className="rounded-xl overflow-hidden shadow-md">
-                    <img src={vendu6} alt="Bien vendu à La Queue-en-Brie" className="w-full h-32 object-cover" />
-                  </div>
-                  <div className="rounded-xl overflow-hidden shadow-md">
-                    <img src={vendu7} alt="Bien vendu à Lagny-sur-Marne" className="w-full h-48 object-cover" />
-                  </div>
-                  <div className="rounded-xl overflow-hidden shadow-md">
-                    <img src={vendu4} alt="Bien vendu à Saint-Augustin" className="w-full h-40 object-cover" />
-                  </div>
-                </div>
+                ))}
               </div>
             </div>
           </div>
@@ -413,34 +404,7 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Biens vendus récemment */}
-      <section className="section-padding bg-card">
-        <div className="container mx-auto">
-          <div className="text-center max-w-2xl mx-auto mb-4">
-            <h2 className="font-display text-3xl md:text-4xl font-semibold text-foreground mb-4">
-              Biens vendus récemment
-            </h2>
-            <p className="text-muted-foreground font-body text-lg">
-              Des résultats concrets qui témoignent de mon engagement et de mon efficacité.
-            </p>
-          </div>
-          <div className="section-divider mb-12" />
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {soldProperties.slice(0, 6).map((property, i) => (
-              <div key={i} className="group bg-background rounded-xl overflow-hidden border border-border/40 hover:shadow-xl transition-all duration-300">
-                <div className="relative aspect-square overflow-hidden">
-                  <img src={property.image} alt={`${property.type} – ${property.location}`} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
-                </div>
-                <div className="p-6">
-                  <h3 className="font-display text-lg font-semibold text-foreground">{property.type}</h3>
-                  <p className="text-muted-foreground font-body text-sm mt-1">{property.location}</p>
-                  <p className="text-primary font-body font-semibold text-sm mt-2">{property.time}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+
 
       {/* Derniers articles */}
       <section className="section-padding bg-background">
