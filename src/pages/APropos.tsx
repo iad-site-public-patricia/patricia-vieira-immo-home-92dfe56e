@@ -68,7 +68,7 @@ const APropos = () => {
                 À Propos — Patricia Vieira
               </h1>
               <p className="font-body text-lg md:text-xl text-white/90 max-w-xl leading-relaxed">
-                Conseillère immobilier en Seine-et-Marne depuis plus de 11 ans.
+                Conseillère immobilier et Manager Platinium Associée depuis plus de 11 ans.
               </p>
             </div>
           </div>
