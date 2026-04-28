@@ -18,7 +18,6 @@ const mainNav = [
       { label: "Tournan-en-Brie", to: "/immobilier-tournan-en-brie" },
       { label: "Brie-Comte-Robert", to: "/immobilier-brie-comte-robert" },
       { label: "Pontault-Combault", to: "/immobilier-pontault-combault" },
-      { label: "Roissy-en-Brie", to: "/immobilier-roissy-en-brie" },
     ],
   },
   { label: "Conseils", to: "/conseils-immobiliers" },
@@ -41,7 +40,6 @@ const footerCities = [
   { label: "Pontault-Combault", to: "/immobilier-pontault-combault" },
   { label: "Tournan-en-Brie", to: "/immobilier-tournan-en-brie" },
   { label: "Brie-Comte-Robert", to: "/immobilier-brie-comte-robert" },
-  { label: "Roissy-en-Brie", to: "/immobilier-roissy-en-brie" },
 ];
 
 const Layout = ({ children }: { children: React.ReactNode }) => {
