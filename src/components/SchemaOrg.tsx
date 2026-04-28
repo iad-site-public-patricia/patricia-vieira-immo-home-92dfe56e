@@ -37,7 +37,7 @@ const realEstateAgent = {
     { "@type": "City", "name": "Tournan-en-Brie" },
     { "@type": "City", "name": "Ozoir-la-Ferrière" },
     { "@type": "City", "name": "Pontault-Combault" },
-    { "@type": "City", "name": "Roissy-en-Brie" },
+    
     { "@type": "City", "name": "Férolles-Attilly" },
     { "@type": "City", "name": "Presles-en-Brie" },
     { "@type": "City", "name": "Brie-Comte-Robert" },

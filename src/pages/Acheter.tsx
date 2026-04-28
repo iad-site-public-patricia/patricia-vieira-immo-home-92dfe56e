@@ -23,7 +23,7 @@ const communes = [
   { name: "Ozoir-la-Ferrière", to: "/immobilier-ozoir-la-ferriere" },
   { name: "Tournan-en-Brie", to: "/immobilier-tournan-en-brie" },
   { name: "Pontault-Combault", to: "/immobilier-pontault-combault" },
-  { name: "Roissy-en-Brie", to: "/immobilier-roissy-en-brie" },
+  
   { name: "Brie-Comte-Robert", to: "/immobilier-brie-comte-robert" },
 ];
 

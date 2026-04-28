@@ -40,7 +40,7 @@ import SecteurOzoir from "./pages/SecteurOzoir";
 import SecteurPontault from "./pages/SecteurPontault";
 import SecteurTournan from "./pages/SecteurTournan";
 import SecteurBrieComteRobert from "./pages/SecteurBrieComteRobert";
-import SecteurRoissy from "./pages/SecteurRoissy";
+
 
 const queryClient = new QueryClient();
 
@@ -69,7 +69,7 @@ const App = () => (
               <Route path="/immobilier-pontault-combault" element={<SecteurPontault />} />
               <Route path="/immobilier-tournan-en-brie" element={<SecteurTournan />} />
               <Route path="/immobilier-brie-comte-robert" element={<SecteurBrieComteRobert />} />
-              <Route path="/immobilier-roissy-en-brie" element={<SecteurRoissy />} />
+              
               {/* Blog / Conseils */}
               <Route path="/conseils-immobiliers" element={<Blog />} />
               <Route path="/conseils-immobiliers/:id" element={<Blog />} />
