@@ -87,6 +87,18 @@ const APropos = () => {
                 </h2>
                 <div className="section-divider !mx-0 !w-14" />
                 <p className="text-lg text-foreground">
+                  Mon parcours professionnel s'est construit autour de valeurs fortes : le sens du service, l'engagement et le goût du challenge.
+                </p>
+                <p>
+                  Après un début en agence immobilière, où j'ai compris que vendre un bien, c'est avant tout accompagner un projet de vie, j'ai dirigé pendant plus de 25 ans ma propre entreprise dans le commerce. Cette expérience m'a permis de développer rigueur, sens des responsabilités et exigence de satisfaction client.
+                </p>
+                <p>
+                  En 2015, j'ai choisi de relever un nouveau défi en rejoignant le réseau iad France, dans la continuité de mon parcours d'indépendante, avec la volonté de développer une activité structurée, performante et tournée vers les résultats.
+                </p>
+                <p>
+                  Aujourd'hui, j'accompagne chaque client avec implication et transparence. Chaque bien est un engagement personnel, avec un objectif clair : vendre dans les meilleures conditions, le plus rapidement possible et au meilleur prix.
+                </p>
+                <p>
                   Depuis plusieurs années, j'accompagne mes clients dans leurs projets immobiliers avec une approche basée sur l'écoute, la transparence et la confiance.
                 </p>
                 <p>
