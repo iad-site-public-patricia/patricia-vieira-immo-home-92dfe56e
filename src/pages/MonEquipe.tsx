@@ -7,7 +7,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { toast } from "sonner";
 import {
   ArrowRight, Heart, Users, Trophy, Target, HandHeart, Rocket,
-  Sparkles, GraduationCap, Compass, Facebook, Instagram, Linkedin,
+  Sparkles, GraduationCap, Compass, Feather, Facebook, Instagram, Linkedin,
 } from "lucide-react";
 
 import heroImg from "@/assets/equipe-celebration.jpg";
@@ -141,6 +141,12 @@ const MonEquipe = () => {
                   emoji: "🚀",
                   title: "Évolution et entrepreneuriat",
                   desc: "L'objectif est d'aider chacun à développer une activité durable, évoluer professionnellement et construire une véritable entreprise.",
+                },
+                {
+                  icon: Feather,
+                  emoji: "🌿",
+                  title: "Liberté et indépendance",
+                  desc: "Chaque conseiller immobilier indépendant reste totalement libre de construire son activité à sa manière et à son rythme. L'objectif n'est pas d'imposer un fonctionnement unique ou une pression collective, mais de permettre à chacun d'évoluer dans un environnement bienveillant, motivant et respectueux de sa personnalité. Chacun avance selon ses ambitions, ses objectifs et son équilibre de vie, tout en bénéficiant du soutien du collectif pour développer son activité et son entrepreneuriat immobilier en toute liberté professionnelle.",
                 },
               ].map((item, i) => (
                 <article
