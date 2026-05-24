@@ -217,20 +217,20 @@ const MonEquipe = () => {
               ].map((pillar, i) => (
                 <div
                   key={i}
-                  className="group bg-navy-foreground/5 backdrop-blur-sm rounded-2xl p-8 border border-navy-foreground/10 hover:bg-navy-foreground/10 hover:border-primary/40 transition-all duration-500 hover:-translate-y-1"
+                  className="group bg-card rounded-2xl p-8 border border-border/40 hover:border-primary/40 hover:shadow-xl transition-all duration-500 hover:-translate-y-1"
                 >
                   <div className="flex items-center justify-between mb-6">
                     <span className="font-display text-3xl text-primary/60 font-light">
                       {pillar.num}
                     </span>
-                    <div className="w-12 h-12 rounded-xl bg-primary/20 flex items-center justify-center group-hover:bg-primary/30 transition-colors">
+                    <div className="w-12 h-12 rounded-xl bg-primary/15 flex items-center justify-center group-hover:bg-primary/25 transition-colors">
                       <pillar.icon className="w-6 h-6 text-primary" />
                     </div>
                   </div>
-                  <h3 className="font-display text-xl font-semibold mb-3 leading-snug">
+                  <h3 className="font-display text-xl font-semibold mb-3 leading-snug text-foreground">
                     {pillar.title}
                   </h3>
-                  <p className="font-body text-navy-foreground/80 leading-relaxed">
+                  <p className="font-body text-foreground/80 leading-relaxed">
                     {pillar.desc}
                   </p>
                 </div>
