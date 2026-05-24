@@ -8,6 +8,7 @@ import { toast } from "sonner";
 import {
   ArrowRight, Heart, Users, Trophy, Target, HandHeart, Rocket,
   Sparkles, GraduationCap, Compass, Feather, Facebook, Instagram, Linkedin,
+  Building2, TrendingUp, Flame,
 } from "lucide-react";
 
 import heroImg from "@/assets/equipe-celebration.jpg";
