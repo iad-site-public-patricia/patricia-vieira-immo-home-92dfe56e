@@ -441,6 +441,149 @@ const MonEquipe = () => {
           </div>
         </section>
 
+        {/* ARTICLE PREMIUM — Pourquoi j'ai choisi l'immobilier indépendant */}
+        <section className="section-padding bg-background">
+          <article className="container mx-auto max-w-3xl text-[#111111] font-body">
+            <header className="text-center mb-12">
+              <div className="section-divider mb-6" />
+              <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-semibold leading-tight text-[#111111]">
+                Pourquoi j'ai choisi l'immobilier indépendant : bien plus qu'un métier, une aventure humaine
+              </h2>
+              <div className="section-divider mt-6" />
+            </header>
+
+            <div className="space-y-5 text-lg leading-relaxed">
+              <p>Quand on parle d'immobilier, beaucoup imaginent immédiatement des visites, des panneaux "À vendre" ou encore des négociations.</p>
+              <p>Mais avec les années, j'ai compris une chose essentielle : l'immobilier n'est pas simplement un métier de transaction. C'est avant tout un métier profondément humain.</p>
+              <p>Derrière chaque vente, chaque achat ou chaque projet, il y a une histoire de vie, des émotions, des changements importants et parfois même de véritables tournants personnels.</p>
+              <p>C'est précisément cette dimension humaine qui m'a toujours passionnée dans ce métier.</p>
+              <p>Aujourd'hui, le métier de conseiller immobilier indépendant évolue énormément. Les clients changent, les outils changent, les habitudes changent… et notre manière de travailler évolue elle aussi.</p>
+              <p>Nous sommes entrés dans une nouvelle génération de l'immobilier : plus digitale, plus libre, plus humaine et surtout beaucoup plus proche des besoins réels des clients.</p>
+            </div>
+
+            <h3 className="font-display text-2xl md:text-3xl font-semibold mt-14 mb-6 text-[#111111]">Un métier qui attire de plus en plus de personnes en reconversion</h3>
+            <div className="space-y-5 text-lg leading-relaxed">
+              <p>Depuis plusieurs années, je rencontre énormément de personnes qui souhaitent changer de vie professionnelle.</p>
+              <p>Certaines viennent du commerce, d'autres du salariat, de la restauration, du management ou encore de l'entrepreneuriat.</p>
+              <p>Beaucoup recherchent finalement la même chose :</p>
+              <ul className="list-disc pl-6 space-y-2 marker:text-primary">
+                <li>plus de liberté,</li>
+                <li>plus d'autonomie,</li>
+                <li>plus de reconnaissance,</li>
+                <li>et une activité qui ait réellement du sens.</li>
+              </ul>
+              <p>L'immobilier indépendant attire aujourd'hui parce qu'il permet de construire quelque chose qui nous ressemble.</p>
+              <p>Mais il faut être honnête : ce métier demande aussi beaucoup d'implication personnelle.</p>
+            </div>
+
+            <h4 className="font-display text-xl md:text-2xl font-semibold mt-12 mb-5 text-[#111111]">La liberté a un prix : celui de la régularité</h4>
+            <div className="space-y-5 text-lg leading-relaxed">
+              <p>Quand on devient conseiller immobilier indépendant, personne ne nous impose nos horaires.</p>
+              <p>Et c'est justement là toute la différence.</p>
+              <p>Cette liberté est incroyable… mais elle demande aussi énormément de discipline.</p>
+              <p>Dans ce métier, il faut apprendre à :</p>
+              <ul className="list-disc pl-6 space-y-2 marker:text-primary">
+                <li>gérer son temps,</li>
+                <li>organiser ses journées,</li>
+                <li>développer sa visibilité,</li>
+                <li>entretenir sa motivation,</li>
+                <li>et surtout rester constant même quand tout ne va pas comme prévu.</li>
+              </ul>
+              <p>Les personnes qui réussissent durablement dans l'immobilier sont rarement celles qui cherchent des résultats rapides.</p>
+              <p>Ce sont souvent celles qui construisent leur réputation avec patience, honnêteté et régularité.</p>
+            </div>
+
+            <h3 className="font-display text-2xl md:text-3xl font-semibold mt-14 mb-6 text-[#111111]">Le métier immobilier a profondément changé</h3>
+            <div className="space-y-5 text-lg leading-relaxed">
+              <p>L'époque où une simple vitrine d'agence suffisait à générer des contacts est largement révolue.</p>
+              <p>Aujourd'hui, les vendeurs et les acquéreurs recherchent principalement leurs informations :</p>
+              <ul className="list-disc pl-6 space-y-2 marker:text-primary">
+                <li>sur internet,</li>
+                <li>sur les réseaux sociaux,</li>
+                <li>sur les portails immobiliers,</li>
+                <li>ou via des vidéos et contenus digitaux.</li>
+              </ul>
+              <p>Le conseiller immobilier moderne doit donc être capable d'allier :</p>
+              <ul className="list-disc pl-6 space-y-2 marker:text-primary">
+                <li>relation humaine,</li>
+                <li>communication digitale,</li>
+                <li>présence terrain,</li>
+                <li>et accompagnement personnalisé.</li>
+              </ul>
+            </div>
+
+            <h4 className="font-display text-xl md:text-2xl font-semibold mt-12 mb-5 text-[#111111]">Le digital ne remplacera jamais l'humain</h4>
+            <div className="space-y-5 text-lg leading-relaxed">
+              <p>Même si les outils évoluent très vite, une chose ne changera jamais : les clients ont besoin de confiance.</p>
+              <p>Acheter ou vendre un bien immobilier représente souvent un moment important dans une vie.</p>
+              <p>Les clients ne recherchent pas simplement un professionnel capable de publier une annonce.</p>
+              <p>Ils recherchent surtout quelqu'un :</p>
+              <ul className="list-disc pl-6 space-y-2 marker:text-primary">
+                <li>qui les écoute,</li>
+                <li>qui les rassure,</li>
+                <li>qui les conseille avec sincérité,</li>
+                <li>et qui reste présent tout au long du projet.</li>
+              </ul>
+              <p>C'est cette proximité humaine qui fait, selon moi, toute la beauté du métier.</p>
+            </div>
+
+            <h3 className="font-display text-2xl md:text-3xl font-semibold mt-14 mb-6 text-[#111111]">Pourquoi les réseaux de mandataires immobiliers se développent autant ?</h3>
+            <div className="space-y-5 text-lg leading-relaxed">
+              <p>Les réseaux immobiliers indépendants séduisent aujourd'hui énormément de professionnels.</p>
+              <p>Et cela s'explique assez facilement.</p>
+              <p>Beaucoup de conseillers souhaitent :</p>
+              <ul className="list-disc pl-6 space-y-2 marker:text-primary">
+                <li>retrouver davantage de liberté,</li>
+                <li>développer leur propre image,</li>
+                <li>bénéficier d'outils modernes,</li>
+                <li>travailler plus librement,</li>
+                <li>et parfois même construire leur propre équipe.</li>
+              </ul>
+              <p>Ce modèle entrepreneurial correspond davantage aux nouvelles attentes du monde du travail.</p>
+            </div>
+
+            <h4 className="font-display text-xl md:text-2xl font-semibold mt-12 mb-5 text-[#111111]">Construire une activité sur le long terme</h4>
+            <div className="space-y-5 text-lg leading-relaxed">
+              <p>Ce que j'aime particulièrement dans l'immobilier indépendant, c'est la possibilité de construire une activité durable.</p>
+              <p>Avec le temps, la confiance des clients, les recommandations et le bouche-à-oreille deviennent une véritable force.</p>
+              <p>Un client satisfait peut :</p>
+              <ul className="list-disc pl-6 space-y-2 marker:text-primary">
+                <li>vous recommander à son entourage,</li>
+                <li>vous rappeler plusieurs années plus tard,</li>
+                <li>ou devenir un véritable ambassadeur de votre travail.</li>
+              </ul>
+              <p>Dans ce métier, la réputation reste l'un des plus beaux leviers de développement.</p>
+            </div>
+
+            <h3 className="font-display text-2xl md:text-3xl font-semibold mt-14 mb-6 text-[#111111]">Les qualités qui font vraiment la différence dans l'immobilier</h3>
+            <div className="space-y-5 text-lg leading-relaxed">
+              <p>Contrairement à ce que l'on pourrait croire, réussir dans l'immobilier ne dépend pas uniquement du talent commercial.</p>
+              <p>Les qualités les plus importantes sont souvent :</p>
+              <ul className="list-disc pl-6 space-y-2 marker:text-primary">
+                <li>l'écoute,</li>
+                <li>l'empathie,</li>
+                <li>la capacité d'adaptation,</li>
+                <li>la régularité,</li>
+                <li>la résilience,</li>
+                <li>et l'authenticité.</li>
+              </ul>
+              <p>Les clients ressentent immédiatement quand une relation est sincère.</p>
+              <p>Et c'est souvent cette sincérité qui crée les plus belles collaborations.</p>
+            </div>
+
+            <h3 className="font-display text-2xl md:text-3xl font-semibold mt-14 mb-6 text-[#111111]">Conclusion : un métier exigeant… mais profondément enrichissant</h3>
+            <div className="space-y-5 text-lg leading-relaxed">
+              <p>L'immobilier indépendant n'est pas un métier "facile".</p>
+              <p>C'est un métier qui demande du travail, de l'implication et une grande capacité relationnelle.</p>
+              <p>Mais c'est aussi un métier incroyablement vivant, stimulant et humain.</p>
+              <p>Chaque rencontre, chaque projet et chaque accompagnement rendent ce quotidien différent.</p>
+              <p>Et pour toutes les personnes qui aiment le contact humain, l'autonomie et l'entrepreneuriat, l'immobilier peut devenir bien plus qu'un simple métier : une véritable aventure de vie.</p>
+            </div>
+
+            <div className="section-divider mt-14" />
+          </article>
+        </section>
+
         {/* SECTION FINALE */}
         <section id="echanger" className="section-padding bg-secondary/40 relative overflow-hidden">
           <div className="container mx-auto max-w-3xl relative">
