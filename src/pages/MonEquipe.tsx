@@ -8,6 +8,7 @@ import { toast } from "sonner";
 import {
   ArrowRight, Heart, Users, Trophy, Target, HandHeart, Rocket,
   Sparkles, GraduationCap, Compass, Feather, Facebook, Instagram, Linkedin,
+  Building2, TrendingUp, Flame,
 } from "lucide-react";
 
 import heroImg from "@/assets/equipe-celebration.jpg";
@@ -235,6 +236,155 @@ const MonEquipe = () => {
                   </p>
                 </div>
               ))}
+            </div>
+          </div>
+        </section>
+
+        {/* POURQUOI REJOINDRE NOTRE RÉSEAU - 4 PILIERS IAD */}
+        <section className="section-padding bg-background relative overflow-hidden">
+          <div className="absolute inset-0 pointer-events-none opacity-60">
+            <div className="absolute top-0 right-1/4 w-[500px] h-[500px] rounded-full bg-gold/10 blur-3xl" />
+            <div className="absolute bottom-0 left-1/4 w-[500px] h-[500px] rounded-full bg-primary/10 blur-3xl" />
+          </div>
+
+          <div className="container mx-auto max-w-6xl relative">
+            {/* Intro */}
+            <div className="max-w-3xl mx-auto text-center mb-20">
+              <p className="font-body text-xs uppercase tracking-[0.3em] text-primary mb-5">
+                Rejoindre le réseau iad
+              </p>
+              <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-semibold text-foreground mb-6 leading-[1.15]">
+                Pourquoi rejoindre notre réseau immobilier&nbsp;?
+              </h2>
+              <div className="w-20 h-0.5 bg-gradient-to-r from-primary to-gold mx-auto mb-8" />
+              <div className="space-y-5 font-body text-base md:text-lg text-foreground/90 leading-relaxed">
+                <p>
+                  Bien plus qu'un simple métier, le réseau iad permet de construire une véritable activité entrepreneuriale dans un environnement humain, dynamique et évolutif.
+                </p>
+                <p>
+                  Depuis plus de 11 ans, j'accompagne des femmes et des hommes qui souhaitent développer leur activité immobilière, évoluer professionnellement et construire leur propre projet de vie.
+                </p>
+              </div>
+            </div>
+
+            {/* Sous-titre 4 piliers */}
+            <div className="text-center mb-14">
+              <p className="font-body text-xs uppercase tracking-[0.25em] text-primary mb-4">
+                La force du modèle
+              </p>
+              <h3 className="font-display text-2xl md:text-3xl lg:text-4xl font-semibold text-foreground leading-tight">
+                Les 4 piliers qui font la force de notre réseau
+              </h3>
+            </div>
+
+            {/* 4 grands blocs piliers - alternance image/texte */}
+            <div className="space-y-10 md:space-y-16">
+              {[
+                {
+                  num: "01",
+                  emoji: "🏢",
+                  icon: Building2,
+                  title: "Créer sa propre agence immobilière dématérialisée",
+                  desc: "Le modèle iad permet à chacun de développer sa propre activité immobilière indépendante sans avoir besoin d'ouvrir une agence physique traditionnelle. Grâce à des outils digitaux performants, des formations, un accompagnement humain et une organisation moderne, chacun peut gérer et développer son activité avec flexibilité et liberté. Le réseau permet de bénéficier de la puissance d'une structure nationale tout en conservant son indépendance.",
+                  image: rejoindreLifestyleImg,
+                  alt: "Conseiller immobilier travaillant avec ses outils digitaux",
+                },
+                {
+                  num: "02",
+                  emoji: "🤝",
+                  icon: Users,
+                  title: "Construire et accompagner sa propre équipe",
+                  desc: "Au-delà de la transaction immobilière, chacun a la possibilité de développer sa propre équipe de mandataires et d'accompagner d'autres personnes dans leur évolution professionnelle. L'objectif n'est pas seulement de recruter, mais de transmettre, accompagner, faire évoluer et aider chacun à réussir à son rythme. Cette dimension humaine et entrepreneuriale apporte une vraie dynamique collective et permet de construire un projet évolutif sur le long terme.",
+                  image: mentoratImg,
+                  alt: "Équipe de conseillers immobiliers en échange et accompagnement",
+                },
+                {
+                  num: "03",
+                  emoji: "📈",
+                  icon: TrendingUp,
+                  title: "Développer un véritable fonds de commerce transmissible",
+                  desc: "L'activité permet progressivement de construire un véritable patrimoine professionnel. Au fil du temps, chacun peut développer une activité durable, structurée et évolutive, avec une vision long terme. Cette approche entrepreneuriale permet de construire quelque chose de concret, valorisable et transmissible. Le modèle repose sur la création d'une activité pérenne et évolutive dans le temps.",
+                  image: terrainImg,
+                  alt: "Construction d'une activité immobilière durable",
+                },
+                {
+                  num: "04",
+                  emoji: "🔥",
+                  icon: Flame,
+                  title: "Évoluer dans une communauté dynamique et motivante",
+                  desc: "Le réseau repose également sur une forte dynamique humaine et collective. Événements, formations, séminaires, challenges, échanges d'expériences, entraide et partage permettent à chacun d'évoluer dans une énergie positive et motivante. L'objectif est que personne ne reste seul dans son évolution. Les réussites des uns inspirent les autres et créent une véritable dynamique de progression collective.",
+                  image: seminaireImg,
+                  alt: "Séminaire d'équipe et événement collectif iad",
+                },
+              ].map((pillar, i) => (
+                <article
+                  key={i}
+                  className={`grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-14 items-center ${
+                    i % 2 === 1 ? "lg:[&>*:first-child]:order-2" : ""
+                  }`}
+                >
+                  {/* Image */}
+                  <div className="relative group">
+                    <div className="absolute -inset-3 bg-gradient-to-br from-primary/20 to-gold/20 rounded-3xl blur-2xl opacity-60 group-hover:opacity-90 transition-opacity duration-700" />
+                    <div className="relative overflow-hidden rounded-2xl shadow-2xl aspect-[4/3]">
+                      <img
+                        src={pillar.image}
+                        alt={pillar.alt}
+                        loading="lazy"
+                        className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
+                      />
+                      <div className="absolute top-4 left-4 bg-card/95 backdrop-blur-sm rounded-xl px-4 py-2 shadow-lg">
+                        <span className="font-display text-2xl text-primary font-semibold">
+                          {pillar.num}
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Texte */}
+                  <div>
+                    <div className="flex items-center gap-4 mb-5">
+                      <div className="shrink-0 w-14 h-14 rounded-2xl bg-gradient-to-br from-primary/15 to-gold/15 flex items-center justify-center">
+                        <pillar.icon className="w-7 h-7 text-primary" />
+                      </div>
+                      <span className="text-3xl" aria-hidden="true">{pillar.emoji}</span>
+                    </div>
+                    <h4 className="font-display text-2xl md:text-3xl font-semibold text-foreground mb-5 leading-tight">
+                      {pillar.title}
+                    </h4>
+                    <p className="font-body text-base md:text-lg text-foreground/85 leading-relaxed">
+                      {pillar.desc}
+                    </p>
+                  </div>
+                </article>
+              ))}
+            </div>
+
+            {/* Section finale inspirante */}
+            <div className="mt-24 relative">
+              <div className="relative bg-gradient-to-br from-navy via-navy to-navy/90 rounded-3xl overflow-hidden shadow-2xl">
+                <div className="absolute inset-0 opacity-20">
+                  <div className="absolute -top-20 -right-20 w-80 h-80 rounded-full bg-gold/40 blur-3xl" />
+                  <div className="absolute -bottom-20 -left-20 w-80 h-80 rounded-full bg-primary/40 blur-3xl" />
+                </div>
+                <div className="relative px-6 py-16 md:px-14 md:py-20 text-center max-w-3xl mx-auto">
+                  <div className="inline-flex items-center justify-center w-14 h-14 rounded-full bg-primary/20 mb-6">
+                    <Sparkles className="w-7 h-7 text-gold" />
+                  </div>
+                  <h3 className="font-display text-3xl md:text-4xl lg:text-5xl font-semibold text-navy-foreground mb-6 leading-tight">
+                    Et si vous construisiez vous aussi votre propre projet&nbsp;?
+                  </h3>
+                  <div className="w-16 h-0.5 bg-gradient-to-r from-primary to-gold mx-auto mb-8" />
+                  <p className="font-body text-base md:text-lg text-navy-foreground/90 leading-relaxed mb-10">
+                    Que vous soyez en réflexion professionnelle, en reconversion ou déjà dans l'immobilier, je serai ravie d'échanger avec vous. Mon rôle est avant tout d'accompagner humainement les personnes qui souhaitent entreprendre, évoluer et construire une activité durable dans un environnement bienveillant et motivant.
+                  </p>
+                  <Button variant="hero" size="xl" asChild>
+                    <a href="#echanger" className="inline-flex items-center gap-2">
+                      Échanger avec moi <ArrowRight className="w-5 h-5" />
+                    </a>
+                  </Button>
+                </div>
+              </div>
             </div>
           </div>
         </section>
