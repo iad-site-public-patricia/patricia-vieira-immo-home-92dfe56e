@@ -171,10 +171,10 @@ const MonEquipe = () => {
         </section>
 
         {/* LES 4 PILIERS */}
-        <section className="section-padding bg-navy text-navy-foreground relative overflow-hidden">
-          <div className="absolute inset-0 opacity-10 pointer-events-none">
-            <div className="absolute -top-32 -left-32 w-96 h-96 rounded-full bg-primary blur-3xl" />
-            <div className="absolute -bottom-32 -right-32 w-96 h-96 rounded-full bg-gold blur-3xl" />
+        <section className="section-padding bg-secondary/30 relative overflow-hidden">
+          <div className="absolute inset-0 opacity-40 pointer-events-none">
+            <div className="absolute -top-32 -left-32 w-96 h-96 rounded-full bg-primary/20 blur-3xl" />
+            <div className="absolute -bottom-32 -right-32 w-96 h-96 rounded-full bg-gold/20 blur-3xl" />
           </div>
 
           <div className="container mx-auto max-w-6xl relative">
@@ -182,8 +182,8 @@ const MonEquipe = () => {
               <p className="font-body text-xs uppercase tracking-[0.25em] text-primary mb-4">
                 Notre dynamique
               </p>
-              <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-semibold mb-6 leading-tight">
-                Les 4 piliers qui font la force de notre équipe
+              <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-semibold text-foreground mb-6 leading-tight">
+                La dynamique de notre équipe c'est
               </h2>
               <div className="w-16 h-0.5 bg-gradient-to-r from-primary to-gold mx-auto" />
             </div>
