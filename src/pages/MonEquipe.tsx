@@ -171,10 +171,10 @@ const MonEquipe = () => {
         </section>
 
         {/* LES 4 PILIERS */}
-        <section className="section-padding bg-navy text-navy-foreground relative overflow-hidden">
-          <div className="absolute inset-0 opacity-10 pointer-events-none">
-            <div className="absolute -top-32 -left-32 w-96 h-96 rounded-full bg-primary blur-3xl" />
-            <div className="absolute -bottom-32 -right-32 w-96 h-96 rounded-full bg-gold blur-3xl" />
+        <section className="section-padding bg-secondary/30 relative overflow-hidden">
+          <div className="absolute inset-0 opacity-40 pointer-events-none">
+            <div className="absolute -top-32 -left-32 w-96 h-96 rounded-full bg-primary/20 blur-3xl" />
+            <div className="absolute -bottom-32 -right-32 w-96 h-96 rounded-full bg-gold/20 blur-3xl" />
           </div>
 
           <div className="container mx-auto max-w-6xl relative">
@@ -182,8 +182,8 @@ const MonEquipe = () => {
               <p className="font-body text-xs uppercase tracking-[0.25em] text-primary mb-4">
                 Notre dynamique
               </p>
-              <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-semibold mb-6 leading-tight">
-                Les 4 piliers qui font la force de notre équipe
+              <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-semibold text-foreground mb-6 leading-tight">
+                La dynamique de notre équipe c'est
               </h2>
               <div className="w-16 h-0.5 bg-gradient-to-r from-primary to-gold mx-auto" />
             </div>
@@ -217,20 +217,20 @@ const MonEquipe = () => {
               ].map((pillar, i) => (
                 <div
                   key={i}
-                  className="group bg-navy-foreground/5 backdrop-blur-sm rounded-2xl p-8 border border-navy-foreground/10 hover:bg-navy-foreground/10 hover:border-primary/40 transition-all duration-500 hover:-translate-y-1"
+                  className="group bg-card rounded-2xl p-8 border border-border/40 hover:border-primary/40 hover:shadow-xl transition-all duration-500 hover:-translate-y-1"
                 >
                   <div className="flex items-center justify-between mb-6">
                     <span className="font-display text-3xl text-primary/60 font-light">
                       {pillar.num}
                     </span>
-                    <div className="w-12 h-12 rounded-xl bg-primary/20 flex items-center justify-center group-hover:bg-primary/30 transition-colors">
+                    <div className="w-12 h-12 rounded-xl bg-primary/15 flex items-center justify-center group-hover:bg-primary/25 transition-colors">
                       <pillar.icon className="w-6 h-6 text-primary" />
                     </div>
                   </div>
-                  <h3 className="font-display text-xl font-semibold mb-3 leading-snug">
+                  <h3 className="font-display text-xl font-semibold mb-3 leading-snug text-foreground">
                     {pillar.title}
                   </h3>
-                  <p className="font-body text-navy-foreground/80 leading-relaxed">
+                  <p className="font-body text-foreground/80 leading-relaxed">
                     {pillar.desc}
                   </p>
                 </div>
