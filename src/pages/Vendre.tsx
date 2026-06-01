@@ -130,7 +130,7 @@ const Vendre = () => {
               </p>
 
               <h2 className="font-display text-2xl md:text-3xl font-semibold text-foreground !mt-10">
-                Le mandat exclusif : vendez plus vite, au meilleur prix
+                Le mandat exclusif : vendez plus vite, au meilleur prix et dans les meilleures conditions
               </h2>
               <p>
                 Le mandat exclusif est souvent la clé d'une vente réussie. Contrairement aux idées reçues, confier la vente de votre bien à un seul professionnel augmente vos chances de vendre plus rapidement et à un meilleur prix. Pourquoi ?
