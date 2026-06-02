@@ -592,15 +592,12 @@ const MonEquipe = () => {
                 <Sparkles className="w-7 h-7 text-primary" />
               </div>
               <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-semibold text-foreground mb-6 leading-tight">
-                Et si c'était aussi votre tour ?
+                Et si vous construisiez vous aussi votre propre projet ?
               </h2>
               <div className="section-divider mb-8" />
               <div className="space-y-4 font-body text-base md:text-lg text-foreground/90 leading-relaxed">
                 <p>
-                  Que vous soyez en réflexion, en reconversion ou déjà dans l'immobilier, je serai ravie d'échanger avec vous.
-                </p>
-                <p>
-                  Mon objectif n'est pas simplement de recruter. Je souhaite avant tout accompagner des personnes qui veulent <span className="font-semibold">évoluer, entreprendre et construire un projet durable</span> dans un environnement humain et motivant.
+                  Que vous soyez en réflexion professionnelle, en reconversion ou déjà dans l'immobilier, je serai ravie d'échanger avec vous. Mon rôle est avant tout d'accompagner humainement les personnes qui souhaitent entreprendre, évoluer et construire une activité durable dans un environnement bienveillant et motivant.
                 </p>
               </div>
             </div>
