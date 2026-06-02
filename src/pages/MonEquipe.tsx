@@ -58,7 +58,9 @@ const MonEquipe = () => {
       />
 
       <div className="text-foreground">
-        <article className="premium-blog-article">
+        <section className="section-padding bg-background">
+          <div className="container mx-auto max-w-4xl">
+            <article className="premium-blog-article space-y-5 font-body text-foreground leading-relaxed">
 
 <h1>Pourquoi j'ai choisi l'immobilier indépendant : bien plus qu'un métier, une aventure humaine</h1>
 
