@@ -329,6 +329,8 @@ une véritable aventure de vie.
 </p>
 
 </article>
+          </div>
+        </section>
         {/* HERO */}
         <section className="relative min-h-[90vh] flex items-center overflow-hidden">
           <img
