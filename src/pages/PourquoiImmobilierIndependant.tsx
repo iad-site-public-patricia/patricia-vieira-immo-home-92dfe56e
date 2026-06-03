@@ -86,49 +86,111 @@ const PourquoiImmobilierIndependant = () => {
         />
       </div>
 
-      <article className="premium-magazine text-foreground">
-        {/* HERO */}
-        <section className="relative w-full overflow-hidden">
-          <img
-            src={heroImg}
-            alt="Immobilier indépendant — Patricia Vieira"
-            className="absolute inset-0 w-full h-full object-cover"
-            loading="eager"
-          />
-          <div className="absolute inset-0 bg-gradient-to-b from-navy/70 via-navy/55 to-navy/85" />
-          <div className="relative z-10 container mx-auto max-w-4xl px-4 py-28 md:py-40 text-center animate-fade-in">
-            <p className="font-body text-xs md:text-sm uppercase tracking-[0.3em] text-primary mb-6">
-              Réflexion · Métier · Aventure
-            </p>
-            <h1 className="font-display text-3xl md:text-5xl lg:text-6xl font-semibold text-navy-foreground leading-tight">
-              Pourquoi j'ai choisi l'immobilier indépendant : bien plus qu'un métier, une aventure humaine
-            </h1>
-            <p className="font-body text-base md:text-xl text-navy-foreground/85 mt-8 max-w-2xl mx-auto leading-relaxed">
-              Une réflexion personnelle sur un métier qui a profondément changé ma vie professionnelle.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center mt-10">
-              <Button variant="hero" size="lg" asChild>
-                <a href="#article">Découvrir l'article <ArrowRight className="ml-2 w-4 h-4" /></a>
-              </Button>
-              <Button variant="outline" size="lg" className="bg-transparent text-navy-foreground border-navy-foreground hover:bg-navy-foreground hover:text-navy" asChild>
-                <Link to="/contact">Me contacter</Link>
-              </Button>
+      <article className="premium-magazine text-foreground bg-warm-white">
+        {/* HERO — Personal Branding Premium */}
+        <section className="relative w-full overflow-hidden bg-navy">
+          {/* Texture / overlay */}
+          <div className="absolute inset-0 opacity-[0.08] bg-[radial-gradient(circle_at_20%_30%,hsl(var(--primary))_0%,transparent_50%),radial-gradient(circle_at_80%_70%,hsl(var(--gold))_0%,transparent_50%)]" />
+          <div className="absolute inset-0 bg-[linear-gradient(180deg,transparent_0%,hsl(var(--navy))_100%)] opacity-40" />
+
+          <div className="relative z-10 container mx-auto max-w-7xl px-4 py-16 md:py-24 lg:py-28">
+            <div className="grid lg:grid-cols-12 gap-10 lg:gap-16 items-center">
+              {/* Texte */}
+              <div className="lg:col-span-7 order-2 lg:order-1 animate-fade-in">
+                <div className="flex items-center gap-3 mb-6">
+                  <span className="h-px w-10 bg-primary" />
+                  <p className="font-body text-[11px] md:text-xs uppercase tracking-[0.4em] text-primary">
+                    Le journal · Édition personnelle
+                  </p>
+                </div>
+                <h1 className="font-display text-4xl md:text-5xl lg:text-[3.75rem] font-semibold text-navy-foreground leading-[1.05] tracking-tight">
+                  Pourquoi j'ai choisi <span className="italic text-primary">l'immobilier indépendant</span>
+                  <span className="block text-navy-foreground/85 text-2xl md:text-3xl lg:text-4xl font-normal italic mt-4">
+                    bien plus qu'un métier, une aventure humaine
+                  </span>
+                </h1>
+                <p className="font-body text-base md:text-lg text-navy-foreground/75 mt-8 max-w-xl leading-relaxed">
+                  Une réflexion personnelle de Patricia Vieira sur un métier qui a profondément changé sa vie professionnelle — et qui peut transformer la vôtre.
+                </p>
+
+                {/* Signature */}
+                <div className="flex items-center gap-4 mt-10 pb-1">
+                  <div className="h-12 w-12 rounded-full bg-primary/15 border border-primary/40 flex items-center justify-center">
+                    <span className="font-display italic text-primary text-lg">PV</span>
+                  </div>
+                  <div>
+                    <p className="font-display text-navy-foreground text-base">Patricia Vieira</p>
+                    <p className="font-body text-xs uppercase tracking-[0.2em] text-navy-foreground/60">
+                      Conseillère immobilière indépendante
+                    </p>
+                  </div>
+                </div>
+
+                <div className="flex flex-col sm:flex-row gap-4 mt-10">
+                  <Button variant="hero" size="lg" asChild>
+                    <a href="#article">Lire l'article <ArrowRight className="ml-2 w-4 h-4" /></a>
+                  </Button>
+                  <Button variant="outline" size="lg" className="bg-transparent text-navy-foreground border-navy-foreground/40 hover:bg-navy-foreground hover:text-navy" asChild>
+                    <Link to="/contact">Échanger avec Patricia</Link>
+                  </Button>
+                </div>
+              </div>
+
+              {/* Portrait */}
+              <div className="lg:col-span-5 order-1 lg:order-2 relative animate-fade-in">
+                <div className="relative mx-auto max-w-md lg:max-w-none">
+                  {/* Cadre or */}
+                  <div className="absolute -inset-3 md:-inset-4 rounded-[2rem] border border-primary/40" />
+                  <div className="absolute -top-6 -left-6 hidden md:block w-24 h-24 border-l-2 border-t-2 border-primary/60" />
+                  <div className="absolute -bottom-6 -right-6 hidden md:block w-24 h-24 border-r-2 border-b-2 border-primary/60" />
+
+                  <div className="relative rounded-[1.75rem] overflow-hidden shadow-2xl bg-gradient-to-br from-sand to-warm-white">
+                    <img
+                      src={patriciaAssise.url}
+                      alt="Portrait de Patricia Vieira, conseillère immobilier indépendante"
+                      className="w-full h-auto object-cover"
+                      loading="eager"
+                    />
+                  </div>
+
+                  {/* Badge flottant */}
+                  <div className="absolute -bottom-5 -left-5 md:-left-8 bg-warm-white text-navy rounded-xl shadow-xl px-5 py-3 max-w-[16rem]">
+                    <p className="font-display italic text-sm md:text-base leading-snug">
+                      « Un métier profondément humain. »
+                    </p>
+                    <p className="font-body text-[10px] uppercase tracking-[0.25em] text-primary mt-1">
+                      — Patricia Vieira
+                    </p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </section>
 
+        {/* MÉTA — temps de lecture / chiffres */}
+        <section className="border-y border-border/40 bg-sand/50">
+          <div className="container mx-auto max-w-5xl px-4 py-5 flex flex-wrap items-center justify-center gap-x-10 gap-y-2 text-center">
+            <span className="font-body text-xs uppercase tracking-[0.25em] text-muted-foreground">📖 Lecture · 7 min</span>
+            <span className="hidden md:inline h-4 w-px bg-border" />
+            <span className="font-body text-xs uppercase tracking-[0.25em] text-muted-foreground">✍️ Par Patricia Vieira</span>
+            <span className="hidden md:inline h-4 w-px bg-border" />
+            <span className="font-body text-xs uppercase tracking-[0.25em] text-primary">Personal Branding · Immobilier</span>
+          </div>
+        </section>
+
         {/* SOMMAIRE */}
-        <section className="bg-sand/40 border-y border-border/40">
-          <div className="container mx-auto max-w-4xl px-4 py-10">
+        <section className="bg-warm-white">
+          <div className="container mx-auto max-w-4xl px-4 py-12">
             <p className="font-body text-xs uppercase tracking-[0.25em] text-primary mb-4 text-center">Sommaire</p>
             <ol className="grid md:grid-cols-2 gap-3">
               {sections.map((s, i) => (
                 <li key={s.id}>
                   <a
                     href={`#${s.id}`}
-                    className="group flex items-start gap-3 p-3 rounded-lg hover:bg-background transition-colors"
+                    className="group flex items-start gap-3 p-3 rounded-lg hover:bg-sand/60 transition-colors"
                   >
-                    <span className="font-display text-primary text-lg shrink-0">{String(i + 1).padStart(2, "0")}</span>
+                    <span className="font-display italic text-primary text-lg shrink-0">{String(i + 1).padStart(2, "0")}</span>
                     <span className="font-body text-foreground group-hover:text-primary transition-colors">{s.label}</span>
                   </a>
                 </li>
@@ -140,7 +202,7 @@ const PourquoiImmobilierIndependant = () => {
         {/* INTRODUCTION */}
         <section id="article" className="section-padding">
           <div className="container mx-auto max-w-3xl px-4 space-y-5 font-body text-lg text-foreground leading-relaxed">
-            <p>
+            <p className="first-letter:font-display first-letter:text-6xl first-letter:font-semibold first-letter:text-primary first-letter:mr-2 first-letter:float-left first-letter:leading-[0.9]">
               Quand on parle d'immobilier, beaucoup imaginent immédiatement des visites, des panneaux "À vendre" ou encore des négociations.
             </p>
             <p>
@@ -165,22 +227,29 @@ const PourquoiImmobilierIndependant = () => {
 
         {/* PERSONAL BRANDING - PATRICIA */}
         <section className="pb-12">
-          <div className="container mx-auto max-w-4xl px-4">
-            <div className="bg-sand/40 rounded-2xl p-6 md:p-10 shadow-lg flex flex-col md:flex-row gap-8 items-center animate-fade-in">
-              <img
-                src={patriciaPortrait.url}
-                alt="Patricia Vieira, conseillère immobilier indépendante"
-                className="w-40 h-40 md:w-56 md:h-56 object-cover rounded-2xl shadow-md shrink-0"
-                loading="lazy"
-              />
-              <div className="text-center md:text-left">
-                <h2 className="font-display text-2xl md:text-3xl font-semibold text-foreground mb-1">Patricia Vieira</h2>
-                <p className="font-body text-sm text-primary uppercase tracking-wider mb-4">
-                  Conseillère immobilier indépendante · Manager et formatrice
-                </p>
-                <blockquote className="font-display italic text-lg md:text-xl text-foreground/85 leading-relaxed border-l-2 border-primary pl-4">
-                  « J'accompagne depuis de nombreuses années des vendeurs, acquéreurs et futurs conseillers immobiliers dans la réalisation de leurs projets. »
-                </blockquote>
+          <div className="container mx-auto max-w-5xl px-4">
+            <div className="relative bg-gradient-to-br from-navy to-navy-light rounded-3xl p-6 md:p-12 shadow-2xl overflow-hidden animate-fade-in">
+              <div className="absolute top-0 right-0 w-64 h-64 bg-primary/20 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
+              <div className="relative flex flex-col md:flex-row gap-8 md:gap-12 items-center">
+                <div className="relative shrink-0">
+                  <div className="absolute -inset-2 rounded-2xl border border-primary/50" />
+                  <img
+                    src={patriciaPortrait.url}
+                    alt="Patricia Vieira, conseillère immobilier indépendante"
+                    className="relative w-44 h-44 md:w-60 md:h-60 object-cover rounded-2xl shadow-xl"
+                    loading="lazy"
+                  />
+                </div>
+                <div className="text-center md:text-left">
+                  <p className="font-body text-xs uppercase tracking-[0.3em] text-primary mb-3">L'auteure</p>
+                  <h2 className="font-display text-3xl md:text-4xl font-semibold text-navy-foreground mb-2">Patricia Vieira</h2>
+                  <p className="font-body text-sm text-navy-foreground/70 uppercase tracking-wider mb-5">
+                    Conseillère immobilier indépendante · Manager et formatrice
+                  </p>
+                  <blockquote className="font-display italic text-lg md:text-xl text-navy-foreground/90 leading-relaxed border-l-2 border-primary pl-5">
+                    « J'accompagne depuis de nombreuses années des vendeurs, acquéreurs et futurs conseillers immobiliers dans la réalisation de leurs projets. »
+                  </blockquote>
+                </div>
               </div>
             </div>
           </div>
