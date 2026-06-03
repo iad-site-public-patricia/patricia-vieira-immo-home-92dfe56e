@@ -342,43 +342,6 @@ une véritable aventure de vie.
 </article>
           </div>
         </section>
-        {/* HERO */}
-        <section className="relative min-h-[90vh] flex items-center overflow-hidden">
-          <img
-            src={heroImg}
-            alt="Équipe de conseillers immobiliers célébrant ensemble"
-            className="absolute inset-0 w-full h-full object-cover"
-            width={1920}
-            height={1080}
-          />
-          <div className="absolute inset-0 bg-gradient-to-br from-navy/85 via-navy/55 to-navy/30" />
-          <div className="relative container mx-auto max-w-5xl py-28 px-4 text-center">
-            <p className="font-body text-xs md:text-sm uppercase tracking-[0.3em] text-primary-foreground/80 mb-6">
-              Mon équipe de conseillers immobiliers
-            </p>
-            <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-semibold leading-[1.1] text-navy-foreground mb-8 drop-shadow-lg">
-              Construire ensemble une aventure humaine et entrepreneuriale
-            </h1>
-            <div className="max-w-3xl mx-auto space-y-5 font-body text-base md:text-lg text-navy-foreground/95 leading-relaxed drop-shadow-sm">
-              <p>
-                Depuis plus de 11 ans, j'accompagne des femmes et des hommes dans le développement de leur activité immobilière.
-              </p>
-              <p>
-                Au-delà du métier, mon objectif est d'aider chacun à construire une activité qui lui ressemble, à gagner en confiance, à évoluer à son rythme et à développer sa liberté professionnelle.
-              </p>
-              <p>
-                Mon équipe est présente dans plusieurs régions de France et repose sur des valeurs fortes : <span className="font-semibold">l'accompagnement, le partage, l'évolution et l'humain</span>.
-              </p>
-            </div>
-            <div className="mt-10">
-              <Button variant="hero" size="xl" asChild>
-                <a href="#echanger" className="inline-flex items-center gap-2">
-                  Échanger avec moi <ArrowRight className="w-5 h-5" />
-                </a>
-              </Button>
-            </div>
-          </div>
-        </section>
 
         {/* UNE ÉQUIPE QUI AVANCE ENSEMBLE */}
         <section className="section-padding">
