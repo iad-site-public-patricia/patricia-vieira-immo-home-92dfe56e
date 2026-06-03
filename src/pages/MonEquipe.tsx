@@ -61,6 +61,12 @@ const MonEquipe = () => {
       <div className="text-foreground">
         <section className="section-padding bg-background">
           <div className="container mx-auto max-w-4xl">
+            <img
+              src={rejoindreHeroTop.url}
+              alt="Rejoindre mon équipe de conseillers immobiliers Patricia Vieira"
+              className="w-full h-auto rounded-2xl shadow-elegant mb-10"
+              loading="eager"
+            />
             <article className="premium-blog-article space-y-5 font-body text-foreground leading-relaxed">
 
 <h1>Pourquoi j'ai choisi l'immobilier indépendant : bien plus qu'un métier, une aventure humaine</h1>
