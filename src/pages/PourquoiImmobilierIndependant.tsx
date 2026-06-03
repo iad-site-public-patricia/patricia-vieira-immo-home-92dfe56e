@@ -11,6 +11,7 @@ import {
 
 import heroImg from "@/assets/blog-header.jpg";
 import patriciaPortrait from "@/assets/patricia-vieira-portrait.png.asset.json";
+import patriciaAssise from "@/assets/patricia-vieira-portrait-assise.png.asset.json";
 import visiteImg from "@/assets/equipe-terrain.jpg";
 import estimationImg from "@/assets/cover-estimation.jpg";
 import equipeImg from "@/assets/equipe-celebration.jpg";
