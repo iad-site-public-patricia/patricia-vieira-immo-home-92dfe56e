@@ -40,6 +40,7 @@ import SecteurOzoir from "./pages/SecteurOzoir";
 import SecteurPontault from "./pages/SecteurPontault";
 import SecteurTournan from "./pages/SecteurTournan";
 import SecteurBrieComteRobert from "./pages/SecteurBrieComteRobert";
+import PourquoiImmobilierIndependant from "./pages/PourquoiImmobilierIndependant";
 
 
 const queryClient = new QueryClient();
@@ -75,6 +76,7 @@ const App = () => (
               <Route path="/conseils-immobiliers/:id" element={<Blog />} />
               <Route path="/blog" element={<Navigate to="/conseils-immobiliers" replace />} />
               <Route path="/blog/:id" element={<Blog />} />
+              <Route path="/pourquoi-j-ai-choisi-l-immobilier-independant" element={<PourquoiImmobilierIndependant />} />
               {/* Transversal */}
               <Route path="/contact" element={<Contact />} />
               <Route path="/mentions-legales" element={<MentionsLegales />} />
