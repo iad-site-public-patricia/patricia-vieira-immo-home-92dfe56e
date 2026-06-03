@@ -19,6 +19,7 @@ import challengeImg from "@/assets/equipe-challenge.jpg";
 import terrainImg from "@/assets/equipe-terrain.jpg";
 import rejoindreEquipeImg from "@/assets/rejoindre-equipe.jpg";
 import rejoindreLifestyleImg from "@/assets/rejoindre-lifestyle.jpg";
+import rejoindreHeroTop from "@/assets/rejoindre-hero-top.png.asset.json";
 
 const galleryItems = [
   { src: seminaireImg, label: "Séminaire d'équipe" },
