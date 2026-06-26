@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import { Heart, Users, Award, Sparkles, ArrowRight, Star, Quote } from "lucide-react";
 import { useEffect, useRef } from "react";
 import patriciaPhoto from "@/assets/patricia-vieira.jpg";
+import patriciaCover from "@/assets/patricia-apropos-cover.png.asset.json";
 
 const avis = [
   { name: "Coraline", type: "Vente", stars: 5, text: "Parfaite ! Vente de mon appartement en 1 semaine et au prix ! Je recommande les yeux fermés." },
@@ -57,8 +58,8 @@ const APropos = () => {
           <div
             className="absolute inset-0 bg-cover bg-center"
             style={{
-              backgroundImage: `url(${patriciaPhoto})`,
-              backgroundPosition: "center 20%",
+              backgroundImage: `url(${patriciaCover.url})`,
+              backgroundPosition: "center 30%",
             }}
           />
           <div className="absolute inset-0 bg-gradient-to-t from-navy/70 via-navy/30 to-transparent" />
