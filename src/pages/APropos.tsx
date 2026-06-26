@@ -58,8 +58,8 @@ const APropos = () => {
           <div
             className="absolute inset-0 bg-cover bg-center"
             style={{
-              backgroundImage: `url(${patriciaPhoto})`,
-              backgroundPosition: "center 20%",
+              backgroundImage: `url(${patriciaCover.url})`,
+              backgroundPosition: "center 30%",
             }}
           />
           <div className="absolute inset-0 bg-gradient-to-t from-navy/70 via-navy/30 to-transparent" />
