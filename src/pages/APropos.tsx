@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import { Heart, Users, Award, Sparkles, ArrowRight, Star, Quote } from "lucide-react";
 import { useEffect, useRef } from "react";
 import patriciaPhoto from "@/assets/patricia-vieira.jpg";
+import patriciaCover from "@/assets/patricia-apropos-cover.png.asset.json";
 
 const avis = [
   { name: "Coraline", type: "Vente", stars: 5, text: "Parfaite ! Vente de mon appartement en 1 semaine et au prix ! Je recommande les yeux fermés." },
