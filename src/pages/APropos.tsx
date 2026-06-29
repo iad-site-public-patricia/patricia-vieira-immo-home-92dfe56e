@@ -128,21 +128,10 @@ const APropos = () => {
                   </ul>
                 </div>
               </div>
-
-              <div className="flex justify-center md:justify-end">
-                <div className="relative">
-                  <div className="absolute -inset-3 bg-gradient-to-br from-primary/20 to-gold/20 rounded-2xl blur-sm" />
-                  <img
-                    src={patriciaPhoto}
-                    alt="Patricia Vieira, conseillère immobilier à Gretz-Armainvilliers en Seine-et-Marne"
-                    className="relative rounded-2xl shadow-xl w-full max-w-md object-cover aspect-[3/4]"
-                    loading="lazy"
-                  />
-                </div>
-              </div>
             </div>
           </div>
         </section>
+
 
         {/* Values */}
         <section className="section-padding bg-secondary/30">
