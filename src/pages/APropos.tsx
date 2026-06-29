@@ -128,8 +128,10 @@ const APropos = () => {
                   </ul>
                 </div>
               </div>
-
+            </div>
+          </div>
         </section>
+
 
         {/* Values */}
         <section className="section-padding bg-secondary/30">
