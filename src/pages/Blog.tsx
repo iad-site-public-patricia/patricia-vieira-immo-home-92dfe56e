@@ -75,13 +75,15 @@ const Blog = () => {
         <img src={blogHeaderImg} alt="Conseils immobiliers" className="absolute inset-0 w-full h-full object-cover" />
         <div className="absolute inset-0 bg-gradient-to-b from-navy/70 via-navy/50 to-navy/80" />
         <div className="container mx-auto max-w-3xl text-center relative z-10">
-          <div className="flex items-center justify-center gap-3 mb-4">
-            <BookOpen className="w-8 h-8 text-primary" />
-          </div>
-          <h1 className="font-display text-4xl md:text-5xl font-bold mb-4 text-navy-foreground">Conseils immobiliers</h1>
-          <p className="font-body text-lg text-navy-foreground/85 max-w-2xl mx-auto leading-relaxed">
-            Guides pratiques, analyses de marché et conseils d'experte pour réussir vos projets immobiliers.
-          </p>
+          <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-4 text-navy-foreground">
+            Patricia Vieira
+            <span className="block text-2xl md:text-3xl lg:text-4xl font-medium mt-3 italic text-navy-foreground/90">
+              Votre conseillère immobilier en Seine-et-Marne
+            </span>
+            <span className="block text-2xl md:text-3xl lg:text-4xl font-medium mt-2 italic text-navy-foreground/90">
+              Manager platinium associée
+            </span>
+          </h1>
         </div>
       </section>
 
