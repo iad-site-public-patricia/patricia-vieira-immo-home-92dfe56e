@@ -33,25 +33,10 @@ const footerCities = [
 
 const Layout = ({ children }: { children: React.ReactNode }) => {
   const [menuOpen, setMenuOpen] = useState(false);
-  const [sectorOpen, setSectorOpen] = useState(false);
-  const [mobileSectorOpen, setMobileSectorOpen] = useState(false);
   const location = useLocation();
-  const dropdownRef = useRef<HTMLDivElement>(null);
-
-  useEffect(() => {
-    const handleClickOutside = (e: MouseEvent) => {
-      if (dropdownRef.current && !dropdownRef.current.contains(e.target as Node)) {
-        setSectorOpen(false);
-      }
-    };
-    document.addEventListener("mousedown", handleClickOutside);
-    return () => document.removeEventListener("mousedown", handleClickOutside);
-  }, []);
 
   useEffect(() => {
     setMenuOpen(false);
-    setSectorOpen(false);
-    setMobileSectorOpen(false);
   }, [location.pathname]);
 
   const isActive = (to: string) => {
@@ -99,49 +84,19 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
 
           {/* Desktop nav */}
           <nav className="hidden lg:flex items-center gap-0.5">
-            {mainNav.map((link) =>
-              link.children ? (
-                <div key={link.to} className="relative" ref={dropdownRef}>
-                  <button
-                    onClick={() => setSectorOpen(!sectorOpen)}
-                    className={`px-3.5 py-2 text-sm font-body font-medium rounded-lg transition-all duration-200 flex items-center gap-1 ${
-                      location.pathname.startsWith("/immobilier-")
-                        ? "text-primary bg-terracotta-light"
-                        : "text-foreground/75 hover:text-primary hover:bg-muted/60"
-                    }`}
-                  >
-                    {link.label}
-                    <ChevronDown className={`w-3.5 h-3.5 transition-transform ${sectorOpen ? "rotate-180" : ""}`} />
-                  </button>
-                  {sectorOpen && (
-                    <div className="absolute top-full left-0 mt-1 w-56 bg-background border border-border/60 rounded-xl shadow-xl py-2 animate-fade-in z-50">
-                      {link.children.map((child) => (
-                        <Link
-                          key={child.to}
-                          to={child.to}
-                          className="flex items-center gap-2 px-4 py-2.5 text-sm font-body text-foreground/80 hover:text-primary hover:bg-muted/60 transition-all"
-                        >
-                          <MapPin className="w-3.5 h-3.5 text-primary/50" />
-                          {child.label}
-                        </Link>
-                      ))}
-                    </div>
-                  )}
-                </div>
-              ) : (
-                <Link
-                  key={link.to}
-                  to={link.to}
-                  className={`px-3.5 py-2 text-sm font-body font-medium rounded-lg transition-all duration-200 ${
-                    isActive(link.to)
-                      ? "text-primary bg-terracotta-light"
-                      : "text-foreground/75 hover:text-primary hover:bg-muted/60"
-                  }`}
-                >
-                  {link.label}
-                </Link>
-              )
-            )}
+            {mainNav.map((link) => (
+              <Link
+                key={link.to}
+                to={link.to}
+                className={`px-3.5 py-2 text-sm font-body font-medium rounded-lg transition-all duration-200 ${
+                  isActive(link.to)
+                    ? "text-primary bg-terracotta-light"
+                    : "text-foreground/75 hover:text-primary hover:bg-muted/60"
+                }`}
+              >
+                {link.label}
+              </Link>
+            ))}
           </nav>
 
           {/* Mobile menu button */}
@@ -157,49 +112,19 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
         {/* Mobile nav */}
         {menuOpen && (
           <nav className="lg:hidden bg-background border-t border-border/60 px-4 py-4 space-y-1 animate-fade-in">
-            {mainNav.map((link) =>
-              link.children ? (
-                <div key={link.to}>
-                  <button
-                    onClick={() => setMobileSectorOpen(!mobileSectorOpen)}
-                    className={`w-full flex items-center justify-between px-4 py-3 rounded-lg text-sm font-body font-medium uppercase tracking-wide transition-all ${
-                      location.pathname.startsWith("/immobilier-")
-                        ? "text-primary bg-terracotta-light"
-                        : "text-foreground/80 hover:text-primary hover:bg-muted/60"
-                    }`}
-                  >
-                    {link.label}
-                    <ChevronDown className={`w-4 h-4 transition-transform ${mobileSectorOpen ? "rotate-180" : ""}`} />
-                  </button>
-                  {mobileSectorOpen && (
-                    <div className="pl-4 space-y-0.5 mt-1">
-                      {link.children.map((child) => (
-                        <Link
-                          key={child.to}
-                          to={child.to}
-                          className="flex items-center gap-2 px-4 py-2.5 rounded-lg text-sm font-body text-foreground/70 hover:text-primary hover:bg-muted/60 transition-all"
-                        >
-                          <MapPin className="w-3.5 h-3.5 text-primary/50" />
-                          {child.label}
-                        </Link>
-                      ))}
-                    </div>
-                  )}
-                </div>
-              ) : (
-                <Link
-                  key={link.to}
-                  to={link.to}
-                  className={`block px-4 py-3 rounded-lg text-sm font-body font-medium uppercase tracking-wide transition-all ${
-                    isActive(link.to)
-                      ? "text-primary bg-terracotta-light"
-                      : "text-foreground/80 hover:text-primary hover:bg-muted/60"
-                  }`}
-                >
-                  {link.label}
-                </Link>
-              )
-            )}
+            {mainNav.map((link) => (
+              <Link
+                key={link.to}
+                to={link.to}
+                className={`block px-4 py-3 rounded-lg text-sm font-body font-medium uppercase tracking-wide transition-all ${
+                  isActive(link.to)
+                    ? "text-primary bg-terracotta-light"
+                    : "text-foreground/80 hover:text-primary hover:bg-muted/60"
+                }`}
+              >
+                {link.label}
+              </Link>
+            ))}
           </nav>
         )}
       </header>
