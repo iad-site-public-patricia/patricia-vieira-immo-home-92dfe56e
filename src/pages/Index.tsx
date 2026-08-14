@@ -99,7 +99,7 @@ const Index = () => {
       <SchemaOrg breadcrumbs={[{ name: "Accueil", url: "/" }]} />
     <div>
       {/* Hero Section — 3 CTA */}
-      <section className="relative min-h-[90vh] flex items-center overflow-hidden">
+      <section className="relative min-h-[90vh] flex items-center overflow-hidden bg-navy">
         <video autoPlay muted loop playsInline className="absolute inset-0 w-full h-full object-cover">
           <source src="/hero-video.mp4" type="video/mp4" />
         </video>
