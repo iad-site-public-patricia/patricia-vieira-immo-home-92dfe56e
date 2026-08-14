@@ -4,7 +4,7 @@ import SchemaOrg from "@/components/SchemaOrg";
 import { Link, useParams } from "react-router-dom";
 import { blogPosts, categories } from "@/data/blogPosts";
 import {
-  ArrowLeft, BookOpen, LayoutGrid, Home, ClipboardCheck, ShoppingCart,
+  ArrowLeft, LayoutGrid, Home, ClipboardCheck, ShoppingCart,
   GraduationCap, TrendingUp, MapPin, BarChart3, Gem, Newspaper, ArrowRight
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
