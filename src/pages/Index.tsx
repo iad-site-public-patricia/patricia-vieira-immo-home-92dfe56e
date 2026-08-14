@@ -99,36 +99,36 @@ const Index = () => {
       <SchemaOrg breadcrumbs={[{ name: "Accueil", url: "/" }]} />
     <div>
       {/* Hero Section — 3 CTA */}
-      <section className="relative min-h-[85vh] flex items-center overflow-hidden">
+      <section className="relative min-h-[90vh] flex items-center overflow-hidden">
         <video autoPlay muted loop playsInline className="absolute inset-0 w-full h-full object-cover">
           <source src="/hero-video.mp4" type="video/mp4" />
         </video>
-        <div className="absolute inset-0 bg-black/50" />
-        <div className="absolute inset-0 bg-gradient-to-r from-navy/80 via-navy/40 to-transparent" />
-        <div className="relative container mx-auto px-4 py-20">
-          <div className="max-w-3xl bg-navy/30 backdrop-blur-md rounded-2xl p-8 md:p-12 border border-navy-foreground/10 shadow-2xl animate-fade-in">
-            <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-navy-foreground leading-tight mb-4">
+        <div className="absolute inset-0 bg-black/40" />
+        <div className="absolute inset-0 bg-gradient-to-r from-navy/75 via-navy/35 to-transparent" />
+        <div className="relative container mx-auto px-4 py-24 md:py-32">
+          <div className="max-w-2xl animate-fade-in">
+            <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-navy-foreground leading-tight mb-4 drop-shadow-lg">
               Patricia Vieira
             </h1>
-            <h2 className="font-display text-2xl md:text-3xl lg:text-4xl font-medium text-navy-foreground/95 leading-snug mb-6">
+            <h2 className="font-display text-2xl md:text-3xl lg:text-4xl font-medium text-navy-foreground/95 leading-snug mb-6 drop-shadow-md">
               <span className="block">L'immobilier pour vos projets.</span>
               <span className="block mt-1">L'accompagnement pour votre avenir professionnel.</span>
             </h2>
-            <p className="text-navy-foreground/90 font-body text-base md:text-lg leading-relaxed mb-8 max-w-2xl">
+            <p className="text-navy-foreground/90 font-body text-base md:text-lg leading-relaxed mb-8 drop-shadow-sm">
               Conseillère immobilière spécialisée en vente immobilière, achat immobilier et estimation immobilière en Seine-et-Marne et ses alentours • Manager et formatrice d'une équipe de conseillers immobiliers, engagée dans le recrutement immobilier partout en France.
             </p>
-            <div className="flex flex-col sm:flex-row flex-wrap gap-3">
-              <Button variant="hero" size="xl" asChild className="w-full sm:w-auto">
+            <div className="flex flex-col md:flex-row flex-wrap gap-3">
+              <Button variant="hero" size="lg" asChild className="w-full md:w-auto">
                 <Link to="/vendre" className="inline-flex items-center gap-2">
                   Estimer ou vendre mon bien <ArrowRight className="w-5 h-5" />
                 </Link>
               </Button>
-              <Button variant="hero-outline" size="xl" asChild className="w-full sm:w-auto">
+              <Button variant="hero-outline" size="lg" asChild className="w-full md:w-auto">
                 <Link to="/acheter" className="inline-flex items-center gap-2">
                   Trouver mon futur logement <ArrowRight className="w-5 h-5" />
                 </Link>
               </Button>
-              <Button variant="hero-outline" size="xl" asChild className="w-full sm:w-auto">
+              <Button variant="hero-outline" size="lg" asChild className="w-full md:w-auto">
                 <Link to="/mon-equipe" className="inline-flex items-center gap-2">
                   Devenir conseiller immobilier <ArrowRight className="w-5 h-5" />
                 </Link>
