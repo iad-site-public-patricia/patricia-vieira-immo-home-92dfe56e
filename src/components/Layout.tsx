@@ -9,17 +9,6 @@ const mainNav = [
   { label: "Vendre", to: "/vendre" },
   { label: "Acheter", to: "/acheter" },
   { label: "Mon Équipe", to: "/mon-equipe" },
-  {
-    label: "Secteurs",
-    to: "/immobilier-gretz-armainvilliers",
-    children: [
-      { label: "Gretz-Armainvilliers", to: "/immobilier-gretz-armainvilliers" },
-      { label: "Ozoir-la-Ferrière", to: "/immobilier-ozoir-la-ferriere" },
-      { label: "Tournan-en-Brie", to: "/immobilier-tournan-en-brie" },
-      { label: "Brie-Comte-Robert", to: "/immobilier-brie-comte-robert" },
-      { label: "Pontault-Combault", to: "/immobilier-pontault-combault" },
-    ],
-  },
   { label: "Conseils", to: "/conseils-immobiliers" },
   { label: "Contact", to: "/contact" },
 ];
