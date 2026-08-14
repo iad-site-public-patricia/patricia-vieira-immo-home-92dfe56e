@@ -90,49 +90,47 @@ const Index = () => {
   return (
     <>
       <PageSEO
-        title="Conseillère Immobilier Seine-et-Marne (77) | Patricia Vieira IAD — Gretz-Armainvilliers"
-        description="Patricia Vieira, conseillère immobilier IAD France en Seine-et-Marne (77). Estimation gratuite, accompagnement vente et achat à Gretz-Armainvilliers et environs. 4.9/5 sur 47+ avis clients vérifiés."
+        title="Patricia Vieira | Conseillère immobilière Seine-et-Marne (77)"
+        description="Patricia Vieira, conseillère immobilière en Seine-et-Marne (77). Vente immobilière, achat immobilier, estimation gratuite et recrutement de conseillers immobiliers. 4.9/5 sur 47+ avis clients vérifiés."
         canonical="/"
-        ogTitle="Patricia Vieira — Conseillère Immobilier Seine-et-Marne (77)"
-        ogDescription="Estimation gratuite, vente et achat immobilier à Gretz-Armainvilliers et en Seine-et-Marne. 4.9/5 sur 47+ avis."
+        ogTitle="Patricia Vieira — Conseillère immobilière Seine-et-Marne (77)"
+        ogDescription="Vente immobilière, achat immobilier, estimation gratuite et recrutement de conseillers immobiliers en Seine-et-Marne. 4.9/5 sur 47+ avis."
       />
       <SchemaOrg breadcrumbs={[{ name: "Accueil", url: "/" }]} />
     <div>
       {/* Hero Section — 3 CTA */}
-      <section className="relative min-h-[85vh] flex items-center overflow-hidden">
+      <section className="relative min-h-[90vh] flex items-center overflow-hidden bg-navy">
         <video autoPlay muted loop playsInline className="absolute inset-0 w-full h-full object-cover">
           <source src="/hero-video.mp4" type="video/mp4" />
         </video>
         <div className="absolute inset-0 bg-black/40" />
-        <div className="absolute inset-0 bg-gradient-to-r from-navy/60 via-navy/30 to-transparent" />
-        <div className="relative container mx-auto px-4 py-20">
-          <div className="max-w-2xl">
-            <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-4 animate-fade-in">
-              <span className="text-navy-foreground drop-shadow-lg">Patricia Vieira</span>
-              <span className="block text-2xl md:text-3xl lg:text-4xl font-medium mt-3 italic text-navy-foreground/90 drop-shadow-md">
-                Votre conseillère immobilier en Seine-et-Marne
-              </span>
+        <div className="absolute inset-0 bg-gradient-to-r from-navy/75 via-navy/35 to-transparent" />
+        <div className="relative container mx-auto px-4 py-24 md:py-32">
+          <div className="max-w-2xl animate-fade-in">
+            <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-navy-foreground leading-tight mb-4 drop-shadow-lg">
+              Patricia Vieira
             </h1>
-            <div className="mb-8 animate-fade-in" style={{ animationDelay: "0.15s" }}>
-              <p className="text-navy-foreground/90 font-body text-lg md:text-xl leading-relaxed drop-shadow-sm">
-                Vente · Achat · Estimation gratuite<br />
-                Gretz-Armainvilliers et alentours (30 km)
-              </p>
-            </div>
-            <div className="flex flex-col sm:flex-row gap-4 animate-fade-in items-center sm:items-start max-w-[280px] sm:max-w-none mx-auto sm:mx-0" style={{ animationDelay: "0.3s" }}>
-              <Button variant="hero" size="xl" asChild>
+            <h2 className="font-display text-2xl md:text-3xl lg:text-4xl font-medium text-navy-foreground/95 leading-snug mb-6 drop-shadow-md">
+              <span className="block">L'immobilier pour vos projets.</span>
+              <span className="block mt-1">L'accompagnement pour votre avenir professionnel.</span>
+            </h2>
+            <p className="text-navy-foreground/90 font-body text-base md:text-lg leading-relaxed mb-8 drop-shadow-sm">
+              Conseillère immobilière spécialisée en vente immobilière, achat immobilier et estimation immobilière en Seine-et-Marne et ses alentours • Manager et formatrice d'une équipe de conseillers immobiliers, engagée dans le recrutement immobilier partout en France.
+            </p>
+            <div className="flex flex-col md:flex-row flex-wrap gap-3">
+              <Button variant="hero" size="lg" asChild className="w-full md:w-auto">
                 <Link to="/vendre" className="inline-flex items-center gap-2">
-                  Vendre mon bien <ArrowRight className="w-5 h-5" />
+                  Estimer ou vendre mon bien <ArrowRight className="w-5 h-5" />
                 </Link>
               </Button>
-              <Button variant="hero" size="xl" asChild>
+              <Button variant="hero-outline" size="lg" asChild className="w-full md:w-auto">
                 <Link to="/acheter" className="inline-flex items-center gap-2">
-                  Acheter un bien <ArrowRight className="w-5 h-5" />
+                  Trouver mon futur logement <ArrowRight className="w-5 h-5" />
                 </Link>
               </Button>
-              <Button variant="hero" size="xl" asChild>
+              <Button variant="hero-outline" size="lg" asChild className="w-full md:w-auto">
                 <Link to="/mon-equipe" className="inline-flex items-center gap-2">
-                  Rejoindre mon équipe <ArrowRight className="w-5 h-5" />
+                  Devenir conseiller immobilier <ArrowRight className="w-5 h-5" />
                 </Link>
               </Button>
             </div>
