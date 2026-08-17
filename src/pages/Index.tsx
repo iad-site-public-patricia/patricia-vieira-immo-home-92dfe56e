@@ -16,6 +16,7 @@ import vendu5_2 from "@/assets/vendu-5-2.jpg";
 import vendu10 from "@/assets/vendu-10.jpg";
 import signatureNotaire from "@/assets/signature-notaire.jpg";
 import signatureNotaire2 from "@/assets/signature-notaire-2.jpg";
+import heroMagazine from "@/assets/hero-magazine-clair.jpg";
 
 const soldProperties = [
   { image: vendu1, type: "Maison familiale", location: "Lésigny 77", time: "Vendu en 1 mois" },
