@@ -112,7 +112,7 @@ const Index = () => {
           playsInline
           preload="auto"
           aria-label="Patricia Vieira, conseillère immobilière en Seine-et-Marne, accompagne un couple lors d'une visite puis d'une signature"
-          className="absolute inset-0 w-full h-full object-cover object-[70%_center] [filter:brightness(1.05)_saturate(1.03)]"
+          className="absolute inset-0 w-full h-full object-cover object-[70%_center] scale-x-[-1] [filter:brightness(1.05)_saturate(1.03)]"
         />
 
         {/* Lecture du texte : léger dégradé blanc uniquement à gauche, aucune voile sombre */}
