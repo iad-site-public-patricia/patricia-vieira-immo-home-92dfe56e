@@ -102,9 +102,9 @@ const Index = () => {
       <SchemaOrg breadcrumbs={[{ name: "Accueil", url: "/" }]} />
     <div>
       {/* Hero éditorial */}
-      <section className="relative overflow-hidden bg-background">
-        {/* Vidéo entièrement visible sur tous les supports (ratio 16:9 conservé) */}
-        <div className="relative w-full aspect-video bg-background">
+      <section className="relative overflow-hidden bg-background min-h-[620px] md:min-h-[680px] lg:min-h-[760px] flex items-center">
+        {/* Vidéo de fond */}
+        <div className="absolute inset-0">
           <video
             src={heroVideo.url}
             poster={heroPoster.url}
@@ -114,16 +114,17 @@ const Index = () => {
             playsInline
             preload="auto"
             aria-label="Patricia Vieira, conseillère immobilière en Seine-et-Marne, accompagne un couple lors d'une visite puis d'une signature"
-            className="absolute inset-0 w-full h-full object-contain object-center [filter:brightness(1.04)_saturate(1.03)]"
+            className="absolute inset-0 w-full h-full object-cover object-[70%_center] [filter:brightness(1.04)_saturate(1.03)]"
           />
         </div>
 
-        {/* Lecture du texte : léger dégradé blanc uniquement à gauche (desktop) */}
-        <div className="hidden lg:block absolute inset-0 bg-gradient-to-r from-background via-background/70 to-transparent lg:via-background/55 lg:to-transparent" />
-        <div className="hidden lg:block absolute inset-0 bg-gradient-to-t from-background/40 via-transparent to-transparent" />
-        <div className="relative container mx-auto px-4 py-12 md:py-16 lg:py-40 lg:absolute lg:inset-0 lg:flex lg:items-center">
+        {/* Lecture du texte : dégradé blanc à gauche */}
+        <div className="absolute inset-0 bg-gradient-to-r from-background via-background/80 to-transparent lg:via-background/60" />
+        <div className="absolute inset-0 bg-gradient-to-t from-background/50 via-transparent to-transparent" />
+        <div className="relative container mx-auto px-4 py-16 md:py-20 lg:py-28">
 
           <div className="max-w-3xl animate-fade-in">
+
             <p className="font-display text-xl md:text-3xl lg:text-4xl font-semibold uppercase tracking-[0.14em] text-navy leading-snug mb-8 md:mb-10">
               Le magazine immobilier<br className="hidden sm:block" /> de Patricia Vieira
             </p>
@@ -142,11 +143,12 @@ const Index = () => {
                   <Home className="w-5 h-5" /> Je suis propriétaire ou acquéreur <ArrowRight className="w-5 h-5" />
                 </Link>
               </Button>
-              <Button variant="hero-outline" size="lg" asChild className="w-full sm:w-auto">
-                <Link to="/mon-equipe" className="inline-flex items-center gap-2">
-                  <Briefcase className="w-5 h-5" /> Je découvre le métier de conseiller immobilier <ArrowRight className="w-5 h-5" />
+              <Button variant="hero-outline" size="lg" asChild className="w-full sm:w-auto h-auto py-3 whitespace-normal">
+                <Link to="/mon-equipe" className="inline-flex items-center gap-2 text-left">
+                  <Briefcase className="w-5 h-5 shrink-0" /> Je découvre le métier de conseiller immobilier <ArrowRight className="w-5 h-5 shrink-0" />
                 </Link>
               </Button>
+
             </div>
           </div>
         </div>
