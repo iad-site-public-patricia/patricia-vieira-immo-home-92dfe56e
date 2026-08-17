@@ -38,8 +38,8 @@ const Estimation = () => {
   return (
     <>
       <PageSEO
-        title="Estimation Immobilière Gratuite en Seine-et-Marne (77) | Patricia Vieira IAD"
-        description="Faites estimer votre bien immobilier gratuitement par Patricia Vieira, conseillère IAD France à Gretz-Armainvilliers. Estimation précise basée sur le marché local du 77. Sans engagement."
+        title="Estimation Immobilière Gratuite en Seine-et-Marne (77) | Patricia Vieira"
+        description="Faites estimer votre bien immobilier gratuitement par Patricia Vieira, conseillère immobilier indépendante à Gretz-Armainvilliers. Estimation précise basée sur le marché local du 77. Sans engagement."
         canonical="/estimation"
       />
       <SchemaOrg
@@ -66,7 +66,7 @@ const Estimation = () => {
           <div className="container mx-auto max-w-3xl">
             <div className="space-y-6 text-muted-foreground font-body leading-relaxed">
               <p>
-                Vous envisagez de vendre votre maison ou votre appartement en Seine-et-Marne ? La première étape indispensable est une estimation précise de votre bien. En tant que conseillère immobilier IAD France à Gretz-Armainvilliers, je vous propose une <strong className="text-foreground">estimation gratuite, personnalisée et sans aucun engagement</strong>.
+                Vous envisagez de vendre votre maison ou votre appartement en Seine-et-Marne ? La première étape indispensable est une estimation précise de votre bien. En tant que conseillère immobilier indépendante à Gretz-Armainvilliers, je vous propose une <strong className="text-foreground">estimation gratuite, personnalisée et sans aucun engagement</strong>.
               </p>
 
               <h2 className="font-display text-2xl md:text-3xl font-semibold text-foreground !mt-10">
@@ -106,7 +106,7 @@ const Estimation = () => {
                   "Connaissance experte du marché local en Seine-et-Marne (77)",
                   "Plus de 10 ans d'expérience dans la transaction immobilière",
                   "Note de 4.9/5 sur 47+ avis vérifiés sur Immodvisor",
-                  "Membre du réseau IAD France, leader français des mandataires immobiliers",
+                  "Conseillère immobilier indépendante, adossée à l'un des plus grands réseaux français",
                   "Estimation gratuite et sans engagement",
                 ].map((item, i) => (
                   <li key={i} className="flex items-center gap-3">

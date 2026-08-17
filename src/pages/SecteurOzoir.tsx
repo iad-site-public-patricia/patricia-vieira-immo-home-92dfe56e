@@ -13,7 +13,7 @@ const SecteurOzoir = () => (
   <>
     <PageSEO
       title="Immobilier Ozoir-la-Ferrière (77330) — Prix, Marché Local | Patricia Vieira"
-      description="Immobilier à Ozoir-la-Ferrière : prix, marché, quartiers. Patricia Vieira, conseillère IAD France en Seine-et-Marne. Estimation gratuite."
+      description="Immobilier à Ozoir-la-Ferrière : prix, marché, quartiers. Patricia Vieira, conseillère immobilier indépendante en Seine-et-Marne. Estimation gratuite."
       canonical="/immobilier-ozoir-la-ferriere"
     />
   <main className="bg-background">

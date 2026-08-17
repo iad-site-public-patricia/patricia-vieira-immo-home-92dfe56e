@@ -60,7 +60,7 @@ const Blog = () => {
     <>
       <PageSEO
         title="Conseils Immobiliers Seine-et-Marne — Blog Patricia Vieira"
-        description="Conseils et actualités immobilières en Seine-et-Marne par Patricia Vieira, conseillère IAD France. Prix, tendances, astuces pour vendre et acheter."
+        description="Conseils et actualités immobilières en Seine-et-Marne par Patricia Vieira, conseillère immobilier indépendante. Prix, tendances, astuces pour vendre et acheter."
         canonical="/conseils-immobiliers"
       />
       <SchemaOrg

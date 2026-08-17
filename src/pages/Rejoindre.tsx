@@ -31,7 +31,7 @@ const Rejoindre = () => {
   return (
     <>
       <PageSEO
-        title="Devenir Conseiller Immobilier IAD France — Rejoindre l'Équipe Patricia Vieira"
+        title="Devenir Conseiller Immobilier Indépendant — Rejoindre l'Équipe Patricia Vieira"
         description="Envie de devenir conseiller immobilier indépendant ? Patricia Vieira vous accompagne dans votre reconversion avec IAD France. Formation, coaching, réseau national."
         canonical="/rejoindre"
       />

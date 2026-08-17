@@ -12,7 +12,7 @@ const SecteurPontault = () => (
   <>
     <PageSEO
       title="Immobilier Pontault-Combault (77340) — Prix, Marché Local | Patricia Vieira"
-      description="Immobilier à Pontault-Combault : prix au m², marché, quartiers résidentiels. Patricia Vieira, conseillère IAD France. Estimation gratuite."
+      description="Immobilier à Pontault-Combault : prix au m², marché, quartiers résidentiels. Patricia Vieira, conseillère immobilier indépendante. Estimation gratuite."
       canonical="/immobilier-pontault-combault"
     />
   <main className="bg-background">

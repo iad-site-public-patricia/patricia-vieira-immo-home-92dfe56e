@@ -87,7 +87,7 @@ const Contact = () => {
                   <ul className="space-y-1.5 text-sm text-muted-foreground font-body">
                     <li><strong className="text-foreground">Statut :</strong> Agent commercial indépendant</li>
                     <li><strong className="text-foreground">RSAC :</strong> Melun n° 339303513</li>
-                    <li><strong className="text-foreground">Réseau :</strong> IAD France</li>
+                    
                   </ul>
                 </div>
 

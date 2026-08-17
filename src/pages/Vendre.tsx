@@ -59,8 +59,8 @@ const Vendre = () => {
   return (
     <>
       <PageSEO
-        title="Vendre Votre Bien Immobilier en Seine-et-Marne (77) | Patricia Vieira IAD France"
-        description="Vendez votre maison ou appartement en Seine-et-Marne avec Patricia Vieira, IAD France. Honoraires réduits de 20 à 30%, accompagnement complet, estimation gratuite."
+        title="Vendre Votre Bien Immobilier en Seine-et-Marne (77) | Patricia Vieira"
+        description="Vendez votre maison ou appartement en Seine-et-Marne avec Patricia Vieira, conseillère immobilier indépendante. Honoraires réduits de 20 à 30%, accompagnement complet, estimation gratuite."
         canonical="/vendre"
       />
       <SchemaOrg
@@ -92,7 +92,7 @@ const Vendre = () => {
                 Vous envisagez de vendre votre maison ou votre appartement en Seine-et-Marne ? <strong className="text-foreground">Je vous accompagne de A à Z</strong>, de l'estimation initiale jusqu'à la signature chez le notaire, avec une stratégie de vente personnalisée et efficace.
               </p>
               <p>
-                En tant que conseillère immobilier indépendante affiliée au réseau IAD France, je mets à votre disposition mon expérience de plus de 10 ans, ma connaissance approfondie du marché local et des outils marketing performants pour maximiser vos chances de vendre rapidement et au meilleur prix.
+                En tant que conseillère immobilier indépendante, je mets à votre disposition mon expérience de plus de 10 ans, ma connaissance approfondie du marché local et des outils marketing performants pour maximiser vos chances de vendre rapidement et au meilleur prix.
               </p>
 
               <h2 className="font-display text-2xl md:text-3xl font-semibold text-foreground !mt-10">
@@ -106,7 +106,7 @@ const Vendre = () => {
                   "Estimation précise et gratuite de votre bien",
                   "Photos professionnelles et mise en valeur de votre propriété",
                   "Rédaction d'annonces attractives et optimisées",
-                  "Diffusion sur les meilleurs portails : Leboncoin, SeLoger, Logic-Immo, IAD France...",
+                  "Diffusion sur les meilleurs portails : Leboncoin, SeLoger, Logic-Immo et mon réseau national...",
                   "Organisation et accompagnement des visites",
                   "Sélection rigoureuse des acquéreurs",
                   "Négociation dans votre intérêt",
@@ -120,13 +120,13 @@ const Vendre = () => {
               </ul>
 
               <h2 className="font-display text-2xl md:text-3xl font-semibold text-foreground !mt-10">
-                Les avantages du modèle IAD France
+                Les avantages de mon modèle indépendant
               </h2>
               <p>
                 En choisissant de vendre avec moi, vous bénéficiez du meilleur des deux mondes : l'accompagnement personnalisé d'une conseillère locale et la puissance d'un réseau national de plus de 18 000 conseillers.
               </p>
               <p>
-                <strong className="text-foreground">Honoraires réduits de 20 à 30% par rapport aux agences traditionnelles</strong> grâce au modèle IAD, sans vitrine physique mais avec une diffusion maximale sur tous les portails immobiliers. Vous faites des économies substantielles sans rien sacrifier sur la qualité du service.
+                <strong className="text-foreground">Honoraires réduits de 20 à 30% par rapport aux agences traditionnelles</strong> grâce à mon modèle sans vitrine physique mais avec une diffusion maximale sur tous les portails immobiliers. Vous faites des économies substantielles sans rien sacrifier sur la qualité du service.
               </p>
 
               <h2 className="font-display text-2xl md:text-3xl font-semibold text-foreground !mt-10">

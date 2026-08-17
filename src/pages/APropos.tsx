@@ -42,8 +42,8 @@ const APropos = () => {
   return (
     <>
       <PageSEO
-        title="À Propos de Patricia Vieira — Conseillère Immobilier IAD France en Seine-et-Marne"
-        description="Découvrez le parcours de Patricia Vieira, conseillère immobilier IAD France à Gretz-Armainvilliers. 11 ans d'expérience, +150 biens vendus, avis clients 4.9/5."
+        title="À Propos de Patricia Vieira — Conseillère Immobilier Indépendante en Seine-et-Marne"
+        description="Découvrez le parcours de Patricia Vieira, conseillère immobilier indépendante à Gretz-Armainvilliers. 11 ans d'expérience, +150 biens vendus, avis clients 4.9/5."
         canonical="/a-propos"
       />
       <SchemaOrg
@@ -122,7 +122,7 @@ const APropos = () => {
                   <ul className="space-y-2 text-sm">
                     <li><strong className="text-foreground">Statut :</strong> Agent commercial indépendant</li>
                     <li><strong className="text-foreground">RSAC :</strong> Melun n° 339303513</li>
-                    <li><strong className="text-foreground">Réseau :</strong> IAD France</li>
+                    
                     <li><strong className="text-foreground">Téléphone :</strong> <a href="tel:+33785618768" className="text-primary hover:underline">07 85 61 87 68</a></li>
                     <li><strong className="text-foreground">Email :</strong> <a href="mailto:patricia.vieira@iadfrance.fr" className="text-primary hover:underline">patricia.vieira@iadfrance.fr</a></li>
                   </ul>
