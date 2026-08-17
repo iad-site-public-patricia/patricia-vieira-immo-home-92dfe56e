@@ -16,6 +16,7 @@ import vendu5_2 from "@/assets/vendu-5-2.jpg";
 import vendu10 from "@/assets/vendu-10.jpg";
 import signatureNotaire from "@/assets/signature-notaire.jpg";
 import signatureNotaire2 from "@/assets/signature-notaire-2.jpg";
+import heroMagazine from "@/assets/hero-magazine-clair.jpg";
 
 const soldProperties = [
   { image: vendu1, type: "Maison familiale", location: "Lésigny 77", time: "Vendu en 1 mois" },
@@ -100,31 +101,30 @@ const Index = () => {
       <SchemaOrg breadcrumbs={[{ name: "Accueil", url: "/" }]} />
     <div>
       {/* Hero éditorial */}
-      <section className="relative min-h-[90vh] flex items-center overflow-hidden bg-navy">
-        <video autoPlay muted loop playsInline className="absolute inset-0 w-full h-full object-cover">
-          <source src="/hero-video.mp4" type="video/mp4" />
-        </video>
-        <div className="absolute inset-0 bg-black/35" />
-        <div className="absolute inset-0 bg-gradient-to-r from-navy/80 via-navy/40 to-transparent" />
-        <div className="relative container mx-auto px-4 py-24 md:py-32">
-          <div className="max-w-2xl animate-fade-in">
-            <p className="font-body text-xs md:text-sm uppercase tracking-[0.28em] text-primary mb-5">
-              Le magazine immobilier de Patricia Vieira
+      <section className="relative min-h-[92vh] flex items-center overflow-hidden bg-background">
+        <img
+          src={heroMagazine}
+          alt="Conseillère immobilière accompagnant un couple lors d'une visite dans une maison lumineuse en Seine-et-Marne"
+          width={1920}
+          height={1280}
+          className="absolute inset-0 w-full h-full object-cover"
+        />
+        <div className="absolute inset-0 bg-background/70" />
+        <div className="absolute inset-0 bg-gradient-to-r from-background via-background/80 to-transparent" />
+        <div className="relative container mx-auto px-4 py-28 md:py-40">
+          <div className="max-w-3xl animate-fade-in">
+            <p className="font-display text-xl md:text-3xl lg:text-4xl font-semibold uppercase tracking-[0.14em] text-navy leading-snug mb-8 md:mb-10">
+              Le magazine immobilier<br className="hidden sm:block" /> de Patricia Vieira
             </p>
-            <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-navy-foreground leading-tight mb-5 drop-shadow-lg">
+            <div className="w-24 h-px bg-primary mb-8 md:mb-10" />
+            <h1 className="font-display text-5xl md:text-6xl lg:text-7xl font-bold text-foreground leading-[1.05] mb-8 md:mb-10">
               Bienvenue dans les coulisses de l'immobilier
             </h1>
-            <h2 className="font-display text-2xl md:text-3xl font-medium text-navy-foreground/95 leading-snug mb-6 drop-shadow-md">
+            <h2 className="font-display text-2xl md:text-3xl font-medium text-navy/90 leading-relaxed mb-10 md:mb-12">
               <span className="block">Comprendre le marché.</span>
               <span className="block mt-1">Réussir son projet.</span>
               <span className="block mt-1">Construire son avenir.</span>
             </h2>
-            <p className="text-navy-foreground/95 font-body text-base md:text-lg leading-relaxed mb-4 drop-shadow-sm">
-              Bienvenue sur mon espace de conseils consacré à l'immobilier. Depuis plus de 11 ans, je partage mon expérience afin d'aider propriétaires, acquéreurs, investisseurs et futurs professionnels à mieux comprendre le marché immobilier et prendre les bonnes décisions.
-            </p>
-            <p className="text-navy-foreground/85 font-body text-base md:text-lg leading-relaxed mb-8 drop-shadow-sm">
-              Vous trouverez ici des analyses, des conseils pratiques, des retours d'expérience ainsi que des ressources utiles pour réussir vos projets immobiliers ou construire votre avenir professionnel.
-            </p>
             <div className="flex flex-col sm:flex-row flex-wrap gap-3">
               <Button variant="hero" size="lg" asChild className="w-full sm:w-auto">
                 <Link to="/conseils-immobiliers" className="inline-flex items-center gap-2">
@@ -137,6 +137,22 @@ const Index = () => {
                 </Link>
               </Button>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Bienvenue — introduction éditoriale */}
+      <section className="bg-background py-20 md:py-28">
+        <div className="container mx-auto px-4">
+          <div className="max-w-3xl mx-auto text-center">
+            <h2 className="font-display text-4xl md:text-5xl font-bold text-foreground mb-6">Bienvenue</h2>
+            <div className="section-divider mb-10" />
+            <p className="font-body text-lg md:text-xl leading-relaxed text-foreground mb-6">
+              Depuis plus de 11 ans, je partage mon expérience afin d'aider propriétaires, acquéreurs, investisseurs et futurs professionnels à mieux comprendre le marché immobilier.
+            </p>
+            <p className="font-body text-lg md:text-xl leading-relaxed text-foreground">
+              Vous trouverez ici des conseils concrets, des analyses de terrain, des retours d'expérience ainsi que des ressources utiles pour réussir vos projets immobiliers ou construire votre avenir professionnel.
+            </p>
           </div>
         </div>
       </section>
