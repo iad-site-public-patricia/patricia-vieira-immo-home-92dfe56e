@@ -532,7 +532,7 @@ une véritable aventure de vie.
                   emoji: "🏢",
                   icon: Building2,
                   title: "Créer sa propre agence immobilière dématérialisée",
-                  desc: "Le modèle iad permet à chacun de développer sa propre activité immobilière indépendante sans avoir besoin d'ouvrir une agence physique traditionnelle. Grâce à des outils digitaux performants, des formations, un accompagnement humain et une organisation moderne, chacun peut gérer et développer son activité avec flexibilité et liberté. Le réseau permet de bénéficier de la puissance d'une structure nationale tout en conservant son indépendance.",
+                  desc: "Chacun peut développer sa propre activité immobilière indépendante sans avoir besoin d'ouvrir une agence physique traditionnelle. Grâce à des outils digitaux performants, des formations, un accompagnement humain et une organisation moderne, chacun peut gérer et développer son activité avec flexibilité et liberté. Le réseau permet de bénéficier de la puissance d'une structure nationale tout en conservant son indépendance.",
                   image: rejoindreLifestyleImg,
                   alt: "Conseiller immobilier travaillant avec ses outils digitaux",
                 },
