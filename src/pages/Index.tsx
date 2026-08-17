@@ -103,14 +103,16 @@ const Index = () => {
       {/* Hero éditorial */}
       <section className="relative min-h-[92vh] flex items-center overflow-hidden bg-background">
         <img
-          src={heroMagazine}
-          alt="Conseillère immobilière accompagnant un couple lors d'une visite dans une maison lumineuse en Seine-et-Marne"
-          width={1920}
-          height={1280}
-          className="absolute inset-0 w-full h-full object-cover"
+          src={heroMagazine.url}
+          alt="Conseillère immobilière accompagnant un couple souriant lors d'une visite dans un appartement lumineux en Seine-et-Marne"
+          width={1536}
+          height={1024}
+          fetchPriority="high"
+          className="absolute inset-0 w-full h-full object-cover object-[70%_center] [filter:brightness(1.06)_saturate(1.04)_contrast(1.03)]"
         />
-        <div className="absolute inset-0 bg-background/70" />
-        <div className="absolute inset-0 bg-gradient-to-r from-background via-background/80 to-transparent" />
+        {/* Lecture du texte : léger dégradé blanc uniquement à gauche, aucune voile sombre */}
+        <div className="absolute inset-0 bg-gradient-to-r from-background via-background/70 to-transparent md:via-background/55 md:to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-t from-background/40 via-transparent to-transparent" />
         <div className="relative container mx-auto px-4 py-28 md:py-40">
           <div className="max-w-3xl animate-fade-in">
             <p className="font-display text-xl md:text-3xl lg:text-4xl font-semibold uppercase tracking-[0.14em] text-navy leading-snug mb-8 md:mb-10">
