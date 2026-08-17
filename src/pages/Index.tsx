@@ -98,45 +98,48 @@ const Index = () => {
       />
       <SchemaOrg breadcrumbs={[{ name: "Accueil", url: "/" }]} />
     <div>
-      {/* Hero Section — 3 CTA */}
+      {/* Hero éditorial */}
       <section className="relative min-h-[90vh] flex items-center overflow-hidden bg-navy">
         <video autoPlay muted loop playsInline className="absolute inset-0 w-full h-full object-cover">
           <source src="/hero-video.mp4" type="video/mp4" />
         </video>
-        <div className="absolute inset-0 bg-black/40" />
-        <div className="absolute inset-0 bg-gradient-to-r from-navy/75 via-navy/35 to-transparent" />
+        <div className="absolute inset-0 bg-black/35" />
+        <div className="absolute inset-0 bg-gradient-to-r from-navy/80 via-navy/40 to-transparent" />
         <div className="relative container mx-auto px-4 py-24 md:py-32">
           <div className="max-w-2xl animate-fade-in">
-            <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-navy-foreground leading-tight mb-4 drop-shadow-lg">
-              Patricia Vieira
-            </h1>
-            <h2 className="font-display text-2xl md:text-3xl lg:text-4xl font-medium text-navy-foreground/95 leading-snug mb-6 drop-shadow-md">
-              <span className="block">L'immobilier pour vos projets.</span>
-              <span className="block mt-1">L'accompagnement pour votre avenir professionnel.</span>
-            </h2>
-            <p className="text-navy-foreground/90 font-body text-base md:text-lg leading-relaxed mb-8 drop-shadow-sm">
-              Conseillère immobilière spécialisée en vente immobilière, achat immobilier et estimation immobilière en Seine-et-Marne et ses alentours • Manager et formatrice d'une équipe de conseillers immobiliers, engagée dans le recrutement immobilier partout en France.
+            <p className="font-body text-xs md:text-sm uppercase tracking-[0.28em] text-primary mb-5">
+              Le magazine immobilier de Patricia Vieira
             </p>
-            <div className="flex flex-col md:flex-row flex-wrap gap-3">
-              <Button variant="hero" size="lg" asChild className="w-full md:w-auto">
-                <Link to="/vendre" className="inline-flex items-center gap-2">
-                  Estimer ou vendre mon bien <ArrowRight className="w-5 h-5" />
+            <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-navy-foreground leading-tight mb-5 drop-shadow-lg">
+              Bienvenue dans les coulisses de l'immobilier
+            </h1>
+            <h2 className="font-display text-2xl md:text-3xl font-medium text-navy-foreground/95 leading-snug mb-6 drop-shadow-md">
+              <span className="block">Comprendre le marché.</span>
+              <span className="block mt-1">Réussir son projet.</span>
+              <span className="block mt-1">Construire son avenir.</span>
+            </h2>
+            <p className="text-navy-foreground/95 font-body text-base md:text-lg leading-relaxed mb-4 drop-shadow-sm">
+              Bienvenue sur mon espace de conseils consacré à l'immobilier. Depuis plus de 11 ans, je partage mon expérience afin d'aider propriétaires, acquéreurs, investisseurs et futurs professionnels à mieux comprendre le marché immobilier et prendre les bonnes décisions.
+            </p>
+            <p className="text-navy-foreground/85 font-body text-base md:text-lg leading-relaxed mb-8 drop-shadow-sm">
+              Vous trouverez ici des analyses, des conseils pratiques, des retours d'expérience ainsi que des ressources utiles pour réussir vos projets immobiliers ou construire votre avenir professionnel.
+            </p>
+            <div className="flex flex-col sm:flex-row flex-wrap gap-3">
+              <Button variant="hero" size="lg" asChild className="w-full sm:w-auto">
+                <Link to="/conseils-immobiliers" className="inline-flex items-center gap-2">
+                  🏡 Je suis propriétaire ou acquéreur <ArrowRight className="w-5 h-5" />
                 </Link>
               </Button>
-              <Button variant="hero-outline" size="lg" asChild className="w-full md:w-auto">
-                <Link to="/acheter" className="inline-flex items-center gap-2">
-                  Trouver mon futur logement <ArrowRight className="w-5 h-5" />
-                </Link>
-              </Button>
-              <Button variant="hero-outline" size="lg" asChild className="w-full md:w-auto">
+              <Button variant="hero-outline" size="lg" asChild className="w-full sm:w-auto">
                 <Link to="/mon-equipe" className="inline-flex items-center gap-2">
-                  Devenir conseiller immobilier <ArrowRight className="w-5 h-5" />
+                  🚀 Je découvre le métier de conseiller immobilier <ArrowRight className="w-5 h-5" />
                 </Link>
               </Button>
             </div>
           </div>
         </div>
       </section>
+
 
       {/* Bandeau de confiance — Chiffres clés */}
       <section className="bg-navy text-navy-foreground py-8">
