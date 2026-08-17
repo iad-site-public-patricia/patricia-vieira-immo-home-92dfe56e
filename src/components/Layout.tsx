@@ -139,7 +139,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
             <div>
               <h3 className="font-display text-2xl font-bold mb-4">Patricia Vieira</h3>
               <p className="text-sm opacity-75 font-body leading-relaxed">
-                Conseillère immobilier IAD France<br />
+                Conseillère immobilier indépendante<br />
                 à Gretz-Armainvilliers
               </p>
               <div className="flex items-center gap-3 mt-5">
@@ -203,7 +203,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
             </div>
           </div>
           <div className="border-t border-navy-foreground/15 mt-10 pt-8 flex flex-col sm:flex-row items-center justify-between text-sm opacity-50 font-body gap-2">
-            <span>© {new Date().getFullYear()} Patricia Vieira Immobilier — Agent commercial RSAC Melun 339303513 — IAD France</span>
+            <span>© {new Date().getFullYear()} Patricia Vieira Immobilier — Agent commercial RSAC Melun 339303513</span>
             <Link to="/mentions-legales" className="hover:text-primary hover:opacity-100 transition-all">Mentions légales</Link>
           </div>
         </div>

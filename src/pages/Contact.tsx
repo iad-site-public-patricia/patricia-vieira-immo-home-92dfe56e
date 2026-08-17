@@ -30,7 +30,7 @@ const Contact = () => {
     <>
       <PageSEO
         title="Contact Patricia Vieira — Conseillère Immobilier Gretz-Armainvilliers (77)"
-        description="Contactez Patricia Vieira, conseillère immobilier IAD France. Tél : 07 85 61 87 68. Email : patricia.vieira@iadfrance.fr. Gretz-Armainvilliers et Seine-et-Marne."
+        description="Contactez Patricia Vieira, conseillère immobilier indépendante. Tél : 07 85 61 87 68. Email : patricia.vieira@iadfrance.fr. Gretz-Armainvilliers et Seine-et-Marne."
         canonical="/contact"
       />
       <SchemaOrg
