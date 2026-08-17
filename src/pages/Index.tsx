@@ -451,6 +451,35 @@ const Index = () => {
         </div>
       </section>
 
+      {/* Qui je suis — présentation après la valeur */}
+      <section className="section-padding bg-sand/40">
+        <div className="container mx-auto max-w-4xl">
+          <p className="font-body text-sm uppercase tracking-[0.2em] text-primary mb-3">Qui je suis</p>
+          <h2 className="font-display text-3xl md:text-4xl font-semibold text-foreground mb-6">
+            Patricia Vieira, conseillère immobilier et manager platinium associée
+          </h2>
+          <div className="space-y-4 font-body text-base md:text-lg text-foreground/90 leading-relaxed">
+            <p>
+              Depuis plus de 11 ans, j'accompagne des propriétaires, des acquéreurs et des investisseurs en Seine-et-Marne et en Val-de-Marne. Mon métier, c'est d'abord d'écouter, d'expliquer et de sécuriser chaque étape d'un projet de vie.
+            </p>
+            <p>
+              J'anime également une équipe de conseillers immobiliers indépendants que je forme et accompagne au quotidien : reconversion professionnelle, entrepreneuriat immobilier, développement d'activité. Une aventure humaine autant que professionnelle.
+            </p>
+          </div>
+          <div className="flex flex-col sm:flex-row gap-3 mt-8">
+            <Button variant="hero" size="lg" asChild>
+              <Link to="/a-propos" className="inline-flex items-center gap-2">
+                Découvrir mon parcours <ArrowRight className="w-5 h-5" />
+              </Link>
+            </Button>
+            <Button variant="hero-outline" size="lg" asChild>
+              <Link to="/contact">Échanger avec moi</Link>
+            </Button>
+          </div>
+        </div>
+      </section>
+
+
       {/* CTA final */}
       <section className="section-padding bg-navy text-navy-foreground">
         <div className="container mx-auto text-center">
