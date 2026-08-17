@@ -102,26 +102,9 @@ const Index = () => {
       <SchemaOrg breadcrumbs={[{ name: "Accueil", url: "/" }]} />
     <div>
       {/* Hero éditorial */}
-      <section className="relative overflow-hidden bg-background min-h-[620px] md:min-h-[680px] lg:min-h-[760px] flex items-center">
-        {/* Vidéo de fond */}
-        <div className="absolute inset-0">
-          <video
-            src={heroVideo.url}
-            poster={heroPoster.url}
-            autoPlay
-            muted
-            loop
-            playsInline
-            preload="auto"
-            aria-label="Patricia Vieira, conseillère immobilière en Seine-et-Marne, accompagne un couple lors d'une visite puis d'une signature"
-            className="absolute inset-0 w-full h-full object-contain object-center [filter:brightness(1.04)_saturate(1.03)]"
-          />
-        </div>
-
-        {/* Lecture du texte : dégradé blanc à gauche */}
-        <div className="absolute inset-0 bg-gradient-to-r from-background via-background/80 to-transparent lg:via-background/60" />
-        <div className="absolute inset-0 bg-gradient-to-t from-background/50 via-transparent to-transparent" />
+      <section className="relative overflow-hidden bg-background flex items-center">
         <div className="relative container mx-auto px-4 py-16 md:py-20 lg:py-28">
+
 
           <div className="max-w-3xl animate-fade-in">
 
@@ -153,6 +136,27 @@ const Index = () => {
           </div>
         </div>
       </section>
+
+      {/* Vidéo sous le hero — visible en entier sur tous les formats */}
+      <section className="bg-background pb-12 md:pb-16">
+        <div className="container mx-auto px-4">
+          <div className="relative w-full aspect-video overflow-hidden rounded-lg bg-secondary">
+            <video
+              src={heroVideo.url}
+              poster={heroPoster.url}
+              autoPlay
+              muted
+              loop
+              playsInline
+              preload="auto"
+              aria-label="Patricia Vieira, conseillère immobilière en Seine-et-Marne, accompagne un couple lors d'une visite puis d'une signature"
+              className="absolute inset-0 w-full h-full object-contain object-center [filter:brightness(1.04)_saturate(1.03)]"
+            />
+          </div>
+        </div>
+      </section>
+
+
 
       {/* Bienvenue — introduction éditoriale */}
       <section className="bg-background py-20 md:py-28">
