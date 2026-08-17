@@ -102,23 +102,27 @@ const Index = () => {
       <SchemaOrg breadcrumbs={[{ name: "Accueil", url: "/" }]} />
     <div>
       {/* Hero éditorial */}
-      <section className="relative min-h-[92vh] flex items-center overflow-hidden bg-background">
-        <video
-          src={heroVideo.url}
-          poster={heroPoster.url}
-          autoPlay
-          muted
-          loop
-          playsInline
-          preload="auto"
-          aria-label="Patricia Vieira, conseillère immobilière en Seine-et-Marne, accompagne un couple lors d'une visite puis d'une signature"
-          className="absolute inset-0 w-full h-full object-cover object-[70%_center] [filter:brightness(1.04)_saturate(1.03)]"
-        />
+      <section className="relative overflow-hidden bg-background">
+        {/* Vidéo entièrement visible sur tous les supports (ratio 16:9 conservé) */}
+        <div className="relative w-full aspect-video bg-background">
+          <video
+            src={heroVideo.url}
+            poster={heroPoster.url}
+            autoPlay
+            muted
+            loop
+            playsInline
+            preload="auto"
+            aria-label="Patricia Vieira, conseillère immobilière en Seine-et-Marne, accompagne un couple lors d'une visite puis d'une signature"
+            className="absolute inset-0 w-full h-full object-contain object-center [filter:brightness(1.04)_saturate(1.03)]"
+          />
+        </div>
 
-        {/* Lecture du texte : léger dégradé blanc uniquement à gauche, aucune voile sombre */}
-        <div className="absolute inset-0 bg-gradient-to-r from-background via-background/70 to-transparent md:via-background/55 md:to-transparent" />
-        <div className="absolute inset-0 bg-gradient-to-t from-background/40 via-transparent to-transparent" />
-        <div className="relative container mx-auto px-4 py-28 md:py-40">
+        {/* Lecture du texte : léger dégradé blanc uniquement à gauche (desktop) */}
+        <div className="hidden lg:block absolute inset-0 bg-gradient-to-r from-background via-background/70 to-transparent lg:via-background/55 lg:to-transparent" />
+        <div className="hidden lg:block absolute inset-0 bg-gradient-to-t from-background/40 via-transparent to-transparent" />
+        <div className="relative container mx-auto px-4 py-12 md:py-16 lg:py-40 lg:absolute lg:inset-0 lg:flex lg:items-center">
+
           <div className="max-w-3xl animate-fade-in">
             <p className="font-display text-xl md:text-3xl lg:text-4xl font-semibold uppercase tracking-[0.14em] text-navy leading-snug mb-8 md:mb-10">
               Le magazine immobilier<br className="hidden sm:block" /> de Patricia Vieira
