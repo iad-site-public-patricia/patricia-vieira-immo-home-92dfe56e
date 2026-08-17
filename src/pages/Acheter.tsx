@@ -47,8 +47,8 @@ const Acheter = () => {
   return (
     <>
       <PageSEO
-        title="Acheter un Bien Immobilier en Seine-et-Marne (77) | Patricia Vieira IAD France"
-        description="Trouvez votre futur logement en Seine-et-Marne avec Patricia Vieira, IAD France. Maisons et appartements à Gretz-Armainvilliers, Tournan, Ozoir et environs."
+        title="Acheter un Bien Immobilier en Seine-et-Marne (77) | Patricia Vieira"
+        description="Trouvez votre futur logement en Seine-et-Marne avec Patricia Vieira, conseillère immobilier indépendante. Maisons et appartements à Gretz-Armainvilliers, Tournan, Ozoir et environs."
         canonical="/acheter"
       />
       <SchemaOrg
@@ -82,7 +82,7 @@ const Acheter = () => {
                 Vous cherchez un bien immobilier en Seine-et-Marne ? Que ce soit votre première acquisition ou un nouvel investissement, <strong className="text-foreground">je vous accompagne à chaque étape de votre projet d'achat</strong>, de la définition de vos critères jusqu'à la remise des clés.
               </p>
               <p>
-                Acheter un bien immobilier est souvent le projet d'une vie. C'est une décision importante qui nécessite d'être bien entouré. En tant que conseillère immobilier indépendante affiliée au réseau IAD France, je mets mon expérience et ma connaissance approfondie du marché local à votre service pour vous aider à trouver le bien qui vous correspond vraiment.
+                Acheter un bien immobilier est souvent le projet d'une vie. C'est une décision importante qui nécessite d'être bien entouré. En tant que conseillère immobilier indépendante, je mets mon expérience et ma connaissance approfondie du marché local à votre service pour vous aider à trouver le bien qui vous correspond vraiment.
               </p>
 
               <h2 className="font-display text-2xl md:text-3xl font-semibold text-foreground !mt-10">
@@ -132,7 +132,7 @@ const Acheter = () => {
                 Consultez mes annonces en ligne
               </h2>
               <p>
-                Retrouvez l'ensemble de mes biens disponibles sur mon profil IAD France :{" "}
+                Retrouvez l'ensemble de mes biens disponibles sur mon profil en ligne :{" "}
                 <a
                   href="https://www.iadfrance.fr/conseiller-immobilier/patricia.vieira"
                   target="_blank"

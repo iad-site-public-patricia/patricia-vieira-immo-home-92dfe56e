@@ -8,7 +8,7 @@ const SecteurTournan = () => (
   <>
     <PageSEO
       title="Immobilier Tournan-en-Brie (77220) — Prix, Marché Local | Patricia Vieira"
-      description="Tout sur l'immobilier à Tournan-en-Brie : prix au m², quartiers, commodités. Patricia Vieira, conseillère IAD France. Estimation gratuite et sans engagement."
+      description="Tout sur l'immobilier à Tournan-en-Brie : prix au m², quartiers, commodités. Patricia Vieira, conseillère immobilier indépendante. Estimation gratuite et sans engagement."
       canonical="/immobilier-tournan-en-brie"
     />
   <main className="bg-background">

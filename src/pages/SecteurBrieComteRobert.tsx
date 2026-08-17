@@ -11,7 +11,7 @@ const SecteurBrieComteRobert = () => (
   <>
     <PageSEO
       title="Immobilier Brie-Comte-Robert (77170) — Prix, Marché Local | Patricia Vieira"
-      description="Immobilier à Brie-Comte-Robert : prix au m², marché, quartiers historiques. Patricia Vieira, conseillère IAD. Estimation gratuite."
+      description="Immobilier à Brie-Comte-Robert : prix au m², marché, quartiers historiques. Patricia Vieira, conseillère immobilier indépendante. Estimation gratuite."
       canonical="/immobilier-brie-comte-robert"
     />
   <main className="bg-background">

@@ -229,7 +229,7 @@ Facebook, Instagram : ces plateformes permettent de toucher une audience locale 
 
 **Le réseau professionnel**
 
-En tant que partenaire du réseau IAD France, je bénéficie d'un réseau de conseillers dans toute la France. Un acquéreur pour votre bien peut venir d'une autre région grâce à ce maillage national.
+Je bénéficie d'un réseau de conseillers dans toute la France. Un acquéreur pour votre bien peut venir d'une autre région grâce à ce maillage national.
 
 **La visite virtuelle**
 
@@ -1546,7 +1546,7 @@ Restez informé et entourez-vous de professionnels compétents. Le marché immob
 
 **Qui je suis**
 
-Je suis Patricia Vieira, conseillère en immobilier indépendante et manager platinium associée au sein du réseau IAD France depuis 2015. Au fil des années, j'ai eu le plaisir d'accompagner de nombreux clients dans leurs projets immobiliers et de développer une équipe de conseillers indépendants.
+Je suis Patricia Vieira, conseillère en immobilier indépendante et manager platinium associée depuis 2015. Au fil des années, j'ai eu le plaisir d'accompagner de nombreux clients dans leurs projets immobiliers et de développer une équipe de conseillers indépendants.
 
 **Ce qui m'a amenée à choisir ce métier**
 

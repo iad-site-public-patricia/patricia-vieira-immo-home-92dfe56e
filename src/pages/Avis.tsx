@@ -17,7 +17,7 @@ const Avis = () => (
   <>
     <PageSEO
       title="Avis Clients Patricia Vieira | 4.9/5 sur 47+ Avis Vérifiés — Immobilier Seine-et-Marne"
-      description="Découvrez les avis vérifiés des clients de Patricia Vieira, conseillère immobilier IAD France. Note 4.9/5 sur Immodvisor. Témoignages authentiques de vendeurs et acheteurs."
+      description="Découvrez les avis vérifiés des clients de Patricia Vieira, conseillère immobilier indépendante. Note 4.9/5 sur Immodvisor. Témoignages authentiques de vendeurs et acheteurs."
       canonical="/avis"
     />
     <SchemaOrg

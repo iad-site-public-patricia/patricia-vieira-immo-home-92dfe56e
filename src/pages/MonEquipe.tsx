@@ -487,7 +487,7 @@ une véritable aventure de vie.
           </div>
         </section>
 
-        {/* POURQUOI REJOINDRE NOTRE RÉSEAU - 4 PILIERS IAD */}
+        {/* POURQUOI REJOINDRE NOTRE RÉSEAU - 4 PILIERS */}
         <section className="section-padding bg-background relative overflow-hidden">
           <div className="absolute inset-0 pointer-events-none opacity-60">
             <div className="absolute top-0 right-1/4 w-[500px] h-[500px] rounded-full bg-gold/10 blur-3xl" />

@@ -15,7 +15,7 @@ const SecteurGretz = () => (
   <>
     <PageSEO
       title="Immobilier Gretz-Armainvilliers (77220) — Prix, Marché et Conseillère Locale | Patricia Vieira"
-      description="Tout savoir sur l'immobilier à Gretz-Armainvilliers : prix au m², marché local, quartiers, commodités. Patricia Vieira, votre conseillère IAD sur place. Estimation gratuite."
+      description="Tout savoir sur l'immobilier à Gretz-Armainvilliers : prix au m², marché local, quartiers, commodités. Patricia Vieira, votre conseillère immobilier indépendante sur place. Estimation gratuite."
       canonical="/immobilier-gretz-armainvilliers"
     />
   <main className="bg-background">

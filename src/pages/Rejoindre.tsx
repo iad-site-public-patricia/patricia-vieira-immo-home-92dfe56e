@@ -31,8 +31,8 @@ const Rejoindre = () => {
   return (
     <>
       <PageSEO
-        title="Devenir Conseiller Immobilier IAD France — Rejoindre l'Équipe Patricia Vieira"
-        description="Envie de devenir conseiller immobilier indépendant ? Patricia Vieira vous accompagne dans votre reconversion avec IAD France. Formation, coaching, réseau national."
+        title="Devenir Conseiller Immobilier Indépendant — Rejoindre l'Équipe Patricia Vieira"
+        description="Envie de devenir conseiller immobilier indépendant ? Patricia Vieira vous accompagne dans votre reconversion professionnelle. Formation, coaching, réseau national."
         canonical="/rejoindre"
       />
     <div>
@@ -335,7 +335,7 @@ const Rejoindre = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {[
               {
-                quote: "Patricia est passionnée par son métier et ce qui fait d'elle une excellente formatrice habilitée au sein du réseau IAD. Merci à toi pour ton partage de connaissances et pour ce temps que tu passes gracieusement à nous former ! Ton expérience et ta pédagogie sont précieux pour tous ceux qui, comme moi, souhaitent développer leurs compétences dans l'immobilier.",
+                quote: "Patricia est passionnée par son métier et ce qui fait d'elle une excellente formatrice habilitée. Merci à toi pour ton partage de connaissances et pour ce temps que tu passes gracieusement à nous former ! Ton expérience et ta pédagogie sont précieux pour tous ceux qui, comme moi, souhaitent développer leurs compétences dans l'immobilier.",
                 name: "Laura B.",
                 role: "Conseillère depuis 2023",
                 stars: 5

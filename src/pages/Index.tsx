@@ -90,53 +90,57 @@ const Index = () => {
   return (
     <>
       <PageSEO
-        title="Patricia Vieira | Conseillère immobilière Seine-et-Marne (77)"
-        description="Patricia Vieira, conseillère immobilière en Seine-et-Marne (77). Vente immobilière, achat immobilier, estimation gratuite et recrutement de conseillers immobiliers. 4.9/5 sur 47+ avis clients vérifiés."
+        title="Conseils immobiliers Seine-et-Marne & Val-de-Marne | Patricia Vieira"
+        description="Guides, analyses et conseils sur l'immobilier en Seine-et-Marne et Val-de-Marne : achat, vente, estimation, investissement, diagnostics, primo-accédants et métier de conseiller immobilier indépendant."
         canonical="/"
-        ogTitle="Patricia Vieira — Conseillère immobilière Seine-et-Marne (77)"
-        ogDescription="Vente immobilière, achat immobilier, estimation gratuite et recrutement de conseillers immobiliers en Seine-et-Marne. 4.9/5 sur 47+ avis."
+        ogTitle="Bienvenue dans les coulisses de l'immobilier — Patricia Vieira"
+        ogDescription="Comprendre le marché, réussir son projet, construire son avenir : conseils immobiliers et accompagnement en Seine-et-Marne et Val-de-Marne."
       />
+
       <SchemaOrg breadcrumbs={[{ name: "Accueil", url: "/" }]} />
     <div>
-      {/* Hero Section — 3 CTA */}
+      {/* Hero éditorial */}
       <section className="relative min-h-[90vh] flex items-center overflow-hidden bg-navy">
         <video autoPlay muted loop playsInline className="absolute inset-0 w-full h-full object-cover">
           <source src="/hero-video.mp4" type="video/mp4" />
         </video>
-        <div className="absolute inset-0 bg-black/40" />
-        <div className="absolute inset-0 bg-gradient-to-r from-navy/75 via-navy/35 to-transparent" />
+        <div className="absolute inset-0 bg-black/35" />
+        <div className="absolute inset-0 bg-gradient-to-r from-navy/80 via-navy/40 to-transparent" />
         <div className="relative container mx-auto px-4 py-24 md:py-32">
           <div className="max-w-2xl animate-fade-in">
-            <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-navy-foreground leading-tight mb-4 drop-shadow-lg">
-              Patricia Vieira
-            </h1>
-            <h2 className="font-display text-2xl md:text-3xl lg:text-4xl font-medium text-navy-foreground/95 leading-snug mb-6 drop-shadow-md">
-              <span className="block">L'immobilier pour vos projets.</span>
-              <span className="block mt-1">L'accompagnement pour votre avenir professionnel.</span>
-            </h2>
-            <p className="text-navy-foreground/90 font-body text-base md:text-lg leading-relaxed mb-8 drop-shadow-sm">
-              Conseillère immobilière spécialisée en vente immobilière, achat immobilier et estimation immobilière en Seine-et-Marne et ses alentours • Manager et formatrice d'une équipe de conseillers immobiliers, engagée dans le recrutement immobilier partout en France.
+            <p className="font-body text-xs md:text-sm uppercase tracking-[0.28em] text-primary mb-5">
+              Le magazine immobilier de Patricia Vieira
             </p>
-            <div className="flex flex-col md:flex-row flex-wrap gap-3">
-              <Button variant="hero" size="lg" asChild className="w-full md:w-auto">
-                <Link to="/vendre" className="inline-flex items-center gap-2">
-                  Estimer ou vendre mon bien <ArrowRight className="w-5 h-5" />
+            <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-navy-foreground leading-tight mb-5 drop-shadow-lg">
+              Bienvenue dans les coulisses de l'immobilier
+            </h1>
+            <h2 className="font-display text-2xl md:text-3xl font-medium text-navy-foreground/95 leading-snug mb-6 drop-shadow-md">
+              <span className="block">Comprendre le marché.</span>
+              <span className="block mt-1">Réussir son projet.</span>
+              <span className="block mt-1">Construire son avenir.</span>
+            </h2>
+            <p className="text-navy-foreground/95 font-body text-base md:text-lg leading-relaxed mb-4 drop-shadow-sm">
+              Bienvenue sur mon espace de conseils consacré à l'immobilier. Depuis plus de 11 ans, je partage mon expérience afin d'aider propriétaires, acquéreurs, investisseurs et futurs professionnels à mieux comprendre le marché immobilier et prendre les bonnes décisions.
+            </p>
+            <p className="text-navy-foreground/85 font-body text-base md:text-lg leading-relaxed mb-8 drop-shadow-sm">
+              Vous trouverez ici des analyses, des conseils pratiques, des retours d'expérience ainsi que des ressources utiles pour réussir vos projets immobiliers ou construire votre avenir professionnel.
+            </p>
+            <div className="flex flex-col sm:flex-row flex-wrap gap-3">
+              <Button variant="hero" size="lg" asChild className="w-full sm:w-auto">
+                <Link to="/conseils-immobiliers" className="inline-flex items-center gap-2">
+                  <Home className="w-5 h-5" /> Je suis propriétaire ou acquéreur <ArrowRight className="w-5 h-5" />
                 </Link>
               </Button>
-              <Button variant="hero-outline" size="lg" asChild className="w-full md:w-auto">
-                <Link to="/acheter" className="inline-flex items-center gap-2">
-                  Trouver mon futur logement <ArrowRight className="w-5 h-5" />
-                </Link>
-              </Button>
-              <Button variant="hero-outline" size="lg" asChild className="w-full md:w-auto">
+              <Button variant="hero-outline" size="lg" asChild className="w-full sm:w-auto">
                 <Link to="/mon-equipe" className="inline-flex items-center gap-2">
-                  Devenir conseiller immobilier <ArrowRight className="w-5 h-5" />
+                  <Briefcase className="w-5 h-5" /> Je découvre le métier de conseiller immobilier <ArrowRight className="w-5 h-5" />
                 </Link>
               </Button>
             </div>
           </div>
         </div>
       </section>
+
 
       {/* Bandeau de confiance — Chiffres clés */}
       <section className="bg-navy text-navy-foreground py-8">
@@ -403,13 +407,20 @@ const Index = () => {
 
 
 
-      {/* Derniers articles */}
-      <section className="section-padding bg-background">
+      {/* Centre de ressources */}
+      <section id="ressources" className="section-padding bg-background">
         <div className="container mx-auto">
-          <div className="flex items-center justify-between mb-4">
-            <h2 className="font-display text-3xl md:text-4xl font-semibold text-foreground">
-              Derniers conseils immobiliers
-            </h2>
+          <div className="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-4">
+            <div className="max-w-2xl">
+              <p className="font-body text-sm uppercase tracking-[0.2em] text-primary mb-3">Centre de ressources</p>
+              <h2 className="font-display text-3xl md:text-4xl font-semibold text-foreground">
+                Guides, conseils et analyses du marché
+              </h2>
+              <p className="font-body text-base md:text-lg text-foreground/80 leading-relaxed mt-3">
+                Vente, achat, estimation, investissement, diagnostics, primo-accédants, immobilier neuf et ancien, marché local en Seine-et-Marne et Val-de-Marne : des contenus clairs pour décider en confiance.
+              </p>
+            </div>
+
             <Button variant="ghost" asChild className="text-primary hover:text-primary/80">
               <Link to="/conseils-immobiliers" className="flex items-center gap-1">
                 Voir tout <ArrowRight className="w-4 h-4" />
@@ -440,6 +451,35 @@ const Index = () => {
           </div>
         </div>
       </section>
+
+      {/* Qui je suis — présentation après la valeur */}
+      <section className="section-padding bg-sand/40">
+        <div className="container mx-auto max-w-4xl">
+          <p className="font-body text-sm uppercase tracking-[0.2em] text-primary mb-3">Qui je suis</p>
+          <h2 className="font-display text-3xl md:text-4xl font-semibold text-foreground mb-6">
+            Patricia Vieira, conseillère immobilier et manager platinium associée
+          </h2>
+          <div className="space-y-4 font-body text-base md:text-lg text-foreground/90 leading-relaxed">
+            <p>
+              Depuis plus de 11 ans, j'accompagne des propriétaires, des acquéreurs et des investisseurs en Seine-et-Marne et en Val-de-Marne. Mon métier, c'est d'abord d'écouter, d'expliquer et de sécuriser chaque étape d'un projet de vie.
+            </p>
+            <p>
+              J'anime également une équipe de conseillers immobiliers indépendants que je forme et accompagne au quotidien : reconversion professionnelle, entrepreneuriat immobilier, développement d'activité. Une aventure humaine autant que professionnelle.
+            </p>
+          </div>
+          <div className="flex flex-col sm:flex-row gap-3 mt-8">
+            <Button variant="hero" size="lg" asChild>
+              <Link to="/a-propos" className="inline-flex items-center gap-2">
+                Découvrir mon parcours <ArrowRight className="w-5 h-5" />
+              </Link>
+            </Button>
+            <Button variant="hero-outline" size="lg" asChild>
+              <Link to="/contact">Échanger avec moi</Link>
+            </Button>
+          </div>
+        </div>
+      </section>
+
 
       {/* CTA final */}
       <section className="section-padding bg-navy text-navy-foreground">

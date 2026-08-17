@@ -19,7 +19,7 @@ const realEstateAgent = {
   "url": BASE_URL,
   "telephone": "+33785618768",
   "email": "patricia.vieira@iadfrance.fr",
-  "description": "Patricia Vieira, conseillère immobilier IAD France en Seine-et-Marne (77). Estimation gratuite, accompagnement vente et achat à Gretz-Armainvilliers et environs.",
+  "description": "Patricia Vieira, conseillère immobilier indépendante en Seine-et-Marne (77). Estimation gratuite, accompagnement vente et achat à Gretz-Armainvilliers et environs.",
   "address": {
     "@type": "PostalAddress",
     "addressLocality": "Gretz-Armainvilliers",
