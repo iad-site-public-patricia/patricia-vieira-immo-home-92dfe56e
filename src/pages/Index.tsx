@@ -102,11 +102,27 @@ const Index = () => {
       <SchemaOrg breadcrumbs={[{ name: "Accueil", url: "/" }]} />
     <div>
       {/* Hero éditorial */}
-      <section className="relative overflow-hidden bg-background flex items-center">
-        <div className="relative container mx-auto px-4 py-16 md:py-20 lg:py-28">
+      <section className="relative overflow-hidden bg-background lg:min-h-[85vh] flex items-center">
+        {/* Vidéo de fond — uniquement sur grand écran (composition 16:9 conçue pour desktop) */}
+        <div className="hidden lg:block absolute inset-0">
+          <video
+            src={heroVideo.url}
+            poster={heroPoster.url}
+            autoPlay
+            muted
+            loop
+            playsInline
+            preload="auto"
+            aria-label="Patricia Vieira, conseillère immobilière en Seine-et-Marne, accompagne un couple lors d'une visite puis d'une signature"
+            className="w-full h-full object-cover object-[80%_center] [filter:brightness(1.04)_saturate(1.03)]"
+          />
+          <div className="absolute inset-0 bg-gradient-to-r from-background via-background/85 to-transparent" />
+        </div>
+
+        <div className="relative z-10 container mx-auto px-4 py-16 md:py-20 lg:py-28">
 
 
-          <div className="max-w-3xl animate-fade-in">
+          <div className="max-w-3xl lg:max-w-2xl animate-fade-in">
 
             <p className="font-display text-xl md:text-3xl lg:text-4xl font-semibold uppercase tracking-[0.14em] text-navy leading-snug mb-8 md:mb-10">
               Le magazine immobilier<br className="hidden sm:block" /> de Patricia Vieira
@@ -137,24 +153,44 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Vidéo sous le hero — visible en entier sur tous les formats */}
-      <section className="bg-background pb-12 md:pb-16">
+      {/* Vidéo mobile (verticale) — sous tout le contenu du Hero */}
+      <section className="md:hidden bg-background pb-12">
         <div className="container mx-auto px-4">
-          <div className="relative w-full aspect-video overflow-hidden rounded-lg bg-secondary">
+          <div className="relative w-full aspect-[9/16] overflow-hidden rounded-lg bg-secondary">
             <video
-              src={heroVideo.url}
-              poster={heroPoster.url}
+              src={heroVideoMobile.url}
+              poster={heroPosterMobile.url}
               autoPlay
               muted
               loop
               playsInline
-              preload="auto"
-              aria-label="Patricia Vieira, conseillère immobilière en Seine-et-Marne, accompagne un couple lors d'une visite puis d'une signature"
-              className="absolute inset-0 w-full h-full object-contain object-center [filter:brightness(1.04)_saturate(1.03)]"
+              preload="metadata"
+              aria-label="Patricia Vieira, conseillère immobilière en Seine-et-Marne, lors d'un rendez-vous client"
+              className="absolute inset-0 w-full h-full object-cover [filter:brightness(1.04)_saturate(1.03)]"
             />
           </div>
         </div>
       </section>
+
+      {/* Vidéo tablette (4:3 recadrée) — sous le contenu du Hero */}
+      <section className="hidden md:block lg:hidden bg-background pb-14">
+        <div className="container mx-auto px-4">
+          <div className="relative w-full aspect-[4/3] overflow-hidden rounded-lg bg-secondary">
+            <video
+              src={heroVideoTablet.url}
+              poster={heroPosterTablet.url}
+              autoPlay
+              muted
+              loop
+              playsInline
+              preload="metadata"
+              aria-label="Patricia Vieira, conseillère immobilière en Seine-et-Marne, lors d'un rendez-vous client"
+              className="absolute inset-0 w-full h-full object-cover [filter:brightness(1.04)_saturate(1.03)]"
+            />
+          </div>
+        </div>
+      </section>
+
 
 
 
