@@ -106,9 +106,31 @@ const Index = () => {
       <SchemaOrg breadcrumbs={[{ name: "Accueil", url: "/" }]} />
     <div>
       {/* Hero éditorial */}
-      <section className="relative overflow-hidden bg-background lg:min-h-[85vh] flex items-center">
-        {/* Vidéo de fond — uniquement sur grand écran (composition 16:9 conçue pour desktop) */}
-        <div className="hidden lg:block absolute inset-0">
+      <section className="relative overflow-hidden bg-background min-h-[640px] lg:min-h-[85vh] flex items-center">
+        {/* Vidéos de fond adaptées à chaque support */}
+        <div className="absolute inset-0">
+          <video
+            src={heroVideoMobile.url}
+            poster={heroPosterMobile.url}
+            autoPlay
+            muted
+            loop
+            playsInline
+            preload="auto"
+            aria-label="Patricia Vieira, conseillère immobilière en Seine-et-Marne, lors d'un rendez-vous client"
+            className="md:hidden w-full h-full object-cover object-center [filter:brightness(1.04)_saturate(1.03)]"
+          />
+          <video
+            src={heroVideoTablet.url}
+            poster={heroPosterTablet.url}
+            autoPlay
+            muted
+            loop
+            playsInline
+            preload="auto"
+            aria-label="Patricia Vieira, conseillère immobilière en Seine-et-Marne, lors d'un rendez-vous client"
+            className="hidden md:block lg:hidden w-full h-full object-cover object-center [filter:brightness(1.04)_saturate(1.03)]"
+          />
           <video
             src={heroVideo.url}
             poster={heroPoster.url}
@@ -118,9 +140,9 @@ const Index = () => {
             playsInline
             preload="auto"
             aria-label="Patricia Vieira, conseillère immobilière en Seine-et-Marne, accompagne un couple lors d'une visite puis d'une signature"
-            className="w-full h-full object-cover object-[80%_center] [filter:brightness(1.04)_saturate(1.03)]"
+            className="hidden lg:block w-full h-full object-cover object-[80%_center] [filter:brightness(1.04)_saturate(1.03)]"
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-background via-background/85 to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-b from-background/92 via-background/70 to-background/30 lg:bg-gradient-to-r lg:from-background lg:via-background/85 lg:to-transparent" />
         </div>
 
         <div className="relative z-10 container mx-auto px-4 py-16 md:py-20 lg:py-28">
@@ -153,43 +175,6 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Vidéo tablette (4:3 recadrée) — sous le contenu du Hero */}
-      <section className="hidden md:block lg:hidden bg-background pb-14">
-        <div className="container mx-auto px-4">
-          <div className="relative w-full aspect-[4/3] overflow-hidden rounded-lg bg-secondary">
-            <video
-              src={heroVideoTablet.url}
-              poster={heroPosterTablet.url}
-              autoPlay
-              muted
-              loop
-              playsInline
-              preload="metadata"
-              aria-label="Patricia Vieira, conseillère immobilière en Seine-et-Marne, lors d'un rendez-vous client"
-              className="absolute inset-0 w-full h-full object-cover [filter:brightness(1.04)_saturate(1.03)]"
-            />
-          </div>
-        </div>
-      </section>
-
-      {/* Vidéo mobile (verticale) — sous tout le contenu du Hero */}
-      <section className="md:hidden bg-background pb-12">
-        <div className="container mx-auto px-4">
-          <div className="relative w-full aspect-[9/16] overflow-hidden rounded-lg bg-secondary">
-            <video
-              src={heroVideoMobile.url}
-              poster={heroPosterMobile.url}
-              autoPlay
-              muted
-              loop
-              playsInline
-              preload="metadata"
-              aria-label="Patricia Vieira, conseillère immobilière en Seine-et-Marne, lors d'un rendez-vous client"
-              className="absolute inset-0 w-full h-full object-cover [filter:brightness(1.04)_saturate(1.03)]"
-            />
-          </div>
-        </div>
-      </section>
 
 
 
