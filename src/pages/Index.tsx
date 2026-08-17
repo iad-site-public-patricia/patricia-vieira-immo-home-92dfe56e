@@ -128,12 +128,12 @@ const Index = () => {
             <div className="flex flex-col sm:flex-row flex-wrap gap-3">
               <Button variant="hero" size="lg" asChild className="w-full sm:w-auto">
                 <Link to="/conseils-immobiliers" className="inline-flex items-center gap-2">
-                  🏡 Je suis propriétaire ou acquéreur <ArrowRight className="w-5 h-5" />
+                  <Home className="w-5 h-5" /> Je suis propriétaire ou acquéreur <ArrowRight className="w-5 h-5" />
                 </Link>
               </Button>
               <Button variant="hero-outline" size="lg" asChild className="w-full sm:w-auto">
                 <Link to="/mon-equipe" className="inline-flex items-center gap-2">
-                  🚀 Je découvre le métier de conseiller immobilier <ArrowRight className="w-5 h-5" />
+                  <Briefcase className="w-5 h-5" /> Je découvre le métier de conseiller immobilier <ArrowRight className="w-5 h-5" />
                 </Link>
               </Button>
             </div>
