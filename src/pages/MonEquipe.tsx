@@ -498,7 +498,7 @@ une véritable aventure de vie.
             {/* Intro */}
             <div className="max-w-3xl mx-auto text-center mb-20">
               <p className="font-body text-xs uppercase tracking-[0.3em] text-primary mb-5">
-                Rejoindre le réseau iad
+                Nous rejoindre
               </p>
               <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-semibold text-foreground mb-6 leading-[1.15]">
                 Pourquoi rejoindre notre réseau immobilier&nbsp;?
@@ -506,7 +506,7 @@ une véritable aventure de vie.
               <div className="w-20 h-0.5 bg-gradient-to-r from-primary to-gold mx-auto mb-8" />
               <div className="space-y-5 font-body text-base md:text-lg text-foreground/90 leading-relaxed">
                 <p>
-                  Bien plus qu'un simple métier, le réseau iad permet de construire une véritable activité entrepreneuriale dans un environnement humain, dynamique et évolutif.
+                  Bien plus qu'un simple métier, notre réseau permet de construire une véritable activité entrepreneuriale dans un environnement humain, dynamique et évolutif.
                 </p>
                 <p>
                   Depuis plus de 11 ans, j'accompagne des femmes et des hommes qui souhaitent développer leur activité immobilière, évoluer professionnellement et construire leur propre projet de vie.
