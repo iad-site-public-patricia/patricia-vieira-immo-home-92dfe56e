@@ -102,14 +102,18 @@ const Index = () => {
     <div>
       {/* Hero éditorial */}
       <section className="relative min-h-[92vh] flex items-center overflow-hidden bg-background">
-        <img
-          src={heroMagazine.url}
-          alt="Conseillère immobilière accompagnant un couple souriant lors d'une visite dans un appartement lumineux en Seine-et-Marne"
-          width={1536}
-          height={1024}
-          fetchPriority="high"
-          className="absolute inset-0 w-full h-full object-cover object-[70%_center] [filter:brightness(1.06)_saturate(1.04)_contrast(1.03)]"
+        <video
+          src={heroVideo.url}
+          poster={heroPoster.url}
+          autoPlay
+          muted
+          loop
+          playsInline
+          preload="auto"
+          aria-label="Patricia Vieira, conseillère immobilière en Seine-et-Marne, accompagne un couple lors d'une visite puis d'une signature"
+          className="absolute inset-0 w-full h-full object-cover object-[70%_center] [filter:brightness(1.05)_saturate(1.03)]"
         />
+
         {/* Lecture du texte : léger dégradé blanc uniquement à gauche, aucune voile sombre */}
         <div className="absolute inset-0 bg-gradient-to-r from-background via-background/70 to-transparent md:via-background/55 md:to-transparent" />
         <div className="absolute inset-0 bg-gradient-to-t from-background/40 via-transparent to-transparent" />
