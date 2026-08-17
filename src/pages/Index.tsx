@@ -406,13 +406,20 @@ const Index = () => {
 
 
 
-      {/* Derniers articles */}
-      <section className="section-padding bg-background">
+      {/* Centre de ressources */}
+      <section id="ressources" className="section-padding bg-background">
         <div className="container mx-auto">
-          <div className="flex items-center justify-between mb-4">
-            <h2 className="font-display text-3xl md:text-4xl font-semibold text-foreground">
-              Derniers conseils immobiliers
-            </h2>
+          <div className="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-4">
+            <div className="max-w-2xl">
+              <p className="font-body text-sm uppercase tracking-[0.2em] text-primary mb-3">Centre de ressources</p>
+              <h2 className="font-display text-3xl md:text-4xl font-semibold text-foreground">
+                Guides, conseils et analyses du marché
+              </h2>
+              <p className="font-body text-base md:text-lg text-foreground/80 leading-relaxed mt-3">
+                Vente, achat, estimation, investissement, diagnostics, primo-accédants, immobilier neuf et ancien, marché local en Seine-et-Marne et Val-de-Marne : des contenus clairs pour décider en confiance.
+              </p>
+            </div>
+
             <Button variant="ghost" asChild className="text-primary hover:text-primary/80">
               <Link to="/conseils-immobiliers" className="flex items-center gap-1">
                 Voir tout <ArrowRight className="w-4 h-4" />
