@@ -90,12 +90,13 @@ const Index = () => {
   return (
     <>
       <PageSEO
-        title="Patricia Vieira | Conseillère immobilière Seine-et-Marne (77)"
-        description="Patricia Vieira, conseillère immobilière en Seine-et-Marne (77). Vente immobilière, achat immobilier, estimation gratuite et recrutement de conseillers immobiliers. 4.9/5 sur 47+ avis clients vérifiés."
+        title="Conseils immobiliers Seine-et-Marne & Val-de-Marne | Patricia Vieira"
+        description="Guides, analyses et conseils sur l'immobilier en Seine-et-Marne et Val-de-Marne : achat, vente, estimation, investissement, diagnostics, primo-accédants et métier de conseiller immobilier indépendant."
         canonical="/"
-        ogTitle="Patricia Vieira — Conseillère immobilière Seine-et-Marne (77)"
-        ogDescription="Vente immobilière, achat immobilier, estimation gratuite et recrutement de conseillers immobiliers en Seine-et-Marne. 4.9/5 sur 47+ avis."
+        ogTitle="Bienvenue dans les coulisses de l'immobilier — Patricia Vieira"
+        ogDescription="Comprendre le marché, réussir son projet, construire son avenir : conseils immobiliers et accompagnement en Seine-et-Marne et Val-de-Marne."
       />
+
       <SchemaOrg breadcrumbs={[{ name: "Accueil", url: "/" }]} />
     <div>
       {/* Hero éditorial */}
