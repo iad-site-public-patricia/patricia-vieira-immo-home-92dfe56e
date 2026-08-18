@@ -64,14 +64,38 @@ const MonEquipe = () => {
       />
 
       <div className="text-foreground">
-        <section className="relative w-full overflow-hidden">
+        <section className="relative w-full min-h-[50vh] md:min-h-[60vh] overflow-hidden flex items-center justify-center">
           <img
-            src={rejoindreHeroTop.url}
-            alt="Rejoindre mon équipe de conseillers immobiliers Patricia Vieira"
-            className="w-full h-[50vh] md:h-[60vh] object-cover"
+            src={monEquipeHero.url}
+            alt="Patricia Vieira en rendez-vous avec des clients autour d'une table lumineuse"
+            className="absolute inset-0 w-full h-full object-cover object-center [filter:brightness(1.04)_saturate(1.03)]"
             loading="eager"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-navy/60 via-transparent to-transparent" />
+          {/* Voile clair identique au Hero de la page d'accueil */}
+          <div className="absolute inset-0 bg-background/12 pointer-events-none" />
+          <div className="absolute inset-0 pointer-events-none bg-gradient-to-b from-background/85 via-background/55 to-background/15 lg:bg-gradient-to-r lg:from-background/95 lg:via-background/70 lg:to-transparent" />
+
+          <div className="relative z-10 container mx-auto max-w-4xl text-center px-4 py-14 md:py-20">
+            <p className="font-body text-xs md:text-sm uppercase tracking-[0.25em] text-navy mb-4 md:mb-6">
+              Découvrir le métier de conseiller immobilier
+            </p>
+            <h1 className="font-display text-3xl md:text-4xl lg:text-5xl font-bold text-foreground leading-tight mb-5 md:mb-7">
+              L'immobilier indépendant : une autre façon de construire sa vie professionnelle
+            </h1>
+            <div className="space-y-4 font-body text-base md:text-lg text-foreground/85 leading-relaxed max-w-2xl mx-auto mb-8 md:mb-10">
+              <p>
+                Depuis plus de 11 ans, j'accompagne des femmes et des hommes qui souhaitent découvrir un métier alliant liberté, entrepreneuriat et relations humaines.
+              </p>
+              <p>
+                Je vous invite à découvrir les réalités, les opportunités et les valeurs qui font de ce métier une véritable aventure humaine et entrepreneuriale.
+              </p>
+            </div>
+            <Button variant="hero" size="xl" asChild>
+              <a href="#echanger" className="inline-flex items-center gap-2">
+                Comprendre le métier <ArrowRight className="w-5 h-5" />
+              </a>
+            </Button>
+          </div>
         </section>
 
         {/* ============ ARTICLE ÉDITORIAL ============ */}
