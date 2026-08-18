@@ -8,7 +8,7 @@ import {
   GraduationCap, TrendingUp, MapPin, BarChart3, Gem, Newspaper, ArrowRight
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import blogHeaderImg from "@/assets/blog-header.jpg";
+import blogHeaderImg from "@/assets/blog-header-v2.jpg.asset.json";
 
 const Blog = () => {
   const { id } = useParams();
@@ -72,18 +72,18 @@ const Blog = () => {
     <div>
       {/* Magazine-style header */}
       <section className="relative section-padding overflow-hidden">
-        <img src={blogHeaderImg} alt="Conseils immobiliers" className="absolute inset-0 w-full h-full object-cover" />
+        <img src={blogHeaderImg.url} alt="Conseils immobiliers" className="absolute inset-0 w-full h-full object-cover" />
         <div className="absolute inset-0 bg-gradient-to-b from-navy/70 via-navy/50 to-navy/80" />
         <div className="container mx-auto max-w-3xl text-center relative z-10">
-          <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-4 text-navy-foreground">
-            Patricia Vieira
-            <span className="block text-2xl md:text-3xl lg:text-4xl font-medium mt-3 italic text-navy-foreground/90">
-              Votre conseillère immobilier en Seine-et-Marne
-            </span>
-            <span className="block text-2xl md:text-3xl lg:text-4xl font-medium mt-2 italic text-navy-foreground/90">
-              Manager platinium associée
-            </span>
+          <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-5 text-navy-foreground">
+            Le guide immobilier de Patricia Vieira
           </h1>
+          <h2 className="font-display text-2xl md:text-3xl lg:text-4xl font-medium leading-snug mb-6 text-navy-foreground/95 italic">
+            Parce qu'un projet immobilier mérite plus que des annonces.
+          </h2>
+          <p className="font-body text-base md:text-lg lg:text-xl text-navy-foreground/85 leading-relaxed max-w-2xl mx-auto">
+            Découvrez des conseils pratiques, des analyses du marché, des méthodes concrètes et des réponses aux questions que se posent vendeurs, acquéreurs et investisseurs avant de prendre une décision.
+          </p>
         </div>
       </section>
 
