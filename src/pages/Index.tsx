@@ -16,11 +16,11 @@ import vendu5_2 from "@/assets/vendu-5-2.jpg";
 import vendu10 from "@/assets/vendu-10.jpg";
 import signatureNotaire from "@/assets/signature-notaire.jpg";
 import signatureNotaire2 from "@/assets/signature-notaire-2.jpg";
-import heroVideo from "@/assets/hero-desktop-v6.mp4.asset.json";
+import heroVideo from "@/assets/hero-desktop-v7.mp4.asset.json";
 import heroPoster from "@/assets/poster-desktop-v4.jpg.asset.json";
-import heroVideoTablet from "@/assets/hero-tablet-v6.mp4.asset.json";
+import heroVideoTablet from "@/assets/hero-tablet-v7.mp4.asset.json";
 import heroPosterTablet from "@/assets/poster-tablet-v4.jpg.asset.json";
-import heroVideoMobile from "@/assets/hero-mobile-v6.mp4.asset.json";
+import heroVideoMobile from "@/assets/hero-mobile-v7.mp4.asset.json";
 import heroPosterMobile from "@/assets/poster-mobile-v4.jpg.asset.json";
 
 const soldProperties = [
