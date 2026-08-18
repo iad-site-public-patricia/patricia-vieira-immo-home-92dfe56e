@@ -142,9 +142,10 @@ const Index = () => {
             aria-label="Patricia Vieira, conseillère immobilière en Seine-et-Marne, accompagne un couple lors d'une visite puis d'une signature"
             className="hidden lg:block absolute inset-0 w-full h-full object-cover object-[75%_center] [filter:brightness(1.04)_saturate(1.03)]"
           />
-          {/* Voile très léger pour garantir la lisibilité du texte sur toutes les vidéos */}
-          <div className="absolute inset-0 bg-black/10 pointer-events-none" />
-          <div className="absolute inset-0 bg-gradient-to-b from-background/92 via-background/70 to-background/30 lg:bg-gradient-to-r lg:from-background lg:via-background/85 lg:to-transparent" />
+          {/* Voile clair quasi invisible : préserve la luminosité, améliore le contraste */}
+          <div className="absolute inset-0 bg-background/12 pointer-events-none" />
+          <div className="absolute inset-0 pointer-events-none bg-gradient-to-b from-background/85 via-background/55 to-background/15 lg:bg-gradient-to-r lg:from-background/95 lg:via-background/70 lg:to-transparent" />
+
         </div>
 
 
