@@ -73,15 +73,17 @@ const Blog = () => {
       {/* Magazine-style header */}
       <section className="relative section-padding overflow-hidden">
         <img src={blogHeaderImg.url} alt="Conseils immobiliers" className="absolute inset-0 w-full h-full object-cover" />
-        <div className="absolute inset-0 bg-gradient-to-b from-navy/70 via-navy/50 to-navy/80" />
+        {/* Voile clair quasi invisible : préserve la luminosité, améliore le contraste */}
+        <div className="absolute inset-0 bg-background/12 pointer-events-none" />
+        <div className="absolute inset-0 pointer-events-none bg-gradient-to-b from-background/85 via-background/55 to-background/15" />
         <div className="container mx-auto max-w-3xl text-center relative z-10">
-          <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-5 text-navy-foreground">
+          <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-5 text-navy">
             Le guide immobilier de Patricia Vieira
           </h1>
-          <h2 className="font-display text-2xl md:text-3xl lg:text-4xl font-medium leading-snug mb-6 text-navy-foreground/95 italic">
+          <h2 className="font-display text-2xl md:text-3xl lg:text-4xl font-medium leading-snug mb-6 text-navy/90 italic">
             Parce qu'un projet immobilier mérite plus que des annonces.
           </h2>
-          <p className="font-body text-base md:text-lg lg:text-xl text-navy-foreground/85 leading-relaxed max-w-2xl mx-auto">
+          <p className="font-body text-base md:text-lg lg:text-xl text-foreground/85 leading-relaxed max-w-2xl mx-auto">
             Découvrez des conseils pratiques, des analyses du marché, des méthodes concrètes et des réponses aux questions que se posent vendeurs, acquéreurs et investisseurs avant de prendre une décision.
           </p>
         </div>
