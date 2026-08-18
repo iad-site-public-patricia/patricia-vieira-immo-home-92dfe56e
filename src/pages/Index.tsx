@@ -18,10 +18,10 @@ import signatureNotaire from "@/assets/signature-notaire.jpg";
 import signatureNotaire2 from "@/assets/signature-notaire-2.jpg";
 import heroVideo from "@/assets/hero-video-v3.mp4.asset.json";
 import heroPoster from "@/assets/hero-poster-v3.png.asset.json";
-import heroVideoTablet from "@/assets/hero-tablet.mp4.asset.json";
-import heroPosterTablet from "@/assets/hero-tablet-poster.jpg.asset.json";
-import heroVideoMobile from "@/assets/hero-mobile.mp4.asset.json";
-import heroPosterMobile from "@/assets/hero-mobile-poster.jpg.asset.json";
+import heroVideoTablet from "@/assets/hero-tablet-v2.mp4.asset.json";
+import heroPosterTablet from "@/assets/hero-tablet-poster-v2.jpg.asset.json";
+import heroVideoMobile from "@/assets/hero-mobile-v2.mp4.asset.json";
+import heroPosterMobile from "@/assets/hero-mobile-poster-v2.jpg.asset.json";
 
 const soldProperties = [
   { image: vendu1, type: "Maison familiale", location: "Lésigny 77", time: "Vendu en 1 mois" },
