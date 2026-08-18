@@ -11,7 +11,7 @@ import {
   CheckCircle2, Quote, ChevronRight, Facebook, Linkedin
 } from "lucide-react";
 
-import heroImg from "@/assets/rejoindre-hero-cover.jpg";
+import heroImg from "@/assets/rejoindre-hero-v2.jpg";
 import equipeImg from "@/assets/rejoindre-equipe.jpg";
 import lifestyleImg from "@/assets/rejoindre-lifestyle.jpg";
 import formationImg from "@/assets/rejoindre-formation.jpg";
