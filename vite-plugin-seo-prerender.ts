@@ -80,12 +80,6 @@ const routesMeta: Record<string, RouteMeta> = {
     canonical: "/immobilier-pontault-combault",
     geoPlacename: "Pontault-Combault",
   },
-  "/immobilier-roissy-en-brie": {
-    title: "Immobilier Roissy-en-Brie (77680) — Prix, Marché Local | Patricia Vieira",
-    description: "Immobilier à Roissy-en-Brie : prix, marché local, cadre de vie. Patricia Vieira, conseillère IAD France. Estimation gratuite et sans engagement.",
-    canonical: "/immobilier-roissy-en-brie",
-    geoPlacename: "Roissy-en-Brie",
-  },
   "/immobilier-brie-comte-robert": {
     title: "Immobilier Brie-Comte-Robert (77170) — Prix, Marché Local | Patricia Vieira",
     description: "Immobilier à Brie-Comte-Robert : prix au m², marché, quartiers historiques. Patricia Vieira, conseillère IAD. Estimation gratuite.",
