@@ -69,279 +69,370 @@ const MonEquipe = () => {
           <div className="absolute inset-0 bg-gradient-to-t from-navy/60 via-transparent to-transparent" />
         </section>
 
-        <section className="section-padding bg-background">
-          <div className="container mx-auto max-w-4xl">
-            <article className="premium-blog-article space-y-5 font-body text-foreground leading-relaxed">
+        {/* ============ ARTICLE ÉDITORIAL ============ */}
+        <article className="bg-background">
+          {/* Titre + introduction */}
+          <section className="section-padding pb-8">
+            <div className="container mx-auto max-w-3xl">
+              <Reveal>
+                <p className="font-body text-xs uppercase tracking-[0.28em] text-primary mb-5">
+                  Le magazine — Récit
+                </p>
+                <h1 className="font-display text-3xl md:text-5xl font-semibold leading-[1.15] text-navy mb-8">
+                  Pourquoi j'ai choisi l'immobilier indépendant : bien plus qu'un métier, une aventure humaine
+                </h1>
+                <div className="w-20 h-[3px] bg-gradient-to-r from-primary to-gold mb-10" />
+              </Reveal>
+
+              <Reveal delay={80}>
+                <p className="font-body text-xl md:text-2xl leading-relaxed text-foreground/90 mb-8 first-letter:font-display first-letter:text-6xl first-letter:leading-[0.85] first-letter:float-left first-letter:mr-3 first-letter:mt-1 first-letter:text-primary">
+                  Quand on parle d'immobilier, beaucoup imaginent immédiatement des visites, des panneaux "À vendre" ou encore des négociations.
+                </p>
+              </Reveal>
+
+              <div className="space-y-7 font-body text-lg leading-[1.85] text-foreground/85">
+                <Reveal delay={100}>
+                  <p>
+                    Mais avec les années, j'ai compris une chose essentielle :
+                    l'immobilier n'est pas simplement un métier de transaction.
+                    C'est avant tout un métier profondément humain.
+                  </p>
+                </Reveal>
+                <Reveal delay={120}>
+                  <p>
+                    Derrière chaque vente, chaque achat ou chaque projet, il y a une histoire de vie, des émotions, des changements importants et parfois même de véritables tournants personnels.
+                  </p>
+                </Reveal>
+                <Reveal delay={140}>
+                  <p className="font-display text-2xl md:text-3xl italic leading-snug text-navy py-2">
+                    C'est précisément cette dimension humaine qui m'a toujours passionnée dans ce métier.
+                  </p>
+                </Reveal>
+                <Reveal delay={160}>
+                  <p>
+                    Aujourd'hui, le métier de conseiller immobilier indépendant évolue énormément. Les clients changent, les outils changent, les habitudes changent… et notre manière de travailler évolue elle aussi.
+                  </p>
+                </Reveal>
+                <Reveal delay={180}>
+                  <p>
+                    Nous sommes entrés dans une nouvelle génération de l'immobilier : plus digitale, plus libre, plus humaine et surtout beaucoup plus proche des besoins réels des clients.
+                  </p>
+                </Reveal>
+              </div>
+            </div>
+          </section>
+
+          {/* Photo pleine largeur */}
+          <Reveal>
+            <figure className="relative w-full overflow-hidden my-4">
+              <img
+                src={conseilClientsImg}
+                alt="Conseillère immobilière en discussion avec un couple de clients"
+                loading="lazy"
+                width={1600}
+                height={912}
+                className="w-full h-[38vh] md:h-[58vh] object-cover"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-navy/25 to-transparent pointer-events-none" />
+            </figure>
+          </Reveal>
+
+          {/* Reconversion */}
+          <section className="section-padding pt-16">
+            <div className="container mx-auto max-w-3xl">
+              <Reveal>
+                <div className="mb-10">
+                  <div className="w-14 h-[2px] bg-primary mb-6" />
+                  <h2 className="font-display text-3xl md:text-4xl font-semibold leading-tight text-navy">
+                    Un métier qui attire de plus en plus de personnes en reconversion
+                  </h2>
+                </div>
+              </Reveal>
+
+              <div className="space-y-7 font-body text-lg leading-[1.85] text-foreground/85">
+                <Reveal><p>Depuis plusieurs années, je rencontre énormément de personnes qui souhaitent changer de vie professionnelle.</p></Reveal>
+                <Reveal><p>Certaines viennent du commerce, d'autres du salariat, de la restauration, du management ou encore de l'entrepreneuriat.</p></Reveal>
+                <Reveal><p>Beaucoup recherchent finalement la même chose :</p></Reveal>
+                <Reveal>
+                  <ul className="grid sm:grid-cols-2 gap-4 not-prose">
+                    {["plus de liberté,", "plus d'autonomie,", "plus de reconnaissance,", "et une activité qui ait réellement du sens."].map((item) => (
+                      <li key={item} className="flex items-start gap-3 rounded-xl border border-border/60 bg-card px-5 py-4">
+                        <Check className="w-5 h-5 text-primary shrink-0 mt-0.5" />
+                        <span className="text-base leading-relaxed">{item}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </Reveal>
+                <Reveal><p>L'immobilier indépendant attire aujourd'hui parce qu'il permet de construire quelque chose qui nous ressemble.</p></Reveal>
+                <Reveal><p>Mais il faut être honnête :<br />ce métier demande aussi beaucoup d'implication personnelle.</p></Reveal>
+              </div>
+            </div>
+          </section>
+
+          {/* Bloc inspirant : la liberté a un prix */}
+          <section className="px-4 md:px-8 lg:px-16 py-10">
+            <Reveal>
+              <div className="container mx-auto max-w-4xl rounded-2xl bg-navy text-navy-foreground px-8 py-14 md:px-16 md:py-20 text-center relative overflow-hidden">
+                <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_hsl(var(--primary)/0.25),_transparent_65%)]" />
+                <div className="relative">
+                  <Feather className="w-7 h-7 mx-auto mb-6 text-gold" />
+                  <h3 className="font-display text-3xl md:text-5xl font-semibold leading-tight">
+                    La liberté a un prix : celui de la régularité
+                  </h3>
+                </div>
+              </div>
+            </Reveal>
+          </section>
+
+          <section className="section-padding pt-6">
+            <div className="container mx-auto max-w-3xl space-y-7 font-body text-lg leading-[1.85] text-foreground/85">
+              <Reveal><p>Quand on devient conseiller immobilier indépendant, personne ne nous impose nos horaires.</p></Reveal>
+              <Reveal><p className="font-display text-2xl italic text-navy">Et c'est justement là toute la différence.</p></Reveal>
+              <Reveal><p>Cette liberté est incroyable… mais elle demande aussi énormément de discipline.</p></Reveal>
+              <Reveal><p>Dans ce métier, il faut apprendre à :</p></Reveal>
+              <Reveal>
+                <ul className="space-y-3 not-prose">
+                  {["gérer son temps,", "organiser ses journées,", "développer sa visibilité,", "entretenir sa motivation,", "et surtout rester constant même quand tout ne va pas comme prévu."].map((item) => (
+                    <li key={item} className="flex items-start gap-3 border-l-2 border-primary/50 bg-secondary/40 rounded-r-lg px-5 py-3">
+                      <Check className="w-5 h-5 text-primary shrink-0 mt-0.5" />
+                      <span className="text-base leading-relaxed">{item}</span>
+                    </li>
+                  ))}
+                </ul>
+              </Reveal>
+              <Reveal><p>Les personnes qui réussissent durablement dans l'immobilier sont rarement celles qui cherchent des résultats rapides.</p></Reveal>
+              <Reveal><p>Ce sont souvent celles qui construisent leur réputation avec patience, honnêteté et régularité.</p></Reveal>
+            </div>
+          </section>
+
+          {/* Le métier a changé + photo demi-largeur */}
+          <section className="section-padding pt-8">
+            <div className="container mx-auto max-w-6xl grid lg:grid-cols-2 gap-12 lg:gap-16 items-start">
+              <Reveal>
+                <img
+                  src={digitalTravailImg}
+                  alt="Travail digital d'une conseillère immobilière"
+                  loading="lazy"
+                  width={1600}
+                  height={912}
+                  className="w-full h-[300px] md:h-[460px] object-cover rounded-2xl shadow-lg lg:sticky lg:top-28"
+                />
+              </Reveal>
+              <div>
+                <Reveal>
+                  <div className="mb-8">
+                    <div className="w-14 h-[2px] bg-primary mb-6" />
+                    <h2 className="font-display text-3xl md:text-4xl font-semibold leading-tight text-navy">
+                      Le métier immobilier a profondément changé
+                    </h2>
+                  </div>
+                </Reveal>
+                <div className="space-y-7 font-body text-lg leading-[1.85] text-foreground/85">
+                  <Reveal><p>L'époque où une simple vitrine d'agence suffisait à générer des contacts est largement révolue.</p></Reveal>
+                  <Reveal><p>Aujourd'hui, les vendeurs et les acquéreurs recherchent principalement leurs informations :</p></Reveal>
+                  <Reveal>
+                    <ul className="space-y-3 not-prose">
+                      {["sur internet,", "sur les réseaux sociaux,", "sur les portails immobiliers,", "ou via des vidéos et contenus digitaux."].map((item) => (
+                        <li key={item} className="flex items-start gap-3">
+                          <Check className="w-5 h-5 text-primary shrink-0 mt-1" />
+                          <span className="text-base leading-relaxed">{item}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </Reveal>
+                  <Reveal><p>Le conseiller immobilier moderne doit donc être capable d'allier :</p></Reveal>
+                  <Reveal>
+                    <ul className="grid sm:grid-cols-2 gap-4 not-prose">
+                      {["relation humaine,", "communication digitale,", "présence terrain,", "et accompagnement personnalisé."].map((item) => (
+                        <li key={item} className="flex items-start gap-3 rounded-xl border border-border/60 bg-card px-5 py-4">
+                          <Sparkles className="w-5 h-5 text-gold shrink-0 mt-0.5" />
+                          <span className="text-base leading-relaxed">{item}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </Reveal>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          {/* Bloc inspirant : le digital */}
+          <section className="px-4 md:px-8 lg:px-16 py-10">
+            <Reveal>
+              <div className="container mx-auto max-w-4xl rounded-2xl border border-primary/25 bg-terracotta-light px-8 py-14 md:px-16 md:py-16 text-center">
+                <Heart className="w-7 h-7 mx-auto mb-6 text-primary" />
+                <h3 className="font-display text-3xl md:text-5xl font-semibold leading-tight text-navy">
+                  Le digital ne remplacera jamais l'humain
+                </h3>
+              </div>
+            </Reveal>
+          </section>
+
+          <section className="section-padding pt-6">
+            <div className="container mx-auto max-w-3xl space-y-7 font-body text-lg leading-[1.85] text-foreground/85">
+              <Reveal><p>Même si les outils évoluent très vite, une chose ne changera jamais :<br />les clients ont besoin de confiance.</p></Reveal>
+              <Reveal><p>Acheter ou vendre un bien immobilier représente souvent un moment important dans une vie.</p></Reveal>
+              <Reveal><p>Les clients ne recherchent pas simplement un professionnel capable de publier une annonce.</p></Reveal>
+              <Reveal><p>Ils recherchent surtout quelqu'un :</p></Reveal>
+              <Reveal>
+                <ul className="space-y-3 not-prose">
+                  {["qui les écoute,", "qui les rassure,", "qui les conseille avec sincérité,", "et qui reste présent tout au long du projet."].map((item) => (
+                    <li key={item} className="flex items-start gap-3 border-l-2 border-primary/50 bg-secondary/40 rounded-r-lg px-5 py-3">
+                      <Check className="w-5 h-5 text-primary shrink-0 mt-0.5" />
+                      <span className="text-base leading-relaxed">{item}</span>
+                    </li>
+                  ))}
+                </ul>
+              </Reveal>
+              <Reveal><p className="font-display text-2xl italic text-navy">C'est cette proximité humaine qui fait, selon moi, toute la beauté du métier.</p></Reveal>
+            </div>
+          </section>
+
+          {/* Photo remise de clés */}
+          <Reveal>
+            <figure className="relative w-full overflow-hidden my-4">
+              <img
+                src={remiseClesImg}
+                alt="Remise des clés à un couple d'acquéreurs"
+                loading="lazy"
+                width={1600}
+                height={912}
+                className="w-full h-[38vh] md:h-[55vh] object-cover"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-navy/25 to-transparent pointer-events-none" />
+            </figure>
+          </Reveal>
+
+          {/* Réseaux de mandataires */}
+          <section className="section-padding pt-16">
+            <div className="container mx-auto max-w-3xl">
+              <Reveal>
+                <div className="mb-10">
+                  <div className="w-14 h-[2px] bg-primary mb-6" />
+                  <h2 className="font-display text-3xl md:text-4xl font-semibold leading-tight text-navy">
+                    Pourquoi les réseaux de mandataires immobiliers se développent autant ?
+                  </h2>
+                </div>
+              </Reveal>
+              <div className="space-y-7 font-body text-lg leading-[1.85] text-foreground/85">
+                <Reveal><p>Les réseaux immobiliers indépendants séduisent aujourd'hui énormément de professionnels.</p></Reveal>
+                <Reveal><p>Et cela s'explique assez facilement.</p></Reveal>
+                <Reveal><p>Beaucoup de conseillers souhaitent :</p></Reveal>
+                <Reveal>
+                  <ul className="grid sm:grid-cols-2 gap-4 not-prose">
+                    {["retrouver davantage de liberté,", "développer leur propre image,", "bénéficier d'outils modernes,", "travailler plus librement,", "et parfois même construire leur propre équipe."].map((item) => (
+                      <li key={item} className="flex items-start gap-3 rounded-xl border border-border/60 bg-card px-5 py-4">
+                        <Check className="w-5 h-5 text-primary shrink-0 mt-0.5" />
+                        <span className="text-base leading-relaxed">{item}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </Reveal>
+                <Reveal><p>Ce modèle entrepreneurial correspond davantage aux nouvelles attentes du monde du travail.</p></Reveal>
+              </div>
+            </div>
+          </section>
+
+          {/* Bloc inspirant : long terme */}
+          <section className="px-4 md:px-8 lg:px-16 py-10">
+            <Reveal>
+              <div className="container mx-auto max-w-4xl rounded-2xl bg-secondary px-8 py-14 md:px-16 md:py-16 text-center border border-border/60">
+                <TrendingUp className="w-7 h-7 mx-auto mb-6 text-primary" />
+                <h3 className="font-display text-3xl md:text-5xl font-semibold leading-tight text-navy">
+                  Construire une activité sur le long terme
+                </h3>
+              </div>
+            </Reveal>
+          </section>
+
+          <section className="section-padding pt-6">
+            <div className="container mx-auto max-w-3xl space-y-7 font-body text-lg leading-[1.85] text-foreground/85">
+              <Reveal><p>Ce que j'aime particulièrement dans l'immobilier indépendant, c'est la possibilité de construire une activité durable.</p></Reveal>
+              <Reveal><p>Avec le temps, la confiance des clients, les recommandations et le bouche-à-oreille deviennent une véritable force.</p></Reveal>
+              <Reveal><p>Un client satisfait peut :</p></Reveal>
+              <Reveal>
+                <ul className="space-y-3 not-prose">
+                  {["vous recommander à son entourage,", "vous rappeler plusieurs années plus tard,", "ou devenir un véritable ambassadeur de votre travail."].map((item) => (
+                    <li key={item} className="flex items-start gap-3 border-l-2 border-primary/50 bg-secondary/40 rounded-r-lg px-5 py-3">
+                      <Check className="w-5 h-5 text-primary shrink-0 mt-0.5" />
+                      <span className="text-base leading-relaxed">{item}</span>
+                    </li>
+                  ))}
+                </ul>
+              </Reveal>
+              <Reveal><p className="font-display text-2xl italic text-navy">Dans ce métier, la réputation reste l'un des plus beaux leviers de développement.</p></Reveal>
+            </div>
+          </section>
+
+          {/* Photo équipe / formation */}
+          <Reveal>
+            <figure className="w-full overflow-hidden my-4">
+              <img
+                src={formationImg}
+                alt="Formation et réunion d'équipe de conseillers immobiliers"
+                loading="lazy"
+                className="w-full h-[34vh] md:h-[50vh] object-cover"
+              />
+            </figure>
+          </Reveal>
+
+          {/* Les qualités */}
+          <section className="section-padding pt-16">
+            <div className="container mx-auto max-w-3xl">
+              <Reveal>
+                <div className="mb-10">
+                  <div className="w-14 h-[2px] bg-primary mb-6" />
+                  <h2 className="font-display text-3xl md:text-4xl font-semibold leading-tight text-navy">
+                    Les qualités qui font vraiment la différence dans l'immobilier
+                  </h2>
+                </div>
+              </Reveal>
+              <div className="space-y-7 font-body text-lg leading-[1.85] text-foreground/85">
+                <Reveal><p>Contrairement à ce que l'on pourrait croire, réussir dans l'immobilier ne dépend pas uniquement du talent commercial.</p></Reveal>
+                <Reveal><p>Les qualités les plus importantes sont souvent :</p></Reveal>
+                <Reveal>
+                  <ul className="grid grid-cols-1 sm:grid-cols-3 gap-4 not-prose">
+                    {["l'écoute,", "l'empathie,", "la capacité d'adaptation,", "la régularité,", "la résilience,", "et l'authenticité."].map((item) => (
+                      <li key={item} className="rounded-xl bg-card border border-border/60 px-5 py-6 text-center">
+                        <Sparkles className="w-5 h-5 text-gold mx-auto mb-3" />
+                        <span className="font-display text-lg text-navy">{item}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </Reveal>
+                <Reveal><p>Les clients ressentent immédiatement quand une relation est sincère.</p></Reveal>
+                <Reveal><p>Et c'est souvent cette sincérité qui crée les plus belles collaborations.</p></Reveal>
+              </div>
+            </div>
+          </section>
+
+          {/* Conclusion */}
+          <section className="section-padding pt-4">
+            <div className="container mx-auto max-w-3xl">
+              <Reveal>
+                <div className="mb-10">
+                  <div className="w-14 h-[2px] bg-primary mb-6" />
+                  <h2 className="font-display text-3xl md:text-4xl font-semibold leading-tight text-navy">
+                    Conclusion : un métier exigeant… mais profondément enrichissant
+                  </h2>
+                </div>
+              </Reveal>
+              <div className="space-y-7 font-body text-lg leading-[1.85] text-foreground/85">
+                <Reveal><p>L'immobilier indépendant n'est pas un métier "facile".</p></Reveal>
+                <Reveal><p>C'est un métier qui demande du travail, de l'implication et une grande capacité relationnelle.</p></Reveal>
+                <Reveal><p>Mais c'est aussi un métier incroyablement vivant, stimulant et humain.</p></Reveal>
+                <Reveal><p>Chaque rencontre, chaque projet et chaque accompagnement rendent ce quotidien différent.</p></Reveal>
+                <Reveal>
+                  <p className="font-display text-2xl md:text-3xl italic leading-snug text-navy border-l-4 border-primary pl-6 py-2">
+                    Et pour toutes les personnes qui aiment le contact humain, l'autonomie et l'entrepreneuriat, l'immobilier peut devenir bien plus qu'un simple métier :
+                    une véritable aventure de vie.
+                  </p>
+                </Reveal>
+              </div>
+            </div>
+          </section>
+        </article>
 
-<h1>Pourquoi j'ai choisi l'immobilier indépendant : bien plus qu'un métier, une aventure humaine</h1>
-
-<p>
-Quand on parle d'immobilier, beaucoup imaginent immédiatement des visites, des panneaux "À vendre" ou encore des négociations.
-</p>
-
-<p>
-Mais avec les années, j'ai compris une chose essentielle :
-l'immobilier n'est pas simplement un métier de transaction.
-C'est avant tout un métier profondément humain.
-</p>
-
-<p>
-Derrière chaque vente, chaque achat ou chaque projet, il y a une histoire de vie, des émotions, des changements importants et parfois même de véritables tournants personnels.
-</p>
-
-<p>
-C'est précisément cette dimension humaine qui m'a toujours passionnée dans ce métier.
-</p>
-
-<p>
-Aujourd'hui, le métier de conseiller immobilier indépendant évolue énormément. Les clients changent, les outils changent, les habitudes changent… et notre manière de travailler évolue elle aussi.
-</p>
-
-<p>
-Nous sommes entrés dans une nouvelle génération de l'immobilier : plus digitale, plus libre, plus humaine et surtout beaucoup plus proche des besoins réels des clients.
-</p>
-
-{/* ========================= */}
-
-<h2>Un métier qui attire de plus en plus de personnes en reconversion</h2>
-
-<p>
-Depuis plusieurs années, je rencontre énormément de personnes qui souhaitent changer de vie professionnelle.
-</p>
-
-<p>
-Certaines viennent du commerce, d'autres du salariat, de la restauration, du management ou encore de l'entrepreneuriat.
-</p>
-
-<p>
-Beaucoup recherchent finalement la même chose :
-</p>
-
-<ul>
-<li>plus de liberté,</li>
-<li>plus d'autonomie,</li>
-<li>plus de reconnaissance,</li>
-<li>et une activité qui ait réellement du sens.</li>
-</ul>
-
-<p>
-L'immobilier indépendant attire aujourd'hui parce qu'il permet de construire quelque chose qui nous ressemble.
-</p>
-
-<p>
-Mais il faut être honnête :
-ce métier demande aussi beaucoup d'implication personnelle.
-</p>
-
-{/* ========================= */}
-
-<h3>La liberté a un prix : celui de la régularité</h3>
-
-<p>
-Quand on devient conseiller immobilier indépendant, personne ne nous impose nos horaires.
-</p>
-
-<p>
-Et c'est justement là toute la différence.
-</p>
-
-<p>
-Cette liberté est incroyable… mais elle demande aussi énormément de discipline.
-</p>
-
-<p>
-Dans ce métier, il faut apprendre à :
-</p>
-
-<ul>
-<li>gérer son temps,</li>
-<li>organiser ses journées,</li>
-<li>développer sa visibilité,</li>
-<li>entretenir sa motivation,</li>
-<li>et surtout rester constant même quand tout ne va pas comme prévu.</li>
-</ul>
-
-<p>
-Les personnes qui réussissent durablement dans l'immobilier sont rarement celles qui cherchent des résultats rapides.
-</p>
-
-<p>
-Ce sont souvent celles qui construisent leur réputation avec patience, honnêteté et régularité.
-</p>
-
-{/* ========================= */}
-
-<h2>Le métier immobilier a profondément changé</h2>
-
-<p>
-L'époque où une simple vitrine d'agence suffisait à générer des contacts est largement révolue.
-</p>
-
-<p>
-Aujourd'hui, les vendeurs et les acquéreurs recherchent principalement leurs informations :
-</p>
-
-<ul>
-<li>sur internet,</li>
-<li>sur les réseaux sociaux,</li>
-<li>sur les portails immobiliers,</li>
-<li>ou via des vidéos et contenus digitaux.</li>
-</ul>
-
-<p>
-Le conseiller immobilier moderne doit donc être capable d'allier :
-</p>
-
-<ul>
-<li>relation humaine,</li>
-<li>communication digitale,</li>
-<li>présence terrain,</li>
-<li>et accompagnement personnalisé.</li>
-</ul>
-
-{/* ========================= */}
-
-<h3>Le digital ne remplacera jamais l'humain</h3>
-
-<p>
-Même si les outils évoluent très vite, une chose ne changera jamais :
-les clients ont besoin de confiance.
-</p>
-
-<p>
-Acheter ou vendre un bien immobilier représente souvent un moment important dans une vie.
-</p>
-
-<p>
-Les clients ne recherchent pas simplement un professionnel capable de publier une annonce.
-</p>
-
-<p>
-Ils recherchent surtout quelqu'un :
-</p>
-
-<ul>
-<li>qui les écoute,</li>
-<li>qui les rassure,</li>
-<li>qui les conseille avec sincérité,</li>
-<li>et qui reste présent tout au long du projet.</li>
-</ul>
-
-<p>
-C'est cette proximité humaine qui fait, selon moi, toute la beauté du métier.
-</p>
-
-{/* ========================= */}
-
-<h2>Pourquoi les réseaux de mandataires immobiliers se développent autant ?</h2>
-
-<p>
-Les réseaux immobiliers indépendants séduisent aujourd'hui énormément de professionnels.
-</p>
-
-<p>
-Et cela s'explique assez facilement.
-</p>
-
-<p>
-Beaucoup de conseillers souhaitent :
-</p>
-
-<ul>
-<li>retrouver davantage de liberté,</li>
-<li>développer leur propre image,</li>
-<li>bénéficier d'outils modernes,</li>
-<li>travailler plus librement,</li>
-<li>et parfois même construire leur propre équipe.</li>
-</ul>
-
-<p>
-Ce modèle entrepreneurial correspond davantage aux nouvelles attentes du monde du travail.
-</p>
-
-{/* ========================= */}
-
-<h3>Construire une activité sur le long terme</h3>
-
-<p>
-Ce que j'aime particulièrement dans l'immobilier indépendant, c'est la possibilité de construire une activité durable.
-</p>
-
-<p>
-Avec le temps, la confiance des clients, les recommandations et le bouche-à-oreille deviennent une véritable force.
-</p>
-
-<p>
-Un client satisfait peut :
-</p>
-
-<ul>
-<li>vous recommander à son entourage,</li>
-<li>vous rappeler plusieurs années plus tard,</li>
-<li>ou devenir un véritable ambassadeur de votre travail.</li>
-</ul>
-
-<p>
-Dans ce métier, la réputation reste l'un des plus beaux leviers de développement.
-</p>
-
-{/* ========================= */}
-
-<h2>Les qualités qui font vraiment la différence dans l'immobilier</h2>
-
-<p>
-Contrairement à ce que l'on pourrait croire, réussir dans l'immobilier ne dépend pas uniquement du talent commercial.
-</p>
-
-<p>
-Les qualités les plus importantes sont souvent :
-</p>
-
-<ul>
-<li>l'écoute,</li>
-<li>l'empathie,</li>
-<li>la capacité d'adaptation,</li>
-<li>la régularité,</li>
-<li>la résilience,</li>
-<li>et l'authenticité.</li>
-</ul>
-
-<p>
-Les clients ressentent immédiatement quand une relation est sincère.
-</p>
-
-<p>
-Et c'est souvent cette sincérité qui crée les plus belles collaborations.
-</p>
-
-{/* ========================= */}
-
-<h2>Conclusion : un métier exigeant… mais profondément enrichissant</h2>
-
-<p>
-L'immobilier indépendant n'est pas un métier "facile".
-</p>
-
-<p>
-C'est un métier qui demande du travail, de l'implication et une grande capacité relationnelle.
-</p>
-
-<p>
-Mais c'est aussi un métier incroyablement vivant, stimulant et humain.
-</p>
-
-<p>
-Chaque rencontre, chaque projet et chaque accompagnement rendent ce quotidien différent.
-</p>
-
-<p>
-Et pour toutes les personnes qui aiment le contact humain, l'autonomie et l'entrepreneuriat, l'immobilier peut devenir bien plus qu'un simple métier :
-une véritable aventure de vie.
-</p>
-
-</article>
-          </div>
-        </section>
 
         {/* UNE ÉQUIPE QUI AVANCE ENSEMBLE */}
         <section className="section-padding">
