@@ -20,7 +20,7 @@ import challengeImg from "@/assets/equipe-challenge.jpg";
 import terrainImg from "@/assets/equipe-terrain.jpg";
 import rejoindreEquipeImg from "@/assets/rejoindre-equipe.jpg";
 import rejoindreLifestyleImg from "@/assets/rejoindre-lifestyle.jpg";
-import rejoindreHeroTop from "@/assets/rejoindre-hero-equipe.png.asset.json";
+import monEquipeHero from "@/assets/mon-equipe-hero-v2.jpg.asset.json";
 import conseilClientsImg from "@/assets/article-conseil-clients.jpg";
 import remiseClesImg from "@/assets/article-remise-cles.jpg";
 import digitalTravailImg from "@/assets/article-digital-travail.jpg";
