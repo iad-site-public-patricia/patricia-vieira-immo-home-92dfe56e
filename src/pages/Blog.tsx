@@ -78,7 +78,7 @@ const Blog = () => {
         <div className="absolute inset-0 pointer-events-none bg-gradient-to-b from-background/85 via-background/55 to-background/15" />
         <div className="container mx-auto max-w-3xl text-center relative z-10">
           <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-5 text-navy">
-            Le guide immobilier de Patricia Vieira
+            Le guide immobilier
           </h1>
           <h2 className="font-display text-2xl md:text-3xl lg:text-4xl font-medium leading-snug mb-6 text-navy/90 italic">
             Parce qu'un projet immobilier mérite plus que des annonces.
