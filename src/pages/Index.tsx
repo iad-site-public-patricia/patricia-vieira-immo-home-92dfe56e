@@ -18,10 +18,10 @@ import signatureNotaire from "@/assets/signature-notaire.jpg";
 import signatureNotaire2 from "@/assets/signature-notaire-2.jpg";
 import heroVideo from "@/assets/hero-video-v3.mp4.asset.json";
 import heroPoster from "@/assets/hero-poster-v3.png.asset.json";
-import heroVideoTablet from "@/assets/hero-tablet.mp4.asset.json";
-import heroPosterTablet from "@/assets/hero-tablet-poster.jpg.asset.json";
-import heroVideoMobile from "@/assets/hero-mobile.mp4.asset.json";
-import heroPosterMobile from "@/assets/hero-mobile-poster.jpg.asset.json";
+import heroVideoTablet from "@/assets/hero-tablet-v2.mp4.asset.json";
+import heroPosterTablet from "@/assets/hero-tablet-poster-v2.jpg.asset.json";
+import heroVideoMobile from "@/assets/hero-mobile-v2.mp4.asset.json";
+import heroPosterMobile from "@/assets/hero-mobile-poster-v2.jpg.asset.json";
 
 const soldProperties = [
   { image: vendu1, type: "Maison familiale", location: "Lésigny 77", time: "Vendu en 1 mois" },
@@ -106,9 +106,9 @@ const Index = () => {
       <SchemaOrg breadcrumbs={[{ name: "Accueil", url: "/" }]} />
     <div>
       {/* Hero éditorial */}
-      <section className="relative overflow-hidden bg-background min-h-[640px] lg:min-h-[85vh] flex items-center">
-        {/* Vidéos de fond adaptées à chaque support */}
-        <div className="absolute inset-0">
+      <section className="relative overflow-hidden bg-background min-h-[640px] md:min-h-[720px] lg:min-h-[85vh] flex items-center">
+        {/* Vidéos de fond adaptées à chaque support — remplissage total, sans bandes */}
+        <div className="absolute inset-0 overflow-hidden">
           <video
             src={heroVideoMobile.url}
             poster={heroPosterMobile.url}
@@ -118,7 +118,7 @@ const Index = () => {
             playsInline
             preload="auto"
             aria-label="Patricia Vieira, conseillère immobilière en Seine-et-Marne, lors d'un rendez-vous client"
-            className="md:hidden w-full h-full object-cover object-center [filter:brightness(1.04)_saturate(1.03)]"
+            className="md:hidden absolute inset-0 w-full h-full object-cover object-center [filter:brightness(1.04)_saturate(1.03)]"
           />
           <video
             src={heroVideoTablet.url}
@@ -129,7 +129,7 @@ const Index = () => {
             playsInline
             preload="auto"
             aria-label="Patricia Vieira, conseillère immobilière en Seine-et-Marne, lors d'un rendez-vous client"
-            className="hidden md:block lg:hidden w-full h-full object-cover object-center [filter:brightness(1.04)_saturate(1.03)]"
+            className="hidden md:block lg:hidden absolute inset-0 w-full h-full object-cover object-center [filter:brightness(1.04)_saturate(1.03)]"
           />
           <video
             src={heroVideo.url}
@@ -140,12 +140,13 @@ const Index = () => {
             playsInline
             preload="auto"
             aria-label="Patricia Vieira, conseillère immobilière en Seine-et-Marne, accompagne un couple lors d'une visite puis d'une signature"
-            className="hidden lg:block w-full h-full object-cover object-[80%_center] [filter:brightness(1.04)_saturate(1.03)]"
+            className="hidden lg:block absolute inset-0 w-full h-full object-cover object-[75%_center] [filter:brightness(1.04)_saturate(1.03)]"
           />
           {/* Voile très léger pour garantir la lisibilité du texte sur toutes les vidéos */}
           <div className="absolute inset-0 bg-black/10 pointer-events-none" />
           <div className="absolute inset-0 bg-gradient-to-b from-background/92 via-background/70 to-background/30 lg:bg-gradient-to-r lg:from-background lg:via-background/85 lg:to-transparent" />
         </div>
+
 
         <div className="relative z-10 container mx-auto px-4 py-16 md:py-20 lg:py-28">
           <div className="max-w-3xl lg:max-w-2xl animate-fade-in">
