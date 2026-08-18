@@ -8,8 +8,9 @@ import { toast } from "sonner";
 import {
   ArrowRight, Heart, Users, Trophy, Target, HandHeart, Rocket,
   Sparkles, GraduationCap, Compass, Feather, Facebook, Instagram, Linkedin,
-  Building2, TrendingUp, Flame,
+  Building2, TrendingUp, Flame, Check,
 } from "lucide-react";
+import Reveal from "@/components/Reveal";
 
 import heroImg from "@/assets/equipe-celebration.jpg";
 import formationImg from "@/assets/equipe-formation.jpg";
@@ -20,6 +21,10 @@ import terrainImg from "@/assets/equipe-terrain.jpg";
 import rejoindreEquipeImg from "@/assets/rejoindre-equipe.jpg";
 import rejoindreLifestyleImg from "@/assets/rejoindre-lifestyle.jpg";
 import rejoindreHeroTop from "@/assets/rejoindre-hero-equipe.png.asset.json";
+import conseilClientsImg from "@/assets/article-conseil-clients.jpg";
+import remiseClesImg from "@/assets/article-remise-cles.jpg";
+import digitalTravailImg from "@/assets/article-digital-travail.jpg";
+
 
 const galleryItems = [
   { src: seminaireImg, label: "Séminaire d'équipe" },
