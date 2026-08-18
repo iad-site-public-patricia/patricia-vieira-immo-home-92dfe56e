@@ -11,7 +11,7 @@ import {
   CheckCircle2, Quote, ChevronRight, Facebook, Linkedin
 } from "lucide-react";
 
-import heroImg from "@/assets/rejoindre-hero-cover.jpg";
+import heroImg from "@/assets/rejoindre-hero-v2.jpg";
 import equipeImg from "@/assets/rejoindre-equipe.jpg";
 import lifestyleImg from "@/assets/rejoindre-lifestyle.jpg";
 import formationImg from "@/assets/rejoindre-formation.jpg";
@@ -37,21 +37,29 @@ const Rejoindre = () => {
       />
     <div>
       <section className="relative min-h-[85vh] flex items-center overflow-hidden">
-        <img src={heroImg} alt="Équipe de conseillers immobiliers" className="absolute inset-0 w-full h-full object-cover" />
-        <div className="absolute inset-0 bg-gradient-to-r from-navy/80 via-navy/50 to-navy/20" />
+        <img
+          src={heroImg}
+          alt="Conseillère immobilière en rendez-vous avec des clients autour d'une table lumineuse"
+          className="absolute inset-0 w-full h-full object-cover object-center [filter:brightness(1.04)_saturate(1.03)]"
+        />
+        <div className="absolute inset-0 bg-background/12 pointer-events-none" />
+        <div className="absolute inset-0 pointer-events-none bg-gradient-to-b from-background/85 via-background/55 to-background/15 lg:bg-gradient-to-r lg:from-background/95 lg:via-background/70 lg:to-transparent" />
         <div className="relative container mx-auto max-w-4xl text-center py-24 px-4">
-          <p className="font-body text-sm uppercase tracking-[0.25em] text-primary-foreground/70 mb-6">
-            Rejoignez l'aventure iad
+          <p className="font-body text-sm uppercase tracking-[0.25em] text-primary mb-6">
+            Découvrir le métier de conseiller immobilier
           </p>
-          <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold mb-8 text-navy-foreground leading-tight drop-shadow-lg">
-            Et si votre prochaine vie professionnelle commençait ici ?
+          <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold mb-8 text-navy leading-tight">
+            L'immobilier indépendant : une autre façon de construire sa vie professionnelle
           </h1>
-          <p className="font-body text-lg md:text-xl text-navy-foreground/90 leading-relaxed max-w-2xl mx-auto mb-10 drop-shadow-sm">
-            Depuis plus de 11 ans, j'accompagne celles et ceux qui veulent entreprendre dans l'immobilier, avec liberté, accompagnement et ambition.
+          <p className="font-body text-lg md:text-xl text-foreground/85 leading-relaxed max-w-2xl mx-auto mb-10">
+            Depuis plus de 11 ans, j'accompagne des femmes et des hommes qui souhaitent découvrir un métier alliant liberté, entrepreneuriat et relations humaines.
+          </p>
+          <p className="font-body text-lg md:text-xl text-foreground/85 leading-relaxed max-w-2xl mx-auto mb-10">
+            Je vous invite à découvrir les réalités, les opportunités et les valeurs qui font de ce métier une véritable aventure humaine et entrepreneuriale.
           </p>
           <Button variant="hero" size="xl" asChild>
             <a href="#formulaire" className="inline-flex items-center gap-2">
-              Échanger avec moi <ArrowRight className="w-5 h-5" />
+              Comprendre le métier <ArrowRight className="w-5 h-5" />
             </a>
           </Button>
         </div>
