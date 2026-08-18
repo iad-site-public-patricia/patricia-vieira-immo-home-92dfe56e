@@ -8,7 +8,7 @@ import {
   GraduationCap, TrendingUp, MapPin, BarChart3, Gem, Newspaper, ArrowRight
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import blogHeaderImg from "@/assets/blog-header-v2.jpg.asset.json";
+import blogHeaderImg from "@/assets/blog-header-v3.jpg.asset.json";
 
 const Blog = () => {
   const { id } = useParams();
