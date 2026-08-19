@@ -423,43 +423,32 @@ const Index = () => {
 
       {/* Section Recrutement — encart distinct */}
       <section className="section-padding bg-navy text-navy-foreground">
-        <div className="container mx-auto">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div>
-              <p className="font-body text-sm uppercase tracking-[0.2em] text-primary mb-3">Partout en France</p>
-              <h2 className="font-display text-3xl md:text-4xl font-bold mb-6">
-                Envie de devenir conseiller immobilier indépendant ?
-              </h2>
-              <p className="font-body text-lg text-navy-foreground/85 leading-relaxed mb-6">
-                Reconversion professionnelle ou expérience dans l'immobilier : je vous accompagne personnellement pour construire votre activité. Rejoignez une équipe humaine, formée et soudée.
-              </p>
-              <ul className="space-y-3 mb-8">
-                {[
-                  "Formation complète et accompagnement personnalisé",
-                  "Activité flexible, partout en France",
-                  "11 ans d'expérience à votre service",
-                  "Rejoignez un réseau leader en France",
-                ].map((item, i) => (
-                  <li key={i} className="flex items-center gap-3 font-body text-navy-foreground/90">
-                    <CheckCircle className="w-5 h-5 text-primary shrink-0" />
-                    {item}
-                  </li>
-                ))}
-              </ul>
-              <Button variant="hero" size="lg" asChild>
-                <Link to="/mon-equipe" className="inline-flex items-center gap-2">
-                  En savoir plus <ArrowRight className="w-5 h-5" />
-                </Link>
-              </Button>
-            </div>
-            <div className="grid grid-cols-2 gap-4">
-              {signatureMoments.map((moment, i) => (
-                <div key={i} className="rounded-xl overflow-hidden shadow-lg">
-                  <img src={moment.image} alt={moment.caption} className="w-full h-64 object-cover" />
-                </div>
-              ))}
-            </div>
-          </div>
+        <div className="container mx-auto max-w-3xl text-center">
+          <p className="font-body text-sm uppercase tracking-[0.2em] text-primary mb-3">Partout en France</p>
+          <h2 className="font-display text-3xl md:text-4xl font-bold mb-6">
+            Envie de devenir conseiller immobilier indépendant ?
+          </h2>
+          <p className="font-body text-lg text-navy-foreground/85 leading-relaxed mb-6">
+            Reconversion professionnelle ou expérience dans l'immobilier : je vous accompagne personnellement pour construire votre activité. Rejoignez une équipe humaine, formée et soudée.
+          </p>
+          <ul className="space-y-3 mb-8 text-left">
+            {[
+              "Formation complète et accompagnement personnalisé",
+              "Activité flexible, partout en France",
+              "11 ans d'expérience à votre service",
+              "Rejoignez un réseau leader en France",
+            ].map((item, i) => (
+              <li key={i} className="flex items-center gap-3 font-body text-navy-foreground/90">
+                <CheckCircle className="w-5 h-5 text-primary shrink-0" />
+                {item}
+              </li>
+            ))}
+          </ul>
+          <Button variant="hero" size="lg" asChild>
+            <Link to="/mon-equipe" className="inline-flex items-center gap-2">
+              En savoir plus <ArrowRight className="w-5 h-5" />
+            </Link>
+          </Button>
         </div>
       </section>
 
