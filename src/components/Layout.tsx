@@ -140,7 +140,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
               <h3 className="font-display text-2xl font-bold mb-4">Patricia Vieira</h3>
               <p className="text-sm opacity-75 font-body leading-relaxed">
                 Conseillère immobilier indépendante Iad France<br />
-                à Gretz-Armainvilliers et ses alentours
+                à Gretz-Armainvilliers et alentours
               </p>
               <div className="flex items-center gap-3 mt-5">
                 <a href="https://www.facebook.com/patriciavieiraimmobilier/" target="_blank" rel="noopener noreferrer nofollow" className="w-10 h-10 rounded-full bg-navy-foreground/10 hover:bg-primary/30 flex items-center justify-center transition-colors" aria-label="Facebook">
