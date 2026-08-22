@@ -20,8 +20,9 @@ import challengeImg from "@/assets/equipe-challenge.jpg";
 import terrainImgAsset from "@/assets/equipe-terrain.png.asset.json";
 const terrainImg = terrainImgAsset.url;
 import rejoindreEquipeImg from "@/assets/rejoindre-equipe.jpg";
-import rejoindreLifestyleAsset from "@/assets/rejoindre-lifestyle.png.asset.json";
-const rejoindreLifestyleImg = rejoindreLifestyleAsset.url;
+import rejoindreLifestyleImg from "@/assets/rejoindre-lifestyle.jpg";
+
+
 import monEquipeHero from "@/assets/mon-equipe-hero-v2.jpg.asset.json";
 import conseilClientsImg from "@/assets/article-conseil-clients.jpg";
 import remiseClesImg from "@/assets/article-remise-cles.jpg";
