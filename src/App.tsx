@@ -73,6 +73,8 @@ const App = () => (
               
               {/* Blog / Conseils */}
               <Route path="/conseils-immobiliers" element={<Blog />} />
+              <Route path="/conseils-immobiliers/decouvrir-mon-parcours" element={<Navigate to="/a-propos" replace />} />
+              <Route path="/blog/decouvrir-mon-parcours" element={<Navigate to="/a-propos" replace />} />
               <Route path="/conseils-immobiliers/:id" element={<Blog />} />
               <Route path="/blog" element={<Navigate to="/conseils-immobiliers" replace />} />
               <Route path="/blog/:id" element={<Blog />} />
