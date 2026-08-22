@@ -15,7 +15,7 @@ import Reveal from "@/components/Reveal";
 import heroImg from "@/assets/equipe-celebration.jpg";
 import formationImg from "@/assets/equipe-formation.jpg";
 import seminaireImg from "@/assets/equipe-seminaire.jpg";
-import mentoratImg from "@/assets/equipe-mentorat.jpg";
+import mentoratImg from "@/assets/equipe-mentorat.png.asset.json";
 import challengeImg from "@/assets/equipe-challenge.jpg";
 import terrainImgAsset from "@/assets/equipe-terrain.png.asset.json";
 const terrainImg = terrainImgAsset.url;
