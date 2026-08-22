@@ -4,7 +4,6 @@ import SchemaOrg from "@/components/SchemaOrg";
 import { Button } from "@/components/ui/button";
 import { Heart, Users, Award, Sparkles, ArrowRight, Star, Quote } from "lucide-react";
 import { useEffect, useRef } from "react";
-import patriciaPhoto from "@/assets/patricia-vieira.jpg";
 import patriciaCover from "@/assets/patricia-apropos-cover.png.asset.json";
 import conseilClientsImg from "@/assets/article-conseil-clients.jpg";
 import mentoratImgAsset from "@/assets/equipe-mentorat.png.asset.json";
