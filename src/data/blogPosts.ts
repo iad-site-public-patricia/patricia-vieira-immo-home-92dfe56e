@@ -49,7 +49,6 @@ import coverTauxCredit from "@/assets/cover-taux-credit.jpg";
 import coverReglementationDpe from "@/assets/cover-reglementation-dpe.jpg";
 import coverTendancesMarche from "@/assets/cover-tendances-marche.jpg";
 import coverActualitesEssentielles from "@/assets/cover-actualites-essentielles.jpg";
-import coverDecouvrirParcours from "@/assets/cover-decouvrir-parcours.jpg";
 
 export interface BlogPost {
   id: string;
@@ -1532,38 +1531,5 @@ La demande locative reste forte dans les grandes agglomérations, soutenant les 
 Restez informé et entourez-vous de professionnels compétents. Le marché immobilier offre de réelles opportunités à condition de bien s'y préparer.
 
 **Vous avez un projet immobilier ? Parlons-en.**`,
-  },
-  // ── Découvrir mon parcours ──
-  {
-    id: "decouvrir-mon-parcours",
-    title: "Découvrir mon parcours",
-    excerpt: "L'immobilier est avant tout une aventure humaine. Découvrez ce qui m'a amenée à choisir ce métier, mon parcours depuis 2015 et ma vision de l'accompagnement immobilier.",
-    category: "Actualités immobilières",
-    date: "14 mars 2026",
-    readTime: "4 min",
-    coverImage: coverDecouvrirParcours,
-    content: `L'immobilier est avant tout une aventure humaine. Derrière chaque projet se cache une histoire, un changement de vie et souvent un nouveau départ. C'est cette conviction qui guide mon métier au quotidien.
-
-**Qui je suis**
-
-Je suis Patricia Vieira, conseillère en immobilier indépendante et manager platinium associée depuis 2015. Au fil des années, j'ai eu le plaisir d'accompagner de nombreux clients dans leurs projets immobiliers et de développer une équipe de conseillers indépendants.
-
-**Ce qui m'a amenée à choisir ce métier**
-
-Ce qui m'a attirée dans l'immobilier, c'est avant tout la dimension humaine. Accompagner des personnes dans l'un des projets les plus importants de leur vie — acheter ou vendre un bien — est une responsabilité qui me passionne. J'ai aussi été séduite par l'indépendance et l'entrepreneuriat que ce métier permet. Aujourd'hui, je vis une activité à la fois humaine, dynamique et incroyablement riche en rencontres.
-
-**Mon parcours dans l'immobilier**
-
-Depuis 2015, j'ai accompagné de nombreux projets immobiliers, chacun unique et porteur d'une histoire personnelle. L'expérience acquise sur le terrain, au contact direct des vendeurs, des acquéreurs et des partenaires, m'a permis de développer une expertise solide et une relation de confiance durable avec mes clients. Chaque transaction réussie renforce ma conviction : un accompagnement attentif et professionnel fait toute la différence.
-
-**Manager et accompagner une équipe**
-
-Mon activité ne se limite pas à l'accompagnement des clients. Au fil des années, j'ai développé une activité de manager et de formatrice, en accompagnant des personnes qui souhaitent se lancer dans l'immobilier et construire leur propre activité. Partager mon expérience, transmettre les bonnes pratiques et voir d'autres personnes réussir est aujourd'hui une dimension essentielle de mon métier. C'est une source de fierté et de motivation au quotidien.
-
-**Une vision humaine et entrepreneuriale de l'immobilier**
-
-Pour moi, l'immobilier est à la fois un métier d'accompagnement humain et une opportunité entrepreneuriale permettant à chacun de construire son propre parcours professionnel. C'est cette double dimension — l'humain et l'entrepreneuriat — qui rend ce métier si passionnant et si riche de sens.
-
-**Vous avez un projet immobilier ou envie de découvrir ce métier ? Parlons-en.**`,
   },
 ];
