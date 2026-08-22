@@ -6,6 +6,10 @@ import { Heart, Users, Award, Sparkles, ArrowRight, Star, Quote } from "lucide-r
 import { useEffect, useRef } from "react";
 import patriciaPhoto from "@/assets/patricia-vieira.jpg";
 import patriciaCover from "@/assets/patricia-apropos-cover.png.asset.json";
+import conseilClientsImg from "@/assets/article-conseil-clients.jpg";
+import mentoratImgAsset from "@/assets/equipe-mentorat.png.asset.json";
+
+const mentoratImg = mentoratImgAsset.url;
 
 const avis = [
   { name: "Coraline", type: "Vente", stars: 5, text: "Parfaite ! Vente de mon appartement en 1 semaine et au prix ! Je recommande les yeux fermés." },
@@ -42,8 +46,8 @@ const APropos = () => {
   return (
     <>
       <PageSEO
-        title="À Propos de Patricia Vieira — Conseillère Immobilier Indépendante en Seine-et-Marne"
-        description="Découvrez le parcours de Patricia Vieira, conseillère immobilier indépendante à Gretz-Armainvilliers. 11 ans d'expérience, +150 biens vendus, avis clients 4.9/5."
+        title="Patricia Vieira | Conseillère immobilier & Manager iad"
+        description="Découvrez le parcours de Patricia Vieira, conseillère immobilier en Seine-et-Marne depuis 2015 et Manager Platinium Associée iad, accompagnant clients et conseillers immobiliers."
         canonical="/a-propos"
       />
       <SchemaOrg
