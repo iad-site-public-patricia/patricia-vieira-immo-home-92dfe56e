@@ -9,7 +9,8 @@ import { Label } from "@/components/ui/label";
 import { Checkbox } from "@/components/ui/checkbox";
 import { toast } from "sonner";
 import { Phone, Mail, MapPin, Facebook, Instagram, Linkedin } from "lucide-react";
-import coverContact from "@/assets/cover-contact.jpg";
+import coverContactAsset from "@/assets/cover-contact-v2.png.asset.json";
+const coverContact = coverContactAsset.url;
 
 const Contact = () => {
   const [form, setForm] = useState({ nom: "", email: "", telephone: "", objet: "", message: "" });
@@ -41,17 +42,13 @@ const Contact = () => {
       />
       <main>
         {/* Hero */}
-        <section className="relative section-padding overflow-hidden">
-          <img src={coverContact} alt="Patricia Vieira au téléphone" className="absolute inset-0 w-full h-full object-cover object-[75%_center] md:object-center" loading="lazy" />
-          <div className="absolute inset-0 bg-gradient-to-r from-navy/80 via-navy/60 to-navy/40" />
-          <div className="container mx-auto max-w-3xl text-center relative z-10">
-            <h1 className="font-display text-4xl md:text-5xl font-bold mb-6 text-navy-foreground">
-              Contactez Patricia Vieira — Conseillère Immobilier
-            </h1>
-            <p className="font-body text-lg text-navy-foreground/85 leading-relaxed">
-              Une question, un projet ? N'hésitez pas à me contacter, je serai ravie d'échanger avec vous.
-            </p>
-          </div>
+        <section className="relative w-full overflow-hidden">
+          <img
+            src={coverContact}
+            alt="Contactez Patricia Vieira — Conseillère immobilier et Manager d'équipe"
+            className="w-full h-auto object-cover"
+            loading="lazy"
+          />
         </section>
 
         <section className="section-padding" id="formulaire">
