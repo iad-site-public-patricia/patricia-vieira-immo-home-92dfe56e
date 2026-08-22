@@ -16,7 +16,9 @@ import visiteImgAsset from "@/assets/equipe-terrain.png.asset.json";
 const visiteImg = visiteImgAsset.url;
 import estimationImg from "@/assets/cover-estimation.jpg";
 import equipeImg from "@/assets/equipe-celebration.jpg";
-import lifestyleImg from "@/assets/rejoindre-lifestyle.jpg";
+import lifestyleImgAsset from "@/assets/rejoindre-lifestyle.png.asset.json";
+const lifestyleImg = lifestyleImgAsset.url;
+
 
 
 
