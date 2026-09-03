@@ -15,7 +15,8 @@ import patriciaAssise from "@/assets/patricia-vieira-portrait-assise.png.asset.j
 import visiteImgAsset from "@/assets/equipe-terrain.png.asset.json";
 const visiteImg = visiteImgAsset.url;
 import estimationImg from "@/assets/cover-estimation.jpg";
-import equipeImg from "@/assets/equipe-celebration.jpg";
+import equipeImgAsset from "@/assets/equipe-celebration.png.asset.json";
+const equipeImg = equipeImgAsset.url;
 import lifestyleImg from "@/assets/rejoindre-lifestyle.jpg";
 
 

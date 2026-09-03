@@ -12,7 +12,8 @@ import {
 } from "lucide-react";
 import Reveal from "@/components/Reveal";
 
-import heroImg from "@/assets/equipe-celebration.jpg";
+import heroImgAsset from "@/assets/equipe-celebration.png.asset.json";
+const heroImg = heroImgAsset.url;
 import formationImg from "@/assets/equipe-formation.jpg";
 import seminaireImg from "@/assets/equipe-seminaire.jpg";
 import mentoratImgAsset from "@/assets/equipe-mentorat.png.asset.json";
