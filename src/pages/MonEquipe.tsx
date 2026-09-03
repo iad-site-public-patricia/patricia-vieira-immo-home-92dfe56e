@@ -686,8 +686,8 @@ const MonEquipe = () => {
                   icon: Flame,
                   title: "Évoluer dans une communauté dynamique et motivante",
                   desc: "Le réseau repose également sur une forte dynamique humaine et collective. Événements, formations, séminaires, challenges, échanges d'expériences, entraide et partage permettent à chacun d'évoluer dans une énergie positive et motivante. L'objectif est que personne ne reste seul dans son évolution. Les réussites des uns inspirent les autres et créent une véritable dynamique de progression collective.",
-                  image: seminaireImg,
-                  alt: "Séminaire d'équipe et événement collectif iad",
+                  image: heroImg,
+                  alt: "L'équipe de Patricia Vieira réunie autour d'un moment convivial",
                 },
               ].map((pillar, i) => (
                 <article
