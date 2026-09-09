@@ -126,7 +126,7 @@ const Vendre = () => {
                 En choisissant de vendre avec moi, vous bénéficiez du meilleur des deux mondes : l'accompagnement personnalisé d'une conseillère locale et la puissance d'un réseau national de plus de 18 000 conseillers.
               </p>
               <p>
-                <strong className="text-foreground">Honoraires réduits de 20 à 30% par rapport aux agences traditionnelles</strong> grâce à mon modèle sans vitrine physique mais avec une diffusion maximale sur tous les portails immobiliers. Vous faites des économies substantielles sans rien sacrifier sur la qualité du service.
+                <strong className="text-foreground">Honoraires adaptés</strong> grâce à mon modèle sans vitrine physique mais avec une diffusion maximale sur tous les portails immobiliers. Vous faites des économies substantielles sans rien sacrifier sur la qualité du service.
               </p>
 
               <h2 className="font-display text-2xl md:text-3xl font-semibold text-foreground !mt-10">
