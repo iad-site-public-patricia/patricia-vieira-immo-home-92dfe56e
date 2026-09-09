@@ -123,7 +123,7 @@ const Vendre = () => {
                 Les avantages de mon modèle indépendant
               </h2>
               <p>
-                En choisissant de vendre avec moi, vous bénéficiez du meilleur des deux mondes : l'accompagnement personnalisé d'une conseillère locale et la puissance d'un réseau national de plus de 18 000 conseillers.
+                En choisissant de vendre avec moi, vous bénéficiez du meilleur des deux mondes : l'accompagnement personnalisé d'une conseillère locale et la puissance d'un réseau national de plus de 15 000 conseillers.
               </p>
               <p>
                 <strong className="text-foreground">Honoraires adaptés</strong> grâce à mon modèle sans vitrine physique mais avec une diffusion maximale sur tous les portails immobiliers. Vous faites des économies substantielles sans rien sacrifier sur la qualité du service.
