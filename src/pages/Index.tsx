@@ -142,36 +142,36 @@ const Index = () => {
             aria-label="Patricia Vieira, conseillère immobilière en Seine-et-Marne, accompagne un couple lors d'une visite puis d'une signature"
             className="hidden lg:block absolute inset-0 w-full h-full object-cover object-center [filter:brightness(1.04)_saturate(1.03)]"
           />
-          {/* Voile clair quasi invisible : préserve la luminosité, améliore le contraste */}
-          <div className="absolute inset-0 bg-background/12 pointer-events-none" />
-          <div className="absolute inset-0 pointer-events-none bg-gradient-to-b from-background/85 via-background/55 to-background/15 lg:bg-gradient-to-r lg:from-background/95 lg:via-background/70 lg:to-transparent" />
+          {/* Contraste éditorial plus franc sur mobile, sans masquer la scène */}
+          <div className="absolute inset-0 bg-background/5 pointer-events-none" />
+          <div className="absolute inset-0 pointer-events-none bg-gradient-to-b from-background/75 via-background/40 to-background/10 md:from-background/80 md:via-background/50 lg:bg-gradient-to-r lg:from-background/95 lg:via-background/70 lg:to-transparent" />
 
         </div>
 
 
         <div className="relative z-10 container mx-auto px-4 py-16 md:py-20 lg:py-28">
           <div className="max-w-3xl lg:max-w-2xl animate-fade-in">
-            <p className="font-display text-xl md:text-3xl lg:text-4xl font-semibold uppercase tracking-[0.14em] text-navy leading-snug mb-8 md:mb-10">
+            <p className="font-display text-xl md:text-3xl lg:text-4xl font-semibold uppercase tracking-[0.14em] text-navy leading-snug mb-6 md:mb-10">
               Le magazine immobilier<br className="hidden sm:block" /> de Patricia Vieira
             </p>
-            <div className="w-24 h-px bg-primary mb-8 md:mb-10" />
-            <h1 className="font-display text-5xl md:text-6xl lg:text-7xl font-bold text-foreground leading-[1.05] mb-8 md:mb-10">
+            <div className="w-24 h-0.5 bg-primary mb-6 md:mb-10" />
+            <h1 className="font-display text-4xl md:text-6xl lg:text-7xl font-bold text-foreground leading-[1.05] mb-6 md:mb-10">
               Bienvenue dans les coulisses de l'immobilier
             </h1>
-            <h2 className="font-display text-2xl md:text-3xl font-medium text-navy/90 leading-relaxed mb-10 md:mb-12">
+            <h2 className="font-display text-2xl md:text-3xl font-semibold text-navy leading-relaxed mb-8 md:mb-12">
               <span className="block">Comprendre le marché.</span>
               <span className="block mt-1">Réussir son projet.</span>
               <span className="block mt-1">Construire son avenir.</span>
             </h2>
-            <div className="flex flex-col sm:flex-row flex-wrap gap-3">
-              <Button variant="hero" size="lg" asChild className="w-full sm:w-auto">
-                <Link to="/conseils-immobiliers" className="inline-flex items-center gap-2">
-                  <Home className="w-5 h-5" /> Je suis propriétaire ou acquéreur <ArrowRight className="w-5 h-5" />
+            <div className="grid w-full max-w-2xl grid-cols-1 gap-3 sm:grid-cols-2">
+              <Button variant="hero" size="lg" asChild className="h-auto min-h-[68px] w-full justify-start px-5 py-4 text-left text-base shadow-xl">
+                <Link to="/conseils-immobiliers" aria-label="Accéder au guide pour propriétaires et acquéreurs" className="grid w-full grid-cols-[auto_1fr_auto] items-center gap-3">
+                  <Home className="w-5 h-5" /> <span>Je suis propriétaire ou acquéreur</span> <ArrowRight className="w-5 h-5" />
                 </Link>
               </Button>
-              <Button variant="hero-outline" size="lg" asChild className="w-full sm:w-auto h-auto py-3 whitespace-normal">
-                <Link to="/mon-equipe" className="inline-flex items-center gap-2 text-left">
-                  <Briefcase className="w-5 h-5 shrink-0" /> Je découvre le métier de conseiller immobilier <ArrowRight className="w-5 h-5 shrink-0" />
+              <Button variant="hero" size="lg" asChild className="h-auto min-h-[68px] w-full justify-start bg-navy px-5 py-4 text-left text-base text-navy-foreground shadow-xl hover:bg-navy/90">
+                <Link to="/mon-equipe" aria-label="Découvrir le métier de conseiller immobilier indépendant" className="grid w-full grid-cols-[auto_1fr_auto] items-center gap-3 whitespace-normal">
+                  <Briefcase className="w-5 h-5" /> <span>Je découvre le métier de conseiller immobilier</span> <ArrowRight className="w-5 h-5" />
                 </Link>
               </Button>
             </div>
