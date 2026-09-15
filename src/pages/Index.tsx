@@ -171,7 +171,7 @@ const Index = () => {
               </Button>
               <Button variant="hero" size="lg" asChild className="h-auto min-h-[68px] w-full justify-start bg-navy px-5 py-4 text-left text-base text-navy-foreground shadow-xl hover:bg-navy/90">
                 <Link to="/mon-equipe" aria-label="Découvrir le métier de conseiller immobilier indépendant" className="grid w-full grid-cols-[auto_1fr_auto] items-center gap-3 whitespace-normal">
-                  <Briefcase className="w-5 h-5" /> <span>Je découvre le métier de conseiller immobilier</span> <ArrowRight className="w-5 h-5" />
+                  <Briefcase className="w-5 h-5" /> <span className="min-w-0 break-words leading-snug">Je découvre le métier de conseiller immobilier</span> <ArrowRight className="w-5 h-5" />
                 </Link>
               </Button>
             </div>
