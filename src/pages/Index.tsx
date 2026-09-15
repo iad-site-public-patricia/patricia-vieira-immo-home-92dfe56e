@@ -142,9 +142,9 @@ const Index = () => {
             aria-label="Patricia Vieira, conseillère immobilière en Seine-et-Marne, accompagne un couple lors d'une visite puis d'une signature"
             className="hidden lg:block absolute inset-0 w-full h-full object-cover object-center [filter:brightness(1.04)_saturate(1.03)]"
           />
-          {/* Contraste éditorial plus franc sur mobile, sans masquer la scène */}
-          <div className="absolute inset-0 bg-background/5 pointer-events-none" />
-          <div className="absolute inset-0 pointer-events-none bg-gradient-to-b from-background/75 via-background/40 to-background/10 md:from-background/80 md:via-background/50 lg:bg-gradient-to-r lg:from-background/95 lg:via-background/70 lg:to-transparent" />
+          {/* Voile clair plus prononcé pour la lisibilité des textes */}
+          <div className="absolute inset-0 bg-background/25 pointer-events-none" />
+          <div className="absolute inset-0 pointer-events-none bg-gradient-to-b from-background/90 via-background/65 to-background/30 md:from-background/90 md:via-background/70 lg:bg-gradient-to-r lg:from-background/95 lg:via-background/85 lg:to-background/20" />
 
         </div>
 
@@ -163,15 +163,15 @@ const Index = () => {
               <span className="block mt-1">Réussir son projet.</span>
               <span className="block mt-1">Construire son avenir.</span>
             </h2>
-            <div className="grid w-full max-w-2xl grid-cols-1 gap-3 sm:grid-cols-2">
-              <Button variant="hero" size="lg" asChild className="h-auto min-h-[68px] w-full justify-start px-5 py-4 text-left text-base shadow-xl">
-                <Link to="/conseils-immobiliers" aria-label="Accéder au guide pour propriétaires et acquéreurs" className="grid w-full grid-cols-[auto_1fr_auto] items-center gap-3">
-                  <Home className="w-5 h-5" /> <span>Je suis propriétaire ou acquéreur</span> <ArrowRight className="w-5 h-5" />
+            <div className="flex w-full max-w-2xl flex-col gap-4">
+              <Button variant="hero" size="lg" asChild className="h-auto min-h-[76px] w-full whitespace-normal px-6 py-4 text-left text-lg shadow-xl">
+                <Link to="/conseils-immobiliers" aria-label="Accéder au guide pour propriétaires et acquéreurs" className="grid w-full grid-cols-[auto_1fr_auto] items-center gap-4">
+                  <Home className="h-6 w-6 shrink-0" /> <span className="leading-snug">Je suis propriétaire ou acquéreur</span> <ArrowRight className="h-6 w-6 shrink-0" />
                 </Link>
               </Button>
-              <Button variant="hero" size="lg" asChild className="h-auto min-h-[68px] w-full justify-start bg-navy px-5 py-4 text-left text-base text-navy-foreground shadow-xl hover:bg-navy/90">
-                <Link to="/mon-equipe" aria-label="Découvrir le métier de conseiller immobilier indépendant" className="grid w-full grid-cols-[auto_1fr_auto] items-center gap-3 whitespace-normal">
-                  <Briefcase className="w-5 h-5" /> <span className="min-w-0 break-words leading-snug">Je découvre le métier de conseiller immobilier</span> <ArrowRight className="w-5 h-5" />
+              <Button variant="hero" size="lg" asChild className="h-auto min-h-[76px] w-full whitespace-normal bg-navy px-6 py-4 text-left text-lg text-navy-foreground shadow-xl hover:bg-navy/90">
+                <Link to="/mon-equipe" aria-label="Découvrir le métier de conseiller immobilier indépendant" className="grid w-full grid-cols-[auto_1fr_auto] items-center gap-4">
+                  <Briefcase className="h-6 w-6 shrink-0" /> <span className="min-w-0 whitespace-normal leading-snug">Je découvre le métier de conseiller immobilier</span> <ArrowRight className="h-6 w-6 shrink-0" />
                 </Link>
               </Button>
             </div>
