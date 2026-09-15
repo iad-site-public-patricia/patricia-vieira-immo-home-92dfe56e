@@ -164,14 +164,14 @@ const Index = () => {
               <span className="block mt-1">Construire son avenir.</span>
             </h2>
             <div className="flex w-full max-w-2xl flex-col gap-4">
-              <Button variant="hero" size="lg" asChild className="h-auto min-h-[76px] w-full px-6 py-4 text-left text-lg shadow-xl">
+              <Button variant="hero" size="lg" asChild className="h-auto min-h-[76px] w-full whitespace-normal px-6 py-4 text-left text-lg shadow-xl">
                 <Link to="/conseils-immobiliers" aria-label="Accéder au guide pour propriétaires et acquéreurs" className="grid w-full grid-cols-[auto_1fr_auto] items-center gap-4">
                   <Home className="h-6 w-6 shrink-0" /> <span className="leading-snug">Je suis propriétaire ou acquéreur</span> <ArrowRight className="h-6 w-6 shrink-0" />
                 </Link>
               </Button>
-              <Button variant="hero" size="lg" asChild className="h-auto min-h-[76px] w-full bg-navy px-6 py-4 text-left text-lg text-navy-foreground shadow-xl hover:bg-navy/90">
+              <Button variant="hero" size="lg" asChild className="h-auto min-h-[76px] w-full whitespace-normal bg-navy px-6 py-4 text-left text-lg text-navy-foreground shadow-xl hover:bg-navy/90">
                 <Link to="/mon-equipe" aria-label="Découvrir le métier de conseiller immobilier indépendant" className="grid w-full grid-cols-[auto_1fr_auto] items-center gap-4">
-                  <Briefcase className="h-6 w-6 shrink-0" /> <span className="leading-snug">Je découvre le métier de conseiller immobilier</span> <ArrowRight className="h-6 w-6 shrink-0" />
+                  <Briefcase className="h-6 w-6 shrink-0" /> <span className="min-w-0 whitespace-normal leading-snug">Je découvre le métier de conseiller immobilier</span> <ArrowRight className="h-6 w-6 shrink-0" />
                 </Link>
               </Button>
             </div>
