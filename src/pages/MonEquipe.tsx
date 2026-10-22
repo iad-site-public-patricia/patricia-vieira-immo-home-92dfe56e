@@ -22,6 +22,11 @@ const mentoratImg = mentoratImgAsset.url;
 import challengeImg from "@/assets/equipe-challenge.jpg";
 import terrainImgAsset from "@/assets/equipe-terrain.png.asset.json";
 const terrainImg = terrainImgAsset.url;
+import coachingDay1Asset from "@/assets/coaching-day-1.jpg.asset.json";
+import coachingDay2Asset from "@/assets/coaching-day-2.jpg.asset.json";
+const coachingDay1 = coachingDay1Asset.url;
+const coachingDay2 = coachingDay2Asset.url;
+
 import rejoindreEquipeImg from "@/assets/rejoindre-equipe.jpg";
 import rejoindreLifestyleImg from "@/assets/rejoindre-lifestyle.jpg";
 
@@ -43,6 +48,20 @@ const galleryItems = [
   { src: rejoindreLifestyleImg, label: "Moments de partage" },
   { src: heroImg, label: "Réussites célébrées" },
 ];
+
+type PillarBlock = {
+  num: string;
+  emoji: string;
+  icon: typeof Building2;
+  title: string;
+  desc: string;
+  image?: string;
+  alt?: string;
+  images?: string[];
+  alts?: string[];
+  caption?: string;
+};
+
 
 const MonEquipe = () => {
   const [form, setForm] = useState({
@@ -653,7 +672,8 @@ const MonEquipe = () => {
 
             {/* 4 grands blocs piliers - alternance image/texte */}
             <div className="space-y-10 md:space-y-16">
-              {[
+              {([
+
                 {
                   num: "01",
                   emoji: "🏢",
@@ -669,8 +689,13 @@ const MonEquipe = () => {
                   icon: Users,
                   title: "Construire et accompagner sa propre équipe",
                   desc: "Au-delà de la transaction immobilière, chacun a la possibilité de développer sa propre équipe de mandataires et d'accompagner d'autres personnes dans leur évolution professionnelle. L'objectif n'est pas seulement de recruter, mais de transmettre, accompagner, faire évoluer et aider chacun à réussir à son rythme. Cette dimension humaine et entrepreneuriale apporte une vraie dynamique collective et permet de construire un projet évolutif sur le long terme.",
-                  image: mentoratImg,
-                  alt: "Équipe de conseillers immobiliers en échange et accompagnement",
+                  images: [coachingDay1, coachingDay2],
+                  alts: [
+                    "Séance de coaching entre conseillères immobilières autour d'un ordinateur portable",
+                    "Patricia Vieira en session de coaching avec un conseiller immobilier",
+                  ],
+                  caption: "Période des coaching-day",
+
                 },
                 {
                   num: "03",
@@ -690,33 +715,77 @@ const MonEquipe = () => {
                   image: heroImg,
                   alt: "L'équipe de Patricia Vieira réunie autour d'un moment convivial",
                 },
-              ].map((pillar, i) => (
+              ] as PillarBlock[]).map((pillar, i) => (
                 <article
                   key={i}
-                  className={`grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-14 items-center ${
-                    i % 2 === 1 ? "lg:[&>*:first-child]:order-2" : ""
-                  }`}
+                  className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-14 items-center"
                 >
                   {/* Image */}
-                  <div className="relative group">
+                  <div
+                    className={`relative group order-2 ${
+                      i % 2 === 1 ? "lg:order-2" : "lg:order-1"
+                    }`}
+                  >
                     <div className="absolute -inset-3 bg-gradient-to-br from-primary/20 to-gold/20 rounded-3xl blur-2xl opacity-60 group-hover:opacity-90 transition-opacity duration-700" />
-                    <div className="relative overflow-hidden rounded-2xl shadow-2xl aspect-[4/3]">
-                      <img
-                        src={pillar.image}
-                        alt={pillar.alt}
-                        loading="lazy"
-                        className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
-                      />
-                      <div className="absolute top-4 left-4 bg-card/95 backdrop-blur-sm rounded-xl px-4 py-2 shadow-lg">
-                        <span className="font-display text-2xl text-primary font-semibold">
-                          {pillar.num}
-                        </span>
+                    {pillar.images ? (
+                      <div className="relative">
+                        {pillar.caption && (
+                          <div className="mb-4 md:mb-5 flex items-center justify-center gap-3 md:gap-4">
+                            <span className="h-px w-8 md:w-14 shrink-0 bg-gradient-to-r from-transparent to-primary/60" />
+                            <span className="font-body text-xs md:text-sm font-semibold uppercase tracking-[0.18em] md:tracking-[0.22em] text-primary text-center leading-none">
+                              {pillar.caption}
+                            </span>
+                            <span className="h-px w-8 md:w-14 shrink-0 bg-gradient-to-l from-transparent to-primary/60" />
+                          </div>
+                        )}
+                        <div className="grid grid-cols-2 gap-3 md:gap-4">
+                          {pillar.images.map((src, j) => (
+                            <div
+                              key={j}
+                              className="relative overflow-hidden rounded-2xl shadow-2xl aspect-[3/4]"
+                            >
+                              <img
+                                src={src}
+                                alt={pillar.alts?.[j] ?? pillar.title}
+                                loading="lazy"
+                                className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
+                              />
+                              {j === 0 && (
+                                <div className="absolute top-3 left-3 bg-card/95 backdrop-blur-sm rounded-xl px-3 py-1.5 shadow-lg">
+                                  <span className="font-display text-lg md:text-2xl text-primary font-semibold">
+                                    {pillar.num}
+                                  </span>
+                                </div>
+                              )}
+                            </div>
+                          ))}
+                        </div>
                       </div>
-                    </div>
+
+                    ) : (
+                      <div className="relative overflow-hidden rounded-2xl shadow-2xl aspect-[4/3]">
+                        <img
+                          src={pillar.image}
+                          alt={pillar.alt}
+                          loading="lazy"
+                          className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
+                        />
+                        <div className="absolute top-4 left-4 bg-card/95 backdrop-blur-sm rounded-xl px-4 py-2 shadow-lg">
+                          <span className="font-display text-2xl text-primary font-semibold">
+                            {pillar.num}
+                          </span>
+                        </div>
+                      </div>
+                    )}
                   </div>
 
                   {/* Texte */}
-                  <div>
+                  <div
+                    className={`order-1 ${
+                      i % 2 === 1 ? "lg:order-1" : "lg:order-2"
+                    }`}
+                  >
+
                     <div className="flex items-center gap-4 mb-5">
                       <div className="shrink-0 w-14 h-14 rounded-2xl bg-gradient-to-br from-primary/15 to-gold/15 flex items-center justify-center">
                         <pillar.icon className="w-7 h-7 text-primary" />
