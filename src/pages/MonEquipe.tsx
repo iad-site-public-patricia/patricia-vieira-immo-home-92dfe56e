@@ -729,6 +729,15 @@ const MonEquipe = () => {
                     <div className="absolute -inset-3 bg-gradient-to-br from-primary/20 to-gold/20 rounded-3xl blur-2xl opacity-60 group-hover:opacity-90 transition-opacity duration-700" />
                     {pillar.images ? (
                       <div className="relative">
+                        {pillar.caption && (
+                          <div className="mb-4 md:mb-5 flex items-center justify-center gap-3 md:gap-4">
+                            <span className="h-px w-8 md:w-14 shrink-0 bg-gradient-to-r from-transparent to-primary/60" />
+                            <span className="font-body text-xs md:text-sm font-semibold uppercase tracking-[0.18em] md:tracking-[0.22em] text-primary text-center leading-none">
+                              {pillar.caption}
+                            </span>
+                            <span className="h-px w-8 md:w-14 shrink-0 bg-gradient-to-l from-transparent to-primary/60" />
+                          </div>
+                        )}
                         <div className="grid grid-cols-2 gap-3 md:gap-4">
                           {pillar.images.map((src, j) => (
                             <div
@@ -751,16 +760,8 @@ const MonEquipe = () => {
                             </div>
                           ))}
                         </div>
-                        {pillar.caption && (
-                          <div className="mt-5 flex items-center justify-center gap-3 md:gap-4">
-                            <span className="h-px w-6 md:w-10 bg-gradient-to-r from-transparent to-primary/50" />
-                            <span className="font-body text-[10px] md:text-xs uppercase tracking-[0.22em] md:tracking-[0.28em] text-primary text-center">
-                              {pillar.caption}
-                            </span>
-                            <span className="h-px w-6 md:w-10 bg-gradient-to-l from-transparent to-primary/50" />
-                          </div>
-                        )}
                       </div>
+
                     ) : (
                       <div className="relative overflow-hidden rounded-2xl shadow-2xl aspect-[4/3]">
                         <img
