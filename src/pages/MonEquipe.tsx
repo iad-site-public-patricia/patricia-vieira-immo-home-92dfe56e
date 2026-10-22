@@ -22,6 +22,11 @@ const mentoratImg = mentoratImgAsset.url;
 import challengeImg from "@/assets/equipe-challenge.jpg";
 import terrainImgAsset from "@/assets/equipe-terrain.png.asset.json";
 const terrainImg = terrainImgAsset.url;
+import coachingDay1Asset from "@/assets/coaching-day-1.jpg.asset.json";
+import coachingDay2Asset from "@/assets/coaching-day-2.jpg.asset.json";
+const coachingDay1 = coachingDay1Asset.url;
+const coachingDay2 = coachingDay2Asset.url;
+
 import rejoindreEquipeImg from "@/assets/rejoindre-equipe.jpg";
 import rejoindreLifestyleImg from "@/assets/rejoindre-lifestyle.jpg";
 
@@ -43,6 +48,20 @@ const galleryItems = [
   { src: rejoindreLifestyleImg, label: "Moments de partage" },
   { src: heroImg, label: "Réussites célébrées" },
 ];
+
+type PillarBlock = {
+  num: string;
+  emoji: string;
+  icon: typeof Building2;
+  title: string;
+  desc: string;
+  image?: string;
+  alt?: string;
+  images?: string[];
+  alts?: string[];
+  caption?: string;
+};
+
 
 const MonEquipe = () => {
   const [form, setForm] = useState({
@@ -653,7 +672,8 @@ const MonEquipe = () => {
 
             {/* 4 grands blocs piliers - alternance image/texte */}
             <div className="space-y-10 md:space-y-16">
-              {[
+              {([
+
                 {
                   num: "01",
                   emoji: "🏢",
@@ -669,8 +689,13 @@ const MonEquipe = () => {
                   icon: Users,
                   title: "Construire et accompagner sa propre équipe",
                   desc: "Au-delà de la transaction immobilière, chacun a la possibilité de développer sa propre équipe de mandataires et d'accompagner d'autres personnes dans leur évolution professionnelle. L'objectif n'est pas seulement de recruter, mais de transmettre, accompagner, faire évoluer et aider chacun à réussir à son rythme. Cette dimension humaine et entrepreneuriale apporte une vraie dynamique collective et permet de construire un projet évolutif sur le long terme.",
-                  image: mentoratImg,
-                  alt: "Équipe de conseillers immobiliers en échange et accompagnement",
+                  images: [coachingDay1, coachingDay2],
+                  alts: [
+                    "Séance de coaching entre conseillères immobilières autour d'un ordinateur portable",
+                    "Patricia Vieira en session de coaching avec un conseiller immobilier",
+                  ],
+                  caption: "Période des coaching-day",
+
                 },
                 {
                   num: "03",
