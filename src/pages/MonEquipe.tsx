@@ -690,33 +690,76 @@ const MonEquipe = () => {
                   image: heroImg,
                   alt: "L'équipe de Patricia Vieira réunie autour d'un moment convivial",
                 },
-              ].map((pillar, i) => (
+              ] as PillarBlock[]).map((pillar, i) => (
                 <article
                   key={i}
-                  className={`grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-14 items-center ${
-                    i % 2 === 1 ? "lg:[&>*:first-child]:order-2" : ""
-                  }`}
+                  className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-14 items-center"
                 >
                   {/* Image */}
-                  <div className="relative group">
+                  <div
+                    className={`relative group order-2 ${
+                      i % 2 === 1 ? "lg:order-2" : "lg:order-1"
+                    }`}
+                  >
                     <div className="absolute -inset-3 bg-gradient-to-br from-primary/20 to-gold/20 rounded-3xl blur-2xl opacity-60 group-hover:opacity-90 transition-opacity duration-700" />
-                    <div className="relative overflow-hidden rounded-2xl shadow-2xl aspect-[4/3]">
-                      <img
-                        src={pillar.image}
-                        alt={pillar.alt}
-                        loading="lazy"
-                        className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
-                      />
-                      <div className="absolute top-4 left-4 bg-card/95 backdrop-blur-sm rounded-xl px-4 py-2 shadow-lg">
-                        <span className="font-display text-2xl text-primary font-semibold">
-                          {pillar.num}
-                        </span>
+                    {pillar.images ? (
+                      <div className="relative">
+                        <div className="grid grid-cols-2 gap-3 md:gap-4">
+                          {pillar.images.map((src, j) => (
+                            <div
+                              key={j}
+                              className="relative overflow-hidden rounded-2xl shadow-2xl aspect-[3/4]"
+                            >
+                              <img
+                                src={src}
+                                alt={pillar.alts?.[j] ?? pillar.title}
+                                loading="lazy"
+                                className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
+                              />
+                              {j === 0 && (
+                                <div className="absolute top-3 left-3 bg-card/95 backdrop-blur-sm rounded-xl px-3 py-1.5 shadow-lg">
+                                  <span className="font-display text-lg md:text-2xl text-primary font-semibold">
+                                    {pillar.num}
+                                  </span>
+                                </div>
+                              )}
+                            </div>
+                          ))}
+                        </div>
+                        {pillar.caption && (
+                          <div className="mt-5 flex items-center justify-center gap-3 md:gap-4">
+                            <span className="h-px w-6 md:w-10 bg-gradient-to-r from-transparent to-primary/50" />
+                            <span className="font-body text-[10px] md:text-xs uppercase tracking-[0.22em] md:tracking-[0.28em] text-primary text-center">
+                              {pillar.caption}
+                            </span>
+                            <span className="h-px w-6 md:w-10 bg-gradient-to-l from-transparent to-primary/50" />
+                          </div>
+                        )}
                       </div>
-                    </div>
+                    ) : (
+                      <div className="relative overflow-hidden rounded-2xl shadow-2xl aspect-[4/3]">
+                        <img
+                          src={pillar.image}
+                          alt={pillar.alt}
+                          loading="lazy"
+                          className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
+                        />
+                        <div className="absolute top-4 left-4 bg-card/95 backdrop-blur-sm rounded-xl px-4 py-2 shadow-lg">
+                          <span className="font-display text-2xl text-primary font-semibold">
+                            {pillar.num}
+                          </span>
+                        </div>
+                      </div>
+                    )}
                   </div>
 
                   {/* Texte */}
-                  <div>
+                  <div
+                    className={`order-1 ${
+                      i % 2 === 1 ? "lg:order-1" : "lg:order-2"
+                    }`}
+                  >
+
                     <div className="flex items-center gap-4 mb-5">
                       <div className="shrink-0 w-14 h-14 rounded-2xl bg-gradient-to-br from-primary/15 to-gold/15 flex items-center justify-center">
                         <pillar.icon className="w-7 h-7 text-primary" />
