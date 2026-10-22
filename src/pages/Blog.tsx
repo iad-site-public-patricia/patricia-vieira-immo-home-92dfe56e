@@ -35,7 +35,7 @@ const Blog = () => {
           </div>
         </section>
         <section className="section-padding">
-          <article className="container mx-auto max-w-3xl prose prose-lg font-body text-foreground">
+          <article className="container mx-auto max-w-4xl prose prose-lg lg:prose-xl font-body text-foreground">
             {post.content.split("\n\n").map((para, i) => {
               if (para.startsWith("**") && para.endsWith("**")) {
                 return <h3 key={i} className="font-display text-xl font-semibold mt-8 mb-3">{para.replace(/\*\*/g, "")}</h3>;
@@ -71,12 +71,12 @@ const Blog = () => {
       />
     <div>
       {/* Magazine-style header */}
-      <section className="relative section-padding overflow-hidden">
+      <section className="relative section-padding overflow-hidden min-h-[60vh] lg:min-h-[70vh] flex items-center">
         <img src={blogHeaderImg.url} alt="Conseils immobiliers" className="absolute inset-0 w-full h-full object-cover" />
         {/* Voile clair quasi invisible : préserve la luminosité, améliore le contraste */}
         <div className="absolute inset-0 bg-background/12 pointer-events-none" />
         <div className="absolute inset-0 pointer-events-none bg-gradient-to-b from-background/85 via-background/55 to-background/15" />
-        <div className="container mx-auto max-w-3xl text-center relative z-10">
+        <div className="container mx-auto max-w-4xl text-center relative z-10">
           <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-5 text-navy">
             Le guide immobilier
           </h1>
@@ -90,7 +90,7 @@ const Blog = () => {
       </section>
 
       <section className="section-padding">
-        <div className="container mx-auto max-w-6xl">
+        <div className="container mx-auto max-w-[1600px]">
           {/* Categories - refined pills */}
           <div className="flex flex-wrap gap-3 mb-14 justify-center">
             {categories.map((cat) => {
@@ -110,10 +110,10 @@ const Blog = () => {
                 <button
                   key={cat}
                   onClick={() => setActiveCategory(cat)}
-                  className={`inline-flex items-center gap-2 px-6 py-3 rounded-lg text-sm font-body font-semibold uppercase tracking-wide border-2 transition-all duration-200 ${
+                  className={`inline-flex items-center gap-2 px-4 sm:px-6 py-2.5 sm:py-3 rounded-lg text-xs sm:text-sm font-body font-semibold uppercase tracking-wide border-2 transition-all duration-200 ${
                     activeCategory === cat
                       ? "bg-navy text-navy-foreground border-navy shadow-md"
-                      : "bg-white text-navy border-navy/80 hover:bg-navy/5 hover:shadow-sm"
+                      : "bg-background text-navy border-navy/80 hover:bg-navy/5 hover:shadow-sm"
                   }`}
                 >
                   {iconMap[cat]}
@@ -124,7 +124,7 @@ const Blog = () => {
           </div>
 
           {/* Cards grid */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-6 lg:gap-8">
             {filtered.map((post) => (
               <Link
                 key={post.id}
@@ -132,7 +132,7 @@ const Blog = () => {
                 className="group bg-card rounded-xl overflow-hidden border border-border/40 hover:shadow-xl transition-all duration-300"
               >
                 {post.coverImage && (
-                  <div className="h-48 overflow-hidden">
+                  <div className="aspect-[16/10] overflow-hidden">
                     <img
                       src={post.coverImage}
                       alt={post.title}
@@ -144,7 +144,7 @@ const Blog = () => {
                   <span className="text-xs font-body font-medium text-navy bg-navy-light px-2.5 py-1 rounded-full">
                     {post.category}
                   </span>
-                  <h2 className="font-display text-lg font-semibold text-foreground mt-3 mb-2 group-hover:text-primary transition-colors leading-snug">
+                  <h2 className="font-display text-lg lg:text-xl font-semibold text-foreground mt-3 mb-2 group-hover:text-primary transition-colors leading-snug">
                     {post.title}
                   </h2>
                   <p className="text-muted-foreground font-body text-base line-clamp-3 leading-relaxed">{post.excerpt}</p>
