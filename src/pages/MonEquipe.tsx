@@ -35,7 +35,7 @@ import rejoindreLifestyleImg from "@/assets/rejoindre-lifestyle.jpg";
 import monEquipeHero from "@/assets/mon-equipe-hero-v2.jpg.asset.json";
 import conseilClientsImg from "@/assets/article-conseil-clients.jpg";
 import remiseClesImg from "@/assets/article-remise-cles.jpg";
-import digitalTravailImg from "@/assets/article-digital-travail.jpg";
+import digitalTravailImg from "@/assets/metier-change-digital.jpg.asset.json";
 
 
 const galleryItems = [
