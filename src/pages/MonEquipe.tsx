@@ -265,12 +265,12 @@ const MonEquipe = () => {
             <div className="container mx-auto max-w-6xl grid lg:grid-cols-2 gap-12 lg:gap-16 items-start">
               <Reveal>
                 <img
-                  src={digitalTravailImg}
-                  alt="Travail digital d'une conseillère immobilière"
+                  src={digitalTravailImg.url}
+                  alt="Les canaux de recherche des clients : internet, réseaux sociaux, portails immobiliers et contenus digitaux"
                   loading="lazy"
-                  width={1600}
-                  height={912}
-                  className="w-full h-[300px] md:h-[460px] object-cover rounded-2xl shadow-lg lg:sticky lg:top-28"
+                  width={1536}
+                  height={1024}
+                  className="w-full rounded-2xl shadow-lg lg:sticky lg:top-28"
                 />
               </Reveal>
               <div>
