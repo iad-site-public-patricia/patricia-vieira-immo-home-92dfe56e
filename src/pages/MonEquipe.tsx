@@ -75,7 +75,7 @@ const ParagraphPhoto = ({
   alt: string;
   ratio: string;
 }) => (
-  <section className="py-6 md:py-10">
+  <section className="section-padding py-8 md:py-14">
     <div className="container mx-auto max-w-6xl">
       <Reveal>
         <img
