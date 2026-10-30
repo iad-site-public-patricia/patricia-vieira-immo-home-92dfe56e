@@ -62,6 +62,34 @@ type PillarBlock = {
   caption?: string;
 };
 
+/**
+ * Photo de paragraphe : même largeur que le visuel « métier digital »,
+ * c'est-à-dire une colonne de la grille max-w-6xl (gap-16 → 50% - 2rem).
+ */
+const ParagraphPhoto = ({
+  src,
+  alt,
+  ratio,
+}: {
+  src: string;
+  alt: string;
+  ratio: string;
+}) => (
+  <section className="py-6 md:py-10">
+    <div className="container mx-auto max-w-6xl">
+      <Reveal>
+        <img
+          src={src}
+          alt={alt}
+          loading="lazy"
+          className={`mx-auto w-full rounded-2xl shadow-lg object-cover lg:max-w-[calc(50%_-_2rem)] ${ratio}`}
+        />
+      </Reveal>
+    </div>
+  </section>
+);
+
+
 
 const MonEquipe = () => {
   const [form, setForm] = useState({
@@ -177,20 +205,13 @@ const MonEquipe = () => {
             </div>
           </section>
 
-          {/* Photo pleine largeur */}
-          <Reveal>
-            <figure className="relative w-full overflow-hidden my-4">
-              <img
-                src={conseilClientsImg}
-                alt="Conseillère immobilière en discussion avec un couple de clients"
-                loading="lazy"
-                width={1600}
-                height={912}
-                className="w-full h-[38vh] md:h-[58vh] object-cover"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-navy/25 to-transparent pointer-events-none" />
-            </figure>
-          </Reveal>
+          {/* Photo de paragraphe — conseil clients */}
+          <ParagraphPhoto
+            src={conseilClientsImg}
+            alt="Conseillère immobilière en discussion avec un couple de clients"
+            ratio="aspect-[16/9]"
+          />
+
 
           {/* Reconversion */}
           <section className="section-padding pt-16">
@@ -343,20 +364,13 @@ const MonEquipe = () => {
             </div>
           </section>
 
-          {/* Photo remise de clés */}
-          <Reveal>
-            <figure className="relative w-full overflow-hidden my-4">
-              <img
-                src={remiseClesImg}
-                alt="Remise des clés à un couple d'acquéreurs"
-                loading="lazy"
-                width={1600}
-                height={912}
-                className="w-full h-[38vh] md:h-[55vh] object-cover"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-navy/25 to-transparent pointer-events-none" />
-            </figure>
-          </Reveal>
+          {/* Photo de paragraphe — remise de clés */}
+          <ParagraphPhoto
+            src={remiseClesImg}
+            alt="Remise des clés à un couple d'acquéreurs"
+            ratio="aspect-[7/4]"
+          />
+
 
           {/* Réseaux de mandataires */}
           <section className="section-padding pt-16">
@@ -419,17 +433,13 @@ const MonEquipe = () => {
             </div>
           </section>
 
-          {/* Photo équipe / formation */}
-          <Reveal>
-            <figure className="w-full overflow-hidden my-4">
-              <img
-                src={formationImg}
-                alt="Formation et réunion d'équipe de conseillers immobiliers"
-                loading="lazy"
-                className="w-full h-[34vh] md:h-[50vh] object-cover"
-              />
-            </figure>
-          </Reveal>
+          {/* Photo de paragraphe — formation d'équipe */}
+          <ParagraphPhoto
+            src={formationImg}
+            alt="Formation et réunion d'équipe de conseillers immobiliers"
+            ratio="aspect-square"
+          />
+
 
           {/* Les qualités */}
           <section className="section-padding pt-16">
@@ -718,7 +728,7 @@ const MonEquipe = () => {
               ] as PillarBlock[]).map((pillar, i) => (
                 <article
                   key={i}
-                  className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-14 items-center"
+                  className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center"
                 >
                   {/* Image */}
                   <div
